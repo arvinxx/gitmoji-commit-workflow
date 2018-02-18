@@ -1,0 +1,17 @@
+{
+  "name": "commitlint-config-gitmoji",
+  "version": "1.0.0",
+  "description": "Shareable commitlint config enforcing gitmoji commit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "commitlint",
+    "gitmoji",
+    "emoji",
+    "git"
+  ],
+  "author": "ArvinX",
+  "license": "MIT"
+}
