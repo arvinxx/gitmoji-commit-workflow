@@ -13,19 +13,20 @@ echo "module.exports = {extends: ['commitlint-config-gitmoji']};" > commitlint.c
 ```
 
 ## Rules
+
 ### Problems
 
 The following rules are considered problems for `gitmoji commit` and will yield a non-zero exit code when not met.
 
 Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) for a list of available rules.
 
-
 #### type-enum
+
 * **condition**: `type` is found in value
 * **rule**: `always`
 * **value**
 
-  ```json
+```js
 [
   ':art:',
   ':newspaper:',
@@ -93,7 +94,7 @@ Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) fo
   ':busts_in_silhouette:',
   ':card_file_box:',
 ],
-  ```
+```
 
 ```sh
 echo ":abc: some message" # fails
@@ -101,11 +102,12 @@ echo ":bento: some message" # passes
 ```
 
 #### type-case
+
 * **description**: `type` is in case `value`
 * **rule**: `always`
 * **value**
   ```js
-    'lowerCase'
+  "lowerCase";
   ```
 
 ```sh
@@ -114,6 +116,7 @@ echo ":art: Format some code" # passes
 ```
 
 #### type-empty
+
 * **condition**: `type` is empty
 * **rule**: `never`
 
@@ -123,10 +126,12 @@ echo ":fire: Delete some file" # passes
 ```
 
 #### scope-case
+
 * **condition**: `scope` is in case `value`
 * **rule**: `always`
+
 ```js
-  'lowerCase'
+"lowerCase";
 ```
 
 ```sh
@@ -135,7 +140,8 @@ echo ":art:(scope) some message" # passes
 ```
 
 #### subject-case
-* **condition**: `subject` must begin with  `['sentence-case', 'start-case', 'pascal-case', 'upper-case']`
+
+* **condition**: `subject` must begin with `['sentence-case', 'start-case', 'pascal-case', 'upper-case']`
 * **rule**: `always`
 
 ```sh
@@ -144,6 +150,7 @@ echo ":art:(scope) Some message" # pass
 ```
 
 #### subject-empty
+
 * **condition**: `subject` is empty
 * **rule**: `never`
 
@@ -153,11 +160,13 @@ echo ":art: some message" # passes
 ```
 
 #### subject-full-stop
+
 * **condition**: `subject` ends with `value`
 * **rule**: `never`
 * **value**
+
 ```js
-  '.'
+".";
 ```
 
 ```sh
@@ -165,13 +174,14 @@ echo ":art: some message." # fails
 echo ":art: some message" # passes
 ```
 
-
 #### header-max-length
+
 * **condition**: `header` has `value` or less characters
 * **rule**: `always`
 * **value**
+
 ```js
-  72
+72;
 ```
 
 ```sh
@@ -179,77 +189,72 @@ echo ":art: some message that is way too long and breaks the line max-length by 
 echo ":art: some message" # passes
 ```
 
-
-
-
-
-
 # Gitmoji Reference Sheet
 
-| Emoji | Raw Emoji Code| Description  |
-| ----- | ----------------------------- | ------------------------------------------------------------ |
-| 🎨     | `:art:`       | when improving the **format**/structure of the code  |
-| 📰     | `:newspaper:` | when creating a **new file** |
-| 📝     | `:pencil:`    | when **performing minor changes/fixing** the code or language |
-| 📝     | `:memo:`      | when documenting source code.|
-| ⚡️     | `:zap:`       | when improving **performance**       |
-| 📚     | `:books:`     | when writing **docs**|
-| 🐛     | `:bug:`       | when fixing a **bug**, with [`@FIXME`](https://github.com/slashsBin/styleguide-todo-grammar#bug-report) Comment Tag |
-| 🚑     | `:ambulance:` | Critical hotfix.     |
-| 🐧     | `:penguin:`   | when fixing something on **Linux**   |
-| 🍎     | `:apple:`     | when fixing something on **Mac OS**  |
-| 🏁     | `:checkered_flag:`    | when fixing something on **Windows** |
-| 🤖     | `:robot:`     | Fixing something on Android. |
-| 🍏     | `:green_ale:` | Fixing something on iOS.     |
-| 🔥     | `:fire:`      | when **removing code** or files, *maybe* with `@CHANGED` Comment Tag |
-| 🚜     | `:tractor:`   | when **change file structure**. Usually together with 🎨      |
-| ♻️     | `:recycle:`   | when **refactoring** code    |
-| ✅     | `:white_check_mark:`  | when adding **tests**|
-| 🔬     | `:microscope:`| when adding **code coverage**|
-| 💚     | `:green_heart:`       | when fixing the **CI** build |
-| 🔒     | `:lock:`      | when dealing with **security**       |
-| ⬆️     | `:arrow_up:`  | when upgrading **dependencies**      |
-| ⬇️     | `:arrow_down:`| when downgrading **dependencies**    |
-| ⏩     | `:fast_forward:`      | when **forward-porting features** from an older version/branch |
-| ⏪     | `:rewind:`    | when **backporting features** from a newer version/branch or **Reverting** changes. |
-| 🚨     | `:rotating_light:`    | when removing **linter**/strict/deprecation warnings |
-| 💄     | `:lipstick:`  | when improving **UI**/Cosmetic       |
-| ♿️     | `:wheelchair:`| when improving **accessibility**     |
-| 🌐     | `:globe_with_meridians:`      | when dealing with **globalization**/internationalization/i18n/g11n |
-| 🚧     | `:construction:`      | **WIP**(Work In Progress) Commits, *maybe* with `@REVIEW` Comment Tag |
-| 💎     | `:gem:`       | New **Release**      |
-| 🔖     | `:bookmark:`  | Version **Tags**     |
-| 🎉     | `:tada:`      | **Initial** Commit   |
-| 🔊     | `:loud_sound:`| when Adding **Logs** |
-| 🔇     | `:mute:`      | when Reducing **Logs**       |
-| ✨     | `:sparkles:`  | when introducing **New** Features    |
-| 💬     | `:speech_balloon:`    | When updating text and literals.     |
-| 💡     | `:bulb:`      | New **Idea**, with `@IDEA` Comment Tag       |
-| 👷     | `:construction_worker:`       | Adding CI build system.      |
-| 📈     | `:chart_with_upwards_trend:`  | Adding analytics or tracking code.   |
-| 🎀     | `:ribbon:`    | Customer requested application **Customization**, with `@HACK` Comment Tag |
-| 🚀     | `:rocket:`    | Anything related to Deployments/**DevOps**   |
-| ➖     | `:heavy_minus_sign:`  | Removing a dependency.       |
-| ➕     | `:heavy_plus_sign:`   | Adding a dependency. |
-| 🔧     | `:wrench:`    | Changing configuration files.|
-| 💩     | `:hankey:`    | Writing **bad code** that needs to be improved.      |
-| 🍃     | `:leaves:`    | **MongoDB** Database specific (Migrations, Scripts, Extensions, ...) |
-| 🏦     | `:bank:`      | **Generic Database** specific (Migrations, Scripts, Extensions, ...) |
-| 🐳     | `:whale:`     | **Docker** Configuration     |
-| 🔀     | `:twisted_rightwards_arrows:` | Merging branches.    |
-| 📌     | `:pushpin:`   | Pinning dependencies to specific versions.   |
-| 👥     | `:busts_in_silhouette:`       | Adding contributor(s).       |
-| 🚸     | `:children_crossing:` | Improving user experience / usability.       |
-| 🏗     | `:building_construction:`     | Making architectural changes.|
-| 📱     | `:iphone:`    | Working on responsive design.|
-| 🤡     | `:clown_face:`| Mocking things.      |
-| 👌     | `:ok_hand:`   | When updating code due to code review changes.       |
-| 💥     | `:boom:`      | Introducing breaking changes.|
-| 🍱     | `:bento:`     | Adding or updating assets.   |
-| ✏️     | `:pencil2:`   | Fixing typos.|
-| 📦     | `:package:`   | When updating compiled files or packages.    |
-| 👽     | `:alien:`     | Updating code due to external API changes.   |
-| 🚚     | `:truck:`     | Moving or renaming files.    |
-| 📄     | `:age_facing_up:`     | Adding or updating license.  |
-| 👥     | `:busts_in_silhouette:`       | When adding **contributor**(s).      |
-| 🗃     | `:card_file_box:`     | Performing database related changes. |
+| Emoji | Raw Emoji Code                | Description                                                                                                         |
+| ----- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| 🎨    | `:art:`                       | when improving the **format**/structure of the code                                                                 |
+| 📰    | `:newspaper:`                 | when creating a **new file**                                                                                        |
+| 📝    | `:pencil:`                    | when **performing minor changes/fixing** the code or language                                                       |
+| 📝    | `:memo:`                      | when documenting source code.                                                                                       |
+| ⚡️   | `:zap:`                       | when improving **performance**                                                                                      |
+| 📚    | `:books:`                     | when writing **docs**                                                                                               |
+| 🐛    | `:bug:`                       | when fixing a **bug**, with [`@FIXME`](https://github.com/slashsBin/styleguide-todo-grammar#bug-report) Comment Tag |
+| 🚑    | `:ambulance:`                 | Critical hotfix.                                                                                                    |
+| 🐧    | `:penguin:`                   | when fixing something on **Linux**                                                                                  |
+| 🍎    | `:apple:`                     | when fixing something on **Mac OS**                                                                                 |
+| 🏁    | `:checkered_flag:`            | when fixing something on **Windows**                                                                                |
+| 🤖    | `:robot:`                     | Fixing something on Android.                                                                                        |
+| 🍏    | `:green_ale:`                 | Fixing something on iOS.                                                                                            |
+| 🔥    | `:fire:`                      | when **removing code** or files, _maybe_ with `@CHANGED` Comment Tag                                                |
+| 🚜    | `:tractor:`                   | when **change file structure**. Usually together with 🎨                                                            |
+| ♻️    | `:recycle:`                   | when **refactoring** code                                                                                           |
+| ✅    | `:white_check_mark:`          | when adding **tests**                                                                                               |
+| 🔬    | `:microscope:`                | when adding **code coverage**                                                                                       |
+| 💚    | `:green_heart:`               | when fixing the **CI** build                                                                                        |
+| 🔒    | `:lock:`                      | when dealing with **security**                                                                                      |
+| ⬆️    | `:arrow_up:`                  | when upgrading **dependencies**                                                                                     |
+| ⬇️    | `:arrow_down:`                | when downgrading **dependencies**                                                                                   |
+| ⏩    | `:fast_forward:`              | when **forward-porting features** from an older version/branch                                                      |
+| ⏪    | `:rewind:`                    | when **backporting features** from a newer version/branch or **Reverting** changes.                                 |
+| 🚨    | `:rotating_light:`            | when removing **linter**/strict/deprecation warnings                                                                |
+| 💄    | `:lipstick:`                  | when improving **UI**/Cosmetic                                                                                      |
+| ♿️   | `:wheelchair:`                | when improving **accessibility**                                                                                    |
+| 🌐    | `:globe_with_meridians:`      | when dealing with **globalization**/internationalization/i18n/g11n                                                  |
+| 🚧    | `:construction:`              | **WIP**(Work In Progress) Commits, _maybe_ with `@REVIEW` Comment Tag                                               |
+| 💎    | `:gem:`                       | New **Release**                                                                                                     |
+| 🔖    | `:bookmark:`                  | Version **Tags**                                                                                                    |
+| 🎉    | `:tada:`                      | **Initial** Commit                                                                                                  |
+| 🔊    | `:loud_sound:`                | when Adding **Logs**                                                                                                |
+| 🔇    | `:mute:`                      | when Reducing **Logs**                                                                                              |
+| ✨    | `:sparkles:`                  | when introducing **New** Features                                                                                   |
+| 💬    | `:speech_balloon:`            | When updating text and literals.                                                                                    |
+| 💡    | `:bulb:`                      | New **Idea**, with `@IDEA` Comment Tag                                                                              |
+| 👷    | `:construction_worker:`       | Adding CI build system.                                                                                             |
+| 📈    | `:chart_with_upwards_trend:`  | Adding analytics or tracking code.                                                                                  |
+| 🎀    | `:ribbon:`                    | Customer requested application **Customization**, with `@HACK` Comment Tag                                          |
+| 🚀    | `:rocket:`                    | Anything related to Deployments/**DevOps**                                                                          |
+| ➖    | `:heavy_minus_sign:`          | Removing a dependency.                                                                                              |
+| ➕    | `:heavy_plus_sign:`           | Adding a dependency.                                                                                                |
+| 🔧    | `:wrench:`                    | Changing configuration files.                                                                                       |
+| 💩    | `:hankey:`                    | Writing **bad code** that needs to be improved.                                                                     |
+| 🍃    | `:leaves:`                    | **MongoDB** Database specific (Migrations, Scripts, Extensions, ...)                                                |
+| 🏦    | `:bank:`                      | **Generic Database** specific (Migrations, Scripts, Extensions, ...)                                                |
+| 🐳    | `:whale:`                     | **Docker** Configuration                                                                                            |
+| 🔀    | `:twisted_rightwards_arrows:` | Merging branches.                                                                                                   |
+| 📌    | `:pushpin:`                   | Pinning dependencies to specific versions.                                                                          |
+| 👥    | `:busts_in_silhouette:`       | Adding contributor(s).                                                                                              |
+| 🚸    | `:children_crossing:`         | Improving user experience / usability.                                                                              |
+| 🏗     | `:building_construction:`     | Making architectural changes.                                                                                       |
+| 📱    | `:iphone:`                    | Working on responsive design.                                                                                       |
+| 🤡    | `:clown_face:`                | Mocking things.                                                                                                     |
+| 👌    | `:ok_hand:`                   | When updating code due to code review changes.                                                                      |
+| 💥    | `:boom:`                      | Introducing breaking changes.                                                                                       |
+| 🍱    | `:bento:`                     | Adding or updating assets.                                                                                          |
+| ✏️    | `:pencil2:`                   | Fixing typos.                                                                                                       |
+| 📦    | `:package:`                   | When updating compiled files or packages.                                                                           |
+| 👽    | `:alien:`                     | Updating code due to external API changes.                                                                          |
+| 🚚    | `:truck:`                     | Moving or renaming files.                                                                                           |
+| 📄    | `:age_facing_up:`             | Adding or updating license.                                                                                         |
+| 👥    | `:busts_in_silhouette:`       | When adding **contributor**(s).                                                                                     |
+| 🗃     | `:card_file_box:`             | Performing database related changes.                                                                                |
