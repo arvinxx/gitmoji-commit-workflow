@@ -195,8 +195,8 @@ parserPreset: {
     parserOpts: {
       headerPattern: /^(:\w*:)(?:\((.*?)\))?\s((?:.*(?=\())|.*)(?:\(#(\d*)\))?/,
       headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
-    }, // gitmoji commit 提取表达式 for commitlint
-},
+    } // gitmoji commit 提取表达式 for commitlint
+}
 ```
 ## Gitmoji Reference Sheet
 
