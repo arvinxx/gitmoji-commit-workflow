@@ -1,7 +1,7 @@
 {
   "name": "commitlint-config-gitmoji",
   "version": "1.0.0",
-  "description": "Shareable commitlint config enforcing gitmoji commit",
+  "description": ":tada: Shareable commitlint config enforcing gitmoji commit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
