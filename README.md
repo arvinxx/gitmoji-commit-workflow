@@ -189,7 +189,16 @@ echo ":art: some message that is way too long and breaks the line max-length by 
 echo ":art: some message" # passes
 ```
 
-# Gitmoji Reference Sheet
+## parserPreset
+```js
+parserPreset: {
+    parserOpts: {
+      headerPattern: /^(:\w*:)(?:\((.*?)\))?\s((?:.*(?=\())|.*)(?:\(#(\d*)\))?/,
+      headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
+    }, // gitmoji commit 提取表达式 for commitlint
+},
+```
+## Gitmoji Reference Sheet
 
 | Emoji | Raw Emoji Code                | Description                                                                                                         |
 | ----- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
