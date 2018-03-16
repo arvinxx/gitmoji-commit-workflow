@@ -1,19 +1,20 @@
-> Lint your gitmoji commits
+> 为你的 gitmoji 风格的 commit 添加 Lint 检查
 
 # commitlint-config-gitmoji
 
 [English](./README.md) | [中文](./README_zh-cn.md)
 
 Shareable `commitlint` config enforcing gitmoji.
-Use with [@commitlint](https://github.com/marionebl/commitlint) .
+需要搭配 [@commitlint](https://github.com/marionebl/commitlint) 使用。
 
-## Demo
+## Demo 演示
 
 TODO
 
-## Getting started
 
-1 - Install dependencies
+## 开始使用
+
+1. 安装依赖
 
 ```sh
 # use npm
@@ -22,23 +23,23 @@ npm i -D commitlint-config-gitmoji @commitlint/core
 # use yarn
 yarn add -D commitlint-config-gitmoji @commitlint/core
 ```
-2 - Add commitlint config for Gitmoji
+2. 添加 commitlint 的配置
 
 ```sh
 echo "module.exports = {extends: ['./node_modules/commitlint-config-gitmoji']};" > commitlint.config.js
 ```
 
-## Rules
+## 规则
 
-### Problems
+### 潜在的问题
 
-The following rules are considered problems for `gitmoji commit` and will yield a non-zero exit code when not met.
+下面的规则根据 `gitmoji commit` 中潜在的问题制定。如果没有问题则会以 non-zero exit code 结束。
 
 Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) for a list of available rules.
 
 #### type-enum
 
-* **condition**: `type` is found in value
+* **condition**: `type` 需要从确定的值中选择
 * **rule**: `always`
 * **value**
 
@@ -111,6 +112,8 @@ Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) fo
   ':card_file_box:',
 ],
 ```
+
+示例：
 
 ```sh
 echo ":abc: some message" # fails
