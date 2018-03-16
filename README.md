@@ -9,7 +9,7 @@ Use with [@commitlint/cli](https://github.com/marionebl/commitlint) .
 
 ```sh
 npm i -D commitlint-config-gitmoji @commitlint/cli
-echo "module.exports = {extends: ['commitlint-config-gitmoji']};" > commitlint.config.js
+echo "module.exports = {extends: ['./node_modules/commitlint-config-gitmoji']};" > commitlint.config.js
 ```
 
 ## Rules
