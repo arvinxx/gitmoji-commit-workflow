@@ -96,7 +96,6 @@ Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) fo
   ':pushpin:',
   ':busts_in_silhouette:',
   ':children_crossing:',
-  ':building_construction:',
   ':iphone:',
   ':clown_face:',
   ':ok_hand:',
@@ -112,10 +111,6 @@ Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) fo
   ':loud-sound:',
   ':mute:',
   ':busts-in-silhouette:',
-  ':children-crossing:',
-  ':building-construction:',
-  ':iphone:',
-  ':clown-face:',
   ':egg:',
   ':see-no-evil:',
   ':camera-flash:',
@@ -300,8 +295,6 @@ parserPreset: {
 | 🔊    | `:loud_sound:`                | Adding logs.                                                                                                        |
 | 🔇    | `:mute:`                      | Removing logs.                                                                                                      |
 | 👥    | `:busts_in_silhouette:`       | Adding contributor(s).                                                                                              |
-| 🚸    | `:children_crossing:`         | Improving user experience / usability.                                                                              |
-| 🏗    | `:building_construction:`     | Making architectural changes.                                                                                       |
 | 📱    | `:iphone:`                    | Working on responsive design.                                                                                       |
 | 🤡    | `:clown_face:`                | Mocking things.                                                                                                     |
 | 🥚    | `:egg:`                       | Adding an easter egg.                                                                                               |
