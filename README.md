@@ -109,6 +109,20 @@ Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) fo
   ':age_facing_up:',
   ':busts_in_silhouette:',
   ':card_file_box:',
+  ':loud-sound:',
+  ':mute:',
+  ':busts-in-silhouette:',
+  ':children-crossing:',
+  ':building-construction:',
+  ':iphone:',
+  ':clown-face:',
+  ':egg:',
+  ':see-no-evil:',
+  ':camera-flash:',
+  ':alembic:',
+  ':mag:',
+  ':wheel-of-dharma:',
+  ':label:',
 ],
 ```
 
@@ -282,4 +296,18 @@ parserPreset: {
 | 🚚    | `:truck:`                     | Moving or renaming files.                                                                                           |
 | 📄    | `:age_facing_up:`             | Adding or updating license.                                                                                         |
 | 👥    | `:busts_in_silhouette:`       | When adding **contributor**(s).                                                                                     |
-| 🗃     | `:card_file_box:`             | Performing database related changes.                                                                                |
+| 🗃    | `:card_file_box:`             | Performing database related changes.                                                                                |
+| 🔊    | `:loud_sound:`                | Adding logs.                                                                                                        |
+| 🔇    | `:mute:`                      | Removing logs.                                                                                                      |
+| 👥    | `:busts_in_silhouette:`       | Adding contributor(s).                                                                                              |
+| 🚸    | `:children_crossing:`         | Improving user experience / usability.                                                                              |
+| 🏗    | `:building_construction:`     | Making architectural changes.                                                                                       |
+| 📱    | `:iphone:`                    | Working on responsive design.                                                                                       |
+| 🤡    | `:clown_face:`                | Mocking things.                                                                                                     |
+| 🥚    | `:egg:`                       | Adding an easter egg.                                                                                               |
+| 🙈    | `:see_no_evil:`               | Adding or updating a .gitignore file                                                                                |
+| 📸    | `:camera_flash:`              | Adding or updating snapshots                                                                                        |
+| ⚗     | `:alembic:`                   | Experimenting new things                                                                                            |
+| 🔍    | `:mag:`                       | Improving SEO                                                                                                       |
+| ☸️    | `:wheel_of_dharma:`           | Work about Kubernetes                                                                                               |
+| 🏷️    | `:label:`                     | Adding or updating types (Flow, TypeScript)                                                                         |
