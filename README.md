@@ -110,7 +110,6 @@ Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) fo
   ':card_file_box:',
   ':loud-sound:',
   ':mute:',
-  ':busts-in-silhouette:',
   ':egg:',
   ':see-no-evil:',
   ':camera-flash:',
@@ -290,13 +289,9 @@ parserPreset: {
 | 👽    | `:alien:`                     | Updating code due to external API changes.                                                                          |
 | 🚚    | `:truck:`                     | Moving or renaming files.                                                                                           |
 | 📄    | `:age_facing_up:`             | Adding or updating license.                                                                                         |
-| 👥    | `:busts_in_silhouette:`       | When adding **contributor**(s).                                                                                     |
 | 🗃    | `:card_file_box:`             | Performing database related changes.                                                                                |
 | 🔊    | `:loud_sound:`                | Adding logs.                                                                                                        |
-| 🔇    | `:mute:`                      | Removing logs.                                                                                                      |
-| 👥    | `:busts_in_silhouette:`       | Adding contributor(s).                                                                                              |
-| 📱    | `:iphone:`                    | Working on responsive design.                                                                                       |
-| 🤡    | `:clown_face:`                | Mocking things.                                                                                                     |
+| 🔇    | `:mute:`                      | Removing logs.                                                                                                      |                                                                                             |                                                                             |
 | 🥚    | `:egg:`                       | Adding an easter egg.                                                                                               |
 | 🙈    | `:see_no_evil:`               | Adding or updating a .gitignore file                                                                                |
 | 📸    | `:camera_flash:`              | Adding or updating snapshots                                                                                        |
