@@ -69,14 +69,14 @@ module.exports = {
         ":age_facing_up:",
         ":busts_in_silhouette:",
         ":card_file_box:",
-        ":loud-sound:",
+        ":loud_sound:",
         ":mute:",
         ":egg:",
-        ":see-no-evil:",
-        ":camera-flash:",
+        ":see_no_evil:",
+        ":camera_flash:",
         ":alembic:",
         ":mag:",
-        ":wheel-of-dharma:",
+        ":wheel_of_dharma:",
         ":label:"
       ]
     ],
