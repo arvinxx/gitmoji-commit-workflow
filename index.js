@@ -66,7 +66,7 @@ module.exports = {
         ":package:",
         ":alien:",
         ":truck:",
-        ":age_facing_up:",
+        ":page_facing_up:",
         ":busts_in_silhouette:",
         ":card_file_box:",
         ":loud_sound:",
