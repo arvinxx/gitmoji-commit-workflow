@@ -1,85 +1,26 @@
+const fs = require("fs");
+const { join } = require("path");
+
+const filePath = join(__dirname, "gitmojis.json");
+
+// Download gitmojis.json if it doesn't exist yet
+if (!fs.existsSync(filePath)) {
+  const url = "https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json";
+
+  const result = require("child_process").execFileSync("curl", ["--silent", "-L", url], {
+    encoding: "utf8",
+    maxBuffer: Infinity
+  });
+
+  fs.writeFileSync(filePath, result);
+}
+
+const { gitmojis } = require(filePath);
+const allGitmojiCodes = gitmojis.map(gitmoji => gitmoji.code);
+
 module.exports = {
   rules: {
-    "type-enum": [
-      2,
-      "always",
-      [
-        ":art:",
-        ":newspaper:",
-        ":pencil:",
-        ":memo:",
-        ":zap:",
-        ":fire:",
-        ":books:",
-        ":bug:",
-        ":ambulance:",
-        ":penguin:",
-        ":apple:",
-        ":checkered_flag:",
-        ":robot:",
-        ":green_ale:",
-        ":tractor:",
-        ":recycle:",
-        ":white_check_mark:",
-        ":microscope:",
-        ":green_heart:",
-        ":lock:",
-        ":arrow_up:",
-        ":arrow_down:",
-        ":fast_forward:",
-        ":rewind:",
-        ":rotating_light:",
-        ":lipstick:",
-        ":wheelchair:",
-        ":globe_with_meridians:",
-        ":construction:",
-        ":gem:",
-        ":bookmark:",
-        ":tada:",
-        ":loud_sound:",
-        ":mute:",
-        ":sparkles:",
-        ":speech_balloon:",
-        ":bulb:",
-        ":construction_worker:",
-        ":chart_with_upwards_trend:",
-        ":ribbon:",
-        ":rocket:",
-        ":heavy_minus_sign:",
-        ":heavy_plus_sign:",
-        ":wrench:",
-        ":hankey:",
-        ":leaves:",
-        ":bank:",
-        ":whale:",
-        ":twisted_rightwards_arrows:",
-        ":pushpin:",
-        ":busts_in_silhouette:",
-        ":children_crossing:",
-        ":building_construction:",
-        ":iphone:",
-        ":clown_face:",
-        ":ok_hand:",
-        ":boom:",
-        ":bento:",
-        ":pencil2:",
-        ":package:",
-        ":alien:",
-        ":truck:",
-        ":page_facing_up:",
-        ":busts_in_silhouette:",
-        ":card_file_box:",
-        ":loud_sound:",
-        ":mute:",
-        ":egg:",
-        ":see_no_evil:",
-        ":camera_flash:",
-        ":alembic:",
-        ":mag:",
-        ":wheel_of_dharma:",
-        ":label:"
-      ]
-    ],
+    "type-enum": [2, "always", allGitmojiCodes],
     "body-leading-blank": [2, "always"],
     "footer-leading-blank": [2, "always"],
     "header-max-length": [2, "always", 72],
