@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-gitmoji",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": ":tada: Shareable commitlint config enforcing gitmoji commit",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "commitlint",
