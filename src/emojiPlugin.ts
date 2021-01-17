@@ -1,9 +1,9 @@
-import { Plugin } from "@commitlint/types";
-import emojiRule from "./emoji-rule";
+import { Plugin } from '@commitlint/types';
+import emojiRule from './emoji-rule';
 
 const plugin: Plugin = {
   rules: {
-    emoji: emojiRule,
+    'start-with-gitmoji': emojiRule,
   },
 };
 

@@ -1,36 +1,30 @@
 import { Rule } from "@commitlint/types";
-import { join } from "path";
-import { existsSync, writeFileSync } from "fs";
-
-const filePath = join(__dirname, "gitmojis.json");
-
-// Download gitmojis.json if it doesn't exist yet
-if (!existsSync(filePath)) {
-  const url =
-    "https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json";
-
-  const result = require("child_process").execFileSync(
-    "curl",
-    ["--silent", "-L", url],
-    {
-      encoding: "utf8",
-      maxBuffer: Infinity,
-    }
-  );
-
-  writeFileSync(filePath, result);
-}
-
-const { gitmojis } = require(filePath);
-const allGitmojiCodes = gitmojis.map((gitmoji) => gitmoji.code);
+import gitmojiCodes from "./gitmoji-code";
 
 const emoji: Rule = (parsed) => {
   const { raw } = parsed;
-  const reg = /^(:\w*:)(?:\((.*?)\))?\s((?:.*(?=\())|.*)(?:\(#(\d*)\))?/;
-  return [
-    false,
-    `Your commit should start with gitmoji message,please check the emoji code on https://gitmoji.dev/`,
-  ];
+
+  const regex = /^(:\w*:)\s.*/gm; // regex test url: https://regex101.com/r/fSdOvB/1
+  const result = regex.exec(raw);
+
+  let pass;
+  let errorMsg = "passed";
+
+  // if don't has emoji
+  if (!result) {
+    pass = false;
+    errorMsg =
+      "Your commit should start with gitmoji code,please check the emoji code on https://gitmoji.dev/.";
+  } else {
+    const emojiCode = result[1];
+
+    pass = gitmojiCodes.includes(emojiCode);
+    if (!pass) {
+      errorMsg = `${emojiCode} is not in the correct gitmoji list, please check the emoji code on https://gitmoji.dev/.`;
+    }
+  }
+
+  return [pass, errorMsg];
 };
 
 export = emoji;

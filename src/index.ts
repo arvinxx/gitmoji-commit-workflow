@@ -1,57 +1,54 @@
-import { join } from "path";
-import { existsSync, writeFileSync } from "fs";
-import type { LintOptions, QualifiedRules } from "@commitlint/types";
-import { RuleConfigSeverity } from "@commitlint/types";
-
-const filePath = join(__dirname, "gitmojis.json");
-
-// Download gitmojis.json if it doesn't exist yet
-if (!existsSync(filePath)) {
-  const url =
-    "https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json";
-
-  const result = require("child_process").execFileSync(
-    "curl",
-    ["--silent", "-L", url],
-    {
-      encoding: "utf8",
-      maxBuffer: Infinity,
-    }
-  );
-
-  writeFileSync(filePath, result);
-}
-
-const { gitmojis } = require(filePath);
-const allGitmojiCodes = gitmojis.map((gitmoji) => gitmoji.code);
+import typeEnum from '@commitlint/config-angular-type-enum';
+import { RuleConfigSeverity } from '@commitlint/types';
+import type { LintOptions, QualifiedRules } from '@commitlint/types';
+import EmojiPlugin from './emojiPlugin';
+import plugin from './emojiPlugin';
 
 const { Error } = RuleConfigSeverity;
+const types = [
+  'build',
+  'ci',
+  'docs',
+  'feat',
+  'fix',
+  'perf',
+  'refactor',
+  'revert',
+  'style',
+  'test',
+  'chore',
+];
 
 const rules: QualifiedRules = {
-  // emoji 必须来源为 gitmoji
-  "type-enum": [Error, "always", allGitmojiCodes],
+  'start-with-gitmoji': [Error, 'always'],
+  // 使用 Angular 的类型说明
+  'type-enum': [Error, 'always', types],
   // 内容以空行开始
-  "body-leading-blank": [Error, "always"],
+  'body-leading-blank': [Error, 'always'],
   // 结尾以空行开始
-  "footer-leading-blank": [Error, "always"],
+  'footer-leading-blank': [Error, 'always'],
   // 标题最大长度 72 个字符
-  "header-max-length": [Error, "always", 72],
+  'header-max-length': [Error, 'always', 72],
   // Scope 永远小写
-  "scope-case": [Error, "always", "lower-case"],
+  'scope-case': [Error, 'always', 'lower-case'],
   // 不允许标题空着
-  "subject-empty": [Error, "never"],
+  'subject-empty': [Error, 'never'],
   // 不允许使用句号
-  "subject-full-stop": [Error, "never"],
+  'subject-full-stop': [Error, 'never'],
   // type 必须小写
-  "type-case": [Error, "always", "lower-case"],
+  'type-case': [Error, 'always', 'lower-case'],
   // type 不能为空
-  "type-empty": [Error, "never"],
+  'type-empty': [Error, 'never'],
 };
 
 const parserPreset: LintOptions = {
   parserOpts: {
-    headerPattern: /^(:\w*:)(?:\((.*?)\))?\s((?:.*(?=\())|.*)(?:\(#(\d*)\))?/,
-    headerCorrespondence: ["type", "scope", "subject", "ticket"],
+    // with group name: /^:\w*:\s(?<type>\w*)(?:\((?<scope>.*)\))?!?:\s(?<subject>[\s\w]*\w)\s?(?<ticket>#\d*)?$/
+    headerPattern: /^(?::\w*:\s)?(?<type>\w*)(?:\((?<scope>.*)\))?!?:\s(?<subject>[\s\w]*\w)\s?(?<ticket>#\d*)?$/, // Test URL: https://regex101.com/r/YxXWi5/4
+    headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
+  },
+  plugins: {
+    gitmoji: EmojiPlugin,
   },
 };
 
@@ -59,4 +56,5 @@ const parserPreset: LintOptions = {
 export = {
   rules,
   parserPreset,
+  plugins: [plugin],
 };

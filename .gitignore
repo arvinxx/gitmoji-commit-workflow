@@ -87,4 +87,6 @@ $RECYCLE.BIN/
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 
+coverage
 lib
+gitmojis.json

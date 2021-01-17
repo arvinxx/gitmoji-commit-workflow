@@ -1,34 +1,28 @@
 import { Commit, RuleConfigCondition } from "@commitlint/types";
 import emojiRule from "./emoji-rule";
 
-const commit: Commit = {
-  type: "chore",
-  scope: "scope",
-  subject: "test",
-  merge: null,
-  header: "chore(scope): test",
-  body: null,
-  footer: null,
-  notes: [],
-  references: [],
-  mentions: [],
-  revert: null,
-  raw: "chore(scope): test\n",
-};
-
 const when: RuleConfigCondition = "always";
 
-/**
- * To pass this to an function, that is obviously not expecting a mock, a type
- * assertion is needed. For this, the as-syntax is needed when a mock is
- * passed as function argument.
- */
-
-it("123", () => {
-  const value = emojiRule(commit, when);
+test("should return error message if commit start without gitmoji code", () => {
+  const value = emojiRule({ raw: "chore(scope): test" } as Commit, when);
 
   expect(value).toEqual([
-    2,
-    "Your commit should start with gitmoji message,please check the emoji code on https://gitmoji.dev/",
+    false,
+    "Your commit should start with gitmoji code,please check the emoji code on https://gitmoji.dev/.",
   ]);
+});
+
+describe("commit start with gitmoji code", () => {
+  it("should return wrong gitmoji code error message if commit start with wrong gitmoji", () => {
+    const value = emojiRule({ raw: ":st: chore(scope): test" } as Commit, when);
+    expect(value).toEqual([
+      false,
+      ":st: is not in the correct gitmoji list, please check the emoji code on https://gitmoji.dev/.",
+    ]);
+  });
+
+  it("should pass when return right commit message code", () => {
+    const value = emojiRule({ raw: ":tada: test" } as Commit, when);
+    expect(value).toEqual([true, "passed"]);
+  });
 });
