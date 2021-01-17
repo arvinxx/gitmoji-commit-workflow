@@ -1,6 +1,6 @@
 {
   "name": "commitlint-plugin-gitmoji",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": ":tada: Shareable commitlint plugin enforcing gitmoji commit rules",
   "main": "lib/index.js",
   "scripts": {
@@ -8,6 +8,8 @@
     "build": "father-build",
     "test": "jest",
     "cov": "jest --coverage",
+    "release": "yarn build && yarn release:only",
+    "release:only": "yarn publish",
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
   },
   "homepage": "https://github.com/arvinxx/commitlint-gitmoji/tree/master/packages/plugin",

@@ -3,3 +3,4 @@ test
 lib/gitmojis.json
 jest.config.js
 tsconfig.json
+.fatherrc.ts
