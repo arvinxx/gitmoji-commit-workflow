@@ -1,11 +1,15 @@
 {
   "name": "commitlint-plugin-gitmoji",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": ":tada: Shareable commitlint plugin enforcing gitmoji commit rules",
   "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
   "scripts": {
-    "start": "tsc -w",
-    "build": "tsc",
+    "start": "father-build -w",
+    "build": "father-build",
     "test": "jest",
     "cov": "jest --coverage",
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"

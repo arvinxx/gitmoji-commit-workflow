@@ -1,5 +1,5 @@
-import { Rule } from "@commitlint/types";
-import gitmojiCodes from "./gitmojiCode";
+import { Rule } from '@commitlint/types';
+import gitmojiCodes from './gitmojiCode';
 
 const emoji: Rule = (parsed) => {
   const { raw } = parsed;
@@ -8,13 +8,13 @@ const emoji: Rule = (parsed) => {
   const result = regex.exec(raw);
 
   let pass;
-  let errorMsg = "passed";
+  let errorMsg = 'passed';
 
   // if don't has emoji
   if (!result) {
     pass = false;
     errorMsg =
-      "Your commit should start with gitmoji code,please check the emoji code on https://gitmoji.dev/.";
+      'Your commit should start with gitmoji code,please check the emoji code on https://gitmoji.dev/.';
   } else {
     const emojiCode = result[1];
 
@@ -27,4 +27,4 @@ const emoji: Rule = (parsed) => {
   return [pass, errorMsg];
 };
 
-export = emoji;
+export default emoji;

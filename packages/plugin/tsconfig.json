@@ -1,14 +1,12 @@
 {
   "include": ["src"],
-  "exclude": ["src/gitmojis-for-test.json"],
+  "exclude": ["src/gitmojis.json"],
   "compilerOptions": {
     "module": "CommonJS",
     "target": "es5",
     "sourceMap": true,
     "moduleResolution": "Node",
     "lib": ["ES2020"],
-    "esModuleInterop": true,
-    "outDir": "lib",
-    "declaration": true
+    "esModuleInterop": true
   }
 }
