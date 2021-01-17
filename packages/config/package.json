@@ -11,7 +11,8 @@
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
   },
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "repository": {
     "type": "git",
