@@ -59,4 +59,9 @@ describe('valid commit', () => {
 
     expect(valid).toBeTruthy();
   });
+  it('$ :memo: docs: update README.md -> passed', async () => {
+    const { valid } = await lint(':memo: docs: update README.md');
+
+    expect(valid).toBeTruthy();
+  });
 });

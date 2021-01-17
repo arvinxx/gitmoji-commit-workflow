@@ -42,7 +42,8 @@ const rules: QualifiedRules = {
 
 const parserPreset: LintOptions = {
   parserOpts: {
-    headerPattern: /^(?::\w*:\s)?(?<type>\w*)(?:\((?<scope>.*)\))?!?:\s(?<subject>[\s\w]*\w)\s?(?<ticket>#\d*)?$/, // Test URL: https://regex101.com/r/YxXWi5/5
+    // Test URL: https://regex101.com/r/YxXWi5/6
+    headerPattern: /^(?::\w*:\s)?(?<type>\w*)(?:\((?<scope>.*)\))?!?:\s(?<subject>[\s\w.]*\w)\s?(?<ticket>#\d*)?$/,
     headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
   },
   plugins: {
