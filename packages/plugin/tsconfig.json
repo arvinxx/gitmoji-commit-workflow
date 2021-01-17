@@ -1,16 +1,14 @@
 {
+  "include": ["src"],
+  "exclude": ["src/gitmojis-for-test.json"],
   "compilerOptions": {
-    "noEmit": true,
     "module": "CommonJS",
     "target": "es5",
     "sourceMap": true,
     "moduleResolution": "Node",
     "lib": ["ES2020"],
     "esModuleInterop": true,
-    "baseUrl": ".",
-    "paths": {
-      "commitlint-plugin-gitmoji": ["./packages/plugin/src"]
-    }
-  },
-  "exclude": ["node_modules"]
+    "outDir": "lib",
+    "declaration": true
+  }
 }

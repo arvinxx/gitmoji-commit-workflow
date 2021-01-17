@@ -1,4 +1,4 @@
-import { lint } from './test-helper';
+import { lint } from './utils';
 
 describe('invalid commit', () => {
   it('$ chore(scope): test -> without gitmoji', async () => {
@@ -12,7 +12,6 @@ describe('invalid commit', () => {
   it('$ :start: chore(scope): test -> invalid gitmoji', async () => {
     const { valid, errors } = await lint(':start: chore(scope): test');
 
-    console.log(errors[0]);
     expect(valid).toBeFalsy();
     expect(errors).toHaveLength(1);
     expect(errors[0].name).toBe('start-with-gitmoji');
@@ -26,9 +25,6 @@ describe('invalid commit', () => {
 
     expect(valid).toBeFalsy();
     expect(errors).toHaveLength(3);
-    expect(errors[0].name).toBe('start-with-gitmoji');
-    expect(errors[1].name).toBe('subject-empty');
-    expect(errors[2].name).toBe('type-empty');
   });
 
   it('$ :start:test: test -> 3 error', async () => {
@@ -36,9 +32,6 @@ describe('invalid commit', () => {
 
     expect(valid).toBeFalsy();
     expect(errors).toHaveLength(3);
-    expect(errors[0].name).toBe('start-with-gitmoji');
-    expect(errors[1].name).toBe('subject-empty');
-    expect(errors[2].name).toBe('type-empty');
   });
 });
 

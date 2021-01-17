@@ -1,0 +1,39 @@
+{
+  "name": "commitlint-config-gitmoji",
+  "version": "1.1.0",
+  "description": ":tada: Shareable commitlint config enforcing gitmoji commit",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc",
+    "test": "jest",
+    "cov": "jest --coverage",
+    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "commitlint",
+    "gitmoji",
+    "emoji",
+    "commit",
+    "git"
+  ],
+  "author": "ArvinX",
+  "license": "MIT",
+  "peerDependencies": {
+    "commitlint": "^11.0.0"
+  },
+  "dependencies": {
+    "commitlint-plugin-gitmoji": "^1.0.0"
+  }
+}

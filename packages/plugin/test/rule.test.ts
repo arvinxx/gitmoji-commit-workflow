@@ -1,5 +1,5 @@
 import { Commit, RuleConfigCondition } from "@commitlint/types";
-import emojiRule from "./emoji-rule";
+import emojiRule from "../src/rule";
 
 const when: RuleConfigCondition = "always";
 

@@ -1,13 +1,20 @@
 {
-  "name": "commitlint-config-gitmoji",
-  "version": "1.1.0",
+  "name": "commitlint-gitmoji",
   "description": ":tada: Shareable commitlint config enforcing gitmoji commit",
-  "main": "lib/index.js",
+  "private": true,
+  "author": "arvinxx(arvinx@foxmail.com)",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "start": "tsc -w",
-    "build": "tsc",
-    "test": "jest",
-    "test:cov": "jest --coverage"
+    "build": "father-build",
+    "--------- ": "",
+    "test": "lerna run test",
+    "test:coverage": "lerna run cov",
+    "---------   ": "",
+    "clean": "lerna run clean && rm -rf es lib dist build coverage .umi .eslintcache apis",
+    "reinstall": "yarn clean && lerna clean &&  rm -rf node_modules && yarn"
   },
   "repository": {
     "type": "git",
@@ -24,7 +31,6 @@
     "emoji",
     "git"
   ],
-  "author": "ArvinX",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/lint": "^11.0.0",
@@ -32,13 +38,11 @@
     "@types/node": "^14.14.21",
     "@types/sinon": "^9.0.10",
     "commitlint": "^11.0.0",
+    "father-build": "^1.19.1",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
-    "sinon": "^9.2.3",
+    "lerna": "^3.22.1",
     "ts-jest": "^26.4.4",
     "typescript": "^4.1.3"
-  },
-  "peerDependencies": {
-    "commitlint": "^11.0.0"
   }
 }

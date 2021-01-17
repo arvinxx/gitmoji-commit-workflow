@@ -1,8 +1,7 @@
-import typeEnum from '@commitlint/config-angular-type-enum';
 import { RuleConfigSeverity } from '@commitlint/types';
 import type { LintOptions, QualifiedRules } from '@commitlint/types';
-import EmojiPlugin from './emojiPlugin';
-import plugin from './emojiPlugin';
+
+import gitmoji from 'commitlint-plugin-gitmoji';
 
 const { Error } = RuleConfigSeverity;
 const types = [
@@ -48,7 +47,7 @@ const parserPreset: LintOptions = {
     headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
   },
   plugins: {
-    gitmoji: EmojiPlugin,
+    gitmoji: gitmoji,
   },
 };
 
@@ -56,5 +55,5 @@ const parserPreset: LintOptions = {
 export = {
   rules,
   parserPreset,
-  plugins: [plugin],
+  plugins: [gitmoji],
 };

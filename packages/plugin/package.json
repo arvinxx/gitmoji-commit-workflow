@@ -1,0 +1,33 @@
+{
+  "name": "commitlint-plugin-gitmoji",
+  "version": "1.0.0",
+  "description": ":tada: Shareable commitlint plugin enforcing gitmoji commit rules",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc",
+    "test": "jest",
+    "cov": "jest --coverage",
+    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "commitlint",
+    "commitlintplugin",
+    "gitmoji",
+    "emoji",
+    "git"
+  ],
+  "author": "ArvinX",
+  "license": "MIT",
+  "peerDependencies": {
+    "commitlint": "^11.0.0"
+  }
+}

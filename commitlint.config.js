@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["./lib"],
+  extends: ['./packages/config/lib'],
 };
