@@ -1,0 +1,5 @@
+node_modules
+test
+lib/gitmojis.json
+jest.config.js
+tsconfig.json
