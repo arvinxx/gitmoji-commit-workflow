@@ -90,3 +90,4 @@ $RECYCLE.BIN/
 coverage
 lib
 gitmojis.json
+/lerna-debug.log
