@@ -14,6 +14,7 @@
     "lib",
     "src"
   ],
+  "homepage": "https://github.com/arvinxx/commitlint-gitmoji/tree/master/packages/config",
   "repository": {
     "type": "git",
     "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"
