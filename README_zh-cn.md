@@ -26,7 +26,7 @@ yarn add -D commitlint-config-gitmoji @commitlint/core
 2. 添加 commitlint 的配置
 
 ```sh
-echo "module.exports = {extends: ['./node_modules/commitlint-config-gitmoji']};" > commitlint.config.js
+echo "module.exports = {extends: ['gitmoji']};" > commitlint.config.js
 ```
 
 ## 规则
@@ -36,96 +36,13 @@ echo "module.exports = {extends: ['./node_modules/commitlint-config-gitmoji']};"
 下面的规则根据 `gitmoji commit` 中潜在的问题制定。如果没有问题则会以 non-zero exit code 结束。
 
 Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) for a list of available rules.
+\_\_
 
 #### type-enum
 
 - **condition**: `type` 需要从确定的值中选择
 - **rule**: `always`
-- **value**
-
-```js
-[
-  ':art:',
-  ':newspaper:',
-  ':pencil:',
-  ':memo:',
-  ':zap:',
-  ':fire:',
-  ':books:',
-  ':bug:',
-  ':ambulance:',
-  ':penguin:',
-  ':apple:',
-  ':checkered_flag:',
-  ':robot:',
-  ':green_ale:',
-  ':tractor:',
-  ':recycle:',
-  ':white_check_mark:',
-  ':microscope:',
-  ':green_heart:',
-  ':lock:',
-  ':arrow_up:',
-  ':arrow_down:',
-  ':fast_forward:',
-  ':rewind:',
-  ':rotating_light:',
-  ':lipstick:',
-  ':wheelchair:',
-  ':globe_with_meridians:',
-  ':construction:',
-  ':gem:',
-  ':bookmark:',
-  ':tada:',
-  ':loud_sound:',
-  ':mute:',
-  ':sparkles:',
-  ':speech_balloon:',
-  ':bulb:',
-  ':construction_worker:',
-  ':chart_with_upwards_trend:',
-  ':ribbon:',
-  ':rocket:',
-  ':heavy_minus_sign:',
-  ':heavy_plus_sign:',
-  ':wrench:',
-  ':hankey:',
-  ':leaves:',
-  ':bank:',
-  ':whale:',
-  ':twisted_rightwards_arrows:',
-  ':pushpin:',
-  ':busts_in_silhouette:',
-  ':children_crossing:',
-  ':building_construction:',
-  ':iphone:',
-  ':clown_face:',
-  ':ok_hand:',
-  ':boom:',
-  ':bento:',
-  ':pencil2:',
-  ':package:',
-  ':alien:',
-  ':truck:',
-  ':age_facing_up:',
-  ':busts_in_silhouette:',
-  ':card_file_box:',
-  ':loud-sound:',
-  ':mute:',
-  ':busts-in-silhouette:',
-  ':children-crossing:',
-  ':building-construction:',
-  ':iphone:',
-  ':clown-face:',
-  ':egg:',
-  ':see-no-evil:',
-  ':camera-flash:',
-  ':alembic:',
-  ':mag:',
-  ':wheel-of-dharma:',
-  ':label:',
-],
-```
+- **value** 来自 [gitmoji](https://github.com/carloscuesta/gitmoji) [JSON](https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json)
 
 示例：
 

@@ -1,10 +1,7 @@
 import { join } from "path";
-import { writeFileSync, existsSync } from "fs";
-import type {
-  LintOptions,
-  LintOutcome,
-  QualifiedRules,
-} from "@commitlint/types";
+import { existsSync, writeFileSync } from "fs";
+import type { LintOptions, QualifiedRules } from "@commitlint/types";
+import { RuleConfigSeverity } from "@commitlint/types";
 
 const filePath = join(__dirname, "gitmojis.json");
 
@@ -28,16 +25,27 @@ if (!existsSync(filePath)) {
 const { gitmojis } = require(filePath);
 const allGitmojiCodes = gitmojis.map((gitmoji) => gitmoji.code);
 
+const { Error } = RuleConfigSeverity;
+
 const rules: QualifiedRules = {
-  "type-enum": [2, "always", allGitmojiCodes], // emoji 必须来源为 gitmoji
-  "body-leading-blank": [2, "always"], // 内容以空行开始
-  "footer-leading-blank": [2, "always"], // 结尾以空行开始
-  "header-max-length": [2, "always", 72], // 标题最大长度 72 个字符
-  "scope-case": [2, "always", "lower-case"], // Scope 永远小写
-  "subject-empty": [2, "never"], // 不允许标题空着
-  "subject-full-stop": [2, "never"], // 不允许使用句号
-  "type-case": [2, "always", "lower-case"], // type 必须小写
-  "type-empty": [2, "never"], // type 不能为空
+  // emoji 必须来源为 gitmoji
+  "type-enum": [Error, "always", allGitmojiCodes],
+  // 内容以空行开始
+  "body-leading-blank": [Error, "always"],
+  // 结尾以空行开始
+  "footer-leading-blank": [Error, "always"],
+  // 标题最大长度 72 个字符
+  "header-max-length": [Error, "always", 72],
+  // Scope 永远小写
+  "scope-case": [Error, "always", "lower-case"],
+  // 不允许标题空着
+  "subject-empty": [Error, "never"],
+  // 不允许使用句号
+  "subject-full-stop": [Error, "never"],
+  // type 必须小写
+  "type-case": [Error, "always", "lower-case"],
+  // type 不能为空
+  "type-empty": [Error, "never"],
 };
 
 const parserPreset: LintOptions = {

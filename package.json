@@ -2,7 +2,7 @@
   "name": "commitlint-config-gitmoji",
   "version": "1.1.0",
   "description": ":tada: Shareable commitlint config enforcing gitmoji commit",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "start": "tsc -w",
     "test": "jest"
