@@ -47,7 +47,8 @@ const parserPreset: LintOptions = {
   },
 };
 
-export default {
+// 按 module.exports 方式输出
+export = {
   rules,
   parserPreset,
 };
