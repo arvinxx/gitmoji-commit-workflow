@@ -89,4 +89,5 @@ $RECYCLE.BIN/
 
 coverage
 lib
+!/packages/plugin/lib/.npmignore
 gitmojis.json
