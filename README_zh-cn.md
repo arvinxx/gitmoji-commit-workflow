@@ -1,16 +1,15 @@
-> 为你的 gitmoji 风格的 commit 添加 Lint 检查
+<img src="https://gw.alipayobjects.com/zos/antfincdn/R8sN%24GNdh6/language.svg" width="18"> [English](./README.md) | 中文
 
 # commitlint-config-gitmoji
 
-[English](./README.md) | [中文](./README_zh-cn.md)
+🎉 为你的 gitmoji 风格的 commit 添加 Lint 检查
 
 Shareable `commitlint` config enforcing gitmoji.
-需要搭配 [@commitlint](https://github.com/marionebl/commitlint) 使用。
+需要搭配 [commitlint](https://github.com/marionebl/commitlint) 使用。
 
 ## Demo 演示
 
 TODO
-
 
 ## 开始使用
 
@@ -23,6 +22,7 @@ npm i -D commitlint-config-gitmoji @commitlint/core
 # use yarn
 yarn add -D commitlint-config-gitmoji @commitlint/core
 ```
+
 2. 添加 commitlint 的配置
 
 ```sh
@@ -39,9 +39,9 @@ Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) fo
 
 #### type-enum
 
-* **condition**: `type` 需要从确定的值中选择
-* **rule**: `always`
-* **value**
+- **condition**: `type` 需要从确定的值中选择
+- **rule**: `always`
+- **value**
 
 ```js
 [
@@ -136,11 +136,13 @@ echo ":bento: some message" # passes
 
 #### type-case
 
-* **description**: `type` is in case `value`
-* **rule**: `always`
-* **value**
+- **description**: `type` is in case `value`
+- **rule**: `always`
+- **value**
+
   ```js
   "lowerCase";
+
   ```
 
 ```sh
@@ -150,8 +152,8 @@ echo ":art: Format some code" # passes
 
 #### type-empty
 
-* **condition**: `type` is empty
-* **rule**: `never`
+- **condition**: `type` is empty
+- **rule**: `never`
 
 ```sh
 echo ": some message" # fails
@@ -160,11 +162,12 @@ echo ":fire: Delete some file" # passes
 
 #### scope-case
 
-* **condition**: `scope` is in case `value`
-* **rule**: `always`
+- **condition**: `scope` is in case `value`
+- **rule**: `always`
 
 ```js
 "lowerCase";
+
 ```
 
 ```sh
@@ -174,8 +177,8 @@ echo ":art:(scope) some message" # passes
 
 #### subject-case
 
-* **condition**: `subject` must begin with `['sentence-case', 'start-case', 'pascal-case', 'upper-case']`
-* **rule**: `always`
+- **condition**: `subject` must begin with `['sentence-case', 'start-case', 'pascal-case', 'upper-case']`
+- **rule**: `always`
 
 ```sh
 echo ":art:(scope) some Message" # Fails
@@ -184,8 +187,8 @@ echo ":art:(scope) Some message" # pass
 
 #### subject-empty
 
-* **condition**: `subject` is empty
-* **rule**: `never`
+- **condition**: `subject` is empty
+- **rule**: `never`
 
 ```sh
 echo ":art: " # fails
@@ -194,12 +197,13 @@ echo ":art: some message" # passes
 
 #### subject-full-stop
 
-* **condition**: `subject` ends with `value`
-* **rule**: `never`
-* **value**
+- **condition**: `subject` ends with `value`
+- **rule**: `never`
+- **value**
 
 ```js
 ".";
+
 ```
 
 ```sh
@@ -209,9 +213,9 @@ echo ":art: some message" # passes
 
 #### header-max-length
 
-* **condition**: `header` has `value` or less characters
-* **rule**: `always`
-* **value**
+- **condition**: `header` has `value` or less characters
+- **rule**: `always`
+- **value**
 
 ```js
 72;
@@ -223,6 +227,7 @@ echo ":art: some message" # passes
 ```
 
 ## parserPreset
+
 ```js
 parserPreset: {
     parserOpts: {
@@ -231,6 +236,7 @@ parserPreset: {
     }
 }
 ```
+
 ## Gitmoji Reference Sheet
 
 | Emoji | Raw Emoji Code                | Description                                                                                                         |
@@ -304,7 +310,7 @@ parserPreset: {
 | 🔇    | `:mute:`                      | Removing logs.                                                                                                      |
 | 👥    | `:busts_in_silhouette:`       | Adding contributor(s).                                                                                              |
 | 🚸    | `:children_crossing:`         | Improving user experience / usability.                                                                              |
-| 🏗    | `:building_construction:`     | Making architectural changes.                                                                                       |
+| 🏗     | `:building_construction:`     | Making architectural changes.                                                                                       |
 | 📱    | `:iphone:`                    | Working on responsive design.                                                                                       |
 | 🤡    | `:clown_face:`                | Mocking things.                                                                                                     |
 | 🥚    | `:egg:`                       | Adding an easter egg.                                                                                               |

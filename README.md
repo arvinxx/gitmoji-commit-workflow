@@ -1,11 +1,11 @@
-> Lint your gitmoji commits
+<img src="https://gw.alipayobjects.com/zos/antfincdn/R8sN%24GNdh6/language.svg" width="18"> English | [中文](./README_zh-cn.md)
 
 # commitlint-config-gitmoji
 
-[English](./README.md) | [中文](./README_zh-cn.md)
+🎉 Lint your gitmoji commits
 
 Shareable `commitlint` config enforcing gitmoji.
-Use with [@commitlint](https://github.com/marionebl/commitlint) .
+Use with [commitlint](https://github.com/marionebl/commitlint) .
 
 ## Demo
 
@@ -22,6 +22,7 @@ npm i -D commitlint-config-gitmoji @commitlint/core
 # use yarn
 yarn add -D commitlint-config-gitmoji @commitlint/core
 ```
+
 2 - Add commitlint config for Gitmoji
 
 ```sh
@@ -38,9 +39,9 @@ Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) fo
 
 #### type-enum
 
-* **condition**: `type` is found in value
-* **rule**: `always`
-* **value**
+- **condition**: `type` is found in value
+- **rule**: `always`
+- **value**
 
 ```js
 [
@@ -127,11 +128,13 @@ echo ":bento: some message" # passes
 
 #### type-case
 
-* **description**: `type` is in case `value`
-* **rule**: `always`
-* **value**
+- **description**: `type` is in case `value`
+- **rule**: `always`
+- **value**
+
   ```js
   "lowerCase";
+
   ```
 
 ```sh
@@ -141,8 +144,8 @@ echo ":art: Format some code" # passes
 
 #### type-empty
 
-* **condition**: `type` is empty
-* **rule**: `never`
+- **condition**: `type` is empty
+- **rule**: `never`
 
 ```sh
 echo ": some message" # fails
@@ -151,11 +154,12 @@ echo ":fire: Delete some file" # passes
 
 #### scope-case
 
-* **condition**: `scope` is in case `value`
-* **rule**: `always`
+- **condition**: `scope` is in case `value`
+- **rule**: `always`
 
 ```js
 "lowerCase";
+
 ```
 
 ```sh
@@ -165,8 +169,8 @@ echo ":art:(scope) some message" # passes
 
 #### subject-case
 
-* **condition**: `subject` must begin with `['sentence-case', 'start-case', 'pascal-case', 'upper-case']`
-* **rule**: `always`
+- **condition**: `subject` must begin with `['sentence-case', 'start-case', 'pascal-case', 'upper-case']`
+- **rule**: `always`
 
 ```sh
 echo ":art:(scope) some Message" # Fails
@@ -175,8 +179,8 @@ echo ":art:(scope) Some message" # pass
 
 #### subject-empty
 
-* **condition**: `subject` is empty
-* **rule**: `never`
+- **condition**: `subject` is empty
+- **rule**: `never`
 
 ```sh
 echo ":art: " # fails
@@ -185,12 +189,13 @@ echo ":art: some message" # passes
 
 #### subject-full-stop
 
-* **condition**: `subject` ends with `value`
-* **rule**: `never`
-* **value**
+- **condition**: `subject` ends with `value`
+- **rule**: `never`
+- **value**
 
 ```js
 ".";
+
 ```
 
 ```sh
@@ -200,9 +205,9 @@ echo ":art: some message" # passes
 
 #### header-max-length
 
-* **condition**: `header` has `value` or less characters
-* **rule**: `always`
-* **value**
+- **condition**: `header` has `value` or less characters
+- **rule**: `always`
+- **value**
 
 ```js
 72;
@@ -214,6 +219,7 @@ echo ":art: some message" # passes
 ```
 
 ## parserPreset
+
 ```js
 parserPreset: {
     parserOpts: {
@@ -222,10 +228,11 @@ parserPreset: {
     }
 }
 ```
+
 ## Gitmoji Reference Sheet
 
 | Emoji | Raw Emoji Code                | Description                                                                                                         |
-| ----- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| ----- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- | --- | --- |
 | 🎨    | `:art:`                       | when improving the **format**/structure of the code                                                                 |
 | 📰    | `:newspaper:`                 | when creating a **new file**                                                                                        |
 | 📝    | `:pencil:`                    | when **performing minor changes/fixing** the code or language                                                       |
@@ -289,9 +296,9 @@ parserPreset: {
 | 👽    | `:alien:`                     | Updating code due to external API changes.                                                                          |
 | 🚚    | `:truck:`                     | Moving or renaming files.                                                                                           |
 | 📄    | `:age_facing_up:`             | Adding or updating license.                                                                                         |
-| 🗃    | `:card_file_box:`             | Performing database related changes.                                                                                |
+| 🗃     | `:card_file_box:`             | Performing database related changes.                                                                                |
 | 🔊    | `:loud_sound:`                | Adding logs.                                                                                                        |
-| 🔇    | `:mute:`                      | Removing logs.                                                                                                      |                                                                                             |                                                                             |
+| 🔇    | `:mute:`                      | Removing logs.                                                                                                      |     |     |
 | 🥚    | `:egg:`                       | Adding an easter egg.                                                                                               |
 | 🙈    | `:see_no_evil:`               | Adding or updating a .gitignore file                                                                                |
 | 📸    | `:camera_flash:`              | Adding or updating snapshots                                                                                        |
