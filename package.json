@@ -9,6 +9,9 @@
   "scripts": {
     "start": "tsc -w",
     "build": "father-build",
+    "---------": "",
+    "release": "yarn build && yarn release:only",
+    "release:only": "lerna publish",
     "--------- ": "",
     "test": "lerna run test",
     "test:coverage": "lerna run cov",
