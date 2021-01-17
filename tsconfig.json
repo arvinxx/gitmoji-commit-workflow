@@ -1,0 +1,14 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "es5",
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "lib": ["ESNext"],
+    "esModuleInterop": true,
+    "outDir": "lib",
+    "baseUrl": "."
+  },
+  "exclude": ["node_modules"]
+}
