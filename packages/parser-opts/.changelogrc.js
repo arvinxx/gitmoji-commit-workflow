@@ -2,5 +2,5 @@ const base = require('../../.changelogrc');
 
 module.exports = {
   ...base,
-  displayScopes: ['changelog'],
+  displayScopes: ['parser-opts'],
 };

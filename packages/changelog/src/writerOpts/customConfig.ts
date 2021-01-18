@@ -7,9 +7,17 @@ export interface CustomConfig {
    */
   scopeDisplayName?: Record<string, string>;
   /**
-   * 待显示的信息
+   * 待显示的 type 组
    */
   displayTypes?: CommitTypes[];
+  /**
+   * 待显示的 scope
+   */
+  displayScopes?: string[];
+  /**
+   * 是否显示作者
+   */
+  showAuthor?: boolean;
 }
 
 let changelogrc: CustomConfig = {};

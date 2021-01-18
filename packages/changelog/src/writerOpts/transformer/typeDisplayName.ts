@@ -10,7 +10,7 @@ export const getDisplayName = (type: CommitTypes | string): string => {
       return `⚡ Performance Improvements | 性能优化`;
     case 'revert':
       return `⏪ Reverts | 回退`;
-    case 'style':
+    case 'styles':
       return `💄 Styles | 样式`;
     case 'docs':
       return `📝 Documentation | 文档`;

@@ -64,4 +64,9 @@ describe('valid commit', () => {
 
     expect(valid).toBeTruthy();
   });
+  it('$ :lipstick: style(typography): 优化信息块和内联代码样式 -> passed', async () => {
+    const { valid } = await lint(':lipstick: style(typography): 优化信息块和内联代码样式');
+
+    expect(valid).toBeTruthy();
+  });
 });

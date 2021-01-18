@@ -16,7 +16,7 @@
     "test": "lerna run test",
     "cov": "jest --coverage",
     "---------   ": "",
-    "changelog": "conventional-changelog -p gitmoji-config -i CHANGELOG.md -s -r 0",
+    "changelog": "lerna run changelog",
     "semantic-release": "semantic-release",
     "---------    ": "",
     "clean": "lerna run clean && rm -rf es lib dist build coverage .umi .eslintcache apis",

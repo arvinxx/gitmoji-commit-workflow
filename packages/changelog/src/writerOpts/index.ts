@@ -23,7 +23,7 @@ export = Q.all(template$).spread((template, header, commit, footer) => {
   // 替换 commit.hbs 模板中的 gitUserInfo
   writerOpts.commitPartial = commit.replace(
     /{{gitUserInfo}}/g,
-    'by: **{{authorName}}**<{{authorEmail}}>',
+    customConfig.showAuthor ? 'by: **{{authorName}}**<{{authorEmail}}>' : '',
   );
   writerOpts.footerPartial = footer;
 
