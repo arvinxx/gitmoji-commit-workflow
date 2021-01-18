@@ -1,4 +1,4 @@
-# commitlint gitmoji
+# Gitmoji Commit
 
 > 🎉 Lint your gitmoji commits
 
