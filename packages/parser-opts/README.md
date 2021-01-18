@@ -1,10 +1,10 @@
 # @gitmoji/parser-opts
 
-> 在多个工具中共享的 gitmoji styles commit 解析器
+> gitmoji styles commit parser options
 
 ## Usage
 
-正则表达式: [传送门](https://regex101.com/r/YxXWi5/7)
+Regex Pattern: [Regex101](https://regex101.com/r/YxXWi5/7)
 
 ```js
 module.exports = {
