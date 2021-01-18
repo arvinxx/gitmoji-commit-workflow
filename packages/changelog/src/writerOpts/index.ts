@@ -21,7 +21,7 @@ export = Q.all([
   // @ts-ignore
   writerOpts.commitPartial = commit.replace(
     /{{gitUserInfo}}/g,
-    'by: **{{authorName}}**',
+    'by: **{{authorName}}**<{{authorEmail}}>',
   );
   // @ts-ignore
   writerOpts.footerPartial = footer;

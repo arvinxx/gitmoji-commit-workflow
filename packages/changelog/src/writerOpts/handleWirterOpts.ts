@@ -1,6 +1,8 @@
 import compareFunc from 'compare-func';
+import { Context } from 'conventional-changelog-writer';
+import type { Commit } from 'conventional-commits-parser';
 
-const transform = (commit, context) => {
+const transform = (commit: Commit, context: Context) => {
   let discard = true;
   const issues = [];
 
@@ -9,29 +11,30 @@ const transform = (commit, context) => {
     discard = false;
   });
 
+  // 修改 type 标题
   if (commit.type === `feat`) {
-    commit.type = `✨ Features`;
+    commit.type = `✨ Features | 新特性`;
   } else if (commit.type === `fix`) {
-    commit.type = `🐛 Bug Fixes`;
+    commit.type = `🐛 Bug Fixes | 修复`;
   } else if (commit.type === `perf`) {
     commit.type = `⚡ Performance Improvements`;
   } else if (commit.type === `revert`) {
-    commit.type = `⏪ Reverts`;
+    commit.type = `⏪ Reverts | 回退`;
   } else if (commit.type === `style`) {
-    commit.type = `💄 Styles`;
+    commit.type = `💄 Styles | 样式`;
   } else if (discard) {
     return;
   }
 
-  if (commit.scope === `*`) {
-    commit.scope = ``;
+  if (commit.scope === '*') {
+    commit.scope = '';
   }
 
-  if (typeof commit.hash === `string`) {
+  if (typeof commit.hash === 'string') {
     commit.hash = commit.hash.substring(0, 7);
   }
 
-  if (typeof commit.subject === `string`) {
+  if (typeof commit.subject === 'string') {
     let url = context.repository
       ? `${context.host}/${context.owner}/${context.repository}`
       : context.repoUrl;
@@ -63,23 +66,14 @@ const transform = (commit, context) => {
     return issues.indexOf(reference.issue) === -1;
   });
 
-  // if (bugsUrl) {
-  //   commit.references = commit.references.map((ref) => {
-  //     return {
-  //       ...ref,
-  //       bugsUrl,
-  //     };
-  //   });
-  // }
-
   return commit;
 };
 
 export default () => ({
   transform,
-  groupBy: `type`,
-  commitGroupsSort: `title`,
-  commitsSort: [`scope`, `subject`],
-  noteGroupsSort: `title`,
+  groupBy: 'type',
+  commitGroupsSort: 'title',
+  commitsSort: ['scope', 'subject'],
+  noteGroupsSort: 'title',
   notesSort: compareFunc,
 });
