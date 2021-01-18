@@ -4,7 +4,7 @@
 
 ## Usage
 
-Regex Pattern: [Regex101](https://regex101.com/r/YxXWi5/7)
+Regex pattern test here : [Regex101](https://regex101.com/r/YxXWi5/7)
 
 ```js
 module.exports = {
