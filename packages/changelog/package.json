@@ -1,0 +1,41 @@
+{
+  "name": "conventional-changelog-gitmoji-config",
+  "version": "1.0.0",
+  "description": "a gitmoji style preset extends the angular preset",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc",
+    "changelog": "conventional-changelog -p gitmoji-config -i CHANGELOG.md -s -r 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arvinxx/commit-gitmoji.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "keywords": [
+    "conventional-changelog",
+    "gitmoji",
+    "preset",
+    "changelog",
+    "emoji"
+  ],
+  "author": "Arvin Xu <arvinx@foxmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ITxiaohao/conventional-changelog-custom-config/issues"
+  },
+  "homepage": "https://github.com/ITxiaohao/conventional-changelog-custom-config#readme",
+  "dependencies": {
+    "@gitmoji/parser-opts": "^1.0.0",
+    "compare-func": "^1.3.2",
+    "q": "^1.5.1"
+  },
+  "devDependencies": {
+    "@types/compare-func": "^1.3.0"
+  }
+}

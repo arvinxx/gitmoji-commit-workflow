@@ -6,14 +6,15 @@
   "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/parser-opts",
   "license": "ISC",
   "main": "lib/index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "tests"
-  },
   "files": [
     "lib",
     "src"
   ],
+  "scripts": {
+    "test": "jest",
+    "cov": "jest --coverage",
+    "changelog": "conventional-changelog -p gitmoji-config -i CHANGELOG.md -s -r 0"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -21,10 +22,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arvinxx/commit-gitmoji.git"
-  },
-  "scripts": {
-    "test": "jest",
-    "cov": "jest --coverage"
   },
   "bugs": {
     "url": "https://github.com/arvinxx/commit-gitmoji/issues"

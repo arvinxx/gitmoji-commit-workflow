@@ -8,6 +8,7 @@
     "build": "tsc",
     "test": "jest",
     "cov": "jest --coverage",
+    "changelog": "conventional-changelog -p gitmoji-config -i CHANGELOG.md -s -r 0",
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
   },
   "files": [
@@ -17,7 +18,7 @@
   "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"
+    "url": "https://github.com/arvinxx/commit-gitmoji.git"
   },
   "publishConfig": {
     "access": "public",
@@ -30,10 +31,10 @@
     "commit",
     "git"
   ],
-  "author": "ArvinX",
+  "author": "Arvin Xu <arvinx@foxmail.com>",
   "license": "MIT",
   "dependencies": {
-    "commitlint-plugin-gitmoji": "^2.0.0",
-    "@gitmoji/parser-opts": "^1.0.0"
+    "@gitmoji/parser-opts": "^1.0.0",
+    "commitlint-plugin-gitmoji": "^2.0.0"
   }
 }

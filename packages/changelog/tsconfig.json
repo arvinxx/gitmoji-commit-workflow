@@ -10,8 +10,6 @@
     "esModuleInterop": true,
     "baseUrl": "../..",
     "paths": {
-      "conventional-changelog-gitmoji-config": ["./packages/changelog/src"],
-      "commitlint-plugin-gitmoji": ["./packages/plugin/src"],
       "@gitmoji/parser-opts": ["./packages/parser-opts/src"]
     }
   }
