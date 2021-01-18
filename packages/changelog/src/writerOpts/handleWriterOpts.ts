@@ -1,6 +1,10 @@
+import types, { CommitTypes } from '@gitmoji/commit-type';
+
 import type { Context, Options } from 'conventional-changelog-writer';
 import type { Commit } from 'conventional-commits-parser';
 import type { CustomConfig } from './customConfig';
+
+import { scopeMapDisplayName, getDisplayName } from './transformer';
 
 const transformer = (customConfig: CustomConfig) => (
   commit: Commit,
@@ -14,32 +18,26 @@ const transformer = (customConfig: CustomConfig) => (
     discard = false;
   });
 
-  // 修改 type 标题
-  if (commit.type === `feat`) {
-    commit.type = `✨ Features | 新特性`;
-  } else if (commit.type === `fix`) {
-    commit.type = `🐛 Bug Fixes | 修复`;
-  } else if (commit.type === `perf`) {
-    commit.type = `⚡ Performance Improvements`;
-  } else if (commit.type === `revert`) {
-    commit.type = `⏪ Reverts | 回退`;
-  } else if (commit.type === `style`) {
-    commit.type = `💄 Styles | 样式`;
-  } else if (discard) {
-    return;
+  let displayTypes = types;
+
+  if (customConfig.displayTypes) {
+    displayTypes = customConfig.displayTypes;
   }
+
+  if (!displayTypes.includes(<CommitTypes>commit.type) && discard) return;
+
+  // 修改 type 标题
+  commit.type = getDisplayName(commit.type);
 
   if (commit.scope === '*') {
     commit.scope = '';
   }
 
   if (customConfig.scopeDisplayName) {
-    const entries = Object.entries(customConfig.scopeDisplayName);
-    entries.forEach(([key, value]) => {
-      if (commit.scope === key) {
-        commit.scope = value;
-      }
-    });
+    commit.scope = scopeMapDisplayName(
+      commit.scope,
+      customConfig.scopeDisplayName,
+    );
   }
 
   if (typeof commit.hash === 'string') {

@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import { readFile as _readFile } from 'fs';
 import customConfig from './customConfig';
 
-import handleWirterOpts from './handleWirterOpts';
+import handleWriterOpts from './handleWriterOpts';
 
 const readFile = Q.denodeify(_readFile);
 
@@ -15,7 +15,7 @@ const template$ = [
 ];
 
 export = Q.all(template$).spread((template, header, commit, footer) => {
-  const writerOpts = handleWirterOpts(customConfig);
+  const writerOpts = handleWriterOpts(customConfig);
 
   writerOpts.mainTemplate = template;
 

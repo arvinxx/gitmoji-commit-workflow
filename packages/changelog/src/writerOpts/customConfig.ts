@@ -1,7 +1,15 @@
 import { resolve } from 'path';
+import type { CommitTypes } from '@gitmoji/commit-type';
 
 export interface CustomConfig {
+  /**
+   * scope 在 Changelog 中的显示信息
+   */
   scopeDisplayName?: Record<string, string>;
+  /**
+   * 待显示的信息
+   */
+  displayTypes?: CommitTypes[];
 }
 
 let changelogrc: CustomConfig = {};

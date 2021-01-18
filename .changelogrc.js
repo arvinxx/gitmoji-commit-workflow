@@ -4,4 +4,5 @@ module.exports = {
     config: 'commitlint-config-gitmoji',
     'parser-opts': '@gitmoji/parser-opts',
   },
+  displayTypes: ['feat', 'fix', 'styles', 'pref'],
 };
