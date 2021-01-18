@@ -1,6 +1,6 @@
 # Gitmoji Commit
 
-> 🎉 Lint your gitmoji commits
+> 😉 Use gitmoji commit in your workflow
 
 # Packages
 
