@@ -1,12 +1,12 @@
 import Q from 'q';
-import conventionalChangelog from './conventional-changelog';
-import recommendedBumpOpts from './conventional-recommended-bump';
-
-import parserOpts from './parserOpts'; // 解析流
-import writerOpts from './writerOpts'; // 输出流
+import conventionalChangelog from './utils/conventional-changelog';
+import recommendedBumpOpts from './utils/conventional-recommended-bump';
 
 // 格式化 git log 信息
-import gitRawCommitsOpts from './git-raw-commit';
+import gitRawCommitsOpts from './utils/git-raw-commit';
+
+import parserOpts from './utils/parserOpts'; // 解析流
+import writerOpts from './writerOpts'; // 输出流
 
 export = Q.all([
   conventionalChangelog,
