@@ -1,12 +1,16 @@
-import { Context, Options } from 'conventional-changelog-writer';
+import type { Context, Options } from 'conventional-changelog-writer';
 import type { Commit } from 'conventional-commits-parser';
+import type { CustomConfig } from './customConfig';
 
-const transform = (commit: Commit, context: Context) => {
+const transformer = (customConfig: CustomConfig) => (
+  commit: Commit,
+  context: Context,
+) => {
   let discard = true;
   const issues = [];
 
   commit.notes.forEach((note) => {
-    note.title = `BREAKING CHANGES`;
+    note.title = 'BREAKING CHANGES';
     discard = false;
   });
 
@@ -27,6 +31,15 @@ const transform = (commit: Commit, context: Context) => {
 
   if (commit.scope === '*') {
     commit.scope = '';
+  }
+
+  if (customConfig.scopeDisplayName) {
+    const entries = Object.entries(customConfig.scopeDisplayName);
+    entries.forEach(([key, value]) => {
+      if (commit.scope === key) {
+        commit.scope = value;
+      }
+    });
   }
 
   if (typeof commit.hash === 'string') {
@@ -68,15 +81,13 @@ const transform = (commit: Commit, context: Context) => {
   return commit;
 };
 
-export default (): Options => ({
-  transform,
+export default (customConfig: CustomConfig): Options => ({
+  transform: transformer(customConfig),
   groupBy: 'type',
   commitGroupsSort: 'title',
   commitsSort: ['scope', 'subject'],
   noteGroupsSort: 'title',
-  debug: (message) => {
-    console.log(message);
-  },
+
   // notesSort: (a, b) => {
   //   return compareFunc(a, b) as boolean;
   // },

@@ -7,8 +7,6 @@ import handleWirterOpts from './handleWirterOpts';
 
 const readFile = Q.denodeify(_readFile);
 
-console.log(customConfig);
-
 const template$ = [
   readFile(resolve(__dirname, './templates/template.hbs'), 'utf-8'),
   readFile(resolve(__dirname, './templates/header.hbs'), 'utf-8'),
@@ -17,7 +15,7 @@ const template$ = [
 ];
 
 export = Q.all(template$).spread((template, header, commit, footer) => {
-  const writerOpts = handleWirterOpts();
+  const writerOpts = handleWirterOpts(customConfig);
 
   writerOpts.mainTemplate = template;
 
