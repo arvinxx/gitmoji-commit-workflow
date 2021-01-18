@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "gitmoji styles commit parser options",
   "author": "arvinxx <arvinx@foxmail.com>",
-  "homepage": "https://github.com/arvinxx/commit-gitmoji#readme",
+  "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/parser-opts",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
