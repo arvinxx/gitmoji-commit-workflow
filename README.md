@@ -25,11 +25,14 @@
 | ---------------------------------------------- | ------------------------------------------ | ------------------------------------- |
 | [commitlint-plugin-gitmoji](./packages/plugin) | [![NPM version][plugin-image]][plugin-url] | commitlint plugin to add gitmoji rule |
 | [@gitmoji/parser-opts](./packages/parser-opts) | [![NPM version][parser-image]][parser-url] | parser opts of gitmoji styles commit  |
+| [@gitmoji/commit-type](./packages/commit-type) | [![NPM version][type-image]][type-url]     | gitmoji commit type                   |
 
 <!-- npm url -->
 
 [parser-image]: http://img.shields.io/npm/v/@gitmoji/parser-opts.svg?style=flat-square&color=deepgreen&label=latest
 [parser-url]: http://npmjs.org/package/@gitmoji/parser-opts
+[type-image]: http://img.shields.io/npm/v/@gitmoji/commit-type.svg?style=flat-square&color=deepgreen&label=latest
+[type-url]: http://npmjs.org/package/@gitmoji/commit-type
 
 ## About this Repo
 

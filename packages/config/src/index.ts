@@ -3,26 +3,15 @@ import type { LintOptions, QualifiedRules } from '@commitlint/types';
 
 import gitmojiPlugin from 'commitlint-plugin-gitmoji';
 import gitmojiParserOpts from '@gitmoji/parser-opts';
+import commitTypes from '@gitmoji/commit-type';
 
 const { Error } = RuleConfigSeverity;
-const types = [
-  'build',
-  'ci',
-  'docs',
-  'feat',
-  'fix',
-  'perf',
-  'refactor',
-  'revert',
-  'style',
-  'test',
-  'chore',
-];
 
 const rules: QualifiedRules = {
+  // gitmoji 规则
   'start-with-gitmoji': [Error, 'always'],
-  // 使用 Angular 的类型说明
-  'type-enum': [Error, 'always', types],
+  // 使用 Angular 的类型
+  'type-enum': [Error, 'always', commitTypes],
   // 内容以空行开始
   'body-leading-blank': [Error, 'always'],
   // 结尾以空行开始

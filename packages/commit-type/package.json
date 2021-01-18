@@ -1,0 +1,27 @@
+{
+  "name": "@gitmoji/commit-type",
+  "version": "1.0.0",
+  "description": "gitmoji commit type",
+  "author": "arvinxx <arvinx@foxmail.com>",
+  "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/commit-type",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "father-build"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvinxx/commit-gitmoji.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arvinxx/commit-gitmoji/issues"
+  }
+}

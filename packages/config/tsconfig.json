@@ -12,7 +12,8 @@
     "paths": {
       "conventional-changelog-gitmoji-config": ["./packages/changelog/src"],
       "commitlint-plugin-gitmoji": ["./packages/plugin/src"],
-      "@gitmoji/parser-opts": ["./packages/parser-opts/src"]
+      "@gitmoji/parser-opts": ["./packages/parser-opts/src"],
+      "@gitmoji/commit-type": ["./packages/commit-type/src"]
     }
   }
 }

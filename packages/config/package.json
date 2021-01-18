@@ -34,7 +34,8 @@
   "author": "Arvin Xu <arvinx@foxmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@gitmoji/parser-opts": "^1.0.0",
+    "@gitmoji/parser-opts": "^1.1.0",
+    "@gitmoji/commit-type": "^1.0.0",
     "commitlint-plugin-gitmoji": "^2.0.0"
   }
 }
