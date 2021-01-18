@@ -4,12 +4,12 @@
 
 # Packages
 
-| Packages                                                          | Status                                     | Description                                                  |
-| ----------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------------------ |
-| [commitlint-config-gitmoji](./packages/config)                    | [![NPM version][config-image]][config-url] | A shareable commitlint config of gitmoji styles              |
-| [commitlint-config-gitmoji-monorepo](./packages/config-mono-repo) | TODO                                       | A shareable commitlint config of gitmoji styles for monorepo |
-| [commitlint-plugin-gitmoji](./packages/plugin)                    | [![NPM version][plugin-image]][plugin-url] | A shareable commitlint plugin to add gitmoji rule            |
-| [@gitmoji/parser-opts](./packages/parser-opts)                    | [![NPM version][parser-image]][parser-url] | gitmoji styles commit parser opts                            |
+| Packages                                                          | Status                                     | Description                                            |
+| ----------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------------ |
+| [commitlint-config-gitmoji](./packages/config)                    | [![NPM version][config-image]][config-url] | a gitmoji commit styles commitlint config              |
+| [commitlint-config-gitmoji-monorepo](./packages/config-mono-repo) | TODO                                       | a gitmoji commit styles commitlint config for monorepo |
+| [commitlint-plugin-gitmoji](./packages/plugin)                    | [![NPM version][plugin-image]][plugin-url] | commitlint plugin to add gitmoji rule                  |
+| [@gitmoji/parser-opts](./packages/parser-opts)                    | [![NPM version][parser-image]][parser-url] | parser opts of gitmoji styles commit                   |
 
 <!-- npm url -->
 
