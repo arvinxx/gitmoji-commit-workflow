@@ -8,10 +8,6 @@
     "moduleResolution": "Node",
     "lib": ["ES2020"],
     "esModuleInterop": true,
-    "baseUrl": "../..",
-    "paths": {
-      "commitlint-plugin-gitmoji": ["./packages/plugin/src"],
-      "@gitmoji/parser-opts": ["./packages/parser-opts/src"]
-    }
+    "declaration": true
   }
 }

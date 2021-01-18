@@ -17,6 +17,7 @@
     /* Alias 路径 */
     "baseUrl": ".",
     "paths": {
+      "@gitmoji/parser-opts": ["./packages/parser-opts/src"],
       "commitlint-plugin-gitmoji": ["./packages/plugin/src"]
     }
   }

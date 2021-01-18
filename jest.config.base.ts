@@ -6,6 +6,7 @@ module.exports = {
   verbose: true,
   moduleNameMapper: {
     'commitlint-plugin-gitmoji': '<rootDir>/packages/plugin/src',
+    '@gitmoji/parser-opts': '<rootDir>/packages/parser-opts/src',
   },
   rootDir: path.resolve(__dirname, '.'),
 };

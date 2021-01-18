@@ -1,0 +1,32 @@
+{
+  "name": "@gitmoji/parser-opts",
+  "version": "1.0.0",
+  "description": "gitmoji styles commit parser options",
+  "author": "arvinxx <arvinx@foxmail.com>",
+  "homepage": "https://github.com/arvinxx/commit-gitmoji#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvinxx/commit-gitmoji.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "cov": "jest --coverage"
+  },
+  "bugs": {
+    "url": "https://github.com/arvinxx/commit-gitmoji/issues"
+  }
+}

@@ -1,7 +1,8 @@
 import { RuleConfigSeverity } from '@commitlint/types';
 import type { LintOptions, QualifiedRules } from '@commitlint/types';
 
-import gitmoji from 'commitlint-plugin-gitmoji';
+import gitmojiPlugin from 'commitlint-plugin-gitmoji';
+import gitmojiParserOpts from '@gitmoji/parser-opts';
 
 const { Error } = RuleConfigSeverity;
 const types = [
@@ -41,13 +42,9 @@ const rules: QualifiedRules = {
 };
 
 const parserPreset: LintOptions = {
-  parserOpts: {
-    // Test URL: https://regex101.com/r/YxXWi5/6
-    headerPattern: /^(?::\w*:\s)?(?<type>\w*)(?:\((?<scope>.*)\))?!?:\s(?<subject>[\s\w.]*\w)\s?(?<ticket>#\d*)?$/,
-    headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
-  },
+  parserOpts: gitmojiParserOpts,
   plugins: {
-    gitmoji,
+    gitmoji: gitmojiPlugin,
   },
 };
 
@@ -55,5 +52,5 @@ const parserPreset: LintOptions = {
 export = {
   rules,
   parserPreset,
-  plugins: [gitmoji],
+  plugins: [gitmojiPlugin],
 };
