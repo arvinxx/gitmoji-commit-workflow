@@ -1,6 +1,6 @@
 {
   "name": "conventional-changelog-gitmoji-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "a gitmoji style preset extends the angular preset",
   "main": "lib/index.js",
   "files": [
@@ -40,7 +40,7 @@
   "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/changelog#readme",
   "dependencies": {
     "@gitmoji/commit-types": "^1.0.0",
-    "@gitmoji/parser-opts": "^1.2.0",
+    "@gitmoji/parser-opts": "^1.2.1",
     "q": "^1.5.1"
   }
 }

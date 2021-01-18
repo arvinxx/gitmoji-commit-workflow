@@ -1,6 +1,6 @@
 {
   "name": "commitlint-plugin-gitmoji",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": ":tada: Shareable commitlint plugin enforcing gitmoji commit rules",
   "main": "lib/index.js",
   "scripts": {
