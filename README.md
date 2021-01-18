@@ -9,7 +9,7 @@
 | [commitlint-config-gitmoji](./packages/config)                    | [![NPM version][config-image]][config-url] | A shareable commitlint config of gitmoji styles              |
 | [commitlint-config-gitmoji-monorepo](./packages/config-mono-repo) | TODO                                       | A shareable commitlint config of gitmoji styles for monorepo |
 | [commitlint-plugin-gitmoji](./packages/plugin)                    | [![NPM version][plugin-image]][plugin-url] | A shareable commitlint plugin to add gitmoji rule            |
-| [commitlint-gitmoji-parser-preset](./packages/parser)             | TODO                                       | commitlint gitmoji parser preset                             |
+| [@gitmoji/parser-opts](./packages/parser-opts)                    | [![NPM version][parser-image]][parser-url] | gitmoji styles commit parser opts                            |
 
 <!-- npm url -->
 
@@ -17,6 +17,10 @@
 [config-url]: http://npmjs.org/package/commitlint-config-gitmoji
 [plugin-image]: http://img.shields.io/npm/v/commitlint-plugin-gitmoji.svg?style=flat-square&color=deepgreen&label=latest
 [plugin-url]: http://npmjs.org/package/commitlint-plugin-gitmoji
+[plugin-image]: http://img.shields.io/npm/v/commitlint-plugin-gitmoji.svg?style=flat-square&color=deepgreen&label=latest
+[plugin-url]: http://npmjs.org/package/commitlint-plugin-gitmoji
+[parser-image]: http://img.shields.io/npm/v/@gitmoji/parser-opts.svg?style=flat-square&color=deepgreen&label=latest
+[parser-url]: http://npmjs.org/package/@gitmoji/parser-opts
 
 ## About this Repo
 
