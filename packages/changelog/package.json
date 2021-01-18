@@ -8,8 +8,8 @@
     "src"
   ],
   "scripts": {
-    "start": "tsc -w",
-    "build": "tsc",
+    "start": "father-build -w",
+    "build": "father-build",
     "changelog": "conventional-changelog -p gitmoji-config -i CHANGELOG.md -s -r 0"
   },
   "repository": {
