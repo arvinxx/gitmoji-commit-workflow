@@ -1,14 +1,12 @@
-# Commitlint Gitmoji
-
 🎉 Lint your gitmoji commits
 
-## packages
+# Packages
 
 | Packages                                                          | Status                                     | Description                                                  |
 | ----------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------------------ |
 | [commitlint-config-gitmoji](./packages/config)                    | [![NPM version][config-image]][config-url] | A shareable commitlint config of gitmoji styles              |
-| [commitlint-plugin-gitmoji](./packages/plugin)                    | [![NPM version][plugin-image]][plugin-url] | A shareable commitlint plugin to add gitmoji rule            |
 | [commitlint-config-gitmoji-monorepo](./packages/config-mono-repo) | TODO                                       | A shareable commitlint config of gitmoji styles for monorepo |
+| [commitlint-plugin-gitmoji](./packages/plugin)                    | [![NPM version][plugin-image]][plugin-url] | A shareable commitlint plugin to add gitmoji rule            |
 | [commitlint-gitmoji-parser-preset](./packages/parser)             | TODO                                       | commitlint gitmoji parser preset                             |
 
 <!-- npm url -->
