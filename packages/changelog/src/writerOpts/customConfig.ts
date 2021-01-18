@@ -1,5 +1,5 @@
 import { resolve } from 'path';
-import type { CommitTypes } from '@gitmoji/commit-type';
+import { CommitTypes } from '@gitmoji/commit-types';
 
 export interface CustomConfig {
   /**

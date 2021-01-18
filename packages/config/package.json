@@ -35,7 +35,7 @@
   "license": "MIT",
   "dependencies": {
     "@gitmoji/parser-opts": "^1.1.0",
-    "@gitmoji/commit-type": "^1.0.0",
+    "@gitmoji/commit-types": "^1.0.0",
     "commitlint-plugin-gitmoji": "^2.0.0"
   }
 }

@@ -40,7 +40,7 @@
   "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/changelog#readme",
   "dependencies": {
     "@gitmoji/parser-opts": "^1.1.0",
-    "@gitmoji/commit-type": "^1.0.0",
+    "@gitmoji/commit-types": "^1.0.0",
     "q": "^1.5.1"
   }
 }

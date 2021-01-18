@@ -1,4 +1,4 @@
-import { CommitTypes } from '@gitmoji/commit-type';
+import { CommitTypes } from '@gitmoji/commit-types';
 
 export const getDisplayName = (type: CommitTypes | string): string => {
   switch (type) {

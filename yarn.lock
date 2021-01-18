@@ -2716,6 +2716,52 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/conventional-changelog-core@*":
+  version "4.1.1"
+  resolved "https://registry.npm.taobao.org/@types/conventional-changelog-core/download/@types/conventional-changelog-core-4.1.1.tgz#30f3258881075e5ec4b4ac8e3e30d006f0693168"
+  integrity sha1-MPMliIEHXl7EtKyOPjDQBvBpMWg=
+  dependencies:
+    "@types/conventional-changelog-writer" "*"
+    "@types/conventional-commits-parser" "*"
+    "@types/conventional-recommended-bump" "*"
+    "@types/git-raw-commits" "*"
+    "@types/node" "*"
+    "@types/normalize-package-data" "*"
+
+"@types/conventional-changelog-writer@*":
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/@types/conventional-changelog-writer/download/@types/conventional-changelog-writer-4.0.0.tgz#79b9f9691212a07eebf15f875c136c896a4286fa"
+  integrity sha1-ebn5aRISoH7r8V+HXBNsiWpChvo=
+  dependencies:
+    "@types/conventional-commits-parser" "*"
+    "@types/node" "*"
+
+"@types/conventional-changelog@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/@types/conventional-changelog/download/@types/conventional-changelog-3.1.0.tgz#d730c1c1cfbcb49ac1eed6b202bb14bc70237372"
+  integrity sha1-1zDBwc+8tJrB7tayArsUvHAjc3I=
+  dependencies:
+    "@types/conventional-changelog-core" "*"
+    "@types/conventional-changelog-writer" "*"
+    "@types/conventional-commits-parser" "*"
+    "@types/node" "*"
+
+"@types/conventional-commits-parser@*":
+  version "3.0.1"
+  resolved "https://registry.npm.taobao.org/@types/conventional-commits-parser/download/@types/conventional-commits-parser-3.0.1.tgz#1a4796a0ae2bf33b41ea49f55e27ccbdb29cce5e"
+  integrity sha1-GkeWoK4r8ztB6kn1XifMvbKczl4=
+  dependencies:
+    "@types/node" "*"
+
+"@types/conventional-recommended-bump@*":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@types/conventional-recommended-bump/download/@types/conventional-recommended-bump-6.0.0.tgz#c80b5a46c6dbbe106120bf7df6f7000701ddfbe4"
+  integrity sha1-yAtaRsbbvhBhIL999vcABwHd++Q=
+  dependencies:
+    "@types/conventional-changelog-core" "*"
+    "@types/conventional-changelog-writer" "*"
+    "@types/conventional-commits-parser" "*"
+
 "@types/estree@*":
   version "0.0.46"
   resolved "https://registry.npm.taobao.org/@types/estree/download/@types/estree-0.0.46.tgz#0fb6bfbbeabd7a30880504993369c4bf1deab1fe"
@@ -2725,6 +2771,13 @@
   version "0.0.39"
   resolved "https://registry.npm.taobao.org/@types/estree/download/@types/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
   integrity sha1-4Xfmme4bjCLSMXTKqnQiZEOJUJ8=
+
+"@types/git-raw-commits@*":
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/@types/git-raw-commits/download/@types/git-raw-commits-2.0.0.tgz?cache=0&sync_timestamp=1605053672318&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fgit-raw-commits%2Fdownload%2F%40types%2Fgit-raw-commits-2.0.0.tgz#157e9e4709db0748fb1aa623f8927ddd4864bac6"
+  integrity sha1-FX6eRwnbB0j7GqYj+JJ93UhkusY=
+  dependencies:
+    "@types/node" "*"
 
 "@types/glob@^7.1.1":
   version "7.1.3"
@@ -2783,7 +2836,7 @@
   resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.14.21.tgz?cache=0&sync_timestamp=1610658316458&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-14.14.21.tgz#d934aacc22424fe9622ebf6857370c052eae464e"
   integrity sha1-2TSqzCJCT+liLr9oVzcMBS6uRk4=
 
-"@types/normalize-package-data@^2.4.0":
+"@types/normalize-package-data@*", "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
   resolved "https://registry.npm.taobao.org/@types/normalize-package-data/download/@types/normalize-package-data-2.4.0.tgz?cache=0&sync_timestamp=1605054866275&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnormalize-package-data%2Fdownload%2F%40types%2Fnormalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha1-5IbQ2XOW15vu3QpuM/RTT/a0lz4=

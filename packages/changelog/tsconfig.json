@@ -10,7 +10,7 @@
     "esModuleInterop": true,
     "baseUrl": "../..",
     "paths": {
-      "@gitmoji/commit-type": ["./packages/commit-type/src"],
+      "@gitmoji/commit-types": ["./packages/commit-type/src"],
       "@gitmoji/parser-opts": ["./packages/parser-opts/src"]
     }
   }

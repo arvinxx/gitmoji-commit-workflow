@@ -1,4 +1,4 @@
-import types, { CommitTypes } from '@gitmoji/commit-type';
+import types, { CommitTypes } from '@gitmoji/commit-types';
 
 import type { Context, Options } from 'conventional-changelog-writer';
 import type { Commit } from 'conventional-commits-parser';

@@ -4,6 +4,6 @@ module.exports = {
   pkgs: [
     'commitlint-plugin-gitmoji',
     '@gitmoji/parser-opts',
-    '@gitmoji/commit-type',
+    '@gitmoji/commit-types',
   ],
 };

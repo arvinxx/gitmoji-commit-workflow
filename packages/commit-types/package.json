@@ -1,9 +1,9 @@
 {
-  "name": "@gitmoji/commit-type",
+  "name": "@gitmoji/commit-types",
   "version": "1.0.0",
-  "description": "gitmoji commit type",
+  "description": "gitmoji commit types",
   "author": "arvinxx <arvinx@foxmail.com>",
-  "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/commit-type",
+  "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/commit-types",
   "license": "MIT",
   "main": "lib/index.js",
   "files": [
