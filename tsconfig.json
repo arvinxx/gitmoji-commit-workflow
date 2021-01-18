@@ -18,6 +18,7 @@
     "baseUrl": ".",
     "paths": {
       "@gitmoji/parser-opts": ["./packages/parser-opts/src"],
+      "@gitmoji/commit-type": ["./packages/commit-type"],
       "commitlint-plugin-gitmoji": ["./packages/plugin/src"],
       "conventional-changelog-gitmoji-config": ["./packages/changelog/src"]
     }
