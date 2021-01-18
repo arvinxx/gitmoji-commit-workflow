@@ -85,6 +85,16 @@ describe('@gitmoji/parser-opts', () => {
       expect(subject).toBe('extract parser-opts packages');
       expect(ticket).toBeUndefined();
     });
+    it(':sparkles: feat(changelog): 添加中文标题', () => {
+      const result = regex.exec(':sparkles: feat(changelog): 添加中文标题');
+
+      expect(result).toHaveLength(5);
+      const { type, scope, subject, ticket } = result.groups;
+      expect(type).toBe('feat');
+      expect(scope).toBe('changelog');
+      expect(subject).toBe('添加中文标题');
+      expect(ticket).toBeUndefined();
+    });
 
   });
 });
