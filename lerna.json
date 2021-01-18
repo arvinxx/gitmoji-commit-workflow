@@ -3,6 +3,9 @@
   "command": {
     "bootstrap": {
       "hoist": true
+    },
+    "publish": {
+      "message": ":bookmark: chore(release): publish"
     }
   },
   "useWorkspaces": true,
