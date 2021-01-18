@@ -1,4 +1,6 @@
-🎉 Lint your gitmoji commits
+# commitlint gitmoji
+
+> 🎉 Lint your gitmoji commits
 
 # Packages
 
@@ -15,3 +17,13 @@
 [config-url]: http://npmjs.org/package/commitlint-config-gitmoji
 [plugin-image]: http://img.shields.io/npm/v/commitlint-plugin-gitmoji.svg?style=flat-square&color=deepgreen&label=latest
 [plugin-url]: http://npmjs.org/package/commitlint-plugin-gitmoji
+
+## About this Repo
+
+The commitlint gitmoji repo is managed as a [monorepo](https://github.com/babel/babel/blob/master/doc/design/monorepo.md); it's composed of many npm packages.
+
+The original `commitlint-config-gitmoji` repo can be found in `packages/config`.
+
+## License
+
+[MIT](./LICENSE) ® Arvin Xu
