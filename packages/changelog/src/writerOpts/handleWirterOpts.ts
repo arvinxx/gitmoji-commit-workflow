@@ -1,5 +1,4 @@
-import compareFunc from 'compare-func';
-import { Context } from 'conventional-changelog-writer';
+import { Context, Options } from 'conventional-changelog-writer';
 import type { Commit } from 'conventional-commits-parser';
 
 const transform = (commit: Commit, context: Context) => {
@@ -69,11 +68,16 @@ const transform = (commit: Commit, context: Context) => {
   return commit;
 };
 
-export default () => ({
+export default (): Options => ({
   transform,
   groupBy: 'type',
   commitGroupsSort: 'title',
   commitsSort: ['scope', 'subject'],
   noteGroupsSort: 'title',
-  notesSort: compareFunc,
+  debug: (message) => {
+    console.log(message);
+  },
+  // notesSort: (a, b) => {
+  //   return compareFunc(a, b) as boolean;
+  // },
 });
