@@ -1,6 +1,6 @@
 {
   "name": "commitlint-gitmoji",
-  "description": ":tada: Shareable commitlint config enforcing gitmoji commit",
+  "description": ":tada: Shareable commitlint gitmoji commit",
   "private": true,
   "author": "arvinxx(arvinx@foxmail.com)",
   "workspaces": [
@@ -14,18 +14,15 @@
     "release:only": "lerna publish",
     "--------- ": "",
     "test": "lerna run test",
-    "test:coverage": "lerna run cov",
+    "cov": "jest --coverage",
     "---------   ": "",
     "clean": "lerna run clean && rm -rf es lib dist build coverage .umi .eslintcache apis",
-    "reinstall": "yarn clean && lerna clean &&  rm -rf node_modules && yarn"
+    "reinstall": "yarn clean && lerna clean &&  rm -rf node_modules && yarn",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "url": "https://github.com/arvinxx/commitlint-gitmoji.git"
   },
   "keywords": [
     "commitlint",
@@ -45,7 +42,10 @@
     "husky": "^4.3.8",
     "jest": "^26.6.3",
     "lerna": "^3.22.1",
+    "semantic-release": "^17.3.3",
     "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
-  }
+  },
+  "version": "0.0.0-development"
 }

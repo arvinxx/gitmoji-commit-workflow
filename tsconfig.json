@@ -1,16 +1,23 @@
 {
   "compilerOptions": {
     "noEmit": true,
-    "module": "CommonJS",
-    "target": "es5",
-    "sourceMap": true,
+
+    /* 模块导入配置项 */
     "moduleResolution": "Node",
-    "lib": ["ES2020"],
     "esModuleInterop": true,
+
+    /* 模块依赖 */
+    // 这些选项对 babel 编译 TypeScript 没有作用
+    // 但是可以让编辑器正确提示错误
+    "target": "es5",
+    "module": "CommonJS",
+    "sourceMap": true,
+    "lib": ["ES2020"],
+    //
+    /* Alias 路径 */
     "baseUrl": ".",
     "paths": {
       "commitlint-plugin-gitmoji": ["./packages/plugin/src"]
     }
-  },
-  "exclude": ["node_modules"]
+  }
 }

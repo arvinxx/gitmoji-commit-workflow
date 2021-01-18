@@ -26,7 +26,7 @@ yarn add -D commitlint-config-gitmoji @commitlint/core
 2. 添加 commitlint 的配置
 
 ```sh
-echo "module.exports = {extends: ['gitmoji']};" > commitlint.config.js
+echo "module.exports = {extends: ['gitmoji']};" > .commitlintrc.js
 ```
 
 ## 规则

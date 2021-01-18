@@ -26,7 +26,7 @@ yarn add -D commitlint-config-gitmoji @commitlint/core
 2 - Add commitlint config for Gitmoji
 
 ```sh
-echo "module.exports = {extends: ['gitmoji']};" > commitlint.config.js
+echo "module.exports = {extends: ['gitmoji']};" > .commitlintrc.js
 ```
 
 ## Rules

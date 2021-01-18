@@ -32,9 +32,6 @@
   ],
   "author": "ArvinX",
   "license": "MIT",
-  "peerDependencies": {
-    "commitlint": "^11.0.0"
-  },
   "dependencies": {
     "commitlint-plugin-gitmoji": "^2.0.0"
   }
