@@ -12,7 +12,7 @@
     "release:only": "yarn publish",
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
   },
-  "homepage": "https://github.com/arvinxx/commitlint-gitmoji/tree/master/packages/plugin",
+  "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/plugin",
   "repository": {
     "type": "git",
     "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"

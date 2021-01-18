@@ -14,7 +14,7 @@
     "lib",
     "src"
   ],
-  "homepage": "https://github.com/arvinxx/commitlint-gitmoji/tree/master/packages/config",
+  "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/config",
   "repository": {
     "type": "git",
     "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"
@@ -33,6 +33,7 @@
   "author": "ArvinX",
   "license": "MIT",
   "dependencies": {
-    "commitlint-plugin-gitmoji": "^2.0.0"
+    "commitlint-plugin-gitmoji": "^2.0.0",
+    "@gitmoji/parser-opts": "^1.0.0"
   }
 }
