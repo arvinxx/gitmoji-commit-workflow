@@ -18,8 +18,8 @@
 [config-url]: http://npmjs.org/package/commitlint-config-gitmoji
 [plugin-image]: http://img.shields.io/npm/v/commitlint-plugin-gitmoji.svg?style=flat-square&color=deepgreen&label=latest
 [plugin-url]: http://npmjs.org/package/commitlint-plugin-gitmoji
-[changelog-image]: http://img.shields.io/npm/v/commitlint-changelog-gitmoji.svg?style=flat-square&color=deepgreen&label=latest
-[changelog-url]: http://npmjs.org/package/commitlint-changelog-gitmoji
+[changelog-image]: http://img.shields.io/npm/v/conventional-changelog-gitmoji-config.svg?style=flat-square&color=deepgreen&label=latest
+[changelog-url]: http://npmjs.org/package/conventional-changelog-gitmoji-config
 [parser-image]: http://img.shields.io/npm/v/@gitmoji/parser-opts.svg?style=flat-square&color=deepgreen&label=latest
 [parser-url]: http://npmjs.org/package/@gitmoji/parser-opts
 
