@@ -10,7 +10,7 @@
       "changelogPreset": "gitmoji-config",
       "createRelease": "github",
       "yes": true,
-      "message": ":bookmark: chore(release): publish [skip ci]"
+      "message": ":bookmark: chore(release): publish %s [skip ci]"
     }
   },
   "useWorkspaces": true,
