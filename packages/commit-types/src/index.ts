@@ -9,6 +9,7 @@ export type CommitTypes =
   | 'revert'
   | 'style'
   | 'test'
+  | 'wip'
   | 'chore';
 
 const types: CommitTypes[] = [
@@ -23,6 +24,7 @@ const types: CommitTypes[] = [
   'style',
   'test',
   'chore',
+  'wip',
 ];
 
 module.exports = types;
