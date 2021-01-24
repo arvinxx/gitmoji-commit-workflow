@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "es5",
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "lib": ["ES2020"],
+    "esModuleInterop": true,
+    "baseUrl": "../..",
+    "paths": {
+      "commitlint-plugin-gitmoji": ["./packages/plugin/src"],
+      "@gitmoji/parser-opts": ["./packages/parser-opts/src"],
+      "@gitmoji/commit-types": ["./packages/commit-type/src"]
+    }
+  }
+}

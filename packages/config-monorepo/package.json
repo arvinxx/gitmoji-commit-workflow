@@ -1,0 +1,41 @@
+{
+  "name": "commitlint-config-gitmoji-monorepo",
+  "version": "0.01",
+  "description": ":tada: Shareable commitlint config for monorepo enforcing gitmoji commit",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc",
+    "test": "jest",
+    "cov": "jest --coverage",
+    "changelog": "conventional-changelog -p gitmoji-config -i CHANGELOG.md -s -r 0",
+    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/config-monorepo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arvinxx/commit-gitmoji.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "commitlint",
+    "gitmoji",
+    "emoji",
+    "commit",
+    "git"
+  ],
+  "author": "Arvin Xu <arvinx@foxmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@gitmoji/commit-types": "^1.1.0",
+    "@gitmoji/parser-opts": "^1.2.1",
+    "commitlint-plugin-gitmoji": "^2.0.1"
+  }
+}
