@@ -6,6 +6,7 @@
     },
     "publish": {
       "ignoreChanges": ["ignored-file", "*.md"],
+      "conventionalCommits": true,
       "message": ":bookmark: chore(release): publish"
     }
   },
