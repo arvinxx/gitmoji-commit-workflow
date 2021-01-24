@@ -5,6 +5,7 @@
       "hoist": true
     },
     "publish": {
+      "ignoreChanges": ["ignored-file", "*.md"],
       "message": ":bookmark: chore(release): publish"
     }
   },
