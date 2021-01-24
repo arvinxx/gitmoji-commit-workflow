@@ -20,7 +20,7 @@
     "semantic-release": "semantic-release",
     "---------    ": "",
     "clean": "lerna run clean && rm -rf es lib dist build coverage .umi .eslintcache apis",
-    "reinstall": "yarn clean && lerna clean &&  rm -rf node_modules && yarn",
+    "reinstall": "yarn clean && lerna clean --yes &&  rm -rf node_modules && yarn",
     "postinstall": "yarn build"
   },
   "repository": {

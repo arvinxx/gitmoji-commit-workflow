@@ -8,6 +8,7 @@
       "ignoreChanges": ["ignored-file", "*.md"],
       "conventionalCommits": true,
       "changelogPreset": "gitmoji-config",
+      "createRelease": "github",
       "yes": true,
       "message": ":bookmark: chore(release): publish [skip ci]"
     }
