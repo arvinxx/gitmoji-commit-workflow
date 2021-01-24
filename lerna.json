@@ -6,11 +6,7 @@
     },
     "publish": {
       "ignoreChanges": ["ignored-file", "*.md"],
-      "conventionalCommits": true,
-      "changelogPreset": "gitmoji-config",
-      "createRelease": "github",
-      "yes": true,
-      "message": ":bookmark: chore(release): publish %s [skip ci]"
+      "message": ":bookmark: chore(release): publish"
     }
   },
   "useWorkspaces": true,
