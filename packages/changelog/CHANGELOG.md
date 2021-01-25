@@ -1,5 +1,12 @@
 # commitlint-config-gitmoji 更新日志
 
+# [conventional-changelog-gitmoji-config-v1.2.0](https://github.com/arvinxx/commit-gitmoji/compare/conventional-changelog-gitmoji-config-v1.1.0...conventional-changelog-gitmoji-config-v1.2.0) (2021-01-25)
+
+
+### ✨ Features | 新特性
+
+* **(conventional-changelog-gitmoji-config)**: bump up version ([159b071](https://github.com/arvinxx/commit-gitmoji/commit/159b071))
+
 # [conventional-changelog-gitmoji-config-v1.1.0](https://github.com/arvinxx/commit-gitmoji/compare/conventional-changelog-gitmoji-config-v1.0.1...conventional-changelog-gitmoji-config-v1.1.0) (2021-01-25)
 
 
