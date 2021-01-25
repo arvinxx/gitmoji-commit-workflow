@@ -1,3 +1,7 @@
+# 更新日志
+
+# [commitlint-config-gitmoji-v2.1.6](https://github.com/arvinxx/commit-gitmoji/compare/commitlint-config-gitmoji-v2.1.5...commitlint-config-gitmoji-v2.1.6) (2021-01-25)
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
