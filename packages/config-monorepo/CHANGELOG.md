@@ -1,5 +1,15 @@
 # 更新日志
 
+## commitlint-config-gitmoji-monorepo [1.0.5](https://github.com/arvinxx/commit-gitmoji/compare/commitlint-config-gitmoji-monorepo@1.0.4...commitlint-config-gitmoji-monorepo@1.0.5) (2021-01-25)
+
+
+
+
+
+### Dependencies
+
+* **@gitmoji/commit-types:** upgraded to 1.1.5
+
 ## commitlint-config-gitmoji-monorepo [1.0.4](https://github.com/arvinxx/commit-gitmoji/compare/commitlint-config-gitmoji-monorepo@1.0.3...commitlint-config-gitmoji-monorepo@1.0.4) (2021-01-25)
 
 
