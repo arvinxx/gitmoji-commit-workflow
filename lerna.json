@@ -9,6 +9,7 @@
       "conventionalCommits": true,
       "changelogPreset": "gitmoji-config",
       "noChangelog": true,
+      "noGitTagVersion": true,
       "message": ":bookmark: chore(version): bump version"
     }
   },
