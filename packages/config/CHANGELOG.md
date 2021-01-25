@@ -1,9 +1,10 @@
-# commitlint-config-gitmoji-v1.0.0 (2021-01-25)
+# conventional-changelog-gitmoji-config 更新日志
 
+## v2.1.4 (2021-01-24)
 
 ### 🐛 Bug Fixes | 修复
 
-* **(commitlint-config-gitmoji)**: fix a subject bug ([219afb2](https://github.com/arvinxx/commit-gitmoji/commit/219afb2))
+- **(commitlint-config-gitmoji)**: fix a subject bug ([219afb2](https://github.com/arvinxx/commit-gitmoji/commit/219afb2))
 
 # Change Log
 
