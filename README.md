@@ -14,7 +14,9 @@
 
 ## Packages
 
-### Config
+### Shareable Configuration
+
+Here are some packages for gitmoji commit workflow
 
 | Packages                                                         | Status                                                       | Downloads                                  |
 | ---------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------ |
