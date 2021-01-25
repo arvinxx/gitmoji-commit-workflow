@@ -3,15 +3,6 @@
   "command": {
     "bootstrap": {
       "hoist": true
-    },
-    "version": {
-      "ignoreChanges": ["ignored-file", "*.md"],
-      "conventionalCommits": true,
-      "changelogPreset": "gitmoji-config",
-      "changelog": false,
-      "gitTagVersion": false,
-      "push": true,
-      "message": ":bookmark: chore(version): bump version"
     }
   },
   "useWorkspaces": true,
