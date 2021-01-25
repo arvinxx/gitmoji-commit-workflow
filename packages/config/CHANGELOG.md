@@ -1,4 +1,4 @@
-# conventional-changelog-gitmoji-config 更新日志
+# 更新日志
 
 # commitlint-config-gitmoji-v1.0.0 (2021-01-25)
 

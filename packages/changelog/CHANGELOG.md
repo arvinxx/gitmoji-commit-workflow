@@ -1,4 +1,4 @@
-# conventional-changelog-gitmoji-config 更新日志
+# 更新日志
 
 # [conventional-changelog-gitmoji-config-v1.2.1](https://github.com/arvinxx/commit-gitmoji/compare/conventional-changelog-gitmoji-config-v1.2.0...conventional-changelog-gitmoji-config-v1.2.1) (2021-01-25)
 
