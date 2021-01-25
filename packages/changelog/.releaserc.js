@@ -4,7 +4,13 @@ module.exports = {
   ...base,
   plugins: [
     ...base.plugins,
-    ['@semantic-release/changelog'],
+    [
+      '@semantic-release/changelog',
+      {
+        changelogFile: 'CHANGELOG.md',
+        changelogTitle: '# commitlint-config-gitmoji 更新日志',
+      },
+    ],
     '@semantic-release/npm', //如果是npm包会自动更新版本号并发布
     ['@semantic-release/github'], // 推送代码回到GitHub
     [
@@ -16,8 +22,7 @@ module.exports = {
           'CHANGELOG.md',
           'package.json',
         ],
-        message:
-          ':bookmark: chore(release): v${nextRelease.version} [skip ci]',
+        message: ':bookmark: chore(release): v${nextRelease.version} [skip ci]',
       },
     ],
   ],
