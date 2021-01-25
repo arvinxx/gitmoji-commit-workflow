@@ -9,7 +9,7 @@
       "conventionalCommits": true,
       "changelogPreset": "gitmoji-config",
       "noChangelog": true,
-      "message": ":bookmark: chore(release): bump version"
+      "message": ":bookmark: chore(version): bump version"
     }
   },
   "useWorkspaces": true,
