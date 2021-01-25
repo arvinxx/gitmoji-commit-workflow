@@ -17,11 +17,6 @@
     "type": "git",
     "url": "https://github.com/arvinxx/commit-gitmoji.git"
   },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
   "keywords": [
     "conventional-changelog",
     "gitmoji",
