@@ -1,3 +1,12 @@
+# 更新日志
+
+# [@gitmoji/parser-opts-v1.2.2](https://github.com/arvinxx/commit-gitmoji/compare/@gitmoji/parser-opts-v1.2.1...@gitmoji/parser-opts-v1.2.2) (2021-01-25)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **(@gitmoji/parser-opts)**: 优化脚本 ([9f25331](https://github.com/arvinxx/commit-gitmoji/commit/9f25331))
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
