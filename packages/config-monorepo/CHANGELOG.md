@@ -1,9 +1,15 @@
-# commitlint-config-gitmoji-monorepo-v1.0.0 (2021-01-25)
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [1.0.1](https://github.com/arvinxx/commit-gitmoji/compare/commitlint-config-gitmoji-monorepo@0.1.1...commitlint-config-gitmoji-monorepo@1.0.1) (2021-01-25)
+
+**Note:** Version bump only for package commitlint-config-gitmoji-monorepo
+
+
+
+
 
 ## [0.1.1](https://github.com/arvinxx/commit-gitmoji/compare/commitlint-config-gitmoji-monorepo@0.1.0...commitlint-config-gitmoji-monorepo@0.1.1) (2021-01-24)
 
