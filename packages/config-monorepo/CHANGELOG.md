@@ -1,3 +1,7 @@
+# 更新日志
+
+# [commitlint-config-gitmoji-monorepo-v1.0.1](https://github.com/arvinxx/commit-gitmoji/compare/commitlint-config-gitmoji-monorepo-v1.0.0...commitlint-config-gitmoji-monorepo-v1.0.1) (2021-01-25)
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
