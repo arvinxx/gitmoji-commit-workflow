@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['./packages/config/lib'],
+  extends: ['gitmoji'],
 };
