@@ -1,4 +1,4 @@
-# Gitmoji Commit
+# Gitmoji Commit Workflow
 
 [![Gitmoji][gitmoji]][gitmoji-url] [![semantic-release][semantic-release]][semantic-release-repo] ![][license-url]
 
