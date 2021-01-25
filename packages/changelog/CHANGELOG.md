@@ -1,5 +1,12 @@
 # 更新日志
 
+## conventional-changelog-gitmoji-config [1.3.4](https://github.com/arvinxx/commit-gitmoji/compare/conventional-changelog-gitmoji-config@1.3.3...conventional-changelog-gitmoji-config@1.3.4) (2021-01-25)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **conventional-changelog-gitmoji-config**: remove scope brace ([5ae3807](https://github.com/arvinxx/commit-gitmoji/commit/5ae3807))
+
 ## conventional-changelog-gitmoji-config [1.3.3](https://github.com/arvinxx/commit-gitmoji/compare/conventional-changelog-gitmoji-config@1.3.2...conventional-changelog-gitmoji-config@1.3.3) (2021-01-25)
 
 
