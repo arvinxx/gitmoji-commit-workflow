@@ -10,6 +10,7 @@
       "changelogPreset": "gitmoji-config",
       "changelog": false,
       "gitTagVersion": false,
+      "push": true,
       "message": ":bookmark: chore(version): bump version"
     }
   },
