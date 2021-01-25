@@ -1,5 +1,12 @@
 # 更新日志
 
+# [commitlint-config-gitmoji-v2.1.5](https://github.com/arvinxx/commit-gitmoji/compare/commitlint-config-gitmoji-v2.1.4...commitlint-config-gitmoji-v2.1.5) (2021-01-25)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **(commitlint-config-gitmoji)**: fix version ([1db5de2](https://github.com/arvinxx/commit-gitmoji/commit/1db5de2))
+
 # [commitlint-config-gitmoji-v1.0.1](https://github.com/arvinxx/commit-gitmoji/compare/commitlint-config-gitmoji-v1.0.0...commitlint-config-gitmoji-v1.0.1) (2021-01-25)
 
 
