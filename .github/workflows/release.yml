@@ -30,9 +30,6 @@ jobs:
       - name: Test
         run: yarn test
 
-      - name: Bump version
-        run: yarn bump-version
-
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

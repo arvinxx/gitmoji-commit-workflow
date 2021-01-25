@@ -8,7 +8,7 @@
       "ignoreChanges": ["ignored-file", "*.md"],
       "conventionalCommits": true,
       "changelogPreset": "gitmoji-config",
-      "yes": true,
+      "noChangelog": true,
       "message": ":bookmark: chore(release): bump version"
     }
   },
