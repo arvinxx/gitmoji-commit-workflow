@@ -8,21 +8,17 @@ module.exports = {
       '@semantic-release/changelog',
       {
         changelogFile: 'CHANGELOG.md',
-        changelogTitle: '# commitlint-config-gitmoji 更新日志',
+        changelogTitle: '# conventional-changelog-gitmoji-config 更新日志',
       },
     ],
-    '@semantic-release/npm', //如果是npm包会自动更新版本号并发布
-    ['@semantic-release/github'], // 推送代码回到GitHub
+    '@semantic-release/npm',
+    '@semantic-release/github',
     [
-      '@semantic-release/git', //发布release
+      '@semantic-release/git',
       {
-        assets: [
-          // 这里的 assets 配置的是要重新 push 回去的东西
-          // 如果不列的话会将全部内容都合并到 release 中
-          'CHANGELOG.md',
-          'package.json',
-        ],
-        message: ':bookmark: chore(release): v${nextRelease.version} [skip ci] \n\nhttps://github.com/arvinxx/commit-gitmoji/releases/tag/${nextRelease.gitTag}',
+        assets: ['CHANGELOG.md', 'package.json'],
+        message:
+          ':bookmark: chore(release): ${nextRelease.gitTag} [skip ci] \n\nhttps://github.com/arvinxx/commit-gitmoji/releases/tag/${nextRelease.gitTag}',
       },
     ],
   ],
