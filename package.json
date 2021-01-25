@@ -17,6 +17,7 @@
     "release": "multi-semantic-release",
     "---------    ": "",
     "clean": "lerna run clean && rm -rf es lib dist build coverage .umi .eslintcache apis",
+    "postinstall": "yarn build",
     "reinstall": "yarn clean && lerna clean --yes &&  rm -rf node_modules && yarn"
   },
   "repository": {
