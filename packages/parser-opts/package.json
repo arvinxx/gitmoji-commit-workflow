@@ -13,7 +13,6 @@
   "scripts": {
     "test": "jest",
     "cov": "jest --coverage",
-    "changelog": "conventional-changelog -p gitmoji-config -i CHANGELOG.md -s -r 0",
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
   },
   "publishConfig": {
