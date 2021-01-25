@@ -33,11 +33,11 @@
 
 Here are some packages for gitmoji commit workflow
 
-| Packages                                                         | Status                                                       | Downloads                                  |
-| ---------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------ |
-| [commitlint-config-gitmoji](./packages/config)                   | [![NPM version][config-image]][config-url]                   | ![NPM downloads][config-download]          |
-| [commitlint-config-gitmoji-monorepo](./packages/config-monorepo) | [![NPM version][config-monorepo-image]][config-monorepo-url] | ![NPM downloads][config-monorepo-download] |
-| [conventional-changelog-gitmoji-config](./packages/changelog)    | [![NPM version][changelog-image]][changelog-url]             | ![NPM downloads][changelog-download]       |
+| Packages                                                         | Status                                                       | Description                                                                              |
+| ---------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| [commitlint-config-gitmoji](./packages/config)                   | [![NPM version][config-image]][config-url]                   | a shareable commitlint configuration to enforcing gitmoji commit                         |
+| [commitlint-config-gitmoji-monorepo](./packages/config-monorepo) | [![NPM version][config-monorepo-image]][config-monorepo-url] | a shareable commitlint configuration to enforcing gitmoji commit in monorepo             |
+| [conventional-changelog-gitmoji-config](./packages/changelog)    | [![NPM version][changelog-image]][changelog-url]             | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
 
 [config-image]: http://img.shields.io/npm/v/commitlint-config-gitmoji.svg?style=flat-square&color=deepgreen&label=latest
 [config-url]: http://npmjs.org/package/commitlint-config-gitmoji
