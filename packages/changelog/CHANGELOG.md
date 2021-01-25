@@ -1,5 +1,12 @@
 # conventional-changelog-gitmoji-config 更新日志
 
+# [conventional-changelog-gitmoji-config-v1.2.1](https://github.com/arvinxx/commit-gitmoji/compare/conventional-changelog-gitmoji-config-v1.2.0...conventional-changelog-gitmoji-config-v1.2.1) (2021-01-25)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **(conventional-changelog-gitmoji-config)**: 修正日志配置 ([e2eca6f](https://github.com/arvinxx/commit-gitmoji/commit/e2eca6f))
+
 # [conventional-changelog-gitmoji-config-v1.2.0](https://github.com/arvinxx/commit-gitmoji/compare/conventional-changelog-gitmoji-config-v1.1.0...conventional-changelog-gitmoji-config-v1.2.0) (2021-01-25)
 
 ### ✨ Features | 新特性
