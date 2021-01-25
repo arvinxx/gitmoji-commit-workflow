@@ -22,20 +22,20 @@ type CommitTypes =
   | 'chore';         // Work with configuration or other stuff
 ```
 
+## License
+
+[MIT](../../LICENSE) ® Arvin Xu
+
 [license-url]: https://img.shields.io/github/license/arvinxx/commit-gitmoji
 
 <!-- npm url -->
 
 [type-image]: http://img.shields.io/npm/v/@gitmoji/commit-types.svg?style=flat-square&color=deepgreen&label=latest
 [type-url]: http://npmjs.org/package/@gitmoji/commit-types
-[download-image]: https://img.shields.io/npm/dm/html2sketch.svg?style=flat-square
-[download-url]: https://npmjs.org/package/html2sketch
+[download-image]: https://img.shields.io/npm/dm/commit-types.svg?style=flat-square
+[download-url]: https://npmjs.org/package/commit-types
 
 <!-- semantic-release -->
 
 [semantic-release]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release-repo]: https://github.com/semantic-release/semantic-release
-
-## License
-
-[MIT](../../LICENSE) ® Arvin Xu
