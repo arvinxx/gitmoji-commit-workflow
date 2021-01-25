@@ -1,6 +1,6 @@
 {
   "name": "conventional-changelog-gitmoji-config",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "a gitmoji style preset extends the angular preset",
   "main": "lib/index.js",
   "files": [
