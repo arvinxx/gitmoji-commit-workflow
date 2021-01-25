@@ -2,7 +2,16 @@
 
 # commitlint-config-gitmoji
 
-🎉 Lint your gitmoji commits
+[![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
+
+<!-- npm url -->
+
+[version-image]: http://img.shields.io/npm/v/commitlint-config-gitmoji.svg?color=deepgreen&label=latest
+[version-url]: http://npmjs.org/package/commitlint-config-gitmoji
+[download-image]: https://img.shields.io/npm/dm/commitlint-config-gitmoji.svg
+[download-url]: https://npmjs.org/package/commitlint-config-gitmoji
+
+> 🎉 Lint your gitmoji commits
 
 Shareable `commitlint` config enforcing gitmoji.
 Use with [commitlint](https://github.com/marionebl/commitlint) .
@@ -13,17 +22,21 @@ TODO
 
 ## Getting started
 
-1 - Install dependencies
+### Install dependencies
 
 ```sh
 # use npm
-npm i -D commitlint-config-gitmoji @commitlint/core
-
-# use yarn
-yarn add -D commitlint-config-gitmoji @commitlint/core
+npm i -D commitlint-config-gitmoji commitlint
 ```
 
-2 - Add commitlint config for Gitmoji
+or
+
+```
+# use yarn
+yarn add -D commitlint-config-gitmoji commitlint
+```
+
+### Add commitlint config for Gitmoji
 
 ```sh
 echo "module.exports = {extends: ['gitmoji']};" > .commitlintrc.js
@@ -41,11 +54,11 @@ Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) fo
 
 - **condition**: `type` is found in value
 - **rule**: `always`
-- **value** From [gitmoji](https://github.com/carloscuesta/gitmoji) [JSON](https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json)
+- **value**: Refer to [@gitmoji/commiy-types](../commit-types)
 
 ```sh
 echo ":abc: some message" # fails
-echo ":bento: some message" # passes
+echo ":feat: some message" # passes
 ```
 
 #### type-case
@@ -95,8 +108,8 @@ echo ":art:(scope) some message" # passes
 - **rule**: `always`
 
 ```sh
-echo ":art:(scope) some Message" # Fails
-echo ":art:(scope) Some message" # pass
+echo ":art:(scope) Some Message" # pass
+echo ":art:(scope) some message" # Fails
 ```
 
 #### subject-empty
@@ -140,17 +153,6 @@ echo ":art: some message that is way too long and breaks the line max-length by 
 echo ":art: some message" # passes
 ```
 
-## parserPreset
+## License
 
-```js
-module.exports = {
-  // ...
-  parserPreset: {
-    parserOpts: {
-      // Test URL: https://regex101.com/r/YxXWi5/5
-      headerPattern: /^(?::\w*:\s)?(?<type>\w*)(?:\((?<scope>._)\))?!?:\s(?<subject>[\s\w]_\w)\s?(?<ticket>#\d\*)?\$/,
-      headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
-    },
-  },
-};
-```
+[MIT](../../LICENSE) ® Arvin Xu

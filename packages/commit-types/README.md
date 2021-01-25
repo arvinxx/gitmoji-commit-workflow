@@ -1,8 +1,8 @@
 # @gitmoji/commit-types
 
-[![NPM version][type-image]][type-url] [![NPM downloads][download-image]][download-url] [![semantic-release][semantic-release]][semantic-release-repo] ![][license-url]
+[![NPM version][type-image]][type-url] [![NPM downloads][download-image]][download-url]
 
-Gitmoji styles Commit Types
+Gitmoji styles commit types
 
 ## Signature
 
@@ -26,16 +26,9 @@ type CommitTypes =
 
 [MIT](../../LICENSE) ® Arvin Xu
 
-[license-url]: https://img.shields.io/github/license/arvinxx/commit-gitmoji
-
 <!-- npm url -->
 
-[type-image]: http://img.shields.io/npm/v/@gitmoji/commit-types.svg?style=flat-square&color=deepgreen&label=latest
+[type-image]: http://img.shields.io/npm/v/@gitmoji/commit-types.svg?color=deepgreen&label=latest
 [type-url]: http://npmjs.org/package/@gitmoji/commit-types
-[download-image]: https://img.shields.io/npm/dm/commit-types.svg?style=flat-square
+[download-image]: https://img.shields.io/npm/dm/commit-types.svg
 [download-url]: https://npmjs.org/package/commit-types
-
-<!-- semantic-release -->
-
-[semantic-release]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
-[semantic-release-repo]: https://github.com/semantic-release/semantic-release
