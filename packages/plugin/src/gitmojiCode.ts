@@ -8,6 +8,7 @@ if (!existsSync(filePath)) {
   const url =
     'https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json';
 
+  // eslint-disable-next-line global-require
   const result = require('child_process').execFileSync(
     'curl',
     ['--silent', '-L', url],
@@ -20,6 +21,7 @@ if (!existsSync(filePath)) {
   writeFileSync(filePath, result);
 }
 
+// eslint-disable-next-line import/no-dynamic-require
 const { gitmojis } = require(filePath);
 const gitmojiCodes: string[] = gitmojis.map((gitmoji) => gitmoji.code);
 

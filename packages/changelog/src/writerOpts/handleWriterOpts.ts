@@ -1,11 +1,11 @@
-import types, { CommitTypes } from '@gitmoji/commit-types';
+import type { CommitTypes } from '@gitmoji/commit-types';
+import types from '@gitmoji/commit-types';
 
 import type { Context, Options } from 'conventional-changelog-writer';
 import type { Commit } from 'conventional-commits-parser';
 import type { CustomConfig } from './customConfig';
 
 import { scopeMapDisplayName, getDisplayName } from './transformer';
-import { createDiffieHellman } from 'crypto';
 
 const transformer = (customConfig: CustomConfig) => (
   commit: Commit,
@@ -34,7 +34,7 @@ const transformer = (customConfig: CustomConfig) => (
     commit.scope = '';
   }
 
-  /*** 处理 scope ***/
+  /** * 处理 scope ** */
 
   if (customConfig.displayScopes) {
     if (!customConfig.displayScopes?.includes(commit.scope)) return;

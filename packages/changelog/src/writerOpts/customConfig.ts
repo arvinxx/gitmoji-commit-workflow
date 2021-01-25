@@ -1,5 +1,5 @@
 import { resolve } from 'path';
-import { CommitTypes } from '@gitmoji/commit-types';
+import type { CommitTypes } from '@gitmoji/commit-types';
 
 export interface CustomConfig {
   /**
@@ -25,13 +25,19 @@ let changelogConfig: CustomConfig = {};
 
 // .changelogrc.js
 try {
+  // eslint-disable-next-line global-require,import/no-dynamic-require
   changelogrc = require(resolve(process.cwd(), '.changelogrc.js'));
-} catch (e) {}
+} catch (e) {
+  //
+}
 
 // changelog.config.js
 try {
+  // eslint-disable-next-line global-require,import/no-dynamic-require
   changelogConfig = require(resolve(process.cwd(), 'changelog.config.js'));
-} catch (e) {}
+} catch (e) {
+  //
+}
 
 const pkg: CustomConfig = { ...changelogrc, ...changelogConfig };
 

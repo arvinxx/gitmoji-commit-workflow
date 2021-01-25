@@ -1,4 +1,4 @@
-import { Rule } from '@commitlint/types';
+import type { Rule } from '@commitlint/types';
 import gitmojiCodes from './gitmojiCode';
 
 const emoji: Rule = (parsed) => {

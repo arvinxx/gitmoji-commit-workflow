@@ -1,28 +1,28 @@
-import { Commit, RuleConfigCondition } from "@commitlint/types";
-import emojiRule from "../src/rule";
+import type { Commit, RuleConfigCondition } from '@commitlint/types';
+import emojiRule from '../src/rule';
 
-const when: RuleConfigCondition = "always";
+const when: RuleConfigCondition = 'always';
 
-test("should return error message if commit start without gitmoji code", () => {
-  const value = emojiRule({ raw: "chore(scope): test" } as Commit, when);
+test('should return error message if commit start without gitmoji code', () => {
+  const value = emojiRule({ raw: 'chore(scope): test' } as Commit, when);
 
   expect(value).toEqual([
     false,
-    "Your commit should start with gitmoji code,please check the emoji code on https://gitmoji.dev/.",
+    'Your commit should start with gitmoji code,please check the emoji code on https://gitmoji.dev/.',
   ]);
 });
 
-describe("commit start with gitmoji code", () => {
-  it("should return wrong gitmoji code error message if commit start with wrong gitmoji", () => {
-    const value = emojiRule({ raw: ":st: chore(scope): test" } as Commit, when);
+describe('commit start with gitmoji code', () => {
+  it('should return wrong gitmoji code error message if commit start with wrong gitmoji', () => {
+    const value = emojiRule({ raw: ':st: chore(scope): test' } as Commit, when);
     expect(value).toEqual([
       false,
-      ":st: is not in the correct gitmoji list, please check the emoji code on https://gitmoji.dev/.",
+      ':st: is not in the correct gitmoji list, please check the emoji code on https://gitmoji.dev/.',
     ]);
   });
 
-  it("should pass when return right commit message code", () => {
-    const value = emojiRule({ raw: ":tada: test" } as Commit, when);
-    expect(value).toEqual([true, "passed"]);
+  it('should pass when return right commit message code', () => {
+    const value = emojiRule({ raw: ':tada: test' } as Commit, when);
+    expect(value).toEqual([true, 'passed']);
   });
 });

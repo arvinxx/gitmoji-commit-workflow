@@ -20,7 +20,7 @@ export = {
     });
 
     return {
-      level: level,
+      level,
       reason:
         breakings === 1
           ? `There is ${breakings} BREAKING CHANGE and ${features} features`
