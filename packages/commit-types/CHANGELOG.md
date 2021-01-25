@@ -1,3 +1,11 @@
+# [@gitmoji/commit-types-v1.1.1](https://github.com/arvinxx/commit-gitmoji/compare/@gitmoji/commit-types-v1.1.0...@gitmoji/commit-types-v1.1.1) (2021-01-25)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **(config)**: fix version ([c535a78](https://github.com/arvinxx/commit-gitmoji/commit/c535a78))
+* **(config)**: fix version ([513e5bf](https://github.com/arvinxx/commit-gitmoji/commit/513e5bf))
+
 # 更新日志
 
 # [@gitmoji/commit-types-v1.1.1](https://github.com/arvinxx/commit-gitmoji/compare/@gitmoji/commit-types-v1.1.0...@gitmoji/commit-types-v1.1.1) (2021-01-25)
