@@ -2,12 +2,16 @@
 
 # Gitmoji Commit Workflow
 
-[![Gitmoji][gitmoji]][gitmoji-url] [![semantic-release][semantic-release]][semantic-release-repo] ![][license-url]
+[![Gitmoji][gitmoji]][gitmoji-url] [![lerna][lerna]][lerna-url] [![Build With father][father]][father-url] [![semantic-release][semantic-release]][semantic-release-repo] ![][license-url]
 
 [![Test CI status][test-ci]][test-ci-url] [![Release CI][release-ci]][deploy-ci-url] [![Coverage][coverage]][codecov-url]
 
 <!-- badge -->
 
+[father]: https://img.shields.io/badge/build%20with-father-028fe4.svg
+[father-url]: https://github.com/umijs/father/
+[lerna]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg
+[lerna-url]: https://lernajs.io/
 [gitmoji]: https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg
 [gitmoji-url]: https://gitmoji.carloscuesta.me/
 [semantic-release]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
