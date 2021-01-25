@@ -51,11 +51,11 @@ Here are some packages for gitmoji commit workflow
 
 ### Helper
 
-| Packages                                         | Status                                     | Description                           |
-| ------------------------------------------------ | ------------------------------------------ | ------------------------------------- |
-| [commitlint-plugin-gitmoji](./packages/plugin)   | [![NPM version][plugin-image]][plugin-url] | commitlint plugin to add gitmoji rule |
-| [@gitmoji/parser-opts](./packages/parser-opts)   | [![NPM version][parser-image]][parser-url] | parser opts of gitmoji styles commit  |
-| [@gitmoji/commit-types](./packages/commit-types) | [![NPM version][types-image]][types-url]   | gitmoji commit types                  |
+| Packages                                         | Status                                     | Description                                          |
+| ------------------------------------------------ | ------------------------------------------ | ---------------------------------------------------- |
+| [commitlint-plugin-gitmoji](./packages/plugin)   | [![NPM version][plugin-image]][plugin-url] | a commitlint plugin to add gitmoji check rule        |
+| [@gitmoji/parser-opts](./packages/parser-opts)   | [![NPM version][parser-image]][parser-url] | a shareable parser options for gitmoji styles commit |
+| [@gitmoji/commit-types](./packages/commit-types) | [![NPM version][types-image]][types-url]   | gitmoji styles commit types                          |
 
 <!-- npm url -->
 
