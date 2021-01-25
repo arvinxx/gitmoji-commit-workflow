@@ -1,6 +1,6 @@
 # @gitmoji/commit-types
 
-[![NPM version][type-image]][type-url] [![NPM downloads][download-image]][download-url]
+[![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
 Gitmoji styles commit types
 
@@ -28,7 +28,7 @@ type CommitTypes =
 
 <!-- npm url -->
 
-[type-image]: http://img.shields.io/npm/v/@gitmoji/commit-types.svg?color=deepgreen&label=latest
-[type-url]: http://npmjs.org/package/@gitmoji/commit-types
+[version-image]: http://img.shields.io/npm/v/@gitmoji/commit-types.svg?color=deepgreen&label=latest
+[version-url]: http://npmjs.org/package/@gitmoji/commit-types
 [download-image]: https://img.shields.io/npm/dm/@gitmoji/commit-types.svg
-[download-url]: https://npmjs.org/package/commit-types
+[download-url]: https://npmjs.org/package/@gitmoji/commit-types

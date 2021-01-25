@@ -1,15 +1,29 @@
 # @gitmoji/parser-opts
 
-> gitmoji styles commit parser options
+[![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
-## Usage
+a shareable parser options for gitmoji styles commit
 
-Regex pattern test here : [Regex101](https://regex101.com/r/YxXWi5/9)
+this package is used in both [conventional-changelog-gitmoji-config](../changelog) and [commitlint-config-gitmoji](../config)
+
+## Sources
+
+Header regex pattern test here : [Regex101](https://regex101.com/r/YxXWi5/9)
 
 ```js
 module.exports = {
-  // Test URL: https://regex101.com/r/YxXWi5/9
   headerPattern: /^(?::\w*:\s)?(?<type>\w*)(?:\((?<scope>.*)\))?!?:\s(?<subject>(?:(?!#).)*(?:(?!\s).))\s?(?<ticket>#\d*)?$/,
   headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
 };
 ```
+
+## License
+
+[MIT](../../LICENSE) ® Arvin Xu
+
+<!-- npm url -->
+
+[version-image]: http://img.shields.io/npm/v/@gitmoji/parser-opts.svg?color=deepgreen&label=latest
+[version-url]: http://npmjs.org/package/@gitmoji/parser-opts
+[download-image]: https://img.shields.io/npm/dm/@gitmoji/parser-opts.svg
+[download-url]: https://npmjs.org/package/@gitmoji/parser-opts
