@@ -1,4 +1,4 @@
-<img src="https://gw.alipayobjects.com/zos/antfincdn/R8sN%24GNdh6/language.svg" width="18"> English | [中文](./README.zh-CN.md)
+> 🎉 Lint your gitmoji commits
 
 # commitlint-config-gitmoji
 
@@ -11,8 +11,6 @@
 [download-image]: https://img.shields.io/npm/dm/commitlint-config-gitmoji.svg
 [download-url]: https://npmjs.org/package/commitlint-config-gitmoji
 
-> 🎉 Lint your gitmoji commits
-
 Shareable `commitlint` config enforcing gitmoji.
 Use with [commitlint](https://github.com/marionebl/commitlint) .
 
@@ -22,7 +20,9 @@ TODO
 
 ## Getting started
 
-### Install dependencies
+### Install
+
+Install dependencies
 
 ```sh
 # use npm
@@ -36,19 +36,45 @@ or
 yarn add -D commitlint-config-gitmoji commitlint
 ```
 
-### Add commitlint config for Gitmoji
+### Config
+
+Add commitlint config for Gitmoji
 
 ```sh
 echo "module.exports = {extends: ['gitmoji']};" > .commitlintrc.js
 ```
 
-## Rules
+## Commit style
+
+### Structure
+
+the Gitmoji Structure of commit styles is below
+
+```
+:gitmoji: type(scope?): subject
+body?
+footer?
+```
+
+### Example
+
+```
+:sparkles: feat(changelog): support chinese title
+
+:bug: fix(config): fix a subject bug
+
+:memo: docs(repo): update README.md
+
+:bulb: docs(plugin): update comments
+```
+
+## Detail Rules
 
 ### Problems
 
 The following rules are considered problems for `gitmoji commit` and will yield a non-zero exit code when not met.
 
-Consult [docs/rules](http://marionebl.github.io/commitlint/#/reference-rules) for a list of available rules.
+Consult [docs/rules](https://commitlint.js.org/#/) for a list of available rules.
 
 #### type-enum
 
@@ -65,12 +91,7 @@ echo ":feat: some message" # passes
 
 - **description**: `type` is in case `value`
 - **rule**: `always`
-- **value**
-
-  ```js
-  'lowerCase';
-
-  ```
+- **value**: `lowerCase`
 
 ```sh
 echo ":ART: Format some code" # fails
@@ -91,11 +112,7 @@ echo ":fire: Delete some file" # passes
 
 - **condition**: `scope` is in case `value`
 - **rule**: `always`
-
-```js
-'lowerCase';
-
-```
+- **value**: `lowerCase`
 
 ```sh
 echo ":art:(SCOPE) some message" # fails
@@ -126,12 +143,7 @@ echo ":art: some message" # passes
 
 - **condition**: `subject` ends with `value`
 - **rule**: `never`
-- **value**
-
-```js
-'.';
-
-```
+- **value**: `.`
 
 ```sh
 echo ":art: some message." # fails
@@ -142,11 +154,7 @@ echo ":art: some message" # passes
 
 - **condition**: `header` has `value` or less characters
 - **rule**: `always`
-- **value**
-
-```js
-72;
-```
+- **value**: `72`
 
 ```sh
 echo ":art: some message that is way too long and breaks the line max-length by several characters" # fails
