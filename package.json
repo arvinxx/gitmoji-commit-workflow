@@ -11,7 +11,7 @@
     "build": "father-build",
     "---------": "",
     "test": "lerna run test",
-    "cov": "jest --coverage",
+    "test:coverage": "jest --coverage",
     "---------   ": "",
     "bump-version": "lerna version",
     "release": "multi-semantic-release",
