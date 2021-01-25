@@ -1,4 +1,4 @@
-> 🎉 Lint your gitmoji commits
+> 🚦 Lint your gitmoji commits
 
 # commitlint-config-gitmoji
 
