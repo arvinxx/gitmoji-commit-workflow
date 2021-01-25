@@ -1,6 +1,6 @@
 {
   "name": "@gitmoji/parser-opts",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "gitmoji styles commit parser options ",
   "author": "arvinxx <arvinx@foxmail.com>",
   "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/parser-opts",
