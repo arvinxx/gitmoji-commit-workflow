@@ -4,9 +4,12 @@
     "bootstrap": {
       "hoist": true
     },
-    "publish": {
+    "version": {
       "ignoreChanges": ["ignored-file", "*.md"],
-      "message": ":bookmark: chore(release): publish"
+      "conventionalCommits": true,
+      "changelogPreset": "gitmoji-config",
+      "yes": true,
+      "message": ":bookmark: chore(release): bump version"
     }
   },
   "useWorkspaces": true,
