@@ -12,11 +12,11 @@
 
 > 😉 Use gitmoji commit in your workflow
 
-# Packages
+## Packages
 
-## Config
+### Config
 
-| Packages                                                         | Status                                                       | Download                                   |
+| Packages                                                         | Status                                                       | Downloads                                  |
 | ---------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------ |
 | [commitlint-config-gitmoji](./packages/config)                   | [![NPM version][config-image]][config-url]                   | ![NPM downloads][config-download]          |
 | [commitlint-config-gitmoji-monorepo](./packages/config-monorepo) | [![NPM version][config-monorepo-image]][config-monorepo-url] | ![NPM downloads][config-monorepo-download] |
@@ -32,7 +32,7 @@
 [changelog-url]: http://npmjs.org/package/conventional-changelog-gitmoji-config
 [changelog-download]: https://img.shields.io/npm/dm/conventional-changelog-gitmoji-config.svg?style=flat-square
 
-## Helper
+### Helper
 
 | Packages                                         | Status                                     | Description                           |
 | ------------------------------------------------ | ------------------------------------------ | ------------------------------------- |
