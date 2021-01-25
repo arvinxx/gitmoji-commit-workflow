@@ -1,6 +1,6 @@
 {
   "name": "@gitmoji/commit-types",
-  "version": "1.1.3",
+  "version": "1.1.2",
   "description": "gitmoji styles commit types",
   "author": "arvinxx <arvinx@foxmail.com>",
   "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/commit-types",
