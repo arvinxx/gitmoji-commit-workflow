@@ -22,7 +22,7 @@ module.exports = {
           'CHANGELOG.md',
           'package.json',
         ],
-        message: ':bookmark: chore(release): v${nextRelease.version} [skip ci]',
+        message: ':bookmark: chore(release): v${nextRelease.version} [skip ci] \n\nhttps://github.com/arvinxx/commit-gitmoji/releases/tag/${nextRelease.gitTag}',
       },
     ],
   ],
