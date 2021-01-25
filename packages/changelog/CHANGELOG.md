@@ -1,4 +1,12 @@
 # commitlint-config-gitmoji 更新日志
+
+# [conventional-changelog-gitmoji-config-v1.0.1](https://github.com/arvinxx/commit-gitmoji/compare/conventional-changelog-gitmoji-config-v1.0.0...conventional-changelog-gitmoji-config-v1.0.1) (2021-01-25)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **(conventional-changelog-gitmoji-config)**: 修正日志配置 ([9c9fd6b](https://github.com/arvinxx/commit-gitmoji/commit/9c9fd6b))
+
 ## v1.0.0 (2021-01-25)
 
 
