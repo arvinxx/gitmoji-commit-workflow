@@ -1,5 +1,5 @@
 {
-  "name": "commit-gitmoji",
+  "name": "gitmoji-commit-workflow",
   "description": "",
   "private": true,
   "author": "Arvin Xu <arvinx@foxmail.com>",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arvinxx/commit-gitmoji.git"
+    "url": "https://github.com/arvinxx/gitmoji-commit-workflow.git"
   },
   "keywords": [
     "commit",

@@ -16,16 +16,16 @@
 [gitmoji-url]: https://gitmoji.carloscuesta.me/
 [semantic-release]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release-repo]: https://github.com/semantic-release/semantic-release
-[license-url]: https://img.shields.io/github/license/arvinxx/commit-gitmoji
+[license-url]: https://img.shields.io/github/license/arvinxx/gitmoji-commit-workflow
 
 <!-- Github CI -->
 
-[test-ci]: https://github.com/arvinxx/commit-gitmoji/workflows/Test%20CI/badge.svg
-[release-ci]: https://github.com/arvinxx/commit-gitmoji/workflows/Release%20CI/badge.svg
-[test-ci-url]: https://github.com/arvinxx/commit-gitmoji/actions?query=workflow%3A%22Test+CI%22
-[deploy-ci-url]: https://github.com/arvinxx/commit-gitmoji/actions?query=workflow%3A%22Release+CI%22
-[coverage]: https://codecov.io/gh/arvinxx/commit-gitmoji/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/arvinxx/commit-gitmoji/branch/master
+[test-ci]: https://github.com/arvinxx/gitmoji-commit-workflow/workflows/Test%20CI/badge.svg
+[release-ci]: https://github.com/arvinxx/gitmoji-commit-workflow/workflows/Release%20CI/badge.svg
+[test-ci-url]: https://github.com/arvinxx/gitmoji-commit-workflow/actions?query=workflow%3A%22Test+CI%22
+[deploy-ci-url]: https://github.com/arvinxx/gitmoji-commit-workflow/actions?query=workflow%3A%22Release+CI%22
+[coverage]: https://codecov.io/gh/arvinxx/gitmoji-commit-workflow/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/arvinxx/gitmoji-commit-workflow/branch/master
 
 ## Packages
 

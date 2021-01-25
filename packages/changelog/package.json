@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arvinxx/commit-gitmoji.git"
+    "url": "https://github.com/arvinxx/gitmoji-commit-workflow.git"
   },
   "keywords": [
     "conventional-changelog",
@@ -31,9 +31,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "bugs": {
-    "url": "https://github.com/arvinxx/commit-gitmoji/issues"
+    "url": "https://github.com/arvinxx/gitmoji-commit-workflow/issues"
   },
-  "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/changelog#readme",
+  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/changelog#readme",
   "dependencies": {
     "@gitmoji/commit-types": "1.1.5",
     "@gitmoji/parser-opts": "1.2.5",

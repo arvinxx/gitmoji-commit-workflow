@@ -13,7 +13,7 @@
     "changelog": "conventional-changelog -p gitmoji-config -i CHANGELOG.md -s -r 0",
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
   },
-  "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/plugin",
+  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/plugin",
   "repository": {
     "type": "git",
     "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"

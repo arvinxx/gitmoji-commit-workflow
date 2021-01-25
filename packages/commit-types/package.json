@@ -3,7 +3,7 @@
   "version": "1.1.5",
   "description": "gitmoji styles commit types",
   "author": "arvinxx <arvinx@foxmail.com>",
-  "homepage": "https://github.com/arvinxx/commit-gitmoji/tree/master/packages/commit-types",
+  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/commit-types",
   "license": "MIT",
   "main": "lib/index.js",
   "files": [
@@ -20,9 +20,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arvinxx/commit-gitmoji.git"
+    "url": "git+https://github.com/arvinxx/gitmoji-commit-workflow.git"
   },
   "bugs": {
-    "url": "https://github.com/arvinxx/commit-gitmoji/issues"
+    "url": "https://github.com/arvinxx/gitmoji-commit-workflow/issues"
   }
 }
