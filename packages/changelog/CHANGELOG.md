@@ -1,5 +1,12 @@
 # 更新日志
 
+## conventional-changelog-gitmoji-config [1.3.6](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.3.5...conventional-changelog-gitmoji-config@1.3.6) (2021-01-27)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **conventional-changelog-gitmoji-config**: fix style type display name ([2fe4ecf](https://github.com/arvinxx/gitmoji-commit-workflow/commit/2fe4ecf))
+
 ## conventional-changelog-gitmoji-config [1.3.5](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.3.4...conventional-changelog-gitmoji-config@1.3.5) (2021-01-25)
 
 
