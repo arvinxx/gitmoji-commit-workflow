@@ -10,6 +10,7 @@ export const getDisplayName = (type: CommitTypes | string): string => {
       return `⚡ Performance Improvements | 性能优化`;
     case 'revert':
       return `⏪ Reverts | 回退`;
+    case 'style':
     case 'styles':
       return `💄 Styles | 样式`;
     case 'docs':
@@ -21,9 +22,9 @@ export const getDisplayName = (type: CommitTypes | string): string => {
     case 'test':
       return `✅ Tests | 测试`;
     case 'ci':
-      return `🔧 Continuous Integration`;
+      return `🔧 Continuous Integration 持续集成`;
     case 'chore':
-      return `🎫 Chores`;
+      return `🎫 Chores 杂项`;
     // 其他都过滤不显示
     default:
       return type;
