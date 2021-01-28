@@ -1,5 +1,20 @@
 # 更新日志
 
+# commitlint-config-gitmoji-monorepo [1.1.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji-monorepo@1.0.5...commitlint-config-gitmoji-monorepo@1.1.0) (2021-01-28)
+
+
+### ✨ Features | 新特性
+
+* **commitlint-config-gitmoji-monorepo**: add scope lint ([7f635e9](https://github.com/arvinxx/gitmoji-commit-workflow/commit/7f635e9))
+
+
+
+
+
+### Dependencies
+
+* **commitlint-plugin-gitmoji:** upgraded to 2.0.5
+
 ## commitlint-config-gitmoji-monorepo [1.0.5](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji-monorepo@1.0.4...commitlint-config-gitmoji-monorepo@1.0.5) (2021-01-25)
 
 
