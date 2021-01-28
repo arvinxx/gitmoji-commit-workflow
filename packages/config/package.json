@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-gitmoji",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "shareable commitlint config enforcing gitmoji commit message",
   "main": "lib/index.js",
   "scripts": {
@@ -34,6 +34,6 @@
   "dependencies": {
     "@gitmoji/commit-types": "1.1.5",
     "@gitmoji/parser-opts": "1.2.5",
-    "commitlint-plugin-gitmoji": "2.0.5"
+    "commitlint-plugin-gitmoji": "2.0.6"
   }
 }
