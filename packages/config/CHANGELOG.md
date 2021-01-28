@@ -1,5 +1,15 @@
 # 更新日志
 
+## commitlint-config-gitmoji [2.1.11](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.1.10...commitlint-config-gitmoji@2.1.11) (2021-01-28)
+
+
+
+
+
+### Dependencies
+
+* **commitlint-plugin-gitmoji:** upgraded to 2.0.5
+
 ## commitlint-config-gitmoji [2.1.10](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.1.9...commitlint-config-gitmoji@2.1.10) (2021-01-25)
 
 

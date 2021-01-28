@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-gitmoji",
-  "version": "2.1.10",
+  "version": "2.1.11",
   "description": ":tada: Shareable commitlint config enforcing gitmoji commit",
   "main": "lib/index.js",
   "scripts": {
@@ -36,6 +36,6 @@
   "dependencies": {
     "@gitmoji/commit-types": "1.1.5",
     "@gitmoji/parser-opts": "1.2.5",
-    "commitlint-plugin-gitmoji": "2.0.4"
+    "commitlint-plugin-gitmoji": "2.0.5"
   }
 }
