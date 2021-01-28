@@ -12,8 +12,7 @@
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
   },
   "files": [
-    "lib",
-    "src"
+    "lib"
   ],
   "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/config",
   "repository": {
