@@ -37,8 +37,7 @@ const parserPreset: LintOptions = {
   },
 };
 
-// 按 module.exports 方式输出
-export = {
+export default {
   rules,
   parserPreset,
   plugins: [gitmojiPlugin],

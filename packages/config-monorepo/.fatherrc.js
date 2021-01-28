@@ -1,6 +1,7 @@
+const config = require('../../.fatherrc');
+
 module.exports = {
-  entry: 'src/index.ts',
-  cjs: 'babel',
+  ...config,
   pkgs: [
     'commitlint-plugin-gitmoji',
     '@gitmoji/parser-opts',

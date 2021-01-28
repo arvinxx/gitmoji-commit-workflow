@@ -27,5 +27,4 @@ const types: CommitTypes[] = [
   'wip',
 ];
 
-module.exports = types;
 export default types;

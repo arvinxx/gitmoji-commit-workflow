@@ -8,7 +8,7 @@ import gitRawCommitsOpts from './utils/git-raw-commit';
 import parserOpts from './utils/parserOpts'; // 解析流
 import writerOpts from './writerOpts'; // 输出流
 
-export = Q.all([
+export default Q.all([
   conventionalChangelog,
   parserOpts,
   recommendedBumpOpts,
