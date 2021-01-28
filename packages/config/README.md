@@ -11,7 +11,7 @@
 [download-image]: https://img.shields.io/npm/dm/commitlint-config-gitmoji.svg
 [download-url]: https://npmjs.org/package/commitlint-config-gitmoji
 
-Shareable `commitlint` config enforcing gitmoji.
+Shareable `commitlint` config enforcing gitmoji commit message styles.
 Use with [commitlint](https://github.com/marionebl/commitlint) .
 
 ## Demo

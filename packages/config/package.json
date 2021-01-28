@@ -1,14 +1,13 @@
 {
   "name": "commitlint-config-gitmoji",
   "version": "2.1.11",
-  "description": ":tada: Shareable commitlint config enforcing gitmoji commit",
+  "description": "shareable commitlint config enforcing gitmoji commit message",
   "main": "lib/index.js",
   "scripts": {
     "start": "tsc -w",
     "build": "tsc",
     "test": "jest",
     "cov": "jest --coverage",
-    "changelog": "conventional-changelog -p gitmoji-config -i CHANGELOG.md -s -r 0",
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
   },
   "files": [
