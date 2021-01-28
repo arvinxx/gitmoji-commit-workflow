@@ -24,24 +24,32 @@ describe('invalid commit', () => {
     const { valid, errors } = await lint('hello :test: test');
 
     expect(valid).toBeFalsy();
-    expect(errors).toHaveLength(3);
+    expect(errors).toHaveLength(4);
   });
 
   it('$ :start:test: test -> 3 error', async () => {
     const { valid, errors } = await lint(':start:test: test');
 
     expect(valid).toBeFalsy();
-    expect(errors).toHaveLength(3);
+    expect(errors).toHaveLength(4);
+  });
+
+  it('$ :white_check_mark: test: test -> scope error', async () => {
+    const { valid, errors } = await lint(':white_check_mark: test: test');
+
+    expect(valid).toBeFalsy();
+    expect(errors).toHaveLength(1);
+  });
+
+  it('$ :white_check_mark: test: test -> scope length error', async () => {
+    const { valid, errors } = await lint(':white_check_mark: test(): test');
+
+    expect(valid).toBeFalsy();
+    expect(errors).toHaveLength(1);
   });
 });
 
 describe('valid commit', () => {
-  it('$ :white_check_mark: test: test -> passed', async () => {
-    const { valid } = await lint(':white_check_mark: test: test');
-
-    expect(valid).toBeTruthy();
-  });
-
   it('$ :sparkles: feat(web): add new feat -> passed', async () => {
     const { valid } = await lint(':sparkles: feat(web): add new feat');
 
@@ -49,23 +57,25 @@ describe('valid commit', () => {
   });
 
   it('$ :green_heart: ci: fix ci -> passed', async () => {
-    const { valid } = await lint(':green_heart: ci: fix ci');
+    const { valid } = await lint(':green_heart: ci(monorepo): fix ci');
 
     expect(valid).toBeTruthy();
   });
 
   it('$ :memo: docs: update document #123 -> passed', async () => {
-    const { valid } = await lint(':memo: docs: update document #123');
+    const { valid } = await lint(':memo: docs(help): update document #123');
 
     expect(valid).toBeTruthy();
   });
   it('$ :memo: docs: update README.md -> passed', async () => {
-    const { valid } = await lint(':memo: docs: update README.md');
+    const { valid } = await lint(':memo: docs(readme): update README.md');
 
     expect(valid).toBeTruthy();
   });
   it('$ :lipstick: style(typography): 优化信息块和内联代码样式 -> passed', async () => {
-    const { valid } = await lint(':lipstick: style(typography): 优化信息块和内联代码样式');
+    const { valid } = await lint(
+      ':lipstick: style(typography): 优化信息块和内联代码样式',
+    );
 
     expect(valid).toBeTruthy();
   });
