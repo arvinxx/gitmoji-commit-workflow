@@ -7,20 +7,24 @@ const filePath = join(__dirname, 'gitmojis.json');
 if (!existsSync(filePath)) {
   const url =
     'https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json';
+  try {
+    // eslint-disable-next-line global-require
+    const result = require('child_process').execFileSync(
+      'curl',
+      ['--silent', '-L', url],
+      {
+        encoding: 'utf8',
+        maxBuffer: Infinity,
+      },
+    );
 
-  // eslint-disable-next-line global-require
-  const result = require('child_process').execFileSync(
-    'curl',
-    ['--silent', '-L', url],
-    {
-      encoding: 'utf8',
-      maxBuffer: Infinity,
-    },
-  );
-
-  writeFileSync(filePath, result);
+    writeFileSync(filePath, result);
+  } catch (e) {
+    throw Error(
+      'Failed to fetch gitmoji JSON, please refer to https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/plugin#fetch-error for help.',
+    );
+  }
 }
-
 // eslint-disable-next-line import/no-dynamic-require
 const { gitmojis } = require(filePath);
 const gitmojiCodes: string[] = gitmojis.map((gitmoji) => gitmoji.code);
