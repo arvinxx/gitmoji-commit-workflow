@@ -63,7 +63,7 @@ footer?
 
 :bug: fix(config): fix a subject bug
 
-:memo: docs(repo): update README.md
+:memo: docs: update README.md
 
 :bulb: docs(plugin): update comments
 ```

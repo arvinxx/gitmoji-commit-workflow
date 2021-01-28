@@ -20,6 +20,8 @@ const rules: QualifiedRules = {
   'header-max-length': [Error, 'always', 72],
   // Scope 永远小写
   'scope-case': [Error, 'always', 'lower-case'],
+  // Scope 必须有值
+  'scope-empty': [Error, 'never'],
   // 不允许标题空着
   'subject-empty': [Error, 'never'],
   // 不允许使用句号
