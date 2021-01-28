@@ -1,5 +1,12 @@
 # 更新日志
 
+# commitlint-config-gitmoji [2.2.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.1.11...commitlint-config-gitmoji@2.2.0) (2021-01-28)
+
+
+### ✨ Features | 新特性
+
+* **description**: update package description ([56dd470](https://github.com/arvinxx/gitmoji-commit-workflow/commit/56dd470))
+
 ## commitlint-config-gitmoji [2.1.11](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.1.10...commitlint-config-gitmoji@2.1.11) (2021-01-28)
 
 
