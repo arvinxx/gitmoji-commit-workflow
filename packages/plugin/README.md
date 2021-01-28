@@ -4,6 +4,16 @@
 
 a commitlint plugin to add gitmoji check rule
 
+## Fetch Error
+
+if you meet the below error. It means that you failed to fetch the `gitmojis.json` file.
+
+```shell
+Failed to fetch gitmoji JSON, please refer to https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/plugin#fetch-error for help.
+```
+
+the solution is that manual downloads the [gitmoji.json](https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json) file and add it to `node_modules/commitlint-plugin-gitmoji/lib` folder
+
 ## License
 
 [MIT](../../LICENSE) ® Arvin Xu
