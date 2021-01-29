@@ -27,6 +27,14 @@
 [coverage]: https://codecov.io/gh/arvinxx/gitmoji-commit-workflow/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/arvinxx/gitmoji-commit-workflow/branch/master
 
+## What is Gitmoji Commit Workflow?
+
+TODO: a Medium Article
+
+## Template
+
+Refer to this repository to get a [template](https://github.com/arvinxx/gitmoji-commit-workflow-template) of Gitmoji Commit Workflow
+
 ## Packages
 
 ### Shareable Configuration
