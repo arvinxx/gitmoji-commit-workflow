@@ -1,6 +1,9 @@
-import { conventionalChangelog, preparing, repoURL } from './utils';
+import { clean, conventionalChangelog, preparing, repoURL } from './utils';
 
 describe('Gitmoji Commit Message Preset', () => {
+  afterAll(() => {
+    clean();
+  });
   xit('should work if there is no semver tag', (done) => {
     preparing(1);
 

@@ -84,6 +84,11 @@ setups([
   },
 ]);
 
+export const clean = () => {
+  shell.cd(__dirname);
+  shell.rm('-rf', 'tmp');
+};
+
 export const preparing = _preparing;
 
 export const repoURL = 'https://github.com/arvinxx/gitmoji-commit-workflow';
