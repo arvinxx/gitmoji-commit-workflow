@@ -36,6 +36,7 @@ setups([
     shell.cd('tmp');
     shell.mkdir('git-templates');
     shell.exec('git init --template=./git-templates');
+    shell.exec('git commit --allow-empty -n -m "Initial commit"');
 
     gitDummyCommit([
       ':construction_worker: build: first build setup',
