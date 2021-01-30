@@ -24,22 +24,33 @@ The configuration object has the following signature:
 interface ChangelogConfig {
   /**
    * map the scope to display name
+   *
+   * for example
+   * {
+   *     'config': 'commitlint-gitmoji-config'
+   * }
+   * will map all config 'scope' to 'commitlint-gitmoji-config' in the changelog
+   * @default { }
    */
   scopeDisplayName?: Record<string, string>;
   /**
    * display types
+   * @default undefined
    */
-  displayTypes?: CommitTypes[];
+  displayTypes?: string[];
   /**
    * whether to include emoji in title
+   * @default true
    */
   withEmoji?: boolean;
   /**
    * title language
+   * @default en-US
    */
   titleLanguage?: 'en-US' | 'zh-CN';
   /**
    * whether to show author
+   * @default false
    */
   showAuthor?: boolean;
 }
