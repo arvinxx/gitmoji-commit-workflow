@@ -1,5 +1,14 @@
 # 更新日志
 
+# conventional-changelog-gitmoji-config [1.4.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.3.6...conventional-changelog-gitmoji-config@1.4.0) (2021-01-30)
+
+
+### ✨ Features
+
+* **commitlint-config-gitmoji**: support more config type ([84db257](https://github.com/arvinxx/gitmoji-commit-workflow/commit/84db257))
+* **i18n**: support on or off emoji ([6ad63c4](https://github.com/arvinxx/gitmoji-commit-workflow/commit/6ad63c4))
+* **i18n**: support switch language ([c7dfa78](https://github.com/arvinxx/gitmoji-commit-workflow/commit/c7dfa78))
+
 ## conventional-changelog-gitmoji-config [1.3.6](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.3.5...conventional-changelog-gitmoji-config@1.3.6) (2021-01-27)
 
 
