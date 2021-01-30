@@ -15,7 +15,10 @@ export default (customConfig: CustomConfig) => (
   const issues = [];
 
   commit.notes.forEach((note) => {
-    note.title = 'BREAKING CHANGES';
+    note.title = `${
+      customConfig?.withEmoji === false ? '' : '💥 '
+    }BREAKING CHANGES`;
+
     discard = false;
   });
 
@@ -28,13 +31,15 @@ export default (customConfig: CustomConfig) => (
   if (!displayTypes.includes(<CommitTypes>commit.type) && discard) return;
 
   // 修改 type 标题
-  commit.type = getDisplayName(commit.type);
+  commit.type = getDisplayName(commit.type, {
+    language: customConfig.titleLanguage,
+    withEmoji: customConfig.withEmoji,
+  });
 
+  /** * 处理 scope ** */
   if (commit.scope === '*') {
     commit.scope = '';
   }
-
-  /** * 处理 scope ** */
 
   if (customConfig.displayScopes) {
     if (!customConfig.displayScopes?.includes(commit.scope)) return;

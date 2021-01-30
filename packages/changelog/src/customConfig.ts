@@ -18,6 +18,14 @@ export interface CustomConfig {
    * 是否显示作者
    */
   showAuthor?: boolean;
+  /**
+   * whether to include emoji in title
+   */
+  withEmoji?: boolean;
+  /**
+   * title language
+   */
+  titleLanguage?: 'en-US' | 'zh-CN';
 }
 
 const explorer = cosmiconfigSync('changelog');

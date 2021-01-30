@@ -31,9 +31,13 @@ interface ChangelogConfig {
    */
   displayTypes?: CommitTypes[];
   /**
-   * there are two languages types
+   * whether to include emoji in title
    */
-  language?: 'en-US' | 'zh-CN';
+  withEmoji?: boolean;
+  /**
+   * title language
+   */
+  titleLanguage?: 'en-US' | 'zh-CN';
   /**
    * whether to show author
    */
