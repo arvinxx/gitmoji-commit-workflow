@@ -1,7 +1,6 @@
 import Q from 'q';
-
-const parserOpts = require('./parserOpts');
-const writerOpts = require('../writerOpts');
+import parserOpts from './parserOpts';
+import writerOpts from './writerOpts';
 
 export = Q.all([parserOpts, writerOpts]).spread((parserOpts, writerOpts) => {
   return { parserOpts, writerOpts };

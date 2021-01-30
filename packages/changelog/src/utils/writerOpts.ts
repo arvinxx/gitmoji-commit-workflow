@@ -1,17 +1,17 @@
 import Q from 'q';
 import { resolve } from 'path';
 import { readFile as _readFile } from 'fs';
-import customConfig from './customConfig';
 
-import handleWriterOpts from './handleWriterOpts';
+import customConfig from '../customConfig';
+import handleWriterOpts from '../handleWriterOpts';
 
 const readFile = Q.denodeify(_readFile);
 
 const template$ = [
-  readFile(resolve(__dirname, './templates/template.hbs'), 'utf-8'),
-  readFile(resolve(__dirname, './templates/header.hbs'), 'utf-8'),
-  readFile(resolve(__dirname, './templates/commit.hbs'), 'utf-8'),
-  readFile(resolve(__dirname, './templates/footer.hbs'), 'utf-8'),
+  readFile(resolve(__dirname, '../templates/template.hbs'), 'utf-8'),
+  readFile(resolve(__dirname, '../templates/header.hbs'), 'utf-8'),
+  readFile(resolve(__dirname, '../templates/commit.hbs'), 'utf-8'),
+  readFile(resolve(__dirname, '../templates/footer.hbs'), 'utf-8'),
 ];
 
 export = Q.all(template$).spread((template, header, commit, footer) => {
