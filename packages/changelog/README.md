@@ -6,6 +6,8 @@ sharable conventional changelog configuration for gitmoji style commit
 
 ## TODO
 
+## Configuration
+
 ## License
 
 [MIT](../../LICENSE) ® Arvin Xu
