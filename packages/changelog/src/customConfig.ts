@@ -1,5 +1,5 @@
-import { resolve } from 'path';
 import type { CommitTypes } from '@gitmoji/commit-types';
+import { cosmiconfigSync } from 'cosmiconfig';
 
 export interface CustomConfig {
   /**
@@ -20,25 +20,8 @@ export interface CustomConfig {
   showAuthor?: boolean;
 }
 
-let changelogrc: CustomConfig = {};
-let changelogConfig: CustomConfig = {};
+const explorer = cosmiconfigSync('changelog');
 
-// .changelogrc.js
-try {
-  // eslint-disable-next-line global-require,import/no-dynamic-require
-  changelogrc = require(resolve(process.cwd(), '.changelogrc.js'));
-} catch (e) {
-  //
-}
+const { config } = explorer.search();
 
-// changelog.config.js
-try {
-  // eslint-disable-next-line global-require,import/no-dynamic-require
-  changelogConfig = require(resolve(process.cwd(), 'changelog.config.js'));
-} catch (e) {
-  //
-}
-
-const pkg: CustomConfig = { ...changelogrc, ...changelogConfig };
-
-export default pkg;
+export default config;
