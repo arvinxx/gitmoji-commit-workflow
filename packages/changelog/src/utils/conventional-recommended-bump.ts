@@ -1,6 +1,7 @@
+/* istanbul ignore file */
 import parserOpts from './parserOpts';
 
-export = {
+export default {
   parserOpts,
   whatBump: (commits) => {
     let level = 2;
