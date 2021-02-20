@@ -1,5 +1,12 @@
 # 更新日志
 
+# semantic-release-config-gitmoji-module [1.1.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji-module@1.0.1...semantic-release-config-gitmoji-module@1.1.0) (2021-02-20)
+
+
+### ✨ Features
+
+* add style and build to release rule ([acd7860](https://github.com/arvinxx/gitmoji-commit-workflow/commit/acd7860))
+
 ## semantic-release-config-gitmoji-module [1.0.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji-module@1.0.0...semantic-release-config-gitmoji-module@1.0.1) (2021-02-20)
 
 
