@@ -41,11 +41,12 @@ Refer to this repository to get a [template](https://github.com/arvinxx/gitmoji-
 
 Here are some packages for gitmoji commit workflow
 
-| Packages                                                         | Status                                                       | Description                                                                              |
-| ---------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| [commitlint-config-gitmoji](./packages/config)                   | [![NPM version][config-image]][config-url]                   | a shareable commitlint configuration to enforcing gitmoji commit                         |
-| [commitlint-config-gitmoji-monorepo](./packages/config-monorepo) | [![NPM version][config-monorepo-image]][config-monorepo-url] | a shareable commitlint configuration to enforcing gitmoji commit in monorepo             |
-| [conventional-changelog-gitmoji-config](./packages/changelog)    | [![NPM version][changelog-image]][changelog-url]             | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
+| Packages                                                            | Status                                                       | Description                                                                              |
+| ------------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| [commitlint-config-gitmoji](./packages/config)                      | [![NPM version][config-image]][config-url]                   | a shareable commitlint configuration to enforcing gitmoji commit                         |
+| [commitlint-config-gitmoji-monorepo](./packages/config-monorepo)    | [![NPM version][config-monorepo-image]][config-monorepo-url] | a shareable commitlint configuration to enforcing gitmoji commit in monorepo             |
+| [conventional-changelog-gitmoji-config](./packages/changelog)       | [![NPM version][changelog-image]][changelog-url]             | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
+| [semantic-release-config-gitmoji-module](./packages/release-module) | [![NPM version][release-module-image]][release-module-url]   | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
 
 [config-image]: http://img.shields.io/npm/v/commitlint-config-gitmoji.svg?style=flat-square&color=deepgreen&label=latest
 [config-url]: http://npmjs.org/package/commitlint-config-gitmoji
@@ -56,6 +57,9 @@ Here are some packages for gitmoji commit workflow
 [changelog-image]: http://img.shields.io/npm/v/conventional-changelog-gitmoji-config.svg?style=flat-square&color=deepgreen&label=latest
 [changelog-url]: http://npmjs.org/package/conventional-changelog-gitmoji-config
 [changelog-download]: https://img.shields.io/npm/dm/conventional-changelog-gitmoji-config.svg?style=flat-square
+[release-module-image]: http://img.shields.io/npm/v/semantic-release-config-gitmoji-module.svg?style=flat-square&color=deepgreen&label=latest
+[release-module-url]: http://npmjs.org/package/semantic-release-config-gitmoji-module
+[release-module-download]: https://img.shields.io/npm/dm/semantic-release-config-gitmoji-module.svg?style=flat-square
 
 ### Helper
 
