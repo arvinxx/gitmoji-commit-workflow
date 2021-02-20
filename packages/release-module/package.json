@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-config-gitmoji-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a gitmoji commit style presets for semantic-release",
   "main": "lib/index.js",
   "files": [
