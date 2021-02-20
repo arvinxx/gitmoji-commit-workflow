@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['gitmoji-monorepo'],
+  extends: ['gitmoji'],
 };
