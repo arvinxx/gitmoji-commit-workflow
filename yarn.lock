@@ -2963,6 +2963,13 @@
   resolved "https://registry.npm.taobao.org/@types/retry/download/@types/retry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
   integrity sha1-KzXsz87n04zXKtmSMvvVi/+zyE0=
 
+"@types/semantic-release@^17.2.0":
+  version "17.2.0"
+  resolved "https://registry.npm.taobao.org/@types/semantic-release/download/@types/semantic-release-17.2.0.tgz#2ed941f0ccd1ba714ec46ddefe4f224164946872"
+  integrity sha1-LtlB8MzRunFOxG3e/k8iQWSUaHI=
+  dependencies:
+    "@types/node" "*"
+
 "@types/sinon@^9.0.10":
   version "9.0.10"
   resolved "https://registry.npm.taobao.org/@types/sinon/download/@types/sinon-9.0.10.tgz?cache=0&sync_timestamp=1608753358090&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fsinon%2Fdownload%2F%40types%2Fsinon-9.0.10.tgz#7fb9bcb6794262482859cab66d59132fca18fcf7"

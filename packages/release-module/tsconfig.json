@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "es5",
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "lib": ["ES2020"],
+    "esModuleInterop": true
+  }
+}
