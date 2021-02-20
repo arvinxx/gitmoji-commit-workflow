@@ -26,7 +26,7 @@ module.exports = {
       {
         assets: ['CHANGELOG.md', 'package.json'],
         message:
-          ':bookmark: chore(release): ${nextRelease.gitTag} [skip ci] \n\nhttps://github.com/arvinxx/gitmoji-commit-workflow/releases/tag/${nextRelease.gitTag}',
+          ':bookmark: chore(release): ${nextRelease.gitTag} [skip ci] \n\n${nextRelease.notes}',
       },
     ],
   ],
