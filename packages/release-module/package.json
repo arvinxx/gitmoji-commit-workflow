@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/arvinxx/gitmoji-commit-workflow/issues"
   },
-  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/changelog#readme",
+  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/release-module#readme",
   "dependencies": {
     "conventional-changelog-gitmoji-config": "1.4.0",
     "@semantic-release/changelog": "^5.0.1",
