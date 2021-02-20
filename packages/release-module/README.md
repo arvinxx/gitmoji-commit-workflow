@@ -10,7 +10,7 @@ shareable semantic-release configuration for gitmoji commit style presets
 
 <!-- npm url -->
 
-[version-image]: http://img.shields.io/npm/v/semantic-release-config-gitmoji-module-github.svg?color=deepgreen&label=latest
-[version-url]: http://npmjs.org/package/semantic-release-config-gitmoji-module-github
-[download-image]: https://img.shields.io/npm/dm/semantic-release-config-gitmoji-module-github.svg
-[download-url]: https://npmjs.org/package/semantic-release-config-gitmoji-module-github
+[version-image]: http://img.shields.io/npm/v/semantic-release-config-gitmoji-module.svg?color=deepgreen&label=latest
+[version-url]: http://npmjs.org/package/semantic-release-config-gitmoji-module
+[download-image]: https://img.shields.io/npm/dm/semantic-release-config-gitmoji-module.svg
+[download-url]: https://npmjs.org/package/semantic-release-config-gitmoji-module
