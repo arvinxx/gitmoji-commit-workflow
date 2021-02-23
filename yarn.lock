@@ -6350,9 +6350,9 @@ fastq@^1.6.0:
     reusify "^1.0.4"
 
 father-build@^1.19.1:
-  version "1.19.1"
-  resolved "https://registry.npm.taobao.org/father-build/download/father-build-1.19.1.tgz#6ca75c2c7b80836e418ba2144db4414681b593a8"
-  integrity sha1-bKdcLHuAg25Bi6IUTbRBRoG1k6g=
+  version "1.19.2"
+  resolved "https://registry.yarnpkg.com/father-build/-/father-build-1.19.2.tgz#4bea41eed6c94dd8e4330c1bdf238b6a2f769e80"
+  integrity sha512-Q5NtpE+LMD8i5utrIEUCb2po4y2HP/jvg7sucwVdOOCOBJny33t/wGybQEOLOLZYOFqw7tR0wPLFsvPnN9d0uw==
   dependencies:
     "@babel/core" "7.12.3"
     "@babel/plugin-proposal-class-properties" "7.12.1"
