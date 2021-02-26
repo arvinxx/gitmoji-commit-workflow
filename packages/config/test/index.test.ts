@@ -5,7 +5,6 @@ describe('invalid commit', () => {
     const { valid, errors } = await lint('chore(scope): test');
 
     expect(valid).toBeFalsy();
-    expect(errors).toHaveLength(1);
     expect(errors[0].name).toBe('start-with-gitmoji');
   });
 
@@ -65,7 +64,9 @@ describe('valid commit', () => {
     expect(valid).toBeTruthy();
   });
   it('$ :lipstick: style(typography): 优化信息块和内联代码样式 -> passed', async () => {
-    const { valid } = await lint(':lipstick: style(typography): 优化信息块和内联代码样式');
+    const { valid } = await lint(
+      ':lipstick: style(typography): 优化信息块和内联代码样式',
+    );
 
     expect(valid).toBeTruthy();
   });

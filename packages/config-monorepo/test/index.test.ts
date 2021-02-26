@@ -5,7 +5,6 @@ describe('invalid commit', () => {
     const { valid, errors } = await lint('chore(scope): test');
 
     expect(valid).toBeFalsy();
-    expect(errors).toHaveLength(1);
     expect(errors[0].name).toBe('start-with-gitmoji');
   });
 
