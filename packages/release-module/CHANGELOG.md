@@ -1,5 +1,15 @@
 # 更新日志
 
+## semantic-release-config-gitmoji-module [1.1.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji-module@1.1.0...semantic-release-config-gitmoji-module@1.1.1) (2021-02-26)
+
+
+
+
+
+### Dependencies
+
+* **conventional-changelog-gitmoji-config:** upgraded to 1.4.1
+
 # semantic-release-config-gitmoji-module [1.1.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji-module@1.0.1...semantic-release-config-gitmoji-module@1.1.0) (2021-02-20)
 
 
