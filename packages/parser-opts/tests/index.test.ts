@@ -8,6 +8,11 @@ describe('@gitmoji/parser-opts', () => {
       expect(result).toBeNull();
     });
 
+    it('chore(scope): test', () => {
+      const result = regex.exec('hello :test: test');
+      expect(result).toBeNull();
+    });
+
     it(':start:test: test', () => {
       const result = regex.exec(':start:test: test');
       expect(result).toBeNull();
@@ -15,16 +20,6 @@ describe('@gitmoji/parser-opts', () => {
   });
 
   describe('valid', () => {
-    it('chore(scope): test', () => {
-      const result = regex.exec('chore(scope): test');
-
-      expect(result).toHaveLength(5);
-      const { type, scope, subject, ticket } = result.groups;
-      expect(type).toBe('chore');
-      expect(scope).toBe('scope');
-      expect(subject).toBe('test');
-      expect(ticket).toBeUndefined();
-    });
     it(':hello: test: test', () => {
       const result = regex.exec(':hello: test: test');
 
@@ -76,7 +71,9 @@ describe('@gitmoji/parser-opts', () => {
       expect(ticket).toBe('#123');
     });
     it(':package: feat(parser-opts): extract parser-opts packages', () => {
-      const result = regex.exec(':package: feat(parser-opts): extract parser-opts packages');
+      const result = regex.exec(
+        ':package: feat(parser-opts): extract parser-opts packages',
+      );
 
       expect(result).toHaveLength(5);
       const { type, scope, subject, ticket } = result.groups;
@@ -95,6 +92,5 @@ describe('@gitmoji/parser-opts', () => {
       expect(subject).toBe('添加中文标题');
       expect(ticket).toBeUndefined();
     });
-
   });
 });

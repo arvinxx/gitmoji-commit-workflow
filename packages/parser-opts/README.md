@@ -8,7 +8,7 @@ this package is used in both [conventional-changelog-gitmoji-config](../changelo
 
 ## Sources
 
-Header regex pattern test here : [Regex101](https://regex101.com/r/YxXWi5/9)
+Header regex pattern test here : [Regex101](https://regex101.com/r/YxXWi5/10)
 
 ```js
 module.exports = {
