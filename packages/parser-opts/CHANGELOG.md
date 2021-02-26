@@ -1,5 +1,12 @@
 # 更新日志
 
+## @gitmoji/parser-opts [1.2.6](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.2.5...@gitmoji/parser-opts@1.2.6) (2021-02-26)
+
+
+### 🐛 Bug Fixes
+
+* fix parser success without gitmoji ([780064f](https://github.com/arvinxx/gitmoji-commit-workflow/commit/780064f))
+
 ## @gitmoji/parser-opts [1.2.5](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.2.4...@gitmoji/parser-opts@1.2.5) (2021-01-25)
 
 
