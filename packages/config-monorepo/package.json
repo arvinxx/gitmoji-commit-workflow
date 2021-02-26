@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-gitmoji-monorepo",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": ":tada: Shareable commitlint config for monorepo enforcing gitmoji commit",
   "main": "lib/index.js",
   "scripts": {
@@ -34,7 +34,7 @@
   "license": "MIT",
   "dependencies": {
     "@gitmoji/commit-types": "1.1.5",
-    "@gitmoji/parser-opts": "1.2.5",
+    "@gitmoji/parser-opts": "1.2.6",
     "commitlint-plugin-gitmoji": "2.0.6"
   }
 }
