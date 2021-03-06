@@ -43,7 +43,7 @@ Here are some packages for gitmoji commit workflow
 
 | Packages                                                            | Status                                                       | Description                                                                              |
 | ------------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| [commitlint-config-gitmoji](./packages/config)                      | [![NPM version][config-image]][config-url]                   | a shareable commitlint configuration to enforcing gitmoji commit                         |
+| [commitlint-config-gitmoji](packages/commitlint-config)             | [![NPM version][config-image]][config-url]                   | a shareable commitlint configuration to enforcing gitmoji commit                         |
 | [commitlint-config-gitmoji-monorepo](./packages/config-monorepo)    | [![NPM version][config-monorepo-image]][config-monorepo-url] | a shareable commitlint configuration to enforcing gitmoji commit in monorepo             |
 | [conventional-changelog-gitmoji-config](./packages/changelog)       | [![NPM version][changelog-image]][changelog-url]             | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
 | [semantic-release-config-gitmoji-module](./packages/release-module) | [![NPM version][release-module-image]][release-module-url]   | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
@@ -82,7 +82,7 @@ Here are some packages for gitmoji commit workflow
 
 The commitlint gitmoji repo is managed as a [monorepo](https://github.com/babel/babel/blob/master/doc/design/monorepo.md); it's composed of many npm packages.
 
-The original `commitlint-config-gitmoji` repo can be found in [packages/config](./packages/config).
+The original `commitlint-config-gitmoji` repo can be found in [packages/config](packages/commitlint-config).
 
 ## License
 

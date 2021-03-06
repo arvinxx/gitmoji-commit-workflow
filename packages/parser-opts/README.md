@@ -4,7 +4,7 @@
 
 a shareable parser options for gitmoji styles commit
 
-this package is used in both [conventional-changelog-gitmoji-config](../changelog) and [commitlint-config-gitmoji](../config)
+this package is used in both [conventional-changelog-gitmoji-config](../changelog) and [commitlint-config-gitmoji](../commitlint-config)
 
 ## Sources
 
