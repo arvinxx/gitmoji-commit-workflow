@@ -1,9 +1,9 @@
 import type { Options as SemRelOptions, PluginSpec } from 'semantic-release';
 
 import type { Options } from './type';
-import commitAnalyzer from './commitAnalyzer';
-import git from './git';
-import npm from './npm';
+import commitAnalyzer from './plugins/commitAnalyzer';
+import git from './plugins/git';
+import npm from './plugins/npm';
 
 export type { ReleaseRule, Options } from './type';
 

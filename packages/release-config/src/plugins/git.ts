@@ -1,5 +1,5 @@
 import type { PluginSpec } from 'semantic-release';
-import type { GitPluginOpts } from './type';
+import type { GitPluginOpts } from '../type';
 
 /**
  * git

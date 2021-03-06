@@ -1,5 +1,5 @@
 import type { PluginSpec } from 'semantic-release';
-import type { NPMPluginOpts } from './type';
+import type { NPMPluginOpts } from '../type';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const npm = (options?: NPMPluginOpts): PluginSpec => {
