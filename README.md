@@ -41,12 +41,11 @@ Refer to this repository to get a [template](https://github.com/arvinxx/gitmoji-
 
 Here are some packages for gitmoji commit workflow
 
-| Packages                                                            | Status                                                       | Description                                                                              |
-| ------------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| [commitlint-config-gitmoji](packages/commitlint-config)             | [![NPM version][config-image]][config-url]                   | a shareable commitlint configuration to enforcing gitmoji commit                         |
-| [commitlint-config-gitmoji-monorepo](./packages/config-monorepo)    | [![NPM version][config-monorepo-image]][config-monorepo-url] | a shareable commitlint configuration to enforcing gitmoji commit in monorepo             |
-| [conventional-changelog-gitmoji-config](./packages/changelog)       | [![NPM version][changelog-image]][changelog-url]             | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
-| [semantic-release-config-gitmoji-module](./packages/release-module) | [![NPM version][release-module-image]][release-module-url]   | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
+| Packages                                                          | Status                                                     | Description                                                                              |
+| ----------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [commitlint-config-gitmoji](packages/commitlint-config)           | [![NPM version][config-image]][config-url]                 | a shareable commitlint configuration to enforcing gitmoji commit                         |
+| [conventional-changelog-gitmoji-config](./packages/changelog)     | [![NPM version][changelog-image]][changelog-url]           | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
+| [semantic-release-config-gitmoji-module](packages/release-config) | [![NPM version][release-module-image]][release-module-url] | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
 
 [config-image]: http://img.shields.io/npm/v/commitlint-config-gitmoji.svg?style=flat-square&color=deepgreen&label=latest
 [config-url]: http://npmjs.org/package/commitlint-config-gitmoji
@@ -63,11 +62,11 @@ Here are some packages for gitmoji commit workflow
 
 ### Helper
 
-| Packages                                         | Status                                     | Description                                          |
-| ------------------------------------------------ | ------------------------------------------ | ---------------------------------------------------- |
-| [commitlint-plugin-gitmoji](./packages/plugin)   | [![NPM version][plugin-image]][plugin-url] | a commitlint plugin to add gitmoji check rule        |
-| [@gitmoji/parser-opts](./packages/parser-opts)   | [![NPM version][parser-image]][parser-url] | a shareable parser options for gitmoji styles commit |
-| [@gitmoji/commit-types](./packages/commit-types) | [![NPM version][types-image]][types-url]   | gitmoji styles commit types                          |
+| Packages                                                | Status                                     | Description                                          |
+| ------------------------------------------------------- | ------------------------------------------ | ---------------------------------------------------- |
+| [commitlint-plugin-gitmoji](packages/commitlint-plugin) | [![NPM version][plugin-image]][plugin-url] | a commitlint plugin to add gitmoji check rule        |
+| [@gitmoji/parser-opts](./packages/parser-opts)          | [![NPM version][parser-image]][parser-url] | a shareable parser options for gitmoji styles commit |
+| [@gitmoji/commit-types](./packages/commit-types)        | [![NPM version][types-image]][types-url]   | gitmoji styles commit types                          |
 
 <!-- npm url -->
 
