@@ -5,6 +5,8 @@ import commitAnalyzer from './commitAnalyzer';
 import git from './git';
 import npm from './npm';
 
+export type { ReleaseRule, Options } from './type';
+
 export const createConfig = (options?: Options): SemRelOptions => {
   const opts = {
     changelogTitle: '# Changelog',

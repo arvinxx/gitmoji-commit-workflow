@@ -6,7 +6,7 @@ export interface ReleaseRule {
   release: Release['type'];
 }
 
-export interface Options extends GitPluginOpts {
+export interface Options extends GitPluginOpts, NPMPluginOpts {
   releaseRules?: ReleaseRule[];
   changelogTitle?: string;
   changelogFile?: string;
