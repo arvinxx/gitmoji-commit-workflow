@@ -1,4 +1,4 @@
-# 更新日志
+# Changelog
 
 ## commitlint-config-gitmoji [2.2.3](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.2...commitlint-config-gitmoji@2.2.3) (2021-03-06)
 

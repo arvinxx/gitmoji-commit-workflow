@@ -16,7 +16,7 @@ module.exports = {
       '@semantic-release/changelog',
       {
         changelogFile: 'CHANGELOG.md',
-        changelogTitle: '# 更新日志',
+        changelogTitle: '# Changelog',
       },
     ],
     '@semantic-release/npm',
