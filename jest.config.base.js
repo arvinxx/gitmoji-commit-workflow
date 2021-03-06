@@ -5,7 +5,7 @@ module.exports = {
   testEnvironment: 'node',
   verbose: true,
   moduleNameMapper: {
-    'commitlint-plugin-gitmoji': '<rootDir>/packages/plugin/src',
+    'commitlint-plugin-gitmoji': '<rootDir>/packages/commitlint-plugin/src',
     '@gitmoji/parser-opts': '<rootDir>/packages/parser-opts/src',
     '@gitmoji/commit-types': '<rootDir>/packages/commit-types/src',
   },
