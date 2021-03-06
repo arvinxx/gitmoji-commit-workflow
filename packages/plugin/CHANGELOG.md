@@ -1,5 +1,12 @@
 # 更新日志
 
+# commitlint-plugin-gitmoji [2.1.0](https://github.com/arvinxx/commitlint-config-gitmoji/compare/commitlint-plugin-gitmoji@2.0.6...commitlint-plugin-gitmoji@2.1.0) (2021-03-06)
+
+
+### ✨ Features
+
+* support gitmoji unicode ([6f418a7](https://github.com/arvinxx/commitlint-config-gitmoji/commit/6f418a7))
+
 ## commitlint-plugin-gitmoji [2.0.6](https://github.com/arvinxx/commitlint-config-gitmoji/compare/commitlint-plugin-gitmoji@2.0.5...commitlint-plugin-gitmoji@2.0.6) (2021-01-28)
 
 
