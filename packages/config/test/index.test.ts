@@ -32,6 +32,13 @@ describe('invalid commit', () => {
     expect(valid).toBeFalsy();
     expect(errors).toHaveLength(3);
   });
+
+  it('$ 😂 test: test -> 3 error', async () => {
+    const { valid, errors } = await lint('😂 test: test');
+
+    expect(valid).toBeFalsy();
+    expect(errors).toHaveLength(1);
+  });
 });
 
 describe('valid commit', () => {
@@ -66,6 +73,14 @@ describe('valid commit', () => {
   it('$ :lipstick: style(typography): 优化信息块和内联代码样式 -> passed', async () => {
     const { valid } = await lint(
       ':lipstick: style(typography): 优化信息块和内联代码样式',
+    );
+
+    expect(valid).toBeTruthy();
+  });
+
+  it('$ 💄 style(typography): 优化信息块和内联代码样式 -> passed', async () => {
+    const { valid } = await lint(
+      '💄 style(typography): 优化信息块和内联代码样式',
     );
 
     expect(valid).toBeTruthy();
