@@ -15,6 +15,7 @@ const generateCommit = (commit: Partial<Commit>) =>
   } as Commit);
 
 const defaultContext = { commit: '', date: '', issue: '' };
+
 describe('transform', () => {
   it('return commit if has feat', () => {
     const transformer = transform({});
@@ -30,6 +31,24 @@ describe('transform', () => {
       mentions: [],
       notes: [],
       references: [],
+    });
+  });
+
+  it('should truncated commit hash', () => {
+    const transformer = transform({});
+    const commit = generateCommit({
+      header: '',
+      type: 'feat',
+      hash: '12345678abc',
+    });
+
+    expect(transformer(commit, defaultContext)).toEqual({
+      hash: '1234567',
+      header: '',
+      mentions: [],
+      notes: [],
+      references: [],
+      type: '✨ Features',
     });
   });
 
