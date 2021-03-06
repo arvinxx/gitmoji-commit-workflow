@@ -1,5 +1,16 @@
 # 更新日志
 
+## commitlint-config-gitmoji [2.2.3](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.2...commitlint-config-gitmoji@2.2.3) (2021-03-06)
+
+
+
+
+
+### Dependencies
+
+* **@gitmoji/parser-opts:** upgraded to 1.3.0
+* **commitlint-plugin-gitmoji:** upgraded to 2.1.0
+
 ## commitlint-config-gitmoji [2.2.2](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.1...commitlint-config-gitmoji@2.2.2) (2021-02-26)
 
 
