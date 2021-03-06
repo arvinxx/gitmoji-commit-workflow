@@ -1,4 +1,4 @@
-# semantic-release-config-gitmoji
+# semantic-release-defaultConfig-gitmoji
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
