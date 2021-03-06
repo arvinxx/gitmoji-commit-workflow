@@ -6,6 +6,4 @@ const defaultConfig: Options = createConfig();
 
 export default defaultConfig;
 
-export { createConfig } from './createConfig';
-
-export * from './type';
+export type { ReleaseRule, Options } from './type';
