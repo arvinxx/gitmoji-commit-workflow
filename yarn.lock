@@ -5742,6 +5742,15 @@ emittery@^0.7.1:
   resolved "https://registry.npm.taobao.org/emittery/download/emittery-0.7.2.tgz#25595908e13af0f5674ab419396e2fb394cdfa82"
   integrity sha1-JVlZCOE68PVnSrQZOW4vs5TN+oI=
 
+emoji-name-map@^1.2.9:
+  version "1.2.9"
+  resolved "https://registry.npm.taobao.org/emoji-name-map/download/emoji-name-map-1.2.9.tgz#32a0788e748d9c7185a29a000102fb263fe2892d"
+  integrity sha1-MqB4jnSNnHGFopoAAQL7Jj/iiS0=
+  dependencies:
+    emojilib "^2.0.2"
+    iterate-object "^1.3.1"
+    map-o "^2.0.1"
+
 emoji-regex@^7.0.1:
   version "7.0.3"
   resolved "https://registry.npm.taobao.org/emoji-regex/download/emoji-regex-7.0.3.tgz?cache=0&sync_timestamp=1603212288390&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Femoji-regex%2Fdownload%2Femoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
@@ -5757,10 +5766,10 @@ emoji-regex@^9.0.0:
   resolved "https://registry.npm.taobao.org/emoji-regex/download/emoji-regex-9.2.0.tgz?cache=0&sync_timestamp=1603212288390&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Femoji-regex%2Fdownload%2Femoji-regex-9.2.0.tgz#a26da8e832b16a9753309f25e35e3c0efb9a066a"
   integrity sha1-om2o6DKxapdTMJ8l4148DvuaBmo=
 
-emoji-unicode@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npm.taobao.org/emoji-unicode/download/emoji-unicode-2.0.1.tgz#37b05f0cd20254fd366d1df4442b5c613a3a021a"
-  integrity sha1-N7BfDNICVP02bR30RCtcYTo6Aho=
+emojilib@^2.0.2:
+  version "2.4.0"
+  resolved "https://registry.npm.taobao.org/emojilib/download/emojilib-2.4.0.tgz#ac518a8bb0d5f76dda57289ccb2fdf9d39ae721e"
+  integrity sha1-rFGKi7DV923aVyicyy/fnTmuch4=
 
 emojis-list@^3.0.0:
   version "3.0.0"
@@ -8417,6 +8426,11 @@ istanbul-reports@^3.0.2:
     html-escaper "^2.0.0"
     istanbul-lib-report "^3.0.0"
 
+iterate-object@^1.3.0, iterate-object@^1.3.1:
+  version "1.3.4"
+  resolved "https://registry.npm.taobao.org/iterate-object/download/iterate-object-1.3.4.tgz#fa50b1d9e58e340a7dd6b4c98c8a5e182e790096"
+  integrity sha1-+lCx2eWONAp91rTJjIpeGC55AJY=
+
 java-properties@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/java-properties/download/java-properties-1.0.2.tgz#ccd1fa73907438a5b5c38982269d0e771fe78211"
@@ -9792,6 +9806,13 @@ map-cache@^0.2.2:
   version "0.2.2"
   resolved "https://registry.npm.taobao.org/map-cache/download/map-cache-0.2.2.tgz#c32abd0bd6525d9b051645bb4f26ac5dc98a0dbf"
   integrity sha1-wyq9C9ZSXZsFFkW7TyasXcmKDb8=
+
+map-o@^2.0.1:
+  version "2.0.10"
+  resolved "https://registry.npm.taobao.org/map-o/download/map-o-2.0.10.tgz#b656a75cead939a936c338fb5df8c9d55f0dbb23"
+  integrity sha1-tlanXOrZOak2wzj7XfjJ1V8NuyM=
+  dependencies:
+    iterate-object "^1.3.0"
 
 map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"

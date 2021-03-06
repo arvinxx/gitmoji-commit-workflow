@@ -1,5 +1,6 @@
 import { join } from 'path';
 import { existsSync, writeFileSync } from 'fs';
+import toEmoji from 'emoji-name-map';
 
 const filePath = join(__dirname, 'gitmojis.json');
 
@@ -30,5 +31,5 @@ const { gitmojis } = require(filePath);
 export const gitmojiCodes: string[] = gitmojis.map((gitmoji) => gitmoji.code);
 
 export const gitmojiUnicode: string[] = gitmojis.map((gitmoji) =>
-  gitmoji.entity.replace('&#', '').replace(';', '').replace('x', ''),
+  toEmoji.get(gitmoji.code),
 );

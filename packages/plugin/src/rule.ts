@@ -1,6 +1,5 @@
 import type { Rule } from '@commitlint/types';
 import { gitmojiCodes, gitmojiUnicode } from './gitmojiCode';
-import emojiUnicode from 'emoji-unicode';
 
 const emoji: Rule = (parsed) => {
   const { raw } = parsed;
@@ -26,9 +25,7 @@ const emoji: Rule = (parsed) => {
   } else if (unicodeResult) {
     const unicode = unicodeResult[1];
 
-    const hasRaw = gitmojiUnicode.includes(emojiUnicode.raw(unicode));
-    const hasHex = gitmojiUnicode.includes(emojiUnicode(unicode));
-    pass = hasHex || hasRaw;
+    pass = gitmojiUnicode.includes(unicode);
 
     if (!pass) {
       errorMsg = `${unicode} is not in the correct gitmoji list, please check the emoji code on https://gitmoji.dev/.`;
