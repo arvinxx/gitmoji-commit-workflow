@@ -1,8 +1,11 @@
 import type { Options as SemRelOptions, PluginSpec } from 'semantic-release';
 
 import type { Options } from './type';
-import commitAnalyzer from './commitAnalyzer';
-import git from './git';
+import commitAnalyzer from './plugins/commitAnalyzer';
+import git from './plugins/git';
+import npm from './plugins/npm';
+
+export type { ReleaseRule, Options } from './type';
 
 export const createConfig = (options?: Options): SemRelOptions => {
   const opts = {
@@ -31,7 +34,7 @@ export const createConfig = (options?: Options): SemRelOptions => {
       },
     ],
     /* 自动更新版本号 如果没有 private ,会作为 npm 模块进行发布 */
-    opts.enableNPM ? '@semantic-release/npm' : '',
+    opts.enableNPM ? npm(options) : '',
     /* 将生成结果发布到 Github */
     opts.enableGithub ? '@semantic-release/github' : '',
     /* 推送代码回到 Git */

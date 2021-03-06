@@ -1,4 +1,4 @@
-import type { ReleaseRule } from './type';
+import type { ReleaseRule } from '../type';
 import type { PluginSpec } from 'semantic-release';
 
 /**

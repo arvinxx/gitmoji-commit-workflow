@@ -6,7 +6,7 @@ export interface ReleaseRule {
   release: Release['type'];
 }
 
-export interface Options extends GitPluginOpts {
+export interface Options extends GitPluginOpts, NPMPluginOpts {
   releaseRules?: ReleaseRule[];
   changelogTitle?: string;
   changelogFile?: string;
@@ -34,4 +34,19 @@ export interface GitPluginOpts {
    * @default ['CHANGELOG.md', 'package.json']
    */
   assets?: string[] | false;
+}
+
+export interface NPMPluginOpts {
+  /**
+   *  Whether to publish the `npm` package to the registry. If `false` the `package.json` version will still be updated.
+   *  `false` if the `package.json` [private](https://docs.npmjs.com/files/package.json#private) property is `true`,
+   *  `true` otherwise
+   */
+  npmPublish?: boolean;
+  /**
+   *Directory path to publish.
+   * default: `.`
+   */
+  pkgRoot?: string;
+  tarballDir?: string | false;
 }
