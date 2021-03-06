@@ -10,14 +10,14 @@ describe('gitmojiCodes work well', () => {
 
     const gitmojiCodes = await import('../src/gitmojiCode');
 
-    expect(gitmojiCodes.default).toBeInstanceOf(Array);
+    expect(gitmojiCodes.gitmojiCodes).toBeInstanceOf(Array);
   });
 
   it('will download gitmoji json and write to file without gitmoji json', async () => {
     // 如果存在 gitmoji 直接删除
     if (existsSync(targetPath)) unlinkSync(targetPath);
     const gitmojiCodes = await import('../src/gitmojiCode');
-    expect(gitmojiCodes.default).toBeInstanceOf(Array);
+    expect(gitmojiCodes.gitmojiCodes).toBeInstanceOf(Array);
   });
 });
 
@@ -36,7 +36,7 @@ describe('gitmojiCodes throw Error', () => {
     if (existsSync(targetPath)) unlinkSync(targetPath);
     try {
       const gitmojiCodes = await import('../src/gitmojiCode');
-      expect(gitmojiCodes.default).toBeInstanceOf(Array);
+      expect(gitmojiCodes.gitmojiCodes).toBeInstanceOf(Array);
     } catch (e) {
       expect(e).toEqual(
         Error(

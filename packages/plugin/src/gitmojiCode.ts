@@ -1,5 +1,6 @@
 import { join } from 'path';
 import { existsSync, writeFileSync } from 'fs';
+import toEmoji from 'emoji-name-map';
 
 const filePath = join(__dirname, 'gitmojis.json');
 
@@ -27,6 +28,8 @@ if (!existsSync(filePath)) {
 }
 // eslint-disable-next-line import/no-dynamic-require
 const { gitmojis } = require(filePath);
-const gitmojiCodes: string[] = gitmojis.map((gitmoji) => gitmoji.code);
+export const gitmojiCodes: string[] = gitmojis.map((gitmoji) => gitmoji.code);
 
-export default gitmojiCodes;
+export const gitmojiUnicode: string[] = gitmojis.map((gitmoji) =>
+  toEmoji.get(gitmoji.code),
+);

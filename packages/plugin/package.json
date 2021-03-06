@@ -36,5 +36,8 @@
   "license": "MIT",
   "peerDependencies": {
     "commitlint": "^11.0.0"
+  },
+  "dependencies": {
+    "emoji-name-map": "^1.2.9"
   }
 }
