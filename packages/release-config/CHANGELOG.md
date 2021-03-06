@@ -1,5 +1,12 @@
 # Changelog
 
+# semantic-release-config-gitmoji [1.1.0-beta.2](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.1.0-beta.1...semantic-release-config-gitmoji@1.1.0-beta.2) (2021-03-06)
+
+
+### ✨ Features
+
+* add npm config ([3d4c5d5](https://github.com/arvinxx/gitmoji-commit-workflow/commit/3d4c5d5))
+
 # semantic-release-config-gitmoji [1.1.0-beta.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.0.1...semantic-release-config-gitmoji@1.1.0-beta.1) (2021-03-06)
 
 
