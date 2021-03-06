@@ -2,7 +2,7 @@ const base = require('../../jest.config.base');
 
 const packageName = 'commitlint-plugin-gitmoji';
 
-const root = '<rootDir>/packages/plugin';
+const root = '<rootDir>/packages/commitlint-plugin';
 
 module.exports = {
   ...base,
