@@ -8,11 +8,11 @@ this package is used in both [conventional-changelog-gitmoji-config](../changelo
 
 ## Sources
 
-Header regex pattern test here : [Regex101](https://regex101.com/r/YxXWi5/10)
+Header regex pattern test here : [Regex101](https://regex101.com/r/YxXWi5/11)
 
 ```js
 module.exports = {
-  headerPattern: /^(?::\w*:\s)?(?<type>\w*)(?:\((?<scope>.*)\))?!?:\s(?<subject>(?:(?!#).)*(?:(?!\s).))\s?(?<ticket>#\d*)?$/,
+  headerPattern: /^(?::\w*:|(?:\ud83c[\udf00-\udfff])|(?:\ud83d[\udc00-\ude4f\ude80-\udeff])|[\u2600-\u2B55])\s(?<type>\w*)(?:\((?<scope>.*)\))?!?:\s(?<subject>(?:(?!#).)*(?:(?!\s).))\s?(?<ticket>#\d*)?$/,
   headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
 };
 ```
