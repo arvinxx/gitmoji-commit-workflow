@@ -5757,6 +5757,11 @@ emoji-regex@^9.0.0:
   resolved "https://registry.npm.taobao.org/emoji-regex/download/emoji-regex-9.2.0.tgz?cache=0&sync_timestamp=1603212288390&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Femoji-regex%2Fdownload%2Femoji-regex-9.2.0.tgz#a26da8e832b16a9753309f25e35e3c0efb9a066a"
   integrity sha1-om2o6DKxapdTMJ8l4148DvuaBmo=
 
+emoji-unicode@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/emoji-unicode/download/emoji-unicode-2.0.1.tgz#37b05f0cd20254fd366d1df4442b5c613a3a021a"
+  integrity sha1-N7BfDNICVP02bR30RCtcYTo6Aho=
+
 emojis-list@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/emojis-list/download/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"

@@ -21,8 +21,34 @@ describe('commit start with gitmoji code', () => {
     ]);
   });
 
-  it('should pass when return right commit message code', () => {
+  it('should failed if commit start with unrecognized gitmoji unicode', () => {
+    const value = emojiRule({ raw: '🤔 chore(scope): test' } as Commit, when);
+    expect(value).toEqual([
+      false,
+      'Your commit should start with gitmoji code,please check the emoji code on https://gitmoji.dev/.',
+    ]);
+  });
+
+  it('should failed if commit start with wrong gitmoji unicode', () => {
+    const value = emojiRule({ raw: '🌙 chore(scope): test' } as Commit, when);
+    expect(value).toEqual([
+      false,
+      '🌙 is not in the correct gitmoji list, please check the emoji code on https://gitmoji.dev/.',
+    ]);
+  });
+
+  it('should pass when return correct commit message code', () => {
     const value = emojiRule({ raw: ':tada: test' } as Commit, when);
+    expect(value).toEqual([true, 'passed']);
+  });
+
+  it('should pass when with correct gitmoji unicode', () => {
+    const value = emojiRule({ raw: '🎉 test' } as Commit, when);
+    expect(value).toEqual([true, 'passed']);
+  });
+
+  it('should pass when with correct test gitmoji unicode', () => {
+    const value = emojiRule({ raw: '✅ test' } as Commit, when);
     expect(value).toEqual([true, 'passed']);
   });
 });
