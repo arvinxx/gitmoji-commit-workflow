@@ -2,6 +2,7 @@ import type { Options as SemRelOptions, PluginSpec } from 'semantic-release';
 
 import type { Options } from './type';
 import commitAnalyzer from './commitAnalyzer';
+import git from './git';
 
 export const createConfig = (options?: Options): SemRelOptions => {
   const opts = {
@@ -34,20 +35,7 @@ export const createConfig = (options?: Options): SemRelOptions => {
     /* 将生成结果发布到 Github */
     opts.enableGithub ? '@semantic-release/github' : '',
     /* 推送代码回到 Git */
-    [
-      '@semantic-release/git',
-      {
-        assets: [
-          // 这里的 assets 配置的是要重新 push 回去的东西
-          // 如果不列的话会将全部内容都合并到 release 中
-          'CHANGELOG.md',
-          'package.json',
-        ],
-        message:
-          // eslint-disable-next-line no-template-curly-in-string
-          ':bookmark: chore(release): ${nextRelease.gitTag} [skip ci] \n\n${nextRelease.notes}',
-      },
-    ],
+    git(options),
   ];
 
   return {
