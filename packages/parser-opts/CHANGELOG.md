@@ -1,5 +1,12 @@
 # 更新日志
 
+# @gitmoji/parser-opts [1.3.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.2.6...@gitmoji/parser-opts@1.3.0) (2021-03-06)
+
+
+### ✨ Features
+
+* support unicode parsing ([0d5eece](https://github.com/arvinxx/gitmoji-commit-workflow/commit/0d5eece)), closes [#13](https://github.com/arvinxx/gitmoji-commit-workflow/issues/13)
+
 ## @gitmoji/parser-opts [1.2.6](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.2.5...@gitmoji/parser-opts@1.2.6) (2021-02-26)
 
 
