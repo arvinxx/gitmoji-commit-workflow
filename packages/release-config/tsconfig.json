@@ -8,6 +8,7 @@
     "moduleResolution": "Node",
     "lib": ["ES2020"],
     "esModuleInterop": true,
+    "declaration": true,
     "baseUrl": "../..",
     "paths": {
       "@gitmoji/commit-types": ["./packages/commit-type/src"],
