@@ -1,7 +1,12 @@
+const {
+  default: umiConfig,
+} = require('@umijs/test/lib/createDefaultConfig/createDefaultConfig');
+
 const path = require('path');
+const defaultConfig = umiConfig(process.cwd(), {});
 
 module.exports = {
-  preset: 'ts-jest',
+  ...defaultConfig,
   testEnvironment: 'node',
   verbose: true,
   moduleNameMapper: {
