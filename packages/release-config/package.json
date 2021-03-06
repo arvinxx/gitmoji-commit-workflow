@@ -1,6 +1,6 @@
 {
-  "name": "semantic-release-config-gitmoji-module",
-  "version": "1.1.2",
+  "name": "semantic-release-config-gitmoji",
+  "version": "1.0.0",
   "description": "a gitmoji commit style presets for semantic-release",
   "main": "lib/index.js",
   "files": [
@@ -22,7 +22,8 @@
     "gitmoji",
     "preset",
     "changelog",
-    "emoji"
+    "emoji",
+    "semantic-release"
   ],
   "author": "Arvin Xu <arvinx@foxmail.com>",
   "license": "MIT",
@@ -33,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/arvinxx/gitmoji-commit-workflow/issues"
   },
-  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/release-module#readme",
+  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/release-config#readme",
   "dependencies": {
     "conventional-changelog-gitmoji-config": "1.4.2",
     "@semantic-release/changelog": "^5.0.1",

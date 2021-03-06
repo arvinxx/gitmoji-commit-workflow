@@ -41,11 +41,11 @@ Refer to this repository to get a [template](https://github.com/arvinxx/gitmoji-
 
 Here are some packages for gitmoji commit workflow
 
-| Packages                                                          | Status                                                     | Description                                                                              |
-| ----------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| [commitlint-config-gitmoji](packages/commitlint-config)           | [![NPM version][config-image]][config-url]                 | a shareable commitlint configuration to enforcing gitmoji commit                         |
-| [conventional-changelog-gitmoji-config](./packages/changelog)     | [![NPM version][changelog-image]][changelog-url]           | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
-| [semantic-release-config-gitmoji-module](packages/release-config) | [![NPM version][release-module-image]][release-module-url] | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
+| Packages                                                      | Status                                                     | Description                                                                              |
+| ------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [commitlint-config-gitmoji](packages/commitlint-config)       | [![NPM version][config-image]][config-url]                 | a shareable commitlint configuration to enforcing gitmoji commit                         |
+| [conventional-changelog-gitmoji-config](./packages/changelog) | [![NPM version][changelog-image]][changelog-url]           | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
+| [semantic-release-config-gitmoji](packages/release-config)    | [![NPM version][release-module-image]][release-module-url] | a shareable conventional-changelog configuration to generate changelog of gitmoji commit |
 
 [config-image]: http://img.shields.io/npm/v/commitlint-config-gitmoji.svg?style=flat-square&color=deepgreen&label=latest
 [config-url]: http://npmjs.org/package/commitlint-config-gitmoji
