@@ -10,7 +10,7 @@ const git = (options: GitPluginOpts = {}): PluginSpec => {
     '@semantic-release/git',
     {
       assets:
-        typeof options.assets === 'boolean'
+        typeof options.gitAssets === 'boolean'
           ? false
           : [
               // 这里的 assets 配置的是要重新 push 回去的东西
@@ -18,7 +18,7 @@ const git = (options: GitPluginOpts = {}): PluginSpec => {
               'CHANGELOG.md',
               'package.json',
             ]
-              .concat(options.assets)
+              .concat(options.gitAssets)
               .filter((a) => a),
       message: options.message
         ? options.message

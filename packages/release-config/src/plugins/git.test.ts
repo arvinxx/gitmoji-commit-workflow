@@ -14,7 +14,7 @@ describe('git', () => {
   });
 
   it('add new assets rules', () => {
-    expect(git({ assets: ['file.json'] })).toEqual([
+    expect(git({ gitAssets: ['file.json'] })).toEqual([
       '@semantic-release/git',
       {
         assets: ['CHANGELOG.md', 'package.json', 'file.json'],

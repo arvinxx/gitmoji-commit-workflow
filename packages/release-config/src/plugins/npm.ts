@@ -10,8 +10,8 @@ const npm = (options?: NPMPluginOpts): PluginSpec => {
       typeof options.tarballDir === 'undefined')
   )
     return '@semantic-release/npm';
-  const { npmPublish, pkgRoot, tarballDir } = options;
-  return ['@semantic-release/npm', { npmPublish, pkgRoot, tarballDir }];
+
+  return ['@semantic-release/npm', options];
 };
 
 export default npm;
