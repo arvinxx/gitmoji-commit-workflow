@@ -1,5 +1,12 @@
 # Changelog
 
+## semantic-release-config-gitmoji [1.2.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.2.0...semantic-release-config-gitmoji@1.2.1) (2021-03-07)
+
+
+### 🐛 Bug Fixes
+
+* 修正找不到 createConfig 模块的错误 ([bf451ca](https://github.com/arvinxx/gitmoji-commit-workflow/commit/bf451ca))
+
 # semantic-release-config-gitmoji [1.2.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.1.0...semantic-release-config-gitmoji@1.2.0) (2021-03-07)
 
 
