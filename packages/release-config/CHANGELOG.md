@@ -1,5 +1,12 @@
 # Changelog
 
+# semantic-release-config-gitmoji [1.2.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.1.0...semantic-release-config-gitmoji@1.2.0) (2021-03-07)
+
+
+### ✨ Features
+
+* add github config ([3d540ca](https://github.com/arvinxx/gitmoji-commit-workflow/commit/3d540ca))
+
 # semantic-release-config-gitmoji [1.1.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.0.1...semantic-release-config-gitmoji@1.1.0) (2021-03-06)
 
 
