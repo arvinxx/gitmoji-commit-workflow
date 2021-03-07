@@ -1,5 +1,5 @@
 import defaultConfig from '../src';
-import { createConfig } from '../src/createConfig';
+import createConfig from '../src/createConfig';
 
 describe('Release Config', () => {
   it('get default config', () => {

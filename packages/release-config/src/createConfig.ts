@@ -8,7 +8,7 @@ import npm from './plugins/npm';
 
 export type { ReleaseRule, Options } from './type';
 
-export const createConfig = (options?: Options): SemRelOptions => {
+const createConfig = (options?: Options): SemRelOptions => {
   const opts = {
     changelogTitle: '# Changelog',
     changelogFile: 'CHANGELOG.md',
@@ -76,3 +76,5 @@ export const createConfig = (options?: Options): SemRelOptions => {
     plugins: plugins.filter((p) => !!p),
   };
 };
+
+export default createConfig;
