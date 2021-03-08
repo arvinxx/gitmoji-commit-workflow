@@ -5413,27 +5413,6 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
-bash-glob@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npm.taobao.org/bash-glob/download/bash-glob-2.0.0.tgz#a8ef19450783403ed93fccca2dbe09f2cf6320dc"
-  integrity sha1-qO8ZRQeDQD7ZP8zKLb4J8s9jINw=
-  dependencies:
-    bash-path "^1.0.1"
-    component-emitter "^1.2.1"
-    cross-spawn "^5.1.0"
-    each-parallel-async "^1.0.0"
-    extend-shallow "^2.0.1"
-    is-extglob "^2.1.1"
-    is-glob "^4.0.0"
-
-bash-path@^1.0.1:
-  version "1.0.3"
-  resolved "https://registry.npm.taobao.org/bash-path/download/bash-path-1.0.3.tgz#dbc9efbdf18b1c11413dcb59b960e6aa56c84258"
-  integrity sha1-28nvvfGLHBFBPctZuWDmqlbIQlg=
-  dependencies:
-    arr-union "^3.1.0"
-    is-windows "^1.0.1"
-
 bcrypt-pbkdf@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/bcrypt-pbkdf/download/bcrypt-pbkdf-1.0.2.tgz#a4301d389b6a43f9b67ff3ca11a3f6637e360e9e"
@@ -6654,7 +6633,7 @@ cross-spawn@7.0.3, cross-spawn@^7.0.0, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-cross-spawn@^5.0.1, cross-spawn@^5.1.0:
+cross-spawn@^5.0.1:
   version "5.1.0"
   resolved "https://registry.npm.taobao.org/cross-spawn/download/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
   integrity sha1-6L0O/uWPz/b4+UUQoKVUu/ojVEk=
@@ -7318,11 +7297,6 @@ duplexify@^3.4.2, duplexify@^3.5.0, duplexify@^3.6.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
-
-each-parallel-async@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/each-parallel-async/download/each-parallel-async-1.0.0.tgz#91783e190000c7dd588336b2d468ebaf71980f7b"
-  integrity sha1-kXg+GQAAx91Ygzay1Gjrr3GYD3s=
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
@@ -8899,7 +8873,7 @@ globals@^12.1.0:
   dependencies:
     type-fest "^0.8.1"
 
-globby@^11.0.0, globby@^11.0.1, globby@^11.0.2:
+globby@11.0.2, globby@^11.0.0, globby@^11.0.1, globby@^11.0.2:
   version "11.0.2"
   resolved "https://registry.npm.taobao.org/globby/download/globby-11.0.2.tgz#1af538b766a3b540ebfb58a32b2e2d5897321d83"
   integrity sha1-GvU4t2ajtUDr+1ijKy4tWJcyHYM=
@@ -11956,12 +11930,12 @@ lodash@4.17.19:
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.19.tgz?cache=0&sync_timestamp=1597336125847&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash%2Fdownload%2Flodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha1-5I3e2+MLMyF4PFtDAfvTU7weSks=
 
-lodash@4.17.20, lodash@4.x, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.4:
+lodash@4.17.20:
   version "4.17.20"
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.20.tgz?cache=0&sync_timestamp=1597336125847&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash%2Fdownload%2Flodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha1-tEqbYpe8tpjxxRo1RaKzs2jVnFI=
 
-lodash@^4.15.0:
+lodash@4.x, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.4:
   version "4.17.21"
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.21.tgz?cache=0&sync_timestamp=1613835817439&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash%2Fdownload%2Flodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
@@ -12625,11 +12599,10 @@ ms@^2.0.0, ms@^2.1.1:
   integrity sha1-V0yBOM4dK1hh8LRFedut1gxmFbI=
 
 multi-semantic-release@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.npm.taobao.org/multi-semantic-release/download/multi-semantic-release-2.6.0.tgz#b0e6989b251b66d88e4a300357df68cebcc19612"
-  integrity sha1-sOaYmyUbZtiOSjADV99ozrzBlhI=
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/multi-semantic-release/-/multi-semantic-release-2.7.0.tgz#8149d7bacd42374868c3bb3028862effc99f0f10"
+  integrity sha512-v3cFJzonhXBZiQ46F7olafKUjUHIRV5iUk4RYYTFz76nPhpVH7cm/74Wjf3SNlGvVFNuaqA+0EKg63Jp+0kn4Q==
   dependencies:
-    bash-glob "^2.0.0"
     blork "^9.2.2"
     cosmiconfig "^7.0.0"
     debug "^4.3.1"
@@ -12638,6 +12611,7 @@ multi-semantic-release@^2.6.0:
     execa "^4.1.0"
     get-stream "^6.0.0"
     git-log-parser "^1.2.0"
+    globby "11.0.2"
     lodash "^4.17.20"
     meow "^8.0.0"
     promise-events "^0.2.1"
