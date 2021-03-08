@@ -4276,9 +4276,9 @@
     "@types/node" "*"
 
 "@types/sinon@^9.0.10":
-  version "9.0.10"
-  resolved "https://registry.npm.taobao.org/@types/sinon/download/@types/sinon-9.0.10.tgz?cache=0&sync_timestamp=1608753358090&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fsinon%2Fdownload%2F%40types%2Fsinon-9.0.10.tgz#7fb9bcb6794262482859cab66d59132fca18fcf7"
-  integrity sha1-f7m8tnlCYkgoWcq2bVkTL8oY/Pc=
+  version "9.0.11"
+  resolved "https://registry.yarnpkg.com/@types/sinon/-/sinon-9.0.11.tgz#7af202dda5253a847b511c929d8b6dda170562eb"
+  integrity sha512-PwP4UY33SeeVKodNE37ZlOsR9cReypbMJOhZ7BVE0lB+Hix3efCOxiJWiE5Ia+yL9Cn2Ch72EjFTRze8RZsNtg==
   dependencies:
     "@types/sinonjs__fake-timers" "*"
 
