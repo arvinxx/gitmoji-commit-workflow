@@ -1,3 +1,3 @@
 module.exports = {
-  extends: require('../../lib').default,
+  extends: require('../../lib'),
 };
