@@ -1,8 +1,14 @@
-# semantic-release-defaultConfig-gitmoji
+# semantic-release-config-gitmoji
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
 shareable [semantic-release][semantic-release] configuration for gitmoji commit style
+
+## How to use
+
+```js
+
+```
 
 ## License
 
