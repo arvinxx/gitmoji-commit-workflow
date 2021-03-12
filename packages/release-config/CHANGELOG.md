@@ -1,5 +1,12 @@
 # Changelog
 
+## semantic-release-config-gitmoji [1.2.2](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.2.1...semantic-release-config-gitmoji@1.2.2) (2021-03-12)
+
+
+### 🐛 Bug Fixes
+
+* fix can't find createConfig ([8a01bff](https://github.com/arvinxx/gitmoji-commit-workflow/commit/8a01bff))
+
 ## semantic-release-config-gitmoji [1.2.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.2.0...semantic-release-config-gitmoji@1.2.1) (2021-03-07)
 
 
