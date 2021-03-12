@@ -1,4 +1,4 @@
-const { createConfig } = require('../../lib');
+const { createConfig } = require('../../lib/createConfig');
 
 const config = createConfig({ enableNPM: false });
 
