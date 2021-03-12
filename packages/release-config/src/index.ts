@@ -1,7 +1,9 @@
 import type { Options } from 'semantic-release';
 
-import createConfig from './createConfig';
+import _createConfig from './createConfig';
 
-const defaultConfig: Options = createConfig();
+const defaultConfig: Options = _createConfig();
+
+export const createConfig = _createConfig;
 
 export default defaultConfig;
