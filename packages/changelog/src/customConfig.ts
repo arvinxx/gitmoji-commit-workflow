@@ -30,6 +30,6 @@ export interface CustomConfig {
 
 const explorer = cosmiconfigSync('changelog');
 
-const { config } = explorer.search();
+const { config } = explorer.search() || { config: {} };
 
 export default config;
