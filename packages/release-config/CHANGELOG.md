@@ -1,5 +1,12 @@
 # Changelog
 
+## semantic-release-config-gitmoji [1.2.3](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.2.2...semantic-release-config-gitmoji@1.2.3) (2021-03-12)
+
+
+### 🐛 Bug Fixes
+
+* fix can't find default ([427298d](https://github.com/arvinxx/gitmoji-commit-workflow/commit/427298d))
+
 ## semantic-release-config-gitmoji [1.2.2](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.2.1...semantic-release-config-gitmoji@1.2.2) (2021-03-12)
 
 
