@@ -7,6 +7,7 @@ const filePath = join(__dirname, 'gitmojis.json');
 // Download gitmojis.json if it doesn't exist yet
 if (!existsSync(filePath)) {
   const url =
+    process.env.GITMOJI_PATH ||
     'https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json';
   try {
     // eslint-disable-next-line global-require
