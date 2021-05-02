@@ -1,8 +1,12 @@
 import { join } from 'path';
 import { existsSync, writeFileSync } from 'fs';
+import { config } from 'dotenv';
+
 import toEmoji from 'emoji-name-map';
 
 const filePath = join(__dirname, 'gitmojis.json');
+
+config();
 
 // Download gitmojis.json if it doesn't exist yet
 if (!existsSync(filePath)) {
