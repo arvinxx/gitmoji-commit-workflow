@@ -1,5 +1,12 @@
 # Changelog
 
+# commitlint-plugin-gitmoji [2.2.0-beta.2](https://github.com/arvinxx/commitlint-config-gitmoji/compare/commitlint-plugin-gitmoji@2.2.0-beta.1...commitlint-plugin-gitmoji@2.2.0-beta.2) (2021-05-02)
+
+
+### ✨ Features
+
+* support GITMOJI_PATH env ([8a81839](https://github.com/arvinxx/commitlint-config-gitmoji/commit/8a81839))
+
 # commitlint-plugin-gitmoji [2.2.0-beta.1](https://github.com/arvinxx/commitlint-config-gitmoji/compare/commitlint-plugin-gitmoji@2.1.0...commitlint-plugin-gitmoji@2.2.0-beta.1) (2021-05-02)
 
 ### ✨ Features
