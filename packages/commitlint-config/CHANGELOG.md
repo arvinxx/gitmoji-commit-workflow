@@ -1,5 +1,12 @@
 # Changelog
 
+## commitlint-config-gitmoji [2.2.5-beta.2](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.5-beta.1...commitlint-config-gitmoji@2.2.5-beta.2) (2021-05-02)
+
+
+### 🐛 Bug Fixes
+
+* fix dependency error ([def947f](https://github.com/arvinxx/gitmoji-commit-workflow/commit/def947f))
+
 ## commitlint-config-gitmoji [2.2.5-beta.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.4...commitlint-config-gitmoji@2.2.5-beta.1) (2021-05-02)
 
 
