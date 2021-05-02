@@ -23,7 +23,7 @@ if (!existsSync(filePath)) {
   } catch (e) {
     /* istanbul ignore next */
     throw Error(
-      'Failed to fetch gitmoji JSON, please refer to https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/plugin#fetch-error for help.',
+      'Failed to fetch gitmoji JSON, please refer to https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/commitlint-plugin#fetch-error for help.',
     );
   }
 }
