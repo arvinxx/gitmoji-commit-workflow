@@ -19,6 +19,11 @@ describe('gitmojiCodes work well', () => {
     const gitmojiCodes = await import('../src/gitmojiCode');
     expect(gitmojiCodes.gitmojiCodes).toBeInstanceOf(Array);
   });
+
+  it('use local file path', async () => {
+    const { localPath } = await import('../src/gitmojiCode');
+    expect(localPath).toEqual(join(__dirname, 'gitmojis-for-test.json'));
+  });
 });
 
 describe('gitmojiCodes throw Error', () => {
