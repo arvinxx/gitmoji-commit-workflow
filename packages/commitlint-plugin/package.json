@@ -1,6 +1,6 @@
 {
   "name": "commitlint-plugin-gitmoji",
-  "version": "2.1.1",
+  "version": "2.2.0-beta.3",
   "description": "shareable commitlint plugin enforcing gitmoji commit rules",
   "main": "lib/index.js",
   "files": [
@@ -38,6 +38,7 @@
     "commitlint": "^11.0.0"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "emoji-name-map": "^1.2.9"
   }
 }

@@ -5106,6 +5106,14 @@ commander@^6.2.0:
   resolved "https://registry.npm.taobao.org/commander/download/commander-6.2.1.tgz?cache=0&sync_timestamp=1610702173050&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha1-B5LraC37wyWZm7K4T93duhEKxzw=
 
+commitlint-plugin-gitmoji@2.2.4-beta.2:
+  version "2.2.0-beta.2"
+  resolved "https://registry.yarnpkg.com/commitlint-plugin-gitmoji/-/commitlint-plugin-gitmoji-2.2.0-beta.2.tgz#55bb79fc420de0a83c88a2fc78f3ce3778dd1483"
+  integrity sha512-qn5loM3boDOKsbnzf+qaNndPzKEthJUCip8Nv4DXerUNSLX4CB5XKBMAkC6mrR9n3bNOe1+UOvmttHUfHSr3Ww==
+  dependencies:
+    dotenv "^8.2.0"
+    emoji-name-map "^1.2.9"
+
 commitlint@^11.0.0:
   version "11.0.0"
   resolved "https://registry.npm.taobao.org/commitlint/download/commitlint-11.0.0.tgz#a60f759b938c97c5d601c881cfe71b1d4051d219"
@@ -6000,6 +6008,11 @@ dotenv@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npm.taobao.org/dotenv/download/dotenv-5.0.1.tgz#a5317459bd3d79ab88cff6e44057a6a3fbb1fcef"
   integrity sha1-pTF0Wb09eauIz/bkQFemo/ux/O8=
+
+dotenv@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
 
 duplexer2@0.0.2:
   version "0.0.2"

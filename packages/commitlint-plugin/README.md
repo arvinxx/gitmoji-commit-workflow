@@ -4,6 +4,8 @@
 
 a commitlint plugin to add gitmoji check rule
 
+## Custom Gitmoji JSON path or URL
+
 ## Fetch Error
 
 if you meet the below error. It means that you failed to fetch the `gitmojis.json` file.

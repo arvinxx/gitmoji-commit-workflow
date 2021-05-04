@@ -19,6 +19,11 @@ describe('gitmojiCodes work well', () => {
     const gitmojiCodes = await import('../src/gitmojiCode');
     expect(gitmojiCodes.gitmojiCodes).toBeInstanceOf(Array);
   });
+
+  it('use local file path', async () => {
+    const { localPath } = await import('../src/gitmojiCode');
+    expect(localPath).toEqual(join(__dirname, 'gitmojis-for-test.json'));
+  });
 });
 
 describe('gitmojiCodes throw Error', () => {
@@ -40,7 +45,7 @@ describe('gitmojiCodes throw Error', () => {
     } catch (e) {
       expect(e).toEqual(
         Error(
-          'Failed to fetch gitmoji JSON, please refer to https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/plugin#fetch-error for help.',
+          'Failed to fetch gitmoji JSON, please refer to https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/commitlint-plugin#fetch-error for help.',
         ),
       );
     }
