@@ -4,7 +4,7 @@ import { config } from 'dotenv';
 
 import toEmoji from 'emoji-name-map';
 
-const isTest = process.env.NODE_ENV === 'test';
+const isTest = process.env.IS_TEST === '1';
 config(isTest ? { path: join(__dirname, '../test', './test.env') } : {});
 
 // if there is GITMOJI_PATH env, use as local file path

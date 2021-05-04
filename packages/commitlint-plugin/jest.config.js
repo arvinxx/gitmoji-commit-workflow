@@ -8,7 +8,7 @@ module.exports = {
   ...base,
   rootDir: '../..',
   roots: [root],
-  setupFiles: [...base.setupFiles],
   name: packageName,
   displayName: packageName,
+  collectCoverageFrom: [`${root}/src/**/*.ts`],
 };

@@ -1,5 +1,6 @@
 import { existsSync, unlinkSync, copyFileSync } from 'fs';
 import { join } from 'path';
+import mockedEnv from 'mocked-env';
 
 const targetPath = join(__dirname, '../src', 'gitmojis.json');
 const testFilePath = join(__dirname, 'gitmojis-for-test.json');
@@ -19,8 +20,22 @@ describe('gitmojiCodes work well', () => {
     const gitmojiCodes = await import('../src/gitmojiCode');
     expect(gitmojiCodes.gitmojiCodes).toBeInstanceOf(Array);
   });
+});
 
-  it('use local file path', async () => {
+describe('local file', () => {
+  let restore; // to restore old values
+  beforeEach(() => {
+    restore = mockedEnv({
+      IS_TEST: '1',
+    });
+  });
+
+  afterEach(() => {
+    restore();
+  });
+
+  xit('use local file path', async () => {
+    console.log(process.env.TEST_ENV);
     const { localPath } = await import('../src/gitmojiCode');
     expect(localPath).toEqual(join(__dirname, 'gitmojis-for-test.json'));
   });
