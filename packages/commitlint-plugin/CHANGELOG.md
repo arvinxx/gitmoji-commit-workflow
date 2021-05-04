@@ -1,5 +1,14 @@
 # Changelog
 
+# commitlint-plugin-gitmoji [2.2.0](https://github.com/arvinxx/commitlint-config-gitmoji/compare/commitlint-plugin-gitmoji@2.1.1...commitlint-plugin-gitmoji@2.2.0) (2021-05-04)
+
+
+### ✨ Features
+
+* support GITMOJI_PATH env ([8a81839](https://github.com/arvinxx/commitlint-config-gitmoji/commit/8a81839))
+* support GITMOJI_PATH env ([2d05da1](https://github.com/arvinxx/commitlint-config-gitmoji/commit/2d05da1)), closes [#40](https://github.com/arvinxx/commitlint-config-gitmoji/issues/40)
+* support local gitmoji path ([6b75a95](https://github.com/arvinxx/commitlint-config-gitmoji/commit/6b75a95))
+
 # commitlint-plugin-gitmoji [2.2.0-beta.3](https://github.com/arvinxx/commitlint-config-gitmoji/compare/commitlint-plugin-gitmoji@2.2.0-beta.2...commitlint-plugin-gitmoji@2.2.0-beta.3) (2021-05-04)
 
 
