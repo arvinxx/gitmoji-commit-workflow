@@ -3472,9 +3472,9 @@
     prettier "2.2.1"
 
 "@umijs/fabric@^2.5.6":
-  version "2.5.10"
-  resolved "https://registry.yarnpkg.com/@umijs/fabric/-/fabric-2.5.10.tgz#67297eb5b19a1ca230208cda2e8de35d1f35275d"
-  integrity sha512-vOMxNWi0R+mp+YXWrtOcy9AyVbEKpnrG5pDJpQMqjq9ENQ4atPnG+dZKb6N4BVMRBpPuhqKmhj1n2i9J/r5lXg==
+  version "2.5.12"
+  resolved "https://registry.yarnpkg.com/@umijs/fabric/-/fabric-2.5.12.tgz#a0a63d0b9ffd30d05179a9345953f6944c6d6114"
+  integrity sha512-IZh7wRK819M1M6Q4Dk+oMBIZolXXuwnZHfNPh+uiZmJLGV9kwejV6cy8yLEmmrLYxyTbS0Rg6VEC7Xp861yPzQ==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/eslint-parser" "^7.12.1"
