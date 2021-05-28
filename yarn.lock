@@ -6867,9 +6867,9 @@ fastq@^1.6.0:
     reusify "^1.0.4"
 
 father-build@^1.19.1:
-  version "1.19.4"
-  resolved "https://registry.yarnpkg.com/father-build/-/father-build-1.19.4.tgz#82d3d0cd584e0aa3eb56880c9820140cce1dac67"
-  integrity sha512-ub3sqUI6/LsZju0n+AL11VpPvhKZud5XjUpP/gZG4UOeYDPtI4TNWcuniBY9Rvg84OIEBh/WXfpe5p9FF00snA==
+  version "1.19.6"
+  resolved "https://registry.yarnpkg.com/father-build/-/father-build-1.19.6.tgz#d84b5f8d17e719ffab6b378e8100657fea22a9d3"
+  integrity sha512-InxKSw8hQi1BAiKUyK/bgDuY3O8CoRqN2k4u3Aa16sDrk05iCHwyLSk/aVN/MkuS4fEPPwECwgisVDhUpXxJvA==
   dependencies:
     "@babel/core" "7.12.3"
     "@babel/plugin-proposal-class-properties" "7.12.1"
@@ -6908,7 +6908,7 @@ father-build@^1.19.1:
     gulp-typescript "5.0.1"
     less "3.9.0"
     less-plugin-npm-import "2.1.0"
-    lodash "4.17.19"
+    lodash "4.17.21"
     rimraf "2.6.3"
     rollup "2.33.3"
     rollup-plugin-postcss "3.1.8"
@@ -10238,12 +10238,7 @@ lodash.zip@^4.2.0:
   resolved "https://registry.npm.taobao.org/lodash.zip/download/lodash.zip-4.2.0.tgz#ec6662e4896408ed4ab6c542a3990b72cc080020"
   integrity sha1-7GZi5IlkCO1KtsVCo5kLcswIACA=
 
-lodash@4.17.19:
-  version "4.17.19"
-  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.19.tgz?cache=0&sync_timestamp=1597336125847&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash%2Fdownload%2Flodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha1-5I3e2+MLMyF4PFtDAfvTU7weSks=
-
-lodash@4.x, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.4:
+lodash@4.17.21, lodash@4.x, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.4:
   version "4.17.21"
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.21.tgz?cache=0&sync_timestamp=1613835817439&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash%2Fdownload%2Flodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
