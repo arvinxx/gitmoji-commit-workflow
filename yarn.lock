@@ -10909,9 +10909,9 @@ ms@^2.0.0, ms@^2.1.1:
   integrity sha1-V0yBOM4dK1hh8LRFedut1gxmFbI=
 
 multi-semantic-release@^2.6.0:
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/multi-semantic-release/-/multi-semantic-release-2.8.0.tgz#77747881fc38036bcc41b2ac25e0b2bab896fa0a"
-  integrity sha512-383U01svsr9lrv/qt516bdg7AyPQVKfCtp6tnTOh1OHV/YDFGaM7I8ox2TpSx3jpOrCeDIeP+bs+8ANMwSFLFQ==
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/multi-semantic-release/-/multi-semantic-release-2.8.1.tgz#7418dd59842ab295b0af868078f0155a597993eb"
+  integrity sha512-o5346JJQjIgllveSZGKK4ELHZW5nz7yizHQBMwKpsD4XksbKasb5iwUp0zeJJ5KP/ty5GfK3PvZFQ0RgGDfYcQ==
   dependencies:
     "@manypkg/get-packages" "^1.1.1"
     blork "^9.2.2"
