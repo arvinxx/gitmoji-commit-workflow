@@ -3422,48 +3422,49 @@
     "@typescript-eslint/types" "4.14.0"
     eslint-visitor-keys "^2.0.0"
 
-"@umijs/babel-plugin-auto-css-modules@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-auto-css-modules/-/babel-plugin-auto-css-modules-3.4.20.tgz#4ab8cd0db65206ed4e923ab421cc476a97040382"
-  integrity sha512-kEjK7pnJtsTlzoHSZgmP+Hlx/6lUdYMdP9Lfu3haU9J6XTnMiibRFsy38uS+A1spl8/oD4RduUvPjGxCXM5W6Q==
+"@umijs/babel-plugin-auto-css-modules@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-auto-css-modules/-/babel-plugin-auto-css-modules-3.5.0.tgz#f6dda5cd77a79b46324743e913e9c79c08085450"
+  integrity sha512-P+4BnM6ADmgXbFbmQJtjNgoOedm4NLQ36t9EWCf1zLiNntkZl8kYVYN7UlDoM0y1SKa7S7wPzEknR2ICiyyDlw==
 
-"@umijs/babel-plugin-import-to-await-require@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-import-to-await-require/-/babel-plugin-import-to-await-require-3.4.20.tgz#afbe61e2c803629fbe51f2c7f4fd31474fb7f281"
-  integrity sha512-z4fQA0jOKF/6DLcNUIIGxK3JoSsUjG74MayErQmeosKO2Wq3IprKshrbnMlJHovKCSvOEaZia34yeR9Le7lNRQ==
+"@umijs/babel-plugin-import-to-await-require@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-import-to-await-require/-/babel-plugin-import-to-await-require-3.5.0.tgz#dc732650713c3129c292d91dc73a01ac3b426ae1"
+  integrity sha512-N82ABz4hFd2OVFqkKRopXDaqYJ4SCzoljd+xYhV6Zx6piDNjxrj5F46tONoNzVaxTtZIBEUtFqq9YWzqWUqpnA==
   dependencies:
-    "@umijs/utils" "3.4.20"
+    "@umijs/utils" "3.5.0"
 
-"@umijs/babel-plugin-lock-core-js-3@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-lock-core-js-3/-/babel-plugin-lock-core-js-3-3.4.20.tgz#3f7043b0c35c1af4938e91e04addf044e1cdb4ed"
-  integrity sha512-mJGMwuHb0Y54n6s99CuLYGW2FGrF8PnnB3ynOscC3keQvttmkXlZ/JhjCyM0hpTqo8doi6QhqgTtJ+Iszz3bCw==
+"@umijs/babel-plugin-lock-core-js-3@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-lock-core-js-3/-/babel-plugin-lock-core-js-3-3.5.0.tgz#d4b647761b632544cbe168dacd0fc587571df4a9"
+  integrity sha512-sVPhhUMzQZYMyJBIw10m7hCaSPWns/QBA8tqVf5Pd+CGayW1FKP9c9Ky7JFmXwfrcADgPgrbPnhuir4fv2W0pA==
   dependencies:
-    "@umijs/utils" "3.4.20"
+    "@umijs/utils" "3.5.0"
     core-js "3.6.5"
 
-"@umijs/babel-plugin-no-anonymous-default-export@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-no-anonymous-default-export/-/babel-plugin-no-anonymous-default-export-3.4.20.tgz#761d96edb1183c7381a15e247431336e050f0b14"
-  integrity sha512-CrN1TLiFydLgxLGVDahAWdzK0E4ujwiQBTBW5y2rnkkKH5f5G/FKZEjbG5H26VOnDH6uemE5i9su8cAzJ7Nw9A==
+"@umijs/babel-plugin-no-anonymous-default-export@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-no-anonymous-default-export/-/babel-plugin-no-anonymous-default-export-3.5.0.tgz#4eecc95424bb71190e2f51be8744218942627bac"
+  integrity sha512-pxk6VrZLu37FMuQ0t8Iu1MG7aIh4qOvxF0aMex+DcP6cK+zZWOUMoBfAg6bI610cD81PEv0FuoQZ+fLePu+QbA==
   dependencies:
-    "@umijs/utils" "3.4.20"
+    "@umijs/utils" "3.5.0"
 
-"@umijs/babel-preset-umi@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/babel-preset-umi/-/babel-preset-umi-3.4.20.tgz#227581faba1320127fc0acb4ef66b661b12ac443"
-  integrity sha512-YUwerpS4jhN1VUYDFQmWXxY8sINFNL9moJx4gLGn/ur6tiZRl/t2y+h/1gFniFkzTNJ0Km4H7QoR8X/POhTEcQ==
+"@umijs/babel-preset-umi@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-preset-umi/-/babel-preset-umi-3.5.0.tgz#cb58440f00f7a141fa6e03f485c6a4d1da28b3a6"
+  integrity sha512-rYIfAkBDhl2004puJRlovzX0xPAgFVViSfJtC1Ffuy48bBQuXGLw8QWcQPNnHJZAo8fs65haTNp+st+zwOFvNg==
   dependencies:
     "@babel/runtime" "7.12.5"
-    "@umijs/babel-plugin-auto-css-modules" "3.4.20"
-    "@umijs/babel-plugin-import-to-await-require" "3.4.20"
-    "@umijs/babel-plugin-lock-core-js-3" "3.4.20"
-    "@umijs/babel-plugin-no-anonymous-default-export" "3.4.20"
+    "@umijs/babel-plugin-auto-css-modules" "3.5.0"
+    "@umijs/babel-plugin-import-to-await-require" "3.5.0"
+    "@umijs/babel-plugin-lock-core-js-3" "3.5.0"
+    "@umijs/babel-plugin-no-anonymous-default-export" "3.5.0"
+    "@umijs/deps" "3.5.0"
 
-"@umijs/deps@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/deps/-/deps-3.4.20.tgz#2ddf72ed686dba8d4b64a1944ba5e69b8b69b135"
-  integrity sha512-eANA/O/4Bx5xjDhZ0DZAdWdpLNYJWV9S+udUgMvAs1FdxNK0EPY/+yg5VE8Lah57qukj8EYH6mtBoukO97+8Xg==
+"@umijs/deps@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@umijs/deps/-/deps-3.5.0.tgz#7b5344ea2118febd591a63bcc505f1d836ba27d7"
+  integrity sha512-IRHIwL3tCUMdnbz8i1I6rIPyljfnB5I2X74zEc9kIxlRVEnp8jvdxgxARJeYSJj/UM/gf2LN8raTMvCrQpvOrQ==
   dependencies:
     "@bloomberg/record-tuple-polyfill" "0.0.3"
     chokidar "3.5.1"
@@ -3515,13 +3516,13 @@
     typescript "^4.0.2"
 
 "@umijs/test@^3.3.9":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/test/-/test-3.4.20.tgz#e0de25ee0c8aa6543381375ed55003a529842d5d"
-  integrity sha512-SZ6p5liWzYowpvRFufPxMSQ6KKjOz27lNFqn4xq5H5SwsKxsxiNxmsu4OaQIprGs1jQ76XWCfq5vpkmy4D+Jtg==
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@umijs/test/-/test-3.5.0.tgz#a469350da8f0a91e2a3d8cdd3e5846b55814509b"
+  integrity sha512-GJGKQ9kIWwhwq8+YcMpF5AmK+FKGM5vwQL0rzETHVL+8MMGwHIfyG3cZIZDG2WnAxil4an2M6TWljjuyY2U9hg==
   dependencies:
     "@babel/core" "7.12.10"
-    "@umijs/babel-preset-umi" "3.4.20"
-    "@umijs/utils" "3.4.20"
+    "@umijs/babel-preset-umi" "3.5.0"
+    "@umijs/utils" "3.5.0"
     babel-core "7.0.0-bridge.0"
     babel-jest "^26.6.3"
     core-js "3.8.2"
@@ -3532,12 +3533,12 @@
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.5.0"
 
-"@umijs/utils@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/utils/-/utils-3.4.20.tgz#8ce2a283586edb30e0e9807d14e1e864bd403e3f"
-  integrity sha512-aWjmwd6EE0lzgJr3htHbzVeyh3o66wxtXnFjcAG5MC3rcMx6fv7UftrbpQJ5scgfKxv0nMu9g80XYLJBM6aI+g==
+"@umijs/utils@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@umijs/utils/-/utils-3.5.0.tgz#682ee054f49239e02d31e16faf7a04382a6cc68c"
+  integrity sha512-dHFtdAWRm1DyUJ5DtFRrb8lqqI6/gHefBEpEAJbkxEHBWFlseY6IEngeEszsrV3ykZOWaBqYivSaKfRw5ehxhQ==
   dependencies:
-    "@umijs/deps" "3.4.20"
+    "@umijs/deps" "3.5.0"
 
 JSONStream@^0.8.4:
   version "0.8.4"
