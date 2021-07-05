@@ -5691,10 +5691,10 @@ debug@3.1.0:
   dependencies:
     ms "2.0.0"
 
-debug@4, debug@4.3.1, debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.2.0, debug@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.npm.taobao.org/debug/download/debug-4.3.1.tgz?cache=0&sync_timestamp=1607566571506&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdebug%2Fdownload%2Fdebug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
-  integrity sha1-8NIpxQXgxtjEmsVT0bE9wYP2su4=
+debug@4, debug@4.3.2, debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.2.0, debug@^4.3.1:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
+  integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
   dependencies:
     ms "2.1.2"
 
@@ -10867,12 +10867,12 @@ mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@^0.5.5, mkdirp@~0.5.0, mkdirp@~0.5.1:
     minimist "^1.2.5"
 
 mocked-env@^1.3.4:
-  version "1.3.4"
-  resolved "https://registry.nlark.com/mocked-env/download/mocked-env-1.3.4.tgz#271cc15074a9b1db20330133a03766e41e528489"
-  integrity sha1-JxzBUHSpsdsgMwEzoDdm5B5ShIk=
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/mocked-env/-/mocked-env-1.3.5.tgz#244eabdc1ed92a8f6f55a2faedc408159eb193b3"
+  integrity sha512-GyYY6ynVOdEoRlaGpaq8UYwdWkvrsU2xRme9B+WPSuJcNjh17+3QIxSYU6zwee0SbehhV6f06VZ4ahjG+9zdrA==
   dependencies:
     check-more-types "2.24.0"
-    debug "4.3.1"
+    debug "4.3.2"
     lazy-ass "1.6.0"
     ramda "0.27.1"
 
