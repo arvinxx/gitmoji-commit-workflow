@@ -1514,6 +1514,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@hutson/parse-repository-url@^3.0.0":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@hutson/parse-repository-url/-/parse-repository-url-3.0.2.tgz#98c23c950a3d9b6c8f0daed06da6c3af06981340"
+  integrity sha512-H9XAx3hc0BQHY6l+IFSWHDySypcXsvsuLhgYLUGywmJ5pswRVQJUHpOsobnLYp2ZUaUlKiKDrgWWhosOwAEM8Q==
+
 "@iarna/cli@^1.2.0":
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/@iarna/cli/download/@iarna/cli-1.2.0.tgz#0f7af5e851afe895104583c4ca07377a8094d641"
@@ -5229,15 +5234,15 @@ conventional-changelog-angular@^5.0.0, conventional-changelog-angular@^5.0.11, c
     q "^1.5.1"
 
 conventional-changelog-core@^4.2.2:
-  version "4.2.2"
-  resolved "https://registry.npmjs.org/conventional-changelog-core/-/conventional-changelog-core-4.2.2.tgz#f0897df6d53b5d63dec36b9442bd45354f8b3ce5"
-  integrity sha512-7pDpRUiobQDNkwHyJG7k9f6maPo9tfPzkSWbRq97GGiZqisElhnvUZSvyQH20ogfOjntB5aadvv6NNcKL1sReg==
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-core/-/conventional-changelog-core-4.2.3.tgz#ce44d4bbba4032e3dc14c00fcd5b53fc00b66433"
+  integrity sha512-MwnZjIoMRL3jtPH5GywVNqetGILC7g6RQFvdb8LRU/fA/338JbeWAku3PZ8yQ+mtVRViiISqJlb0sOz0htBZig==
   dependencies:
     add-stream "^1.0.0"
-    conventional-changelog-writer "^4.0.18"
+    conventional-changelog-writer "^5.0.0"
     conventional-commits-parser "^3.2.0"
     dateformat "^3.0.0"
-    get-pkg-repo "^1.0.0"
+    get-pkg-repo "^4.0.0"
     git-raw-commits "^2.0.8"
     git-remote-origin-url "^2.0.0"
     git-semver-tags "^4.1.1"
@@ -5246,7 +5251,6 @@ conventional-changelog-core@^4.2.2:
     q "^1.5.1"
     read-pkg "^3.0.0"
     read-pkg-up "^3.0.0"
-    shelljs "^0.8.3"
     through2 "^4.0.0"
 
 conventional-changelog-preset-loader@^2.3.4:
@@ -5254,12 +5258,27 @@ conventional-changelog-preset-loader@^2.3.4:
   resolved "https://registry.yarnpkg.com/conventional-changelog-preset-loader/-/conventional-changelog-preset-loader-2.3.4.tgz#14a855abbffd59027fd602581f1f34d9862ea44c"
   integrity sha512-GEKRWkrSAZeTq5+YjUZOYxdHq+ci4dNwHvpaBC3+ENalzFWuCWa9EZXSuZBpkr72sMdKB+1fyDV4takK1Lf58g==
 
-conventional-changelog-writer@^4.0.0, conventional-changelog-writer@^4.0.18:
+conventional-changelog-writer@^4.0.0:
   version "4.1.0"
   resolved "https://registry.npm.taobao.org/conventional-changelog-writer/download/conventional-changelog-writer-4.1.0.tgz#1ca7880b75aa28695ad33312a1f2366f4b12659f"
   integrity sha1-HKeIC3WqKGla0zMSofI2b0sSZZ8=
   dependencies:
     compare-func "^2.0.0"
+    conventional-commits-filter "^2.0.7"
+    dateformat "^3.0.0"
+    handlebars "^4.7.6"
+    json-stringify-safe "^5.0.1"
+    lodash "^4.17.15"
+    meow "^8.0.0"
+    semver "^6.0.0"
+    split "^1.0.0"
+    through2 "^4.0.0"
+
+conventional-changelog-writer@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-writer/-/conventional-changelog-writer-5.0.0.tgz#c4042f3f1542f2f41d7d2e0d6cad23aba8df8eec"
+  integrity sha512-HnDh9QHLNWfL6E1uHz6krZEQOgm8hN7z/m7tT16xwd802fwgMN0Wqd7AQYVkhpsjDUx/99oo+nGgvKF657XP5g==
+  dependencies:
     conventional-commits-filter "^2.0.7"
     dateformat "^3.0.0"
     handlebars "^4.7.6"
@@ -7322,15 +7341,14 @@ get-package-type@^0.1.0:
   resolved "https://registry.npm.taobao.org/get-package-type/download/get-package-type-0.1.0.tgz#8de2d803cff44df3bc6c456e6668b36c3926e11a"
   integrity sha1-jeLYA8/0TfO8bEVuZmizbDkm4Ro=
 
-get-pkg-repo@^1.0.0:
-  version "1.4.0"
-  resolved "https://registry.npm.taobao.org/get-pkg-repo/download/get-pkg-repo-1.4.0.tgz#c73b489c06d80cc5536c2c853f9e05232056972d"
-  integrity sha1-xztInAbYDMVTbCyFP54FIyBWly0=
+get-pkg-repo@^4.0.0:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/get-pkg-repo/-/get-pkg-repo-4.1.2.tgz#c4ffd60015cf091be666a0212753fc158f01a4c0"
+  integrity sha512-/FjamZL9cBYllEbReZkxF2IMh80d8TJoC4e3bmLNif8ibHw95aj0N/tzqK0kZz9eU/3w3dL6lF4fnnX/sDdW3A==
   dependencies:
-    hosted-git-info "^2.1.4"
-    meow "^3.3.0"
-    normalize-package-data "^2.3.0"
-    parse-github-repo-url "^1.3.0"
+    "@hutson/parse-repository-url" "^3.0.0"
+    hosted-git-info "^4.0.0"
+    meow "^7.0.0"
     through2 "^2.0.0"
 
 get-port@^5.1.1:
@@ -7409,18 +7427,7 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-git-raw-commits@^2.0.0:
-  version "2.0.9"
-  resolved "https://registry.npm.taobao.org/git-raw-commits/download/git-raw-commits-2.0.9.tgz?cache=0&sync_timestamp=1609289435003&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgit-raw-commits%2Fdownload%2Fgit-raw-commits-2.0.9.tgz#5cbc707a615cb77b71e687f8a1ee54af46208b22"
-  integrity sha1-XLxwemFct3tx5of4oe5Ur0YgiyI=
-  dependencies:
-    dargs "^7.0.0"
-    lodash.template "^4.0.2"
-    meow "^8.0.0"
-    split2 "^3.0.0"
-    through2 "^4.0.0"
-
-git-raw-commits@^2.0.8:
+git-raw-commits@^2.0.0, git-raw-commits@^2.0.8:
   version "2.0.10"
   resolved "https://registry.npmjs.org/git-raw-commits/-/git-raw-commits-2.0.10.tgz#e2255ed9563b1c9c3ea6bd05806410290297bbc1"
   integrity sha512-sHhX5lsbG9SOO6yXdlwgEMQ/ljIn7qMpAbJZCGfXX2fq5T8M5SrDnpYk9/4HswTildcIqatsWa91vty6VhWSaQ==
@@ -10193,7 +10200,7 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.npm.taobao.org/lodash.sortby/download/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
-lodash.template@^4.0.2, lodash.template@^4.5.0:
+lodash.template@^4.5.0:
   version "4.5.0"
   resolved "https://registry.npm.taobao.org/lodash.template/download/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
   integrity sha1-+XYZXPPzR9DV9SSDVp/oAxzM6Ks=
@@ -10555,7 +10562,7 @@ memory-fs@^0.5.0:
     errno "^0.1.3"
     readable-stream "^2.0.1"
 
-meow@^3.3.0, meow@^3.6.0:
+meow@^3.6.0:
   version "3.7.0"
   resolved "https://registry.npm.taobao.org/meow/download/meow-3.7.0.tgz?cache=0&sync_timestamp=1610076659129&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmeow%2Fdownload%2Fmeow-3.7.0.tgz#72cb668b425228290abbfa856892587308a801fb"
   integrity sha1-cstmi0JSKCkKu/qFaJJYcwioAfs=
@@ -10585,6 +10592,23 @@ meow@^5.0.0:
     redent "^2.0.0"
     trim-newlines "^2.0.0"
     yargs-parser "^10.0.0"
+
+meow@^7.0.0:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/meow/-/meow-7.1.1.tgz#7c01595e3d337fcb0ec4e8eed1666ea95903d306"
+  integrity sha512-GWHvA5QOcS412WCo8vwKDlTelGLsCGBVevQB5Kva961rmNfun0PCbv5+xta2kUMFJyR8/oWnn7ddeKdosbAPbA==
+  dependencies:
+    "@types/minimist" "^1.2.0"
+    camelcase-keys "^6.2.2"
+    decamelize-keys "^1.1.0"
+    hard-rejection "^2.1.0"
+    minimist-options "4.1.0"
+    normalize-package-data "^2.5.0"
+    read-pkg-up "^7.0.1"
+    redent "^3.0.0"
+    trim-newlines "^3.0.0"
+    type-fest "^0.13.1"
+    yargs-parser "^18.1.3"
 
 meow@^8.0.0:
   version "8.1.2"
@@ -11100,7 +11124,7 @@ nopt@^5.0.0:
   dependencies:
     abbrev "1"
 
-normalize-package-data@^2.0.0, normalize-package-data@^2.3.0, normalize-package-data@^2.3.2, normalize-package-data@^2.3.4, normalize-package-data@^2.4.0, normalize-package-data@^2.5.0:
+normalize-package-data@^2.0.0, normalize-package-data@^2.3.2, normalize-package-data@^2.3.4, normalize-package-data@^2.4.0, normalize-package-data@^2.5.0:
   version "2.5.0"
   resolved "https://registry.npm.taobao.org/normalize-package-data/download/normalize-package-data-2.5.0.tgz?cache=0&sync_timestamp=1602547356577&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnormalize-package-data%2Fdownload%2Fnormalize-package-data-2.5.0.tgz#e66db1838b200c1dfc233225d12cb36520e234a8"
   integrity sha1-5m2xg4sgDB38IzIl0SyzZSDiNKg=
@@ -11951,11 +11975,6 @@ parse-entities@^2.0.0:
     is-alphanumerical "^1.0.0"
     is-decimal "^1.0.0"
     is-hexadecimal "^1.0.0"
-
-parse-github-repo-url@^1.3.0:
-  version "1.4.1"
-  resolved "https://registry.npm.taobao.org/parse-github-repo-url/download/parse-github-repo-url-1.4.1.tgz#9e7d8bb252a6cb6ba42595060b7bf6df3dbc1f50"
-  integrity sha1-nn2LslKmy2ukJZUGC3v23z28H1A=
 
 parse-json@^2.2.0:
   version "2.2.0"
@@ -13986,7 +14005,7 @@ shelljs@^0.7.3:
     interpret "^1.0.0"
     rechoir "^0.6.2"
 
-shelljs@^0.8.3, shelljs@^0.8.4:
+shelljs@^0.8.4:
   version "0.8.4"
   resolved "https://registry.npmjs.org/shelljs/-/shelljs-0.8.4.tgz#de7684feeb767f8716b326078a8a00875890e3c2"
   integrity sha512-7gk3UZ9kOfPLIAbslLzyWeGiEqx9e3rxwZM0KE6EL8GlGwjym9Mrlx5/p33bWTu9YG6vcS4MBxYZDHYr5lr8BQ==
@@ -15391,6 +15410,11 @@ type-fest@^0.11.0:
   resolved "https://registry.npm.taobao.org/type-fest/download/type-fest-0.11.0.tgz?cache=0&sync_timestamp=1606468899313&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftype-fest%2Fdownload%2Ftype-fest-0.11.0.tgz#97abf0872310fed88a5c466b25681576145e33f1"
   integrity sha1-l6vwhyMQ/tiKXEZrJWgVdhReM/E=
 
+type-fest@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.13.1.tgz#0172cb5bce80b0bd542ea348db50c7e21834d934"
+  integrity sha512-34R7HTnG0XIJcBSn5XhDd7nNFPRcXYRZrBB2O2jdKqYODldSzBAqzsWoZYYvduky73toYS/ESqxPvkDf/F0XMg==
+
 type-fest@^0.16.0:
   version "0.16.0"
   resolved "https://registry.npm.taobao.org/type-fest/download/type-fest-0.16.0.tgz?cache=0&sync_timestamp=1606468899313&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftype-fest%2Fdownload%2Ftype-fest-0.16.0.tgz#3240b891a78b0deae910dbeb86553e552a148860"
@@ -16380,7 +16404,7 @@ yargs-parser@^15.0.1:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs-parser@^18.1.2:
+yargs-parser@^18.1.2, yargs-parser@^18.1.3:
   version "18.1.3"
   resolved "https://registry.npm.taobao.org/yargs-parser/download/yargs-parser-18.1.3.tgz?cache=0&sync_timestamp=1604886694625&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fyargs-parser%2Fdownload%2Fyargs-parser-18.1.3.tgz#be68c4975c6b2abf469236b0c870362fab09a7b0"
   integrity sha1-vmjEl1xrKr9GkjawyHA2L6sJp7A=
