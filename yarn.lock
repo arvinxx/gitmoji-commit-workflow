@@ -10909,9 +10909,9 @@ ms@^2.0.0, ms@^2.1.1:
   integrity sha1-V0yBOM4dK1hh8LRFedut1gxmFbI=
 
 multi-semantic-release@^2.6.0:
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/multi-semantic-release/-/multi-semantic-release-2.8.0.tgz#77747881fc38036bcc41b2ac25e0b2bab896fa0a"
-  integrity sha512-383U01svsr9lrv/qt516bdg7AyPQVKfCtp6tnTOh1OHV/YDFGaM7I8ox2TpSx3jpOrCeDIeP+bs+8ANMwSFLFQ==
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/multi-semantic-release/-/multi-semantic-release-2.9.0.tgz#0681629bbc271029e4c62ab991a6c3ff19230149"
+  integrity sha512-W4cRrtYIF0XcNP7MndbNbGWO2HmZs8hskYf8Z/iQUtB275I39/zRe319ymQyzl9MHRySwIqcQVilGCrySwd45g==
   dependencies:
     "@manypkg/get-packages" "^1.1.1"
     blork "^9.2.2"
@@ -10923,7 +10923,7 @@ multi-semantic-release@^2.6.0:
     get-stream "^6.0.0"
     git-log-parser "^1.2.0"
     globby "11.0.2"
-    lodash "^4.17.20"
+    lodash "^4.17.21"
     meow "^8.0.0"
     promise-events "^0.2.1"
     semantic-release "^17.3.0"
