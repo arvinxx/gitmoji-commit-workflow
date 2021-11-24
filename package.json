@@ -61,7 +61,7 @@
     "lint-staged": "^10.5.3",
     "multi-semantic-release": "^2.6.0",
     "prettier": "^2.2.1",
-    "semantic-release": "^17.3.3",
+    "semantic-release": "^18.0.1",
     "semantic-release-config-gitmoji": "^1.2.1",
     "ts-jest": "^26.4.4",
     "ts-node": "^9.1.1",
