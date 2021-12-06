@@ -53,7 +53,7 @@
     "babel-plugin-add-module-exports": "^1.0.4",
     "commitlint": "^11.0.0",
     "commitlint-config-gitmoji": "^2.2.5-beta.1",
-    "eslint": "^7.18.0",
+    "eslint": "^8.4.0",
     "father-build": "^1.19.1",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
