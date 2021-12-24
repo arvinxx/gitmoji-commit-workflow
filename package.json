@@ -58,7 +58,7 @@
     "husky": "^4.3.8",
     "jest": "^26.6.3",
     "lerna": "^4.0.0",
-    "lint-staged": "^10.5.3",
+    "lint-staged": "^12.1.4",
     "multi-semantic-release": "^2.6.0",
     "prettier": "^2.2.1",
     "semantic-release": "^17.3.3",
