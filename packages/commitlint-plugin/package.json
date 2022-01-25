@@ -38,7 +38,7 @@
     "commitlint": "^12.1.1"
   },
   "dependencies": {
-    "dotenv": "^9.0.0",
+    "dotenv": "^14.3.0",
     "emoji-name-map": "^1.2.9"
   },
   "devDependencies": {
