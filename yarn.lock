@@ -3422,54 +3422,59 @@
     "@typescript-eslint/types" "4.14.0"
     eslint-visitor-keys "^2.0.0"
 
-"@umijs/babel-plugin-auto-css-modules@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-auto-css-modules/-/babel-plugin-auto-css-modules-3.4.20.tgz#4ab8cd0db65206ed4e923ab421cc476a97040382"
-  integrity sha512-kEjK7pnJtsTlzoHSZgmP+Hlx/6lUdYMdP9Lfu3haU9J6XTnMiibRFsy38uS+A1spl8/oD4RduUvPjGxCXM5W6Q==
-
-"@umijs/babel-plugin-import-to-await-require@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-import-to-await-require/-/babel-plugin-import-to-await-require-3.4.20.tgz#afbe61e2c803629fbe51f2c7f4fd31474fb7f281"
-  integrity sha512-z4fQA0jOKF/6DLcNUIIGxK3JoSsUjG74MayErQmeosKO2Wq3IprKshrbnMlJHovKCSvOEaZia34yeR9Le7lNRQ==
+"@umijs/babel-plugin-auto-css-modules@3.5.23":
+  version "3.5.23"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-auto-css-modules/-/babel-plugin-auto-css-modules-3.5.23.tgz#f5469099c3468d29ab8ae34882b430811248b1e6"
+  integrity sha512-dMrprGgbKHN2gvqGYa9D20514KetAmD+WHaYgu9PWApddYs/GIrAWuFv16yi1N9nm6GBF6k3obX64rp/mZXHnw==
   dependencies:
-    "@umijs/utils" "3.4.20"
+    "@umijs/utils" "3.5.23"
 
-"@umijs/babel-plugin-lock-core-js-3@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-lock-core-js-3/-/babel-plugin-lock-core-js-3-3.4.20.tgz#3f7043b0c35c1af4938e91e04addf044e1cdb4ed"
-  integrity sha512-mJGMwuHb0Y54n6s99CuLYGW2FGrF8PnnB3ynOscC3keQvttmkXlZ/JhjCyM0hpTqo8doi6QhqgTtJ+Iszz3bCw==
+"@umijs/babel-plugin-import-to-await-require@3.5.23":
+  version "3.5.23"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-import-to-await-require/-/babel-plugin-import-to-await-require-3.5.23.tgz#b07e6d92c3c8de045744cdebbd7ab7c5629e4d1c"
+  integrity sha512-4dmcX6Q2ReYoO1qS/gpKF3V/0RgLSmQu2NskkdAVeENK84ayJwnuqdMe+hW59L0C4hLbq9JO+GLUE1mGp+54Fw==
   dependencies:
-    "@umijs/utils" "3.4.20"
+    "@umijs/utils" "3.5.23"
+
+"@umijs/babel-plugin-lock-core-js-3@3.5.23":
+  version "3.5.23"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-lock-core-js-3/-/babel-plugin-lock-core-js-3-3.5.23.tgz#1f6213607e1ebb2fa705764d6bee586f7a6cc43e"
+  integrity sha512-F3wNVGycIE/bjxhkMz4SyONqrc0M2GbmZOMIo0x+QNdeNzoQ9Y6t3LM18+0M1i834z4QZbR0EBrXWaqYo2FpLQ==
+  dependencies:
+    "@umijs/utils" "3.5.23"
     core-js "3.6.5"
 
-"@umijs/babel-plugin-no-anonymous-default-export@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-no-anonymous-default-export/-/babel-plugin-no-anonymous-default-export-3.4.20.tgz#761d96edb1183c7381a15e247431336e050f0b14"
-  integrity sha512-CrN1TLiFydLgxLGVDahAWdzK0E4ujwiQBTBW5y2rnkkKH5f5G/FKZEjbG5H26VOnDH6uemE5i9su8cAzJ7Nw9A==
+"@umijs/babel-plugin-no-anonymous-default-export@3.5.23":
+  version "3.5.23"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-no-anonymous-default-export/-/babel-plugin-no-anonymous-default-export-3.5.23.tgz#a50534ab724e964f0658a2e5c623554b0c15c13f"
+  integrity sha512-wBWOHx+bo3G/OfFYBTD+r4v/7tGMF7Ut2ry8SL11nmhX3eRgb5OIHbnbfLEUPmH6s/meBiiHZOLccFagW6SOKg==
   dependencies:
-    "@umijs/utils" "3.4.20"
+    "@umijs/utils" "3.5.23"
 
-"@umijs/babel-preset-umi@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/babel-preset-umi/-/babel-preset-umi-3.4.20.tgz#227581faba1320127fc0acb4ef66b661b12ac443"
-  integrity sha512-YUwerpS4jhN1VUYDFQmWXxY8sINFNL9moJx4gLGn/ur6tiZRl/t2y+h/1gFniFkzTNJ0Km4H7QoR8X/POhTEcQ==
+"@umijs/babel-preset-umi@3.5.23":
+  version "3.5.23"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-preset-umi/-/babel-preset-umi-3.5.23.tgz#0f3494aefc1f77afc1b791d06bed5f412597f4d0"
+  integrity sha512-RRPhP5jmhvZnfGDV0jpBMw6eV7oFjdxVd47++Gt1N3L8QVhHpSDn9AZ3ww0xg5Ffn7SK7wfsgMiEXKzfuKbqGw==
   dependencies:
     "@babel/runtime" "7.12.5"
-    "@umijs/babel-plugin-auto-css-modules" "3.4.20"
-    "@umijs/babel-plugin-import-to-await-require" "3.4.20"
-    "@umijs/babel-plugin-lock-core-js-3" "3.4.20"
-    "@umijs/babel-plugin-no-anonymous-default-export" "3.4.20"
+    "@umijs/babel-plugin-auto-css-modules" "3.5.23"
+    "@umijs/babel-plugin-import-to-await-require" "3.5.23"
+    "@umijs/babel-plugin-lock-core-js-3" "3.5.23"
+    "@umijs/babel-plugin-no-anonymous-default-export" "3.5.23"
+    "@umijs/deps" "3.5.23"
 
-"@umijs/deps@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/deps/-/deps-3.4.20.tgz#2ddf72ed686dba8d4b64a1944ba5e69b8b69b135"
-  integrity sha512-eANA/O/4Bx5xjDhZ0DZAdWdpLNYJWV9S+udUgMvAs1FdxNK0EPY/+yg5VE8Lah57qukj8EYH6mtBoukO97+8Xg==
+"@umijs/deps@3.5.23":
+  version "3.5.23"
+  resolved "https://registry.yarnpkg.com/@umijs/deps/-/deps-3.5.23.tgz#cb29269b7874d2c9645f60aad9e120a180b9be04"
+  integrity sha512-Z4Tq0GG6PQaguPWIVVtfi+ehruD4JJjTibPXIASxuMT9Xey076ZMY9rjCd5ZBlecFDde2lC53MOkyOcGniCAaQ==
   dependencies:
     "@bloomberg/record-tuple-polyfill" "0.0.3"
     chokidar "3.5.1"
     clipboardy "2.3.0"
+    esbuild "0.12.15"
     jest-worker "24.9.0"
     prettier "2.2.1"
+    regenerate-unicode-properties "9.0.0"
 
 "@umijs/fabric@^2.5.6":
   version "2.5.13"
@@ -3515,13 +3520,13 @@
     typescript "^4.0.2"
 
 "@umijs/test@^3.3.9":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/test/-/test-3.4.20.tgz#e0de25ee0c8aa6543381375ed55003a529842d5d"
-  integrity sha512-SZ6p5liWzYowpvRFufPxMSQ6KKjOz27lNFqn4xq5H5SwsKxsxiNxmsu4OaQIprGs1jQ76XWCfq5vpkmy4D+Jtg==
+  version "3.5.23"
+  resolved "https://registry.yarnpkg.com/@umijs/test/-/test-3.5.23.tgz#ed1b1b0e077e9e013d7d543385f3feefd8b05f56"
+  integrity sha512-ipglpweW2wEwc+8sER3DdEI/x8n71Dlc70WIkmNMKYbdnYHhgprY58ayR2HKCyjb1t5pBj24j9Vhw8B5anJ9GQ==
   dependencies:
     "@babel/core" "7.12.10"
-    "@umijs/babel-preset-umi" "3.4.20"
-    "@umijs/utils" "3.4.20"
+    "@umijs/babel-preset-umi" "3.5.23"
+    "@umijs/utils" "3.5.23"
     babel-core "7.0.0-bridge.0"
     babel-jest "^26.6.3"
     core-js "3.8.2"
@@ -3532,12 +3537,12 @@
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.5.0"
 
-"@umijs/utils@3.4.20":
-  version "3.4.20"
-  resolved "https://registry.yarnpkg.com/@umijs/utils/-/utils-3.4.20.tgz#8ce2a283586edb30e0e9807d14e1e864bd403e3f"
-  integrity sha512-aWjmwd6EE0lzgJr3htHbzVeyh3o66wxtXnFjcAG5MC3rcMx6fv7UftrbpQJ5scgfKxv0nMu9g80XYLJBM6aI+g==
+"@umijs/utils@3.5.23":
+  version "3.5.23"
+  resolved "https://registry.yarnpkg.com/@umijs/utils/-/utils-3.5.23.tgz#5c26746380c4f3db21631f3ae0c38cc7d3b1ec6a"
+  integrity sha512-3uGD7DeuQrhfWZBnm3ry7PvP7jZwmdps5na+7TsI1/XpjyIWLWxbuy5vYQszi/1spKA3eIB0UNW9PrroAVxMIg==
   dependencies:
-    "@umijs/deps" "3.4.20"
+    "@umijs/deps" "3.5.23"
 
 JSONStream@^0.8.4:
   version "0.8.4"
@@ -6263,6 +6268,11 @@ es6-promisify@^5.0.0:
   integrity sha1-UQnWLz5W6pZ8S2NQWu8IKRyKUgM=
   dependencies:
     es6-promise "^4.0.3"
+
+esbuild@0.12.15:
+  version "0.12.15"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.15.tgz#9d99cf39aeb2188265c5983e983e236829f08af0"
+  integrity sha512-72V4JNd2+48eOVCXx49xoSWHgC3/cCy96e7mbXKY+WOWghN00cCmlGnwVLRhRHorvv0dgCyuMYBZlM2xDM5OQw==
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -13226,6 +13236,13 @@ redeyed@~2.1.0:
   dependencies:
     esprima "~4.0.0"
 
+regenerate-unicode-properties@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/regenerate-unicode-properties/-/regenerate-unicode-properties-9.0.0.tgz#54d09c7115e1f53dc2314a974b32c1c344efe326"
+  integrity sha512-3E12UeNSPfjrgwjkR81m5J7Aw/T55Tu7nUyZVQYCKEOs+2dkxEY+DpPtZzO4YruuiPb7NkYLVcyJC4+zCbk5pA==
+  dependencies:
+    regenerate "^1.4.2"
+
 regenerate-unicode-properties@^8.2.0:
   version "8.2.0"
   resolved "https://registry.npm.taobao.org/regenerate-unicode-properties/download/regenerate-unicode-properties-8.2.0.tgz#e5de7111d655e7ba60c057dbe9ff37c87e65cdec"
@@ -13233,7 +13250,7 @@ regenerate-unicode-properties@^8.2.0:
   dependencies:
     regenerate "^1.4.0"
 
-regenerate@^1.4.0:
+regenerate@^1.4.0, regenerate@^1.4.2:
   version "1.4.2"
   resolved "https://registry.npm.taobao.org/regenerate/download/regenerate-1.4.2.tgz?cache=0&sync_timestamp=1604220147658&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fregenerate%2Fdownload%2Fregenerate-1.4.2.tgz#b9346d8827e8f5a32f7ba29637d398b69014848a"
   integrity sha1-uTRtiCfo9aMve6KWN9OYtpAUhIo=
