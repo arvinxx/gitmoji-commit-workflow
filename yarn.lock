@@ -3287,6 +3287,13 @@
   resolved "https://registry.npm.taobao.org/@types/retry/download/@types/retry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
   integrity sha1-KzXsz87n04zXKtmSMvvVi/+zyE0=
 
+"@types/semantic-release@17.2.4":
+  version "17.2.4"
+  resolved "https://registry.yarnpkg.com/@types/semantic-release/-/semantic-release-17.2.4.tgz#2b82cd645a4e10547737d37248ca581ab799fa33"
+  integrity sha512-Ud2GB2+0WgyBrKB7PbyZA+bud3QD0z3Iv6KPx6FfeMUNDekw3EWgZi3eLKXoeGDPBo+hev74NN1pEPMp0rL2vQ==
+  dependencies:
+    "@types/node" "*"
+
 "@types/semantic-release@^17.2.0":
   version "17.2.0"
   resolved "https://registry.npm.taobao.org/@types/semantic-release/download/@types/semantic-release-17.2.0.tgz#2ed941f0ccd1ba714ec46ddefe4f224164946872"
