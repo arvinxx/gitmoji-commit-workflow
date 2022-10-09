@@ -1,5 +1,15 @@
 # Changelog
 
+## semantic-release-config-gitmoji [1.2.5-beta.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.2.4...semantic-release-config-gitmoji@1.2.5-beta.1) (2022-10-09)
+
+
+
+
+
+### Dependencies
+
+* **conventional-changelog-gitmoji-config:** upgraded to 1.4.4-beta.1
+
 ## semantic-release-config-gitmoji [1.2.4](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.2.3...semantic-release-config-gitmoji@1.2.4) (2021-03-12)
 
 
