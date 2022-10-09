@@ -1,5 +1,12 @@
 # Changelog
 
+## @gitmoji/parser-opts [1.3.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.3.0...@gitmoji/parser-opts@1.3.1) (2022-10-09)
+
+
+### 🐛 Bug Fixes
+
+* allow parenthesis around ticket number ([3393666](https://github.com/arvinxx/gitmoji-commit-workflow/commit/3393666))
+
 ## @gitmoji/parser-opts [1.3.1-beta.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.3.0...@gitmoji/parser-opts@1.3.1-beta.1) (2022-10-09)
 
 
