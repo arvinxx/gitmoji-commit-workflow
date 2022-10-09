@@ -70,6 +70,16 @@ describe('@gitmoji/parser-opts', () => {
       expect(subject).toBe('i have a word');
       expect(ticket).toBe('#123');
     });
+    it(':start: chore(scope): i have a ticket (#123)', () => {
+      const result = regex.exec(':start: chore(scope): i have a ticket (#123)');
+
+      expect(result).toHaveLength(5);
+      const { type, scope, subject, ticket } = result.groups;
+      expect(type).toBe('chore');
+      expect(scope).toBe('scope');
+      expect(subject).toBe('i have a ticket');
+      expect(ticket).toBe('#123');
+    });
     it(':package: feat(parser-opts): extract parser-opts packages', () => {
       const result = regex.exec(
         ':package: feat(parser-opts): extract parser-opts packages',
