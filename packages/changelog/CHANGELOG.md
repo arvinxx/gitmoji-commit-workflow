@@ -1,5 +1,15 @@
 # Changelog
 
+## conventional-changelog-gitmoji-config [1.4.4](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.3...conventional-changelog-gitmoji-config@1.4.4) (2022-10-09)
+
+
+
+
+
+### Dependencies
+
+* **@gitmoji/parser-opts:** upgraded to 1.3.1
+
 ## conventional-changelog-gitmoji-config [1.4.4-beta.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.3...conventional-changelog-gitmoji-config@1.4.4-beta.1) (2022-10-09)
 
 
