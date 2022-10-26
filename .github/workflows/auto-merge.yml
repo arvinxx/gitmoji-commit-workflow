@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '14'
 
-      - uses: c-hive/gha-yarn-cache@v1
+      - uses: c-hive/gha-yarn-cache@v2
 
       - run: yarn
       - run: yarn lint
