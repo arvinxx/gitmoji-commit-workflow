@@ -48,7 +48,7 @@
     "@types/node": "^15.0.1",
     "@types/semantic-release": "^17.2.0",
     "@types/sinon": "^10.0.0",
-    "@umijs/fabric": "^2.5.6",
+    "@umijs/fabric": "^3.0.0",
     "@umijs/test": "^3.3.9",
     "babel-plugin-add-module-exports": "^1.0.4",
     "commitlint": "^11.0.0",
