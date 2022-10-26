@@ -35,7 +35,7 @@
   "author": "ArvinX",
   "license": "MIT",
   "peerDependencies": {
-    "commitlint": "^12.1.1"
+    "commitlint": "^12.1.1 || ^17.0.0"
   },
   "dependencies": {
     "dotenv": "^9.0.0",
