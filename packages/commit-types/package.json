@@ -10,7 +10,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "father-build",
+    "build": "father build",
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
   },
   "publishConfig": {

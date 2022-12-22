@@ -7,8 +7,8 @@
     "lib"
   ],
   "scripts": {
-    "start": "father-build -w",
-    "build": "father-build",
+    "start": "father dev",
+    "build": "father build",
     "test": "jest",
     "cov": "jest --coverage",
     "release": "yarn build && yarn release:only",
