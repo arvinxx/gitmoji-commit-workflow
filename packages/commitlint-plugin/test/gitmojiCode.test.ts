@@ -6,18 +6,18 @@ const targetPath = join(__dirname, '../src', 'gitmojis.json');
 const testFilePath = join(__dirname, 'gitmojis-for-test.json');
 
 describe('gitmojiCodes work well', () => {
-  it('just return result', async () => {
+  it('just return result', () => {
     if (!existsSync(targetPath)) copyFileSync(testFilePath, targetPath);
 
-    const gitmojiCodes = await import('../src/gitmojiCode');
+    const gitmojiCodes = require('../lib/gitmojiCode');
 
     expect(gitmojiCodes.gitmojiCodes).toBeInstanceOf(Array);
   });
 
-  it('will download gitmoji json and write to file without gitmoji json', async () => {
+  it('will download gitmoji json and write to file without gitmoji json', () => {
     // 如果存在 gitmoji 直接删除
     if (existsSync(targetPath)) unlinkSync(targetPath);
-    const gitmojiCodes = await import('../src/gitmojiCode');
+    const gitmojiCodes = require('../lib/gitmojiCode');
     expect(gitmojiCodes.gitmojiCodes).toBeInstanceOf(Array);
   });
 });
