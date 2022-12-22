@@ -1,13 +1,15 @@
-const base = require('../../jest.config.base');
+import base from '../../jest.config.base';
+import { Config } from '@umijs/test';
 
 const packageName = '@gitmoji/conventional-changelog-gitmoji-config';
 
 const root = '<rootDir>/packages/changelog';
 
-module.exports = {
+const config: Config.InitialOptions = {
   ...base,
   rootDir: '../..',
   roots: [root],
-  name: packageName,
   displayName: packageName,
 };
+
+export default config;
