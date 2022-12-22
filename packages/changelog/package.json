@@ -7,8 +7,8 @@
     "lib"
   ],
   "scripts": {
-    "start": "father-build -w",
-    "build": "father-build",
+    "start": "father dev",
+    "build": "father build",
     "test": "jest",
     "cov": "jest --coverage",
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
