@@ -1,18 +1,3 @@
 {
-  "extends": "../../tsconfig.json",
-  "include": ["src"],
-  "compilerOptions": {
-    "module": "CommonJS",
-    "target": "es5",
-    "sourceMap": true,
-    "moduleResolution": "Node",
-    "lib": ["ES2020"],
-    "esModuleInterop": true,
-    "declaration": true,
-    "baseUrl": "../..",
-    "paths": {
-      "@gitmoji/commit-types": ["./packages/commit-type/src"],
-      "conventional-changelog-gitmoji-config": ["./packages/changelog/src"]
-    }
-  }
+  "extends": "../../tsconfig.json"
 }
