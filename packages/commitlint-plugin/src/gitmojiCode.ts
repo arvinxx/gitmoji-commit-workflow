@@ -38,7 +38,6 @@ if (!existsSync(filePath)) {
     );
   }
 }
-// eslint-disable-next-line import/no-dynamic-require
 const { gitmojis } = require(filePath);
 export const gitmojiCodes: string[] = gitmojis.map((gitmoji) => gitmoji.code);
 
