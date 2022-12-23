@@ -51,7 +51,7 @@
     "father": "^4",
     "husky": "^8",
     "jest": "^29",
-    "lerna": "^4.0.0",
+    "lerna": "^6.1.0",
     "lint-staged": "^13",
     "multi-semantic-release": "^3",
     "prettier": "^2.2.1",
