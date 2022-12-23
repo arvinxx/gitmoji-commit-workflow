@@ -23,9 +23,6 @@ export default (customConfig: CustomConfig): Options => ({
   mainTemplate: template,
   headerPartial: header,
   // 替换 commit.hbs 模板中的 gitUserInfo
-  commitPartial: commit.replace(
-    /{{gitUserInfo}}/g,
-    customConfig.showAuthor ? author : '',
-  ),
+  commitPartial: commit.replace(/{{gitUserInfo}}/g, customConfig.showAuthor ? author : ''),
   footerPartial: footer,
 });

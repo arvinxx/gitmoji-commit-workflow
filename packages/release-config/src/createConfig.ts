@@ -8,7 +8,7 @@ import npm from './plugins/npm';
 
 export type { ReleaseRule, Options } from './type';
 
-const createConfig = (options?: Options): SemRelOptions => {
+export const createConfig = (options?: Options): SemRelOptions => {
   const opts = {
     changelogTitle: '# Changelog',
     changelogFile: 'CHANGELOG.md',
@@ -17,8 +17,8 @@ const createConfig = (options?: Options): SemRelOptions => {
     ...options,
   };
   //  npm config
-  const { npmPublish, pkgRoot, tarballDir } = opts;
-  const npmConfig = npm({ npmPublish, pkgRoot, tarballDir });
+  const { npmPublish, pkgRoot, tarballDir, monorepo } = opts;
+  const npmConfig = npm({ npmPublish, pkgRoot, tarballDir, monorepo });
 
   // github config
   const {

@@ -7,7 +7,8 @@ const emoji: Rule = (parsed) => {
   // code regex test url: https://regex101.com/r/fSdOvB/1
   const regex = /^(:\w*:)\s.*/gm;
   // unicode regex test url: https://regex101.com/r/OTMgWL/2
-  const unicodeRegex = /(\ud83c[\udf00-\udfff]|\ud83d[\udc00-\ude4f\ude80-\udeff]|[\u2600-\u2B55])\s.*/gm;
+  const unicodeRegex =
+    /(\ud83c[\udf00-\udfff]|\ud83d[\udc00-\ude4f\ude80-\udeff]|[\u2600-\u2B55])\s.*/gm;
 
   const result = regex.exec(raw);
   const unicodeResult = unicodeRegex.exec(raw);

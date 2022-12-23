@@ -14,9 +14,7 @@ describe('Gitmoji Commit Message Preset', () => {
       expect(log).toContain('amazing new module');
       expect(log).toContain('**compile**: avoid a bug');
       // expect(log).toContain('make it faster');
-      expect(log).toContain(
-        `, closes [#1](${repoURL}/issues/1) [#2](${repoURL}/issues/2)`,
-      );
+      expect(log).toContain(`, closes [#1](${repoURL}/issues/1) [#2](${repoURL}/issues/2)`);
       expect(log).toContain('New build system.');
       expect(log).toContain('Not backward compatible.');
       expect(log).toContain('**compile**: The Change is huge.');

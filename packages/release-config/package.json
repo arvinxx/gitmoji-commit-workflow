@@ -2,21 +2,6 @@
   "name": "semantic-release-config-gitmoji",
   "version": "1.2.5",
   "description": "a gitmoji commit style presets for semantic-release",
-  "main": "lib/index.js",
-  "files": [
-    "lib"
-  ],
-  "scripts": {
-    "start": "father-build -w",
-    "build": "father-build",
-    "test": "jest",
-    "cov": "jest --coverage",
-    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arvinxx/gitmoji-commit-workflow.git"
-  },
   "keywords": [
     "conventional-changelog",
     "gitmoji",
@@ -25,21 +10,37 @@
     "emoji",
     "semantic-release"
   ],
-  "author": "Arvin Xu <arvinx@foxmail.com>",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
+  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/release-config#readme",
   "bugs": {
     "url": "https://github.com/arvinxx/gitmoji-commit-workflow/issues"
   },
-  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/release-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arvinxx/gitmoji-commit-workflow.git"
+  },
+  "license": "MIT",
+  "author": "Arvin Xu <arvinx@foxmail.com>",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "father build",
+    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache",
+    "cov": "jest --coverage",
+    "start": "father dev",
+    "test": "jest"
+  },
   "dependencies": {
     "@gitmoji/commit-types": "1.1.5",
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/changelog": "^6",
+    "@semantic-release/git": "^10",
+    "@semrel-extra/npm": "^1",
     "@types/semantic-release": "^17.2.0",
     "conventional-changelog-gitmoji-config": "1.4.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
