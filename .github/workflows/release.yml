@@ -6,26 +6,53 @@ on:
       - beta
 
 jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install deps
+        run: pnpm install
+
+      - name: Test
+        run: pnpm run test
+
   release:
+    needs: test
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
+      - uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
         with:
-          node-version: '14'
+          version: 7
 
-      - uses: c-hive/gha-yarn-cache@v1
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
 
-      - name: install
-        run: yarn
+      - name: Install deps
+        run: pnpm install
 
-      - name: Test
-        run: yarn test
+      - name: build
+        run: pnpm run build
 
-      - name: Release
+      - name: release
+        run: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn release
