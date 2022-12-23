@@ -37,7 +37,7 @@
   "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/release-config#readme",
   "dependencies": {
     "@gitmoji/commit-types": "1.1.5",
-    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^9.0.0",
     "@types/semantic-release": "^17.2.0",
     "conventional-changelog-gitmoji-config": "1.4.4"
