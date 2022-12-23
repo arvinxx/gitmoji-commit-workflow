@@ -17,8 +17,8 @@ export const createConfig = (options?: Options): SemRelOptions => {
     ...options,
   };
   //  npm config
-  const { npmPublish, pkgRoot, tarballDir } = opts;
-  const npmConfig = npm({ npmPublish, pkgRoot, tarballDir });
+  const { npmPublish, pkgRoot, tarballDir, monorepo } = opts;
+  const npmConfig = npm({ npmPublish, pkgRoot, tarballDir, monorepo });
 
   // github config
   const {

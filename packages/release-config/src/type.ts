@@ -104,9 +104,15 @@ export interface NPMPluginOpts {
    */
   npmPublish?: boolean;
   /**
-   *Directory path to publish.
+   * Directory path to publish.
    * default: `.`
    */
   pkgRoot?: string;
   tarballDir?: string | false;
+  /**
+   * 如果是 Monorepo 仓库发布npm包，使用 "@semrel-extra/npm" 替代官方包
+   * if using monorepo, use "@semrel-extra/npm" instead of the official package
+   * @see https://github.com/dhoulb/multi-semantic-release#npm-invalid-npm-token
+   */
+  monorepo?: boolean;
 }
