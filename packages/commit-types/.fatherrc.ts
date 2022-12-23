@@ -1,3 +1,3 @@
-import config from '../../.fatherrc'
+import config from '../../.fatherrc';
 
-export default config
+export default config;
