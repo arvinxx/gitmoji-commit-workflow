@@ -13,4 +13,8 @@ describe('npm', () => {
       },
     ]);
   });
+
+  it('use monorepo', () => {
+    expect(npm({ monorepo: true })).toEqual('@semrel-extra/npm');
+  });
 });
