@@ -61,5 +61,6 @@
     "ts-jest": "^29",
     "ts-node": "^10",
     "typescript": "^4.1.3"
-  }
+  },
+  "version": "2.2.7-beta.1"
 }
