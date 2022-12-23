@@ -81,9 +81,7 @@ describe('@gitmoji/parser-opts', () => {
       expect(ticket).toBe('#123');
     });
     it(':package: feat(parser-opts): extract parser-opts packages', () => {
-      const result = regex.exec(
-        ':package: feat(parser-opts): extract parser-opts packages',
-      );
+      const result = regex.exec(':package: feat(parser-opts): extract parser-opts packages');
 
       expect(result).toHaveLength(5);
       const { type, scope, subject, ticket } = result.groups;

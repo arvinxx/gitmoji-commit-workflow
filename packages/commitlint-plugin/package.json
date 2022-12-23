@@ -2,29 +2,6 @@
   "name": "commitlint-plugin-gitmoji",
   "version": "2.2.0",
   "description": "shareable commitlint plugin enforcing gitmoji commit rules",
-  "main": "lib/index.js",
-  "files": [
-    "lib"
-  ],
-  "scripts": {
-    "start": "father-build -w",
-    "build": "father-build",
-    "test": "jest",
-    "cov": "jest --coverage",
-    "release": "yarn build && yarn release:only",
-    "release:only": "yarn publish",
-    "changelog": "conventional-changelog -p gitmoji-config -i CHANGELOG.md -s -r 0",
-    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
-  },
-  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/plugin",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
   "keywords": [
     "commitlint",
     "commitlintplugin",
@@ -32,16 +9,40 @@
     "emoji",
     "git"
   ],
-  "author": "ArvinX",
+  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"
+  },
   "license": "MIT",
-  "peerDependencies": {
-    "commitlint": "^12.1.1"
+  "author": "ArvinX",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "father build",
+    "changelog": "conventional-changelog -p gitmoji-config -i CHANGELOG.md -s -r 0",
+    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache",
+    "cov": "jest --coverage",
+    "release": "yarn build && yarn release:only",
+    "release:only": "yarn publish",
+    "start": "father dev",
+    "test": "jest"
   },
   "dependencies": {
+    "@commitlint/types": "^17",
     "dotenv": "^9.0.0",
     "emoji-name-map": "^1.2.9"
   },
   "devDependencies": {
     "mocked-env": "^1.3.4"
+  },
+  "peerDependencies": {
+    "commitlint": "^12.1.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

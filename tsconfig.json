@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "noEmit": true,
-
+    /* 生成能力 */
+    "declaration": true,
     /* 模块导入配置项 */
     "moduleResolution": "Node",
     "esModuleInterop": true,
@@ -12,7 +12,7 @@
     "target": "es5",
     "module": "CommonJS",
     "sourceMap": true,
-    "lib": ["ES2020"],
+    "lib": ["ESNext"],
     //
     /* Alias 路径 */
     "baseUrl": ".",

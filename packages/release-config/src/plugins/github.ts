@@ -7,8 +7,7 @@ import type { GithubPluginOpts } from '../type';
  */
 const github = (options: GithubPluginOpts = {}): PluginSpec => {
   const noOpts =
-    options &&
-    Object.values(options).filter((i) => typeof i !== 'undefined').length === 0;
+    options && Object.values(options).filter((i) => typeof i !== 'undefined').length === 0;
 
   if (!options || noOpts) return '@semantic-release/github';
 

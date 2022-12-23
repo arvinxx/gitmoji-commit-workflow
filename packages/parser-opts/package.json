@@ -2,28 +2,29 @@
   "name": "@gitmoji/parser-opts",
   "version": "1.3.1",
   "description": "gitmoji styles commit parser options",
-  "author": "arvinxx <arvinx@foxmail.com>",
   "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/parser-opts",
+  "bugs": {
+    "url": "https://github.com/arvinxx/gitmoji-commit-workflow/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvinxx/gitmoji-commit-workflow.git"
+  },
   "license": "ISC",
+  "author": "arvinxx <arvinx@foxmail.com>",
   "main": "lib/index.js",
   "files": [
     "lib",
     "src"
   ],
   "scripts": {
-    "test": "jest",
+    "build": "father build",
+    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache",
     "cov": "jest --coverage",
-    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
+    "test": "jest"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arvinxx/gitmoji-commit-workflow.git"
-  },
-  "bugs": {
-    "url": "https://github.com/arvinxx/gitmoji-commit-workflow/issues"
   }
 }

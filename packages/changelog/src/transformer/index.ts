@@ -7,17 +7,12 @@ import type { CommitTypes } from '@gitmoji/commit-types';
 
 import types from '@gitmoji/commit-types';
 
-export default (customConfig: CustomConfig) => (
-  commit: Commit,
-  context: Context,
-) => {
+export default (customConfig: CustomConfig) => (commit: Commit, context: Context) => {
   let discard = true;
   const issues = [];
 
   commit.notes.forEach((note) => {
-    note.title = `${
-      customConfig?.withEmoji === false ? '' : '💥 '
-    }BREAKING CHANGES`;
+    note.title = `${customConfig?.withEmoji === false ? '' : '💥 '}BREAKING CHANGES`;
 
     discard = false;
   });
@@ -46,10 +41,7 @@ export default (customConfig: CustomConfig) => (
   }
 
   if (customConfig.scopeDisplayName) {
-    commit.scope = scopeMapDisplayName(
-      commit.scope,
-      customConfig.scopeDisplayName,
-    );
+    commit.scope = scopeMapDisplayName(commit.scope, customConfig.scopeDisplayName);
   }
 
   if (typeof commit.hash === 'string') {

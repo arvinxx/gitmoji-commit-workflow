@@ -21,14 +21,10 @@ if (!existsSync(filePath)) {
     'https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json';
   try {
     // eslint-disable-next-line global-require
-    const result = require('child_process').execFileSync(
-      'curl',
-      ['--silent', '-L', url],
-      {
-        encoding: 'utf8',
-        maxBuffer: Infinity,
-      },
-    );
+    const result = require('child_process').execFileSync('curl', ['--silent', '-L', url], {
+      encoding: 'utf8',
+      maxBuffer: Infinity,
+    });
 
     writeFileSync(filePath, result);
   } catch (e) {
@@ -38,12 +34,9 @@ if (!existsSync(filePath)) {
     );
   }
 }
-// eslint-disable-next-line import/no-dynamic-require
 const { gitmojis } = require(filePath);
 export const gitmojiCodes: string[] = gitmojis.map((gitmoji) => gitmoji.code);
 
-export const gitmojiUnicode: string[] = gitmojis.map((gitmoji) =>
-  toEmoji.get(gitmoji.code),
-);
+export const gitmojiUnicode: string[] = gitmojis.map((gitmoji) => toEmoji.get(gitmoji.code));
 
 export const localPath = filePath;

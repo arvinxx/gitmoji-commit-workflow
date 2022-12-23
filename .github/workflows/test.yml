@@ -5,20 +5,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
-      - uses: c-hive/gha-yarn-cache@v1
+      - name: Install deps
+        run: pnpm install
 
-      - name: install
-        run: yarn
+      - name: Test and coverage
+        run: pnpm run test:coverage
 
-      - name: test
-        run: yarn test:coverage
-
-      - name: Generate coverage
-        run: bash <(curl -s https://codecov.io/bash)
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
