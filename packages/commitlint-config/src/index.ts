@@ -1,4 +1,4 @@
-import { RuleConfigSeverity } from '@commitlint/types';
+import { type Plugin, RuleConfigSeverity } from '@commitlint/types';
 import type { LintOptions, QualifiedRules } from '@commitlint/types';
 
 import gitmojiPlugin from 'commitlint-plugin-gitmoji';
@@ -23,7 +23,7 @@ const rules: QualifiedRules = {
   // 不允许标题空着
   'subject-empty': [Error, 'never'],
   // 不允许使用句号
-  'subject-full-stop': [Error, 'never'],
+  'subject-full-stop': [Error, 'never', '.'],
   // type 必须小写
   'type-case': [Error, 'always', 'lower-case'],
   // type 不能为空
@@ -37,8 +37,10 @@ const parserPreset: LintOptions = {
   },
 };
 
-export default {
+const config: { plugins: Plugin[]; parserPreset: LintOptions; rules: QualifiedRules } = {
   rules,
   parserPreset,
   plugins: [gitmojiPlugin],
 };
+
+export default config;
