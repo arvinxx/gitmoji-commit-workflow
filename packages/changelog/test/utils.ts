@@ -6,10 +6,7 @@ import betterThanBefore from 'better-than-before';
 import shell from 'shelljs';
 import gitmojiChangelogConfig from '../src';
 
-export const conventionalChangelog = (
-  done,
-  testFn: (changelog: string) => void,
-) => {
+export const conventionalChangelog = (done, testFn: (changelog: string) => void) => {
   conventionalChangelogCore({
     config: gitmojiChangelogConfig as Options.Config,
   })
@@ -50,10 +47,7 @@ setups([
       ':sparkles: feat: amazing new module',
       'BREAKING CHANGE: Not backward compatible.',
     ]);
-    gitDummyCommit([
-      ':bug: fix(compile): avoid a bug',
-      'BREAKING CHANGE: The Change is huge.',
-    ]);
+    gitDummyCommit([':bug: fix(compile): avoid a bug', 'BREAKING CHANGE: The Change is huge.']);
     gitDummyCommit(':zap: perf(ngOptions): make it faster');
     gitDummyCommit(':rewind: revert(ngOptions): bad commit');
     gitDummyCommit([':bug: fix(*): oops', ' closes #1, #2']);
