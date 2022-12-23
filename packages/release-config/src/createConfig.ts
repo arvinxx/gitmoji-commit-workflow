@@ -8,7 +8,7 @@ import npm from './plugins/npm';
 
 export type { ReleaseRule, Options } from './type';
 
-const createConfig = (options?: Options): SemRelOptions => {
+export const createConfig = (options?: Options): SemRelOptions => {
   const opts = {
     changelogTitle: '# Changelog',
     changelogFile: 'CHANGELOG.md',
