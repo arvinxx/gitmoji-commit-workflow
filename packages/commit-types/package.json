@@ -2,10 +2,18 @@
   "name": "@gitmoji/commit-types",
   "version": "1.1.5",
   "description": "gitmoji styles commit types",
-  "author": "arvinxx <arvinx@foxmail.com>",
   "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/commit-types",
+  "bugs": {
+    "url": "https://github.com/arvinxx/gitmoji-commit-workflow/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvinxx/gitmoji-commit-workflow.git"
+  },
   "license": "MIT",
+  "author": "arvinxx <arvinx@foxmail.com>",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
@@ -16,12 +24,5 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arvinxx/gitmoji-commit-workflow.git"
-  },
-  "bugs": {
-    "url": "https://github.com/arvinxx/gitmoji-commit-workflow/issues"
   }
 }

@@ -1,3 +1,3 @@
 const config = require('@umijs/max/prettier');
 
-module.exports =config
+module.exports = { ...config, printWidth: 100 };
