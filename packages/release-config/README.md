@@ -6,8 +6,23 @@ shareable [semantic-release][semantic-release] configuration for gitmoji commit 
 
 ## How to use
 
-```js
+### Basic Usage
 
+```js
+// .releaserc.js
+module.exports = {
+  extends: ['semantic-release-config-gitmoji'],
+};
+```
+
+### Create your config
+
+```js
+const { createConfig } = require('semantic-release-config-gitmoji/lib/createConfig');
+
+const config = createConfig({ monorepo: true });
+
+module.exports = config;
 ```
 
 ## License

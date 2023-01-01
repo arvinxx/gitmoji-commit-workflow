@@ -21,6 +21,7 @@
   "license": "MIT",
   "author": "Arvin Xu <arvinx@foxmail.com>",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],

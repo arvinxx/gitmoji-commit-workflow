@@ -23,6 +23,7 @@
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx ",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "release": "multi-semantic-release",
+    "release:local": "multi-semantic-release --no-ci",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "tsc": "tsc -p tsconfig-check.json"
