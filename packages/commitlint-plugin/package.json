@@ -4,12 +4,12 @@
   "description": "shareable commitlint plugin enforcing gitmoji commit rules",
   "keywords": [
     "commitlint",
-    "commitlintplugin",
+    "commitlint-plugin",
     "gitmoji",
     "emoji",
     "git"
   ],
-  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/plugin",
+  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/commitlint-plugin",
   "repository": {
     "type": "git",
     "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"

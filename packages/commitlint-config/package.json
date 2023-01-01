@@ -9,7 +9,7 @@
     "commit",
     "git"
   ],
-  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/config",
+  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/commitlint-config",
   "repository": {
     "type": "git",
     "url": "https://github.com/arvinxx/gitmoji-commit-workflow.git"
