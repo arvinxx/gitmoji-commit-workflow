@@ -36,6 +36,7 @@
     "@gitmoji/commit-types": "1.1.5",
     "@semantic-release/changelog": "^6",
     "@semantic-release/git": "^10",
+    "@semantic-release/github": "npm:@achingbrain/semantic-release-github",
     "@semrel-extra/npm": "^1",
     "@types/semantic-release": "^17.2.0",
     "conventional-changelog-gitmoji-config": "1.4.4"
