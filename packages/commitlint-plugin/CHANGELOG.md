@@ -1,5 +1,19 @@
 # Changelog
 
+## <small>2.2.1 (2023-01-01)</small>
+
+* :arrow_up: chore: upgrade to father4 ([5ea649e](https://github.com/arvinxx/commitlint-config-gitmoji/commit/5ea649e))
+* :arrow_up: chore: upgrade to jest29 ([9aa126b](https://github.com/arvinxx/commitlint-config-gitmoji/commit/9aa126b))
+* :art: chore: reformat code with prettier ([809cbc9](https://github.com/arvinxx/commitlint-config-gitmoji/commit/809cbc9))
+* :art: chore: reformat package.json with prettier ([5176c18](https://github.com/arvinxx/commitlint-config-gitmoji/commit/5176c18))
+* :bookmark: chore(release): commitlint-plugin-gitmoji@2.2.1-beta.1 [skip ci] ([8a50b94](https://github.com/arvinxx/commitlint-config-gitmoji/commit/8a50b94)), closes [#40](https://github.com/arvinxx/commitlint-config-gitmoji/issues/40) [#40](https://github.com/arvinxx/commitlint-config-gitmoji/issues/40) [#40](https://github.com/arvinxx/commitlint-config-gitmoji/issues/40) [#40](https://github.com/arvinxx/commitlint-config-gitmoji/issues/40) [#104](https://github.com/arvinxx/commitlint-config-gitmoji/issues/104) [#105](https://github.com/arvinxx/commitlint-config-gitmoji/issues/105) [#106](https://github.com/arvinxx/commitlint-config-gitmoji/issues/106) [#107](https://github.com/arvinxx/commitlint-config-gitmoji/issues/107) [#108](https://github.com/arvinxx/commitlint-config-gitmoji/issues/108) [#109](https://github.com/arvinxx/commitlint-config-gitmoji/issues/109) [#110](https://github.com/arvinxx/commitlint-config-gitmoji/issues/110) [#111](https://github.com/arvinxx/commitlint-config-gitmoji/issues/111) [#113](https://github.com/arvinxx/commitlint-config-gitmoji/issues/113) [#114](https://github.com/arvinxx/commitlint-config-gitmoji/issues/114) [#115](https://github.com/arvinxx/commitlint-config-gitmoji/issues/115) [#116](https://github.com/arvinxx/commitlint-config-gitmoji/issues/116) [#117](https://github.com/arvinxx/commitlint-config-gitmoji/issues/117) [#118](https://github.com/arvinxx/commitlint-config-gitmoji/issues/118) [#119](https://github.com/arvinxx/commitlint-config-gitmoji/issues/119) [#121](https://github.com/arvinxx/commitlint-config-gitmoji/issues/121) [#306](https://github.com/arvinxx/commitlint-config-gitmoji/issues/306) [#367](https://github.com/arvinxx/commitlint-config-gitmoji/issues/367) [#522](https://github.com/arvinxx/commitlint-config-gitmoji/issues/522) [#581](https://github.com/arvinxx/commitlint-config-gitmoji/issues/581) [#655](https://github.com/arvinxx/commitlint-config-gitmoji/issues/655)
+* :memo: docs: Removed unnecesary documentation ([3d728e3](https://github.com/arvinxx/commitlint-config-gitmoji/commit/3d728e3))
+* :white_check_mark: test: fix test ([bf7ea1c](https://github.com/arvinxx/commitlint-config-gitmoji/commit/bf7ea1c))
+* :white_check_mark: test: fix test after upgrade ([30c897d](https://github.com/arvinxx/commitlint-config-gitmoji/commit/30c897d))
+* :wrench: chore: fix package.json ([7a2e102](https://github.com/arvinxx/commitlint-config-gitmoji/commit/7a2e102))
+* :zap: chore: Replaced fetching gitmoji.json for dependency ([cf1788f](https://github.com/arvinxx/commitlint-config-gitmoji/commit/cf1788f))
+* build(deps): bump dotenv from 8.5.1 to 9.0.0 ([1ff1169](https://github.com/arvinxx/commitlint-config-gitmoji/commit/1ff1169))
+
 ## <small>2.2.1-beta.1 (2022-12-24)</small>
 
 * :arrow_up: chore: upgrade to father4 ([5ea649e](https://github.com/arvinxx/commitlint-config-gitmoji/commit/5ea649e))
