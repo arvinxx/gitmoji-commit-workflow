@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['gitmoji'],
+  extends: ['./packages/commitlint-config/lib/index.js'],
 };

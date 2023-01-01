@@ -16,8 +16,8 @@ const rules: QualifiedRules = {
   'body-leading-blank': [Error, 'always'],
   // 结尾以空行开始
   'footer-leading-blank': [Error, 'always'],
-  // 标题最大长度 72 个字符
-  'header-max-length': [Error, 'always', 72],
+  // 标题最大长度 100 个字符
+  'header-max-length': [Error, 'always', 100],
   // Scope 永远小写
   'scope-case': [Error, 'always', 'lower-case'],
   // 不允许标题空着
