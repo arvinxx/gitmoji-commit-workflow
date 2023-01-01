@@ -12,7 +12,7 @@
   "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/commitlint-plugin",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arvinxx/commitlint-config-gitmoji.git"
+    "url": "https://github.com/arvinxx/gitmoji-commit-workflow.git"
   },
   "license": "MIT",
   "author": "ArvinX",
