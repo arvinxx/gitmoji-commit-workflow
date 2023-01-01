@@ -1,5 +1,12 @@
 # Changelog
 
+## commitlint-config-gitmoji [2.2.8-beta.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.7...commitlint-config-gitmoji@2.2.8-beta.1) (2023-01-01)
+
+
+### 🐛 Bug Fixes
+
+* fix missing module.exports when migration to father4 ([2da44fd](https://github.com/arvinxx/gitmoji-commit-workflow/commit/2da44fd))
+
 ## <small>2.2.7 (2023-01-01)</small>
 
 * :arrow_up: chore: upgrade to father4 ([5ea649e](https://github.com/arvinxx/gitmoji-commit-workflow/commit/5ea649e))
