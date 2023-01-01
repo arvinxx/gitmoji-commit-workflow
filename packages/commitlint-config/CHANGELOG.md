@@ -1,5 +1,22 @@
 # Changelog
 
+## <small>2.2.7 (2023-01-01)</small>
+
+* :arrow_up: chore: upgrade to father4 ([5ea649e](https://github.com/arvinxx/gitmoji-commit-workflow/commit/5ea649e))
+* :arrow_up: chore: upgrade to jest29 ([9aa126b](https://github.com/arvinxx/gitmoji-commit-workflow/commit/9aa126b))
+* :art: chore: reformat code with prettier ([809cbc9](https://github.com/arvinxx/gitmoji-commit-workflow/commit/809cbc9))
+* :art: chore: reformat package.json with prettier ([5176c18](https://github.com/arvinxx/gitmoji-commit-workflow/commit/5176c18))
+* :bookmark: chore(release): commitlint-config-gitmoji@2.2.7-beta.1 [skip ci] ([0331f34](https://github.com/arvinxx/gitmoji-commit-workflow/commit/0331f34))
+* :rotating_light: chore: fix lint ([647e88e](https://github.com/arvinxx/gitmoji-commit-workflow/commit/647e88e))
+
+
+
+
+
+### Dependencies
+
+* **commitlint-plugin-gitmoji:** upgraded to 2.2.1
+
 ## <small>2.2.7-beta.1 (2022-12-24)</small>
 
 * :arrow_up: chore: upgrade to father4 ([5ea649e](https://github.com/arvinxx/gitmoji-commit-workflow/commit/5ea649e))
