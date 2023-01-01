@@ -1,5 +1,13 @@
 # Changelog
 
+# semantic-release-config-gitmoji [1.3.0-beta.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.2.5...semantic-release-config-gitmoji@1.3.0-beta.1) (2023-01-01)
+
+
+### ✨ Features
+
+* add new monorepo params to work with monorepo ([6fdbc7f](https://github.com/arvinxx/gitmoji-commit-workflow/commit/6fdbc7f))
+* add new monorepo params to work with monorepo ([0c6cd36](https://github.com/arvinxx/gitmoji-commit-workflow/commit/0c6cd36))
+
 ## semantic-release-config-gitmoji [1.2.5](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.2.4...semantic-release-config-gitmoji@1.2.5) (2022-10-09)
 
 
