@@ -1,6 +1,6 @@
 import { defineConfig } from 'father';
 
 export default defineConfig({
-  cjs: { output: 'lib' },
-  // extraBabelPlugins: ['add-module-exports'],
+  cjs: { output: 'lib', platform: 'browser' },
+  extraBabelPlugins: ['add-module-exports'],
 });

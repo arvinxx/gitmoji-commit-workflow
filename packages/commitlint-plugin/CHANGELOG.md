@@ -1,5 +1,7 @@
 # Changelog
 
+## commitlint-plugin-gitmoji [2.2.2-beta.1](https://github.com/arvinxx/commitlint-config-gitmoji/compare/commitlint-plugin-gitmoji@2.2.1...commitlint-plugin-gitmoji@2.2.2-beta.1) (2023-01-01)
+
 ## <small>2.2.1 (2023-01-01)</small>
 
 * :arrow_up: chore: upgrade to father4 ([5ea649e](https://github.com/arvinxx/commitlint-config-gitmoji/commit/5ea649e))

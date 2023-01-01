@@ -11,8 +11,7 @@
 [download-image]: https://img.shields.io/npm/dm/commitlint-config-gitmoji.svg
 [download-url]: https://npmjs.org/package/commitlint-config-gitmoji
 
-Shareable `commitlint` config enforcing gitmoji commit message styles.
-Use with [commitlint](https://github.com/marionebl/commitlint) .
+Shareable `commitlint` config enforcing gitmoji commit message styles. Use with [commitlint](https://github.com/marionebl/commitlint) .
 
 ## Demo
 
@@ -32,8 +31,8 @@ npm i -D commitlint-config-gitmoji commitlint
 or
 
 ```
-# use yarn
-yarn add -D commitlint-config-gitmoji commitlint
+# use pnpm
+pnpm i -D commitlint-config-gitmoji commitlint
 ```
 
 ### Config
@@ -41,7 +40,7 @@ yarn add -D commitlint-config-gitmoji commitlint
 Add commitlint config for Gitmoji
 
 ```sh
-echo "module.exports = {extends: ['gitmoji']};" > .commitlintrc.js
+echo "module.exports = {extends: ['gitmoji']};" > commitlint.config.js
 ```
 
 ## Commit style
@@ -154,7 +153,7 @@ echo ":art: some message" # passes
 
 - **condition**: `header` has `value` or less characters
 - **rule**: `always`
-- **value**: `72`
+- **value**: `100`
 
 ```sh
 echo ":art: some message that is way too long and breaks the line max-length by several characters" # fails
