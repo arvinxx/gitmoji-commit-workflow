@@ -1,5 +1,16 @@
 # Changelog
 
+## commitlint-config-gitmoji [2.2.8](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.7...commitlint-config-gitmoji@2.2.8) (2023-01-01)
+
+### 🐛 Bug Fixes
+
+- **commitlint-config**: upgrade header-max-length config in commitlint ([e59891f](https://github.com/arvinxx/gitmoji-commit-workflow/commit/e59891f))
+- fix missing module.exports when migration to father4 ([2da44fd](https://github.com/arvinxx/gitmoji-commit-workflow/commit/2da44fd))
+
+### Dependencies
+
+- **commitlint-plugin-gitmoji:** upgraded to 2.2.2
+
 ## commitlint-config-gitmoji [2.2.8-beta.3](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.8-beta.2...commitlint-config-gitmoji@2.2.8-beta.3) (2023-01-01)
 
 ### 🐛 Bug Fixes
