@@ -74,6 +74,13 @@ export const createConfig = (options?: Options): SemRelOptions => {
 
   return {
     plugins: plugins.filter((p) => !!p),
+    branches: [
+      'master',
+      { name: 'rc-*', prerelease: 'rc' },
+      { name: 'rc', prerelease: true },
+      'alpha',
+      'beta',
+    ],
   };
 };
 
