@@ -32,8 +32,8 @@ npm i -D commitlint-config-gitmoji commitlint
 or
 
 ```
-# use yarn
-yarn add -D commitlint-config-gitmoji commitlint
+# use pnpm
+pnpm i -D commitlint-config-gitmoji commitlint
 ```
 
 ### Config
@@ -41,7 +41,7 @@ yarn add -D commitlint-config-gitmoji commitlint
 Add commitlint config for Gitmoji
 
 ```sh
-echo "module.exports = {extends: ['gitmoji']};" > .commitlintrc.js
+echo "module.exports = {extends: ['gitmoji']};" > commitlint.config.js
 ```
 
 ## Commit style

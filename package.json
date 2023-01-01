@@ -45,6 +45,7 @@
     "@types/sinon": "^10.0.0",
     "@umijs/max": "^4",
     "@umijs/test": "^4",
+    "babel-plugin-add-module-exports": "^1",
     "commitlint": "^17",
     "commitlint-config-gitmoji": "^2",
     "conventional-changelog-gitmoji-config": "^1",
