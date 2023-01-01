@@ -21,6 +21,7 @@
     "lint-staged:js": "eslint --cache --ext .js,.jsx,.ts,.tsx",
     "lint-styles": "stylelint",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx ",
+    "prepare": "husky install",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "release": "multi-semantic-release",
     "release:local": "multi-semantic-release --no-ci",
@@ -38,7 +39,7 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/lint": "^17",
+    "@commitlint/cli": "^17",
     "@types/jest": "^29",
     "@types/node": "^16",
     "@types/semantic-release": "^17",
@@ -46,7 +47,6 @@
     "@umijs/max": "^4",
     "@umijs/test": "^4",
     "babel-plugin-add-module-exports": "^1",
-    "commitlint": "^17",
     "commitlint-config-gitmoji": "^2",
     "conventional-changelog-gitmoji-config": "^1",
     "eslint": "^8",
