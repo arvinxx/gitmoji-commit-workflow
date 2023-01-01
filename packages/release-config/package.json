@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-config-gitmoji",
-  "version": "1.3.0-beta.2",
+  "version": "1.3.0",
   "description": "a gitmoji commit style presets for semantic-release",
   "keywords": [
     "conventional-changelog",
