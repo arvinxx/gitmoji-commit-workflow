@@ -47,7 +47,7 @@
     "@umijs/max": "^4",
     "@umijs/test": "^4",
     "babel-plugin-add-module-exports": "^1",
-    "commitlint-config-gitmoji": "^2",
+    "commitlint-config-gitmoji": "beta",
     "conventional-changelog-gitmoji-config": "^1",
     "eslint": "^8",
     "father": "^4",
