@@ -10,6 +10,16 @@
 
 - try to fix release tag problem ([6da470a](https://github.com/arvinxx/gitmoji-commit-workflow/commit/6da470a))
 
+# semantic-release-config-gitmoji [1.4.0-rc.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.3.0...semantic-release-config-gitmoji@1.4.0-rc.1) (2023-01-02)
+
+### ✨ Features
+
+- support rc prerelease ([2457ab3](https://github.com/arvinxx/gitmoji-commit-workflow/commit/2457ab3))
+
+### 🐛 Bug Fixes
+
+- try to fix release tag problem ([6da470a](https://github.com/arvinxx/gitmoji-commit-workflow/commit/6da470a))
+
 # semantic-release-config-gitmoji [1.3.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.2.5...semantic-release-config-gitmoji@1.3.0) (2023-01-01)
 
 ### ✨ Features
