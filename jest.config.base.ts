@@ -6,6 +6,8 @@ const base: Config.InitialOptions = createConfig({
   target: 'node',
 });
 
+delete base.testTimeout;
+
 const config: Config.InitialOptions = {
   ...base,
   moduleNameMapper: {
@@ -15,6 +17,7 @@ const config: Config.InitialOptions = {
     '@gitmoji/commit-types': '<rootDir>/packages/commit-types/src',
   },
   rootDir: path.resolve(__dirname, '.'),
+  coveragePathIgnorePatterns: ['/node_modules/', '/lib/', '/es/'],
 };
 
 export default config;
