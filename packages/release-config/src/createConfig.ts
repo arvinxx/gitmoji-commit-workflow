@@ -76,7 +76,7 @@ export const createConfig = (options?: Options): SemRelOptions => {
     plugins: plugins.filter((p) => !!p),
     branches: [
       'master',
-      { name: 'rc-*', prerelease: 'rc' },
+      { name: 'rc-*', prerelease: 'rc', channel: 'rc' },
       { name: 'rc', prerelease: true },
       'alpha',
       'beta',

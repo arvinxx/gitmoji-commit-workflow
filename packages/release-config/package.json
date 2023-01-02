@@ -30,7 +30,9 @@
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache",
     "cov": "jest --coverage",
     "start": "father dev",
-    "test": "jest"
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:update": "jest -u"
   },
   "dependencies": {
     "@gitmoji/commit-types": "1.1.5",
