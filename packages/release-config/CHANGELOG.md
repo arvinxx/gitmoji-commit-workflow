@@ -1,5 +1,11 @@
 # Changelog
 
+# semantic-release-config-gitmoji [1.4.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.3.0...semantic-release-config-gitmoji@1.4.0) (2023-01-02)
+
+### ✨ Features
+
+- add rc release config ([2201864](https://github.com/arvinxx/gitmoji-commit-workflow/commit/2201864)), closes [#661](https://github.com/arvinxx/gitmoji-commit-workflow/issues/661)
+
 # semantic-release-config-gitmoji [1.4.0-rc.3](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.4.0-rc.2...semantic-release-config-gitmoji@1.4.0-rc.3) (2023-01-02)
 
 # semantic-release-config-gitmoji [1.4.0-rc.2](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.4.0-rc.1...semantic-release-config-gitmoji@1.4.0-rc.2) (2023-01-02)
