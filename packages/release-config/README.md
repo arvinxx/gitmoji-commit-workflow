@@ -17,7 +17,10 @@ module.exports = {
 
 ### Create your config
 
+use this in monorepo
+
 ```js
+// .releaserc.js
 const { createConfig } = require('semantic-release-config-gitmoji/lib/createConfig');
 
 const config = createConfig({ monorepo: true });
