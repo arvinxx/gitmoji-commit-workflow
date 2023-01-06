@@ -13,7 +13,11 @@ exports[`get default config 1`] = `
       "name": "rc",
       "prerelease": true,
     },
-    "alpha",
+    {
+      "channel": "alpha",
+      "name": "alpha",
+      "prerelease": "alpha",
+    },
     "beta",
   ],
   "plugins": [
