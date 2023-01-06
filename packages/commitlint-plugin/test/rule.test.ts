@@ -8,7 +8,7 @@ test('should return error message if commit start without gitmoji code', () => {
 
   expect(value).toEqual([
     false,
-    'Your commit should start with gitmoji code,please check the emoji code on https://gitmoji.dev/.',
+    'Your commit should start with gitmoji code. Please check the emoji code on https://gitmoji.dev/.',
   ]);
 });
 
@@ -25,7 +25,7 @@ describe('commit start with gitmoji code', () => {
     const value = emojiRule({ raw: '🤔 chore(scope): test' } as Commit, when);
     expect(value).toEqual([
       false,
-      'Your commit should start with gitmoji code,please check the emoji code on https://gitmoji.dev/.',
+      'Your commit should start with gitmoji code. Please check the emoji code on https://gitmoji.dev/.',
     ]);
   });
 
