@@ -1,5 +1,11 @@
 # Changelog
 
+## semantic-release-config-gitmoji [1.4.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.4.0...semantic-release-config-gitmoji@1.4.1) (2023-01-06)
+
+### 🐛 Bug Fixes
+
+- fix alpha release problem ([1af7ad0](https://github.com/arvinxx/gitmoji-commit-workflow/commit/1af7ad0))
+
 # semantic-release-config-gitmoji [1.4.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.3.0...semantic-release-config-gitmoji@1.4.0) (2023-01-02)
 
 ### ✨ Features
