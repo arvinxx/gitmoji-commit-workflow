@@ -35,7 +35,7 @@ const emoji: Rule = (parsed) => {
     // if don't has gitmoji code or emoji unicode
     pass = false;
     errorMsg =
-      'Your commit should start with gitmoji code,please check the emoji code on https://gitmoji.dev/.';
+      'Your commit should start with gitmoji code. Please check the emoji code on https://gitmoji.dev/.';
   }
 
   return [pass, errorMsg];
