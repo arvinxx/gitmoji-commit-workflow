@@ -1,5 +1,11 @@
 # Changelog
 
+## commitlint-plugin-gitmoji [2.2.3](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-plugin-gitmoji@2.2.2...commitlint-plugin-gitmoji@2.2.3) (2023-01-06)
+
+### 🐛 Bug Fixes
+
+- corrected grammar of complaint message ([5bac55a](https://github.com/arvinxx/gitmoji-commit-workflow/commit/5bac55a))
+
 ## commitlint-plugin-gitmoji [2.2.2](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-plugin-gitmoji@2.2.1...commitlint-plugin-gitmoji@2.2.2) (2023-01-01)
 
 ## commitlint-plugin-gitmoji [2.2.2-beta.1](https://github.com/arvinxx/commitlint-config-gitmoji/compare/commitlint-plugin-gitmoji@2.2.1...commitlint-plugin-gitmoji@2.2.2-beta.1) (2023-01-01)

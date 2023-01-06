@@ -1,6 +1,6 @@
 {
   "name": "commitlint-plugin-gitmoji",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "shareable commitlint plugin enforcing gitmoji commit rules",
   "keywords": [
     "commitlint",
