@@ -1,5 +1,11 @@
 # Changelog
 
+## commitlint-plugin-gitmoji [2.2.4](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-plugin-gitmoji@2.2.3...commitlint-plugin-gitmoji@2.2.4) (2023-01-14)
+
+### 🐛 Bug Fixes
+
+- try to fix release issue by lock gitmojis version ([c928267](https://github.com/arvinxx/gitmoji-commit-workflow/commit/c928267))
+
 ## commitlint-plugin-gitmoji [2.2.3](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-plugin-gitmoji@2.2.2...commitlint-plugin-gitmoji@2.2.3) (2023-01-06)
 
 ### 🐛 Bug Fixes
