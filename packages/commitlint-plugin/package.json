@@ -33,7 +33,7 @@
   "dependencies": {
     "@commitlint/types": "^17",
     "emoji-name-map": "^1.2.9",
-    "gitmojis": "^3.11.1"
+    "gitmojis": "3.13.2"
   },
   "publishConfig": {
     "access": "public",
