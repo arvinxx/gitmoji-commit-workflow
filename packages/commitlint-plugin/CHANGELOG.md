@@ -1,5 +1,11 @@
 # Changelog
 
+## commitlint-plugin-gitmoji [2.2.5](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-plugin-gitmoji@2.2.4...commitlint-plugin-gitmoji@2.2.5) (2023-02-10)
+
+### 🐛 Bug Fixes
+
+- try to fix gitmoji unicode regex ([acd12b1](https://github.com/arvinxx/gitmoji-commit-workflow/commit/acd12b1)), closes [#662](https://github.com/arvinxx/gitmoji-commit-workflow/issues/662) [#56](https://github.com/arvinxx/gitmoji-commit-workflow/issues/56) [#493](https://github.com/arvinxx/gitmoji-commit-workflow/issues/493)
+
 ## commitlint-plugin-gitmoji [2.2.4](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-plugin-gitmoji@2.2.3...commitlint-plugin-gitmoji@2.2.4) (2023-01-14)
 
 ### 🐛 Bug Fixes

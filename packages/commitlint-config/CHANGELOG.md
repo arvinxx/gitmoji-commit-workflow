@@ -1,5 +1,11 @@
 # Changelog
 
+## commitlint-config-gitmoji [2.2.11](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.10...commitlint-config-gitmoji@2.2.11) (2023-02-10)
+
+### Dependencies
+
+- **commitlint-plugin-gitmoji:** upgraded to 2.2.5
+
 ## commitlint-config-gitmoji [2.2.10](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.9...commitlint-config-gitmoji@2.2.10) (2023-01-14)
 
 ### Dependencies

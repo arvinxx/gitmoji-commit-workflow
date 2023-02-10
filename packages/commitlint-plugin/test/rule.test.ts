@@ -1,4 +1,6 @@
 import type { Commit, RuleConfigCondition } from '@commitlint/types';
+import { gitmojis } from 'gitmojis';
+
 import emojiRule from '../src/rule';
 
 const when: RuleConfigCondition = 'always';
@@ -25,7 +27,7 @@ describe('commit start with gitmoji code', () => {
     const value = emojiRule({ raw: '🤔 chore(scope): test' } as Commit, when);
     expect(value).toEqual([
       false,
-      'Your commit should start with gitmoji code. Please check the emoji code on https://gitmoji.dev/.',
+      '🤔 is not in the correct gitmoji list, please check the emoji code on https://gitmoji.dev/.',
     ]);
   });
 
@@ -42,6 +44,11 @@ describe('commit start with gitmoji code', () => {
     expect(value).toEqual([true, 'passed']);
   });
 
+  it(':construction_worker: should pass', () => {
+    const value = emojiRule({ raw: ':construction_worker: test' } as Commit, when);
+    expect(value).toEqual([true, 'passed']);
+  });
+
   it('🎉 should pass', () => {
     const value = emojiRule({ raw: '🎉 test' } as Commit, when);
     expect(value).toEqual([true, 'passed']);
@@ -55,5 +62,20 @@ describe('commit start with gitmoji code', () => {
   it('💄 should pass', () => {
     const value = emojiRule({ raw: '💄 test' } as Commit, when);
     expect(value).toEqual([true, 'passed']);
+  });
+
+  it('⚡️should pass', () => {
+    const value = emojiRule({ raw: '⚡️ test' } as Commit, when);
+    expect(value).toEqual([true, 'passed']);
+  });
+
+  it('every emoji in list past', () => {
+    const gitmojiUnicode: string[] = gitmojis.map((gitmoji) => gitmoji.emoji);
+
+    gitmojiUnicode.forEach((unicode) => {
+      const value = emojiRule({ raw: `${unicode} test` } as Commit, when);
+      console.log(`testing ${unicode}...`);
+      expect(value).toEqual([true, 'passed']);
+    });
   });
 });

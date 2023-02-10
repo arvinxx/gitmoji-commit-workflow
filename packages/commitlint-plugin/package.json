@@ -1,6 +1,6 @@
 {
   "name": "commitlint-plugin-gitmoji",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "description": "shareable commitlint plugin enforcing gitmoji commit rules",
   "keywords": [
     "commitlint",
@@ -32,8 +32,8 @@
   },
   "dependencies": {
     "@commitlint/types": "^17",
-    "emoji-name-map": "^1.2.9",
-    "gitmojis": "3.13.2"
+    "emoji-regex": "^10",
+    "gitmojis": "^3"
   },
   "publishConfig": {
     "access": "public",
