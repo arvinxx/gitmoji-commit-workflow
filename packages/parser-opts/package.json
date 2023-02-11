@@ -1,6 +1,6 @@
 {
   "name": "@gitmoji/parser-opts",
-  "version": "1.4.0-beta.2",
+  "version": "1.4.0",
   "description": "gitmoji styles commit parser options",
   "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/parser-opts",
   "bugs": {
@@ -23,7 +23,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@gitmoji/gitmoji-regex": "1.0.0-beta.1"
+    "@gitmoji/gitmoji-regex": "1.0.0"
   },
   "publishConfig": {
     "access": "public",

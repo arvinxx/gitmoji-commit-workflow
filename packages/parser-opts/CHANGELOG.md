@@ -1,5 +1,12 @@
 # Changelog
 
+# @gitmoji/parser-opts [1.4.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.3.1...@gitmoji/parser-opts@1.4.0) (2023-02-11)
+
+### ✨ Features
+
+- **parser-opts**: support UCS-4 unicode ([bc09794](https://github.com/arvinxx/gitmoji-commit-workflow/commit/bc09794))
+- support UCS-4 emoji unicode ([006d8e4](https://github.com/arvinxx/gitmoji-commit-workflow/commit/006d8e4))
+
 # @gitmoji/parser-opts [1.4.0-beta.2](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.4.0-beta.1...@gitmoji/parser-opts@1.4.0-beta.2) (2023-02-11)
 
 ### ✨ Features
