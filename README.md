@@ -29,7 +29,7 @@
 
 ## What is Gitmoji Commit Workflow?
 
-TODO: a medium article | [中文](https://www.yuque.com/arvinxx-fe/workflow/gitmoji-commit-workflow)
+English(TODO) | [中文](https://www.yuque.com/arvinxx-fe/workflow/gitmoji-commit-workflow)
 
 ## Template
 
