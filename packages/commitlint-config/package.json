@@ -30,7 +30,7 @@
   "dependencies": {
     "@commitlint/types": "^17",
     "@gitmoji/commit-types": "1.1.5",
-    "@gitmoji/parser-opts": "1.4.0",
+    "@gitmoji/parser-opts": "1.4.0-beta.2",
     "commitlint-plugin-gitmoji": "2.2.6"
   },
   "devDependencies": {
