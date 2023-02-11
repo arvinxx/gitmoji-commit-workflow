@@ -1,6 +1,6 @@
 {
   "name": "@gitmoji/gitmoji-regex",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "a gitmoji regex to for both gitmoji code and gitmoji unicode",
   "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/gitmoji-regex",
   "bugs": {
