@@ -1,0 +1,33 @@
+{
+  "name": "@gitmoji/gitmoji-regex",
+  "version": "0.0.0",
+  "description": "a gitmoji regex to for both gitmoji code and gitmoji unicode",
+  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/gitmoji-regex",
+  "bugs": {
+    "url": "https://github.com/arvinxx/gitmoji-commit-workflow/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arvinxx/gitmoji-commit-workflow.git"
+  },
+  "license": "ISC",
+  "author": "arvinxx <arvinx@foxmail.com>",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "father build",
+    "clean": "rm -rf es lib dist build coverage .eslintcache",
+    "cov": "jest --coverage",
+    "test": "jest"
+  },
+  "dependencies": {
+    "emoji-regex": "^10",
+    "gitmojis": "^3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

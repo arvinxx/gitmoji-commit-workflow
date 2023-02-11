@@ -69,7 +69,7 @@ describe('commit start with gitmoji code', () => {
     expect(value).toEqual([true, 'passed']);
   });
 
-  it('every emoji in list past', () => {
+  it('every emoji in gitmoji list should pass', () => {
     const gitmojiUnicode: string[] = gitmojis.map((gitmoji) => gitmoji.emoji);
 
     gitmojiUnicode.forEach((unicode) => {

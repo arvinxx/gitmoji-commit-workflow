@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@commitlint/types": "^17",
-    "emoji-regex": "^10",
+    "@gitmoji/gitmoji-regex": "0.0.0",
     "gitmojis": "^3"
   },
   "publishConfig": {
