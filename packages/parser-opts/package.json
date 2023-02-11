@@ -14,14 +14,16 @@
   "author": "arvinxx <arvinx@foxmail.com>",
   "main": "lib/index.js",
   "files": [
-    "lib",
-    "src"
+    "lib"
   ],
   "scripts": {
     "build": "father build",
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache",
     "cov": "jest --coverage",
     "test": "jest"
+  },
+  "dependencies": {
+    "@gitmoji/gitmoji-regex": "0.0.0"
   },
   "publishConfig": {
     "access": "public",
