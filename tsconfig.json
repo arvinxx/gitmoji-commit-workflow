@@ -18,9 +18,11 @@
     "baseUrl": ".",
     "paths": {
       "@gitmoji/parser-opts": ["./packages/parser-opts/src"],
-      "@gitmoji/commit-types": ["./packages/commit-type/src"],
+      "@gitmoji/gitmoji-regex": ["./packages/gitmoji-regex/src"],
+      "@gitmoji/commit-types": ["./packages/commit-types/src"],
       "commitlint-plugin-gitmoji": ["./packages/commitlint-plugin/src"],
-      "conventional-changelog-gitmoji-config": ["./packages/changelog/src"]
+      "conventional-changelog-gitmoji-config": ["./packages/changelog/src"],
+      "semantic-release-config-gitmoji": ["./packages/release-config/src"]
     }
   }
 }

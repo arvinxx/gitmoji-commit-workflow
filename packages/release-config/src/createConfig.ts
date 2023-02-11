@@ -79,7 +79,7 @@ export const createConfig = (options?: Options): SemRelOptions => {
       { name: 'rc-*', prerelease: 'rc', channel: 'rc' },
       { name: 'rc', prerelease: true },
       { name: 'alpha', prerelease: 'alpha', channel: 'alpha' },
-      'beta',
+      { name: 'beta', prerelease: 'beta', channel: 'beta' },
     ],
   };
 };

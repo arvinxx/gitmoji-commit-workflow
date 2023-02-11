@@ -1,8 +1,8 @@
 {
-  "name": "@gitmoji/parser-opts",
-  "version": "1.4.0-beta.2",
-  "description": "gitmoji styles commit parser options",
-  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/parser-opts",
+  "name": "@gitmoji/gitmoji-regex",
+  "version": "1.0.0-beta.1",
+  "description": "a gitmoji regex to for both gitmoji code and gitmoji unicode",
+  "homepage": "https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/gitmoji-regex",
   "bugs": {
     "url": "https://github.com/arvinxx/gitmoji-commit-workflow/issues"
   },
@@ -18,12 +18,13 @@
   ],
   "scripts": {
     "build": "father build",
-    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache",
+    "clean": "rm -rf es lib dist build coverage .eslintcache",
     "cov": "jest --coverage",
     "test": "jest"
   },
   "dependencies": {
-    "@gitmoji/gitmoji-regex": "1.0.0-beta.1"
+    "emoji-regex": "^10",
+    "gitmojis": "^3"
   },
   "publishConfig": {
     "access": "public",

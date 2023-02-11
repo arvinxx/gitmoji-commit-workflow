@@ -1,6 +1,6 @@
 {
   "name": "conventional-changelog-gitmoji-config",
-  "version": "1.4.4",
+  "version": "1.4.5-beta.1",
   "description": "a gitmoji commit style presets for conventional changelog",
   "keywords": [
     "conventional-changelog",
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@gitmoji/commit-types": "1.1.5",
-    "@gitmoji/parser-opts": "1.3.1",
+    "@gitmoji/parser-opts": "1.4.0-beta.2",
     "cosmiconfig": "^7.0.0"
   },
   "devDependencies": {

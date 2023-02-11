@@ -56,6 +56,8 @@
     "lint-staged": "^13",
     "multi-semantic-release": "^3",
     "prettier": "^2.2.1",
+    "prettier-plugin-organize-imports": "^3",
+    "prettier-plugin-packagejson": "^2",
     "semantic-release": "^19.0.5",
     "ts-jest": "^29",
     "ts-node": "^10",

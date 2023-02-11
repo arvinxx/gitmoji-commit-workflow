@@ -1,5 +1,22 @@
 # Changelog
 
+# commitlint-config-gitmoji [2.3.0-beta.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.12-beta.2...commitlint-config-gitmoji@2.3.0-beta.1) (2023-02-11)
+
+### ✨ Features
+
+- support UCS-4 emoji unicode ([006d8e4](https://github.com/arvinxx/gitmoji-commit-workflow/commit/006d8e4))
+
+### Dependencies
+
+- **@gitmoji/parser-opts:** upgraded to 1.4.0-beta.2
+
+## commitlint-config-gitmoji [2.2.12-beta.2](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.12-beta.1...commitlint-config-gitmoji@2.2.12-beta.2) (2023-02-11)
+
+### Dependencies
+
+- **@gitmoji/parser-opts:** upgraded to 1.4.0-beta.1
+- **commitlint-plugin-gitmoji:** upgraded to 2.2.6-beta.1
+
 ## commitlint-config-gitmoji [2.2.11](https://github.com/arvinxx/gitmoji-commit-workflow/compare/commitlint-config-gitmoji@2.2.10...commitlint-config-gitmoji@2.2.11) (2023-02-10)
 
 ### Dependencies

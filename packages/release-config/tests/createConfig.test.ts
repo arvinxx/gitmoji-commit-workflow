@@ -1,4 +1,4 @@
-import createConfig from './createConfig';
+import { createConfig } from '../src/createConfig';
 
 describe('createConfig', () => {
   it('disable npm plugin', () => {

@@ -7,6 +7,10 @@
     "moduleResolution": "Node",
     "lib": ["ES2020"],
     "esModuleInterop": true,
-    "declaration": true
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@gitmoji/gitmoji-regex": ["./src"]
+    }
   }
 }

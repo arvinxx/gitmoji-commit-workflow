@@ -1,9 +1,8 @@
-import { type Plugin, RuleConfigSeverity } from '@commitlint/types';
 import type { LintOptions, QualifiedRules } from '@commitlint/types';
-
-import gitmojiPlugin from 'commitlint-plugin-gitmoji';
-import gitmojiParserOpts from '@gitmoji/parser-opts';
+import { RuleConfigSeverity, type Plugin } from '@commitlint/types';
 import commitTypes from '@gitmoji/commit-types';
+import gitmojiParserOpts from '@gitmoji/parser-opts';
+import gitmojiPlugin from 'commitlint-plugin-gitmoji';
 
 const { Error } = RuleConfigSeverity;
 

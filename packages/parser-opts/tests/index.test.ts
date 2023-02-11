@@ -1,4 +1,4 @@
-import parserOpts from '../src';
+import parserOpts from '@gitmoji/parser-opts';
 
 const { headerPattern: regex } = parserOpts;
 describe('@gitmoji/parser-opts', () => {
@@ -110,6 +110,28 @@ describe('@gitmoji/parser-opts', () => {
       expect(type).toBe('feat');
       expect(scope).toBe('unicode');
       expect(subject).toBe('support unicode');
+      expect(ticket).toBeUndefined();
+    });
+
+    it('⚡️ feat(unicode): support UCS-4 unicode', () => {
+      const result = regex.exec('⚡️ feat(unicode): support UCS-4 unicode');
+
+      expect(result).toHaveLength(5);
+      const { type, scope, subject, ticket } = result.groups;
+      expect(type).toBe('feat');
+      expect(scope).toBe('unicode');
+      expect(subject).toBe('support UCS-4 unicode');
+      expect(ticket).toBeUndefined();
+    });
+
+    it('😂 test: test', () => {
+      const result = regex.exec('😂 feat(emoji): get emoji');
+
+      expect(result).toHaveLength(5);
+      const { type, scope, subject, ticket } = result.groups;
+      expect(type).toBe('feat');
+      expect(scope).toBe('emoji');
+      expect(subject).toBe('get emoji');
       expect(ticket).toBeUndefined();
     });
   });
