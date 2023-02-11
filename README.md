@@ -67,6 +67,7 @@ Here are some packages for gitmoji commit workflow
 | [commitlint-plugin-gitmoji](packages/commitlint-plugin) | [![NPM version][plugin-image]][plugin-url] | a commitlint plugin to add gitmoji check rule        |
 | [@gitmoji/parser-opts](./packages/parser-opts)          | [![NPM version][parser-image]][parser-url] | a shareable parser options for gitmoji styles commit |
 | [@gitmoji/commit-types](./packages/commit-types)        | [![NPM version][types-image]][types-url]   | gitmoji styles commit types                          |
+| [@gitmoji/gitmoji-regex](./packages/gitmoji-regex)      | [![NPM version][regex-image]][regex-url]   | a gitmoji regex                                      |
 
 <!-- npm url -->
 
@@ -76,6 +77,8 @@ Here are some packages for gitmoji commit workflow
 [parser-url]: http://npmjs.org/package/@gitmoji/parser-opts
 [types-image]: http://img.shields.io/npm/v/@gitmoji/commit-types.svg?style=flat-square&color=deepgreen&label=latest
 [types-url]: http://npmjs.org/package/@gitmoji/commit-types
+[regex-image]: http://img.shields.io/npm/v/@gitmoji/gitmoji-regex.svg?style=flat-square&color=deepgreen&label=latest
+[regex-url]: http://npmjs.org/package/@gitmoji/gitmoji-regex
 
 ## About this Repo
 
