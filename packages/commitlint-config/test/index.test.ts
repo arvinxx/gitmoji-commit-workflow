@@ -81,4 +81,10 @@ describe('valid commit', () => {
 
     expect(valid).toBeTruthy();
   });
+
+  it('$ ⚡️ chore(scope): test -> passed', async () => {
+    const result = await lint('⚡️ chore(scope): test');
+
+    expect(result.valid).toBeTruthy();
+  });
 });
