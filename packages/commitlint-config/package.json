@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "build": "father build",
-    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache",
+    "clean": "rm -rf es lib dist build coverage .eslintcache",
     "cov": "jest --coverage",
     "start": "father dev",
     "test": "jest"
