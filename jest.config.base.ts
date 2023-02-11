@@ -14,6 +14,7 @@ const config: Config.InitialOptions = {
     ...base.moduleNameMapper,
     'commitlint-plugin-gitmoji': '<rootDir>/packages/commitlint-plugin/src',
     '@gitmoji/parser-opts': '<rootDir>/packages/parser-opts/src',
+    '@gitmoji/gitmoji-regex': '<rootDir>/packages/gitmoji-regex/src',
     '@gitmoji/commit-types': '<rootDir>/packages/commit-types/src',
   },
   rootDir: path.resolve(__dirname, '.'),
