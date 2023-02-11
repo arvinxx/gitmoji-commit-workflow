@@ -23,7 +23,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@gitmoji/gitmoji-regex": "1.0.0"
+    "@gitmoji/gitmoji-regex": "1.0.0-beta.1"
   },
   "publishConfig": {
     "access": "public",

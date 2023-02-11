@@ -1,18 +1,22 @@
 # Changelog
 
-## @gitmoji/parser-opts [1.3.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.3.0...@gitmoji/parser-opts@1.3.1) (2022-10-09)
+# @gitmoji/parser-opts [1.4.0-beta.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.3.1...@gitmoji/parser-opts@1.4.0-beta.1) (2023-02-11)
 
+### ✨ Features
+
+- **parser-opts**: support UCS-4 unicode ([bc09794](https://github.com/arvinxx/gitmoji-commit-workflow/commit/bc09794))
+
+## @gitmoji/parser-opts [1.3.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.3.0...@gitmoji/parser-opts@1.3.1) (2022-10-09)
 
 ### 🐛 Bug Fixes
 
-* allow parenthesis around ticket number ([3393666](https://github.com/arvinxx/gitmoji-commit-workflow/commit/3393666))
+- allow parenthesis around ticket number ([3393666](https://github.com/arvinxx/gitmoji-commit-workflow/commit/3393666))
 
 ## @gitmoji/parser-opts [1.3.1-beta.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.3.0...@gitmoji/parser-opts@1.3.1-beta.1) (2022-10-09)
 
-
 ### 🐛 Bug Fixes
 
-* allow parenthesis around ticket number ([3393666](https://github.com/arvinxx/gitmoji-commit-workflow/commit/3393666))
+- allow parenthesis around ticket number ([3393666](https://github.com/arvinxx/gitmoji-commit-workflow/commit/3393666))
 
 # @gitmoji/parser-opts [1.3.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/@gitmoji/parser-opts@1.2.6...@gitmoji/parser-opts@1.3.0) (2021-03-06)
 
