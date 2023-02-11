@@ -1,31 +1,28 @@
 # Changelog
 
-## conventional-changelog-gitmoji-config [1.4.4](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.3...conventional-changelog-gitmoji-config@1.4.4) (2022-10-09)
-
-
-
-
+## conventional-changelog-gitmoji-config [1.4.5-beta.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.4...conventional-changelog-gitmoji-config@1.4.5-beta.1) (2023-02-11)
 
 ### Dependencies
 
-* **@gitmoji/parser-opts:** upgraded to 1.3.1
+- **@gitmoji/parser-opts:** upgraded to 1.4.0-beta.1
+
+## conventional-changelog-gitmoji-config [1.4.4](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.3...conventional-changelog-gitmoji-config@1.4.4) (2022-10-09)
+
+### Dependencies
+
+- **@gitmoji/parser-opts:** upgraded to 1.3.1
 
 ## conventional-changelog-gitmoji-config [1.4.4-beta.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.3...conventional-changelog-gitmoji-config@1.4.4-beta.1) (2022-10-09)
 
-
-
-
-
 ### Dependencies
 
-* **@gitmoji/parser-opts:** upgraded to 1.3.1-beta.1
+- **@gitmoji/parser-opts:** upgraded to 1.3.1-beta.1
 
 ## conventional-changelog-gitmoji-config [1.4.3](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.2...conventional-changelog-gitmoji-config@1.4.3) (2021-03-12)
 
-
 ### 🐛 Bug Fixes
 
-* fix error when there is no changelog config ([1ec76ee](https://github.com/arvinxx/gitmoji-commit-workflow/commit/1ec76ee))
+- fix error when there is no changelog config ([1ec76ee](https://github.com/arvinxx/gitmoji-commit-workflow/commit/1ec76ee))
 
 ## conventional-changelog-gitmoji-config [1.4.2](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.1...conventional-changelog-gitmoji-config@1.4.2) (2021-03-06)
 
