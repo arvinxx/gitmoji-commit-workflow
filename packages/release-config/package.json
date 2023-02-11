@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-config-gitmoji",
-  "version": "1.4.1",
+  "version": "1.4.2-beta.1",
   "description": "a gitmoji commit style presets for semantic-release",
   "keywords": [
     "conventional-changelog",
@@ -41,7 +41,7 @@
     "@semantic-release/github": "npm:@achingbrain/semantic-release-github",
     "@semrel-extra/npm": "^1",
     "@types/semantic-release": "^17.2.0",
-    "conventional-changelog-gitmoji-config": "1.4.4"
+    "conventional-changelog-gitmoji-config": "1.4.5-beta.1"
   },
   "publishConfig": {
     "access": "public",
