@@ -1,6 +1,6 @@
 {
   "name": "conventional-changelog-gitmoji-config",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "description": "a gitmoji commit style presets for conventional changelog",
   "keywords": [
     "conventional-changelog",

@@ -1,5 +1,11 @@
 # Changelog
 
+## conventional-changelog-gitmoji-config [1.4.7](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.6...conventional-changelog-gitmoji-config@1.4.7) (2023-02-15)
+
+### 🐛 Bug Fixes
+
+- 修正 changelog 日志问题 ([c4053b2](https://github.com/arvinxx/gitmoji-commit-workflow/commit/c4053b2))
+
 ## conventional-changelog-gitmoji-config [1.4.6](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.5...conventional-changelog-gitmoji-config@1.4.6) (2023-02-11)
 
 ### Dependencies
