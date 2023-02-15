@@ -7,11 +7,6 @@
     "sourceMap": true,
     "moduleResolution": "Node",
     "lib": ["ES2020"],
-    "esModuleInterop": true,
-    "baseUrl": "../..",
-    "paths": {
-      "@gitmoji/commit-types": ["./packages/commit-types/src"],
-      "@gitmoji/parser-opts": ["./packages/parser-opts/src"]
-    }
+    "esModuleInterop": true
   }
 }
