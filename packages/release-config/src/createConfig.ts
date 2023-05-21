@@ -1,12 +1,12 @@
 import type { Options as SemRelOptions, PluginSpec } from 'semantic-release';
 
-import type { Options } from './type';
 import commitAnalyzer from './plugins/commitAnalyzer';
 import git from './plugins/git';
 import github from './plugins/github';
 import npm from './plugins/npm';
+import type { Options } from './type';
 
-export type { ReleaseRule, Options } from './type';
+export type { Options, ReleaseRule } from './type';
 
 export const createConfig = (options?: Options): SemRelOptions => {
   const opts = {
@@ -76,6 +76,7 @@ export const createConfig = (options?: Options): SemRelOptions => {
     plugins: plugins.filter((p) => !!p),
     branches: [
       'master',
+      'main',
       { name: 'rc-*', prerelease: 'rc', channel: 'rc' },
       { name: 'rc', prerelease: true },
       { name: 'alpha', prerelease: 'alpha', channel: 'alpha' },
