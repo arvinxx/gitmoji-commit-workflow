@@ -4,6 +4,7 @@ exports[`get default config 1`] = `
 {
   "branches": [
     "master",
+    "main",
     {
       "channel": "rc",
       "name": "rc-*",
