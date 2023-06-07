@@ -2,6 +2,7 @@ import type { Options } from 'conventional-changelog-writer';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 import type { CustomConfig } from './customConfig';
+import finalizeContext from './finalizeContext';
 import transformer from './transformer';
 
 const basePath = resolve(__dirname, './templates');
@@ -41,5 +42,6 @@ export default (customConfig: CustomConfig): Options => {
     // 替换 commit.hbs 模板中的 gitUserInfo
     commitPartial: reduceHeadingLevel(!customConfig.reduceHeadingLevel, commitPartial),
     footerPartial: reduceHeadingLevel(!customConfig.reduceHeadingLevel, footerPartial),
+    finalizeContext: finalizeContext(customConfig),
   };
 };

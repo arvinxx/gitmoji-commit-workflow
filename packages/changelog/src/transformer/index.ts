@@ -87,8 +87,11 @@ export default (customConfig: CustomConfig) => (commit: Commit, context: Context
   });
 
   // format
-  if (commit.authorNameEncode) commit.authorNameEncode = encodeURIComponent(commit.authorName);
-  if (commit.subject) commit.subject = pangu.spacing(capitalizeFirstLetter(commit.subject));
+  if (commit.authorName) commit.authorNameEncode = encodeURIComponent(commit.authorName);
+  if (commit.subject) {
+    commit.rawSubject = commit.subject;
+    commit.subject = pangu.spacing(capitalizeFirstLetter(commit.subject));
+  }
 
   return commit;
 };
