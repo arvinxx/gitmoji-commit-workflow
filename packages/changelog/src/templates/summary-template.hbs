@@ -10,17 +10,22 @@
 {{/each}}
 {{/each}}
 
+{{#each authors}}
+[<img width="32" height="32" src="https://avatars.githubusercontent.com/{{authorNameEncode}}" />](https://github.com/{{authorNameEncode}})
+{{/each}}
 <details>
 <summary><kbd>Improvements and Fixes</kbd></summary>
 
 {{#each commitGroups}}
 
 {{#if title}}
-> #### {{subtitle}}
->
+<br/>
+
+#### {{subtitle}}
+
 {{/if}}
 {{#each commits}}
-> {{> commit root=@root}}{{/each}}
+{{> commit root=@root}}{{/each}}
 {{/each}}
 {{> footer}}
 </details>

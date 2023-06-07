@@ -3,6 +3,7 @@ import { CustomConfig } from '../customConfig';
 import { typeMap } from '../transformer/typeDisplayName';
 export default (customConfig: CustomConfig) => (context: Context): Context => {
   const subCommitScope = customConfig?.scopeDisplayName?.['*'] || '';
+  const authors = {};
   context.commitGroups = context.commitGroups.map((item) => {
     const subtitle = Object.values(typeMap).find(
       (i) =>
@@ -34,6 +35,13 @@ export default (customConfig: CustomConfig) => (context: Context): Context => {
       } else {
         c.last = false;
       }
+      if (c.authorNameEncode && !authors[c.authorNameEncode]) {
+        authors[c.authorNameEncode] = {
+          authorName: c.authorName,
+          authorEmail: c.authorEmail,
+          authorNameEncode: c.authorNameEncode,
+        };
+      }
       return c;
     });
     return {
@@ -42,5 +50,6 @@ export default (customConfig: CustomConfig) => (context: Context): Context => {
       commits,
     };
   });
+  context.authors = Object.values(authors);
   return context;
 };
