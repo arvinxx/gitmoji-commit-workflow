@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+# lobe-commit as a commit hook
+if npx -v >&/dev/null
+then
+  exec < /dev/tty
+  npx -c "lobe-commit --hook $1 $2"
+else
+  exec < /dev/tty
+  lobe-commit --hook $1 $2
+fi

@@ -8,8 +8,8 @@ import { scopeMapDisplayName } from './scopeMapDisplayName';
 import { getDisplayName } from './typeDisplayName';
 
 const capitalizeFirstLetter = (str: string): string => {
-  const firstLetter = str.slice(0, 1).toUpperCase();
-  const remainingStr = str.slice(1);
+  const firstLetter = String(str).slice(0, 1).toUpperCase();
+  const remainingStr = String(str).slice(1);
   return firstLetter + remainingStr;
 };
 
@@ -87,8 +87,8 @@ export default (customConfig: CustomConfig) => (commit: Commit, context: Context
   });
 
   // format
-  commit.authorNameEncode = encodeURIComponent(commit.authorName);
-  commit.subject = pangu.spacing(capitalizeFirstLetter(commit.subject));
+  if (commit.authorNameEncode) commit.authorNameEncode = encodeURIComponent(commit.authorName);
+  if (commit.subject) commit.subject = pangu.spacing(capitalizeFirstLetter(commit.subject));
 
   return commit;
 };

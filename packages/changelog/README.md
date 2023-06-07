@@ -65,14 +65,17 @@ interface ChangelogConfig {
   showSummary?: boolean;
   /**
    * Reduce heading level from # to ##
+   * @default false
    */
   reduceHeadingLevel?: boolean;
   /**
    * put timestamp to second line
+   * @default false
    */
   newlineTimestamp?: boolean;
   /**
    * add back to top button
+   * @default false
    */
   addBackToTop?: boolean;
 }
