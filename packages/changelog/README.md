@@ -81,6 +81,14 @@ interface ChangelogConfig {
 }
 ```
 
+> 👉 Tip: If turn on `back to top` button, should edit `CHANGELOG.md` first like below:
+
+```markdown
+<a name="readme-top"></a>
+
+# Changelog
+```
+
 ## License
 
 [MIT](../../LICENSE) ® Arvin Xu
