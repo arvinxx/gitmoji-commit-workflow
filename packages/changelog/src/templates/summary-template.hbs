@@ -6,20 +6,22 @@
 ### {{title}}
 
 {{/if}}
-{{#each commits}}{{#if first}}**{{scope}}**: {{subject}}{{else}}{{rawSubject}}{{/if}}{{#if last}}.{{else}},{{/if}}
+{{#each commits}}{{#if first}}- **{{scope}}**: {{subject}}{{else}}{{rawSubject}}{{/if}}{{#if last}}.
+{{else}},{{/if}}{{/each}}
 {{/each}}
-{{/each}}
+
+<br/>
 
 {{#each authors}}
 [<img width="32" height="32" src="https://avatars.githubusercontent.com/{{authorNameEncode}}" />](https://github.com/{{authorNameEncode}})
 {{/each}}
+
 <details>
-<summary><kbd>Improvements and Fixes</kbd></summary>
+<summary><kbd>Improvements and fixes details</kbd></summary>
 
 {{#each commitGroups}}
 
 {{#if title}}
-<br/>
 
 #### {{subtitle}}
 
