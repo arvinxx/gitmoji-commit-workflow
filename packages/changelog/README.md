@@ -47,12 +47,34 @@ interface ChangelogConfig {
    * title language
    * @default en-US
    */
-  titleLanguage?: 'en-US' | 'zh-CN';
+  titleLanguage?: 'en-US' | 'zh-CN' | 'mix';
   /**
    * whether to show author
    * @default false
    */
   showAuthor?: boolean;
+  /**
+   * whether to show author avatar
+   * @default false
+   */
+  showAuthorAvatar?: boolean;
+  /**
+   * whether to show summary
+   * @default false
+   */
+  showSummary?: boolean;
+  /**
+   * Reduce heading level from # to ##
+   */
+  reduceHeadingLevel?: boolean;
+  /**
+   * put timestamp to second line
+   */
+  newlineTimestamp?: boolean;
+  /**
+   * add back to top button
+   */
+  addBackToTop?: boolean;
 }
 ```
 

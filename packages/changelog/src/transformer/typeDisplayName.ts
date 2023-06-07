@@ -2,7 +2,7 @@ import type { CommitTypes } from '@gitmoji/commit-types';
 
 export interface DisplayNameOptions {
   withEmoji?: boolean;
-  language?: 'en-US' | 'zh-CN';
+  language?: 'en-US' | 'zh-CN' | 'mix';
 }
 
 interface TypeNameMap {
@@ -78,7 +78,9 @@ export const getDisplayName = (
   if (type in typeMap) {
     const item = typeMap[type];
     const { emoji } = item;
-    return `${withEmoji ? `${emoji} ` : ''}${item[language]}`;
+    return `${withEmoji ? `${emoji} ` : ''}${
+      language === 'mix' ? [item['en-US'], item['zh-CN']].join(' | ') : item[language]
+    }`;
   }
 
   return type;
