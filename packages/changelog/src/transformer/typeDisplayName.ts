@@ -4,7 +4,7 @@ import { merge } from 'lodash';
 export interface DisplayNameOptions {
   withEmoji?: boolean;
   language?: 'en-US' | 'zh-CN' | 'mix';
-  customTypeMap?: Record<Exclude<CommitTypes, 'wip'>, CustomTypeNameMap>;
+  customTypeMap?: { [key in CommitTypes]?: CustomTypeNameMap };
 }
 
 export interface CustomTypeNameMap {
@@ -91,7 +91,7 @@ export const typeMap: Record<Exclude<CommitTypes, 'wip'>, TypeNameMap> = {
 };
 
 export const defineTypeMap = (
-  customTypeMap: Record<Exclude<CommitTypes, 'wip'>, CustomTypeNameMap>,
+  customTypeMap: { [key in CommitTypes]?: CustomTypeNameMap },
 ): Record<Exclude<CommitTypes, 'wip'>, TypeNameMap> => {
   if (!customTypeMap) return typeMap;
   return merge(typeMap, customTypeMap);
