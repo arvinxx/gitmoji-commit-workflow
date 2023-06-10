@@ -1,5 +1,11 @@
 # Changelog
 
+## semantic-release-config-gitmoji [1.5.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.5.0...semantic-release-config-gitmoji@1.5.1) (2023-06-10)
+
+### Dependencies
+
+- **conventional-changelog-gitmoji-config:** upgraded to 1.5.0
+
 # semantic-release-config-gitmoji [1.5.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.4.3...semantic-release-config-gitmoji@1.5.0) (2023-05-21)
 
 ### ✨ Features
