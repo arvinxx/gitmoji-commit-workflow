@@ -26,19 +26,19 @@ export const typeMap: Record<Exclude<CommitTypes, 'wip'>, TypeNameMap> = {
     subtitle: "What's fixed",
   },
   build: {
-    emoji: '👷',
+    emoji: '📦',
     'en-US': 'Build System',
     'zh-CN': '构建系统',
     subtitle: 'Build system',
   },
   chore: {
-    emoji: '🎫',
+    emoji: '🔧',
     'en-US': 'Chores',
     'zh-CN': '杂项',
     subtitle: 'Chores',
   },
   ci: {
-    emoji: '🔧',
+    emoji: '👷',
     'en-US': 'Continuous Integration',
     'zh-CN': '持续集成',
     subtitle: 'Continuous integration',

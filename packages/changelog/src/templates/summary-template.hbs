@@ -6,7 +6,7 @@
 ### {{title}}
 
 {{/if}}
-{{#each commits}}{{#if first}}- **{{scope}}**: {{subject}}{{else}}{{rawSubject}}{{/if}}{{#if last}}.
+{{#each commits}}{{#if first}}- {{#if scope}}**{{scope}}**: {{/if}}{{subject}}{{else}}{{rawSubject}}{{/if}}{{#if last}}.
 {{else}}, {{/if}}{{/each}}
 {{/each}}
 
@@ -23,7 +23,7 @@
 
 {{#if title}}
 
-#### {{subtitle}}
+### {{subtitle}}
 
 {{/if}}
 {{#each commits}}

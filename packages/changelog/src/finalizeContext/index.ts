@@ -2,7 +2,7 @@ import type { Context } from 'conventional-changelog-writer';
 import { CustomConfig } from '../customConfig';
 import { typeMap } from '../transformer/typeDisplayName';
 export default (customConfig: CustomConfig) => (context: Context): Context => {
-  const subCommitScope = customConfig?.scopeDisplayName?.['*'] || '';
+  const subCommitScope = customConfig?.scopeDisplayName?.['*'] || null;
   const authors = {};
   context.commitGroups = context.commitGroups.map((item) => {
     const subtitle = Object.values(typeMap).find(
@@ -13,6 +13,7 @@ export default (customConfig: CustomConfig) => (context: Context): Context => {
     ).subtitle;
     let group;
     let commits = item.commits.sort((a, b) => {
+      console.log(a.scope, b.scope);
       if (a.scope === subCommitScope && b.scope === subCommitScope) {
         return 0;
       } else if (a.scope === subCommitScope) {
