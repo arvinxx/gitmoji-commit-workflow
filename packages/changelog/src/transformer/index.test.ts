@@ -52,22 +52,6 @@ describe('transform', () => {
     });
   });
 
-  it('should change type display', () => {
-    const transformer = transform({ customTypeMap: { feat: { emoji: '🤯' } } });
-    const commit = generateCommit({
-      header: '',
-      type: 'feat',
-    });
-
-    expect(transformer(commit, defaultContext)).toEqual({
-      header: '',
-      mentions: [],
-      notes: [],
-      references: [],
-      type: '🤯 Features',
-    });
-  });
-
   describe('Custom Config', () => {
     it('should only display included types', () => {
       const transformer = transform({
@@ -159,6 +143,22 @@ describe('transform', () => {
         subject: '增加 Button 组件',
         rawSubject: '增加Button组件',
         type: '✨ Features',
+      });
+    });
+
+    it('should change type display', () => {
+      const transformer = transform({ customTypeMap: { feat: { emoji: '🤯' } } });
+      const commit = generateCommit({
+        header: '',
+        type: 'feat',
+      });
+
+      expect(transformer(commit, defaultContext)).toEqual({
+        header: '',
+        mentions: [],
+        notes: [],
+        references: [],
+        type: '🤯 Features',
       });
     });
   });
