@@ -23,5 +23,8 @@ jobs:
       - name: Test and coverage
         run: pnpm run test:coverage
 
+      - name: Health check with doctor
+        run: pnpm run doctor
+
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3

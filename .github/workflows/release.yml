@@ -29,6 +29,9 @@ jobs:
       - name: Test
         run: pnpm run test
 
+      - name: Health check with doctor
+        run: pnpm run doctor
+
   release:
     needs: test
     name: Release
