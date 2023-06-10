@@ -10,10 +10,10 @@ describe('typeDisplayName', () => {
     expect(getDisplayName('style')).toEqual('💄 Styles');
     expect(getDisplayName('docs')).toEqual('📝 Documentation');
     expect(getDisplayName('refactor')).toEqual('♻ Code Refactoring');
-    expect(getDisplayName('build')).toEqual('📦 Build System');
+    expect(getDisplayName('build')).toEqual('👷 Build System');
     expect(getDisplayName('test')).toEqual('✅ Tests');
-    expect(getDisplayName('ci')).toEqual('👷 Continuous Integration');
-    expect(getDisplayName('chore')).toEqual('🔧 Chores');
+    expect(getDisplayName('ci')).toEqual('🔧 Continuous Integration');
+    expect(getDisplayName('chore')).toEqual('🎫 Chores');
   });
 
   it('should return Chinese with { language: "zh-CN" }', () => {
@@ -25,10 +25,10 @@ describe('typeDisplayName', () => {
     expect(getDisplayName('style', opts)).toEqual('💄 样式');
     expect(getDisplayName('docs', opts)).toEqual('📝 文档');
     expect(getDisplayName('refactor', opts)).toEqual('♻ 重构');
-    expect(getDisplayName('build', opts)).toEqual('📦 构建系统');
+    expect(getDisplayName('build', opts)).toEqual('👷 构建系统');
     expect(getDisplayName('test', opts)).toEqual('✅ 测试');
-    expect(getDisplayName('ci', opts)).toEqual('👷 持续集成');
-    expect(getDisplayName('chore', opts)).toEqual('🔧 杂项');
+    expect(getDisplayName('ci', opts)).toEqual('🔧 持续集成');
+    expect(getDisplayName('chore', opts)).toEqual('🎫 杂项');
   });
 
   it('should return without emoji with { withEmoji: false }', () => {
