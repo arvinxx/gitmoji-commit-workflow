@@ -19,7 +19,9 @@
   ],
   "scripts": {
     "build": "father build",
-    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache"
+    "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache",
+    "doctor": "father doctor",
+    "prepublishOnly": "npm run doctor && npm run build"
   },
   "publishConfig": {
     "access": "public",

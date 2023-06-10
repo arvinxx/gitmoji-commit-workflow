@@ -29,6 +29,8 @@
     "build": "father build",
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache",
     "cov": "jest --coverage",
+    "doctor": "father doctor",
+    "prepublishOnly": "npm run doctor && npm run build",
     "start": "father dev",
     "test": "jest",
     "test:cov": "jest --coverage",

@@ -20,6 +20,8 @@
     "build": "father build",
     "clean": "rm -rf es lib dist build coverage .eslintcache",
     "cov": "jest --coverage",
+    "doctor": "father doctor",
+    "prepublishOnly": "npm run doctor && npm run build",
     "test": "jest"
   },
   "dependencies": {
