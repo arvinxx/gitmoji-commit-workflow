@@ -27,13 +27,16 @@
     "build": "father build",
     "clean": "rm -rf es lib dist build coverage src/.umi* .eslintcache",
     "cov": "jest --coverage",
+    "doctor": "father doctor",
+    "prepublishOnly": "npm run doctor && npm run build",
     "start": "father dev",
     "test": "jest"
   },
   "dependencies": {
     "@gitmoji/commit-types": "1.1.5",
     "@gitmoji/parser-opts": "1.4.0",
-    "cosmiconfig": "^7"
+    "cosmiconfig": "^7",
+    "pangu": "^4"
   },
   "devDependencies": {
     "@types/conventional-changelog-core": "^4",
@@ -42,7 +45,6 @@
     "conventional-changelog-writer": "^5",
     "conventional-commits-parser": "^3",
     "git-dummy-commit": "^1",
-    "pangu": "^4",
     "shelljs": "^0.8",
     "through2": "^4"
   },
