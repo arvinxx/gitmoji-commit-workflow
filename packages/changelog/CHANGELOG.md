@@ -1,5 +1,11 @@
 # Changelog
 
+# conventional-changelog-gitmoji-config [1.5.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.7...conventional-changelog-gitmoji-config@1.5.0) (2023-06-10)
+
+### ✨ Features
+
+- **changelog**: Add changelog style configs, closes [#669](https://github.com/arvinxx/gitmoji-commit-workflow/issues/669) ([f9e6585](https://github.com/arvinxx/gitmoji-commit-workflow/commit/f9e6585))
+
 ## conventional-changelog-gitmoji-config [1.4.7](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.6...conventional-changelog-gitmoji-config@1.4.7) (2023-02-15)
 
 ### 🐛 Bug Fixes
