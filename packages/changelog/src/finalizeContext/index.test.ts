@@ -1,14 +1,14 @@
-import type { Context } from 'conventional-changelog-writer';
-import { CustomConfig } from '../customConfig';
 import { typeMap } from '../transformer/typeDisplayName';
+import finalizeContext from './index';
 
-describe('test transformCommitGroups', () => {
-  const customConfig: CustomConfig = {
+describe('finalizeContext', () => {
+  const customConfig = {
     scopeDisplayName: {
       '*': 'all',
     },
+    customTypeMap: {},
   };
-  const context: Context = {
+  const context = {
     commitGroups: [
       {
         title: '✨ Features',
@@ -29,55 +29,215 @@ describe('test transformCommitGroups', () => {
   };
 
   it('should transform commitGroups correctly', () => {
-    const subCommitScope = customConfig?.scopeDisplayName?.['*'] || null;
-    const authors = {};
-    context.commitGroups = context.commitGroups.map((item) => {
-      const subtitle = Object.values(typeMap).find(
-        (i) =>
-          item.title.includes(i['emoji']) ||
-          item.title.includes(i['en-US']) ||
-          item.title.includes(i['zh-CN']),
-      ).subtitle;
-      let group;
-      let commits = item.commits.sort((a, b) => {
-        if (a.scope === subCommitScope && b.scope === subCommitScope) {
-          return 0;
-        } else if (a.scope === subCommitScope) {
-          return 1;
-        } else if (b.scope === subCommitScope) {
-          return -1;
-        } else {
-          return 0;
-        }
-      });
-      commits = commits.map((c, index) => {
-        if (group !== c.scope) {
-          group = c.scope;
-          c.first = true;
-        } else {
-          c.first = false;
-        }
-        if (!commits[index + 1] || group !== commits[index + 1].scope) {
-          c.last = true;
-        } else {
-          c.last = false;
-        }
-        if (c.authorNameEncode && !authors[c.authorNameEncode]) {
-          authors[c.authorNameEncode] = {
-            authorName: c.authorName,
-            authorEmail: c.authorEmail,
-            authorNameEncode: c.authorNameEncode,
-          };
-        }
-        return c;
-      });
-      return {
-        title: item.title,
-        subtitle,
-        commits,
-      };
+    const transformedContext = finalizeContext(customConfig)(context);
+    expect(transformedContext).toMatchSnapshot();
+  });
+
+  it('should set subCommitScope correctly when it is defined in customConfig', () => {
+    const customConfigWithSubCommitScope = {
+      ...customConfig,
+      scopeDisplayName: {
+        '*': 'all',
+        test: 'test',
+      },
+    };
+    const transformedContext = finalizeContext(customConfigWithSubCommitScope)(context);
+    expect(transformedContext.commitGroups[0].commits[0].first).toBe(true);
+  });
+
+  it('should set subCommitScope to null when it is not defined in customConfig', () => {
+    const transformedContext = finalizeContext(customConfig)(context);
+    expect(transformedContext.commitGroups[0].commits[0].first).toBe(true);
+  });
+
+  it('should set subtitle correctly when title contains emoji', () => {
+    const contextWithTitleEmoji = {
+      ...context,
+      commitGroups: [
+        {
+          title: '✨ Features',
+          commits: [],
+        },
+      ],
+    };
+    const transformedContext = finalizeContext(customConfig)(contextWithTitleEmoji);
+    expect(transformedContext.commitGroups[0].subtitle).toBe("What's improved");
+  });
+
+  it('should set subtitle correctly when title contains en-US', () => {
+    const contextWithTitleEnUS = {
+      ...context,
+      commitGroups: [
+        {
+          title: 'Features',
+          commits: [],
+        },
+      ],
+    };
+    const transformedContext = finalizeContext(customConfig)({
+      ...contextWithTitleEnUS,
+      commitGroups: [
+        {
+          ...contextWithTitleEnUS.commitGroups[0],
+          title: `Features ${typeMap['feat']['en-US']}`,
+        },
+      ],
     });
-    context.authors = Object.values(authors);
-    expect(context).toMatchSnapshot();
+    expect(transformedContext.commitGroups[0].subtitle).toBe("What's improved");
+  });
+
+  it('should set subtitle correctly when title contains zh-CN', () => {
+    const contextWithTitleZhCN = {
+      ...context,
+      commitGroups: [
+        {
+          title: 'Features',
+          commits: [],
+        },
+      ],
+    };
+    const transformedContext = finalizeContext(customConfig)({
+      ...contextWithTitleZhCN,
+      commitGroups: [
+        {
+          ...contextWithTitleZhCN.commitGroups[0],
+          title: `Features ${typeMap['feat']['zh-CN']}`,
+        },
+      ],
+    });
+    expect(transformedContext.commitGroups[0].subtitle).toBe("What's improved");
+  });
+
+  it('should sort commits correctly when subCommitScope is defined in customConfig', () => {
+    const customConfigWithSubCommitScope = {
+      ...customConfig,
+      scopeDisplayName: {
+        '*': 'all',
+        test: 'test',
+      },
+    };
+    const contextWithMultipleCommits = {
+      ...context,
+      commitGroups: [
+        {
+          title: '✨ Features',
+          commits: [
+            {
+              hash: '1234',
+              subject: 'test commit 1',
+              scope: 'test',
+              title: '✨ Features',
+              authorName: 'test',
+              authorEmail: 'test@test.com',
+              authorNameEncode: 'test',
+            },
+            {
+              hash: '5678',
+              subject: 'test commit 2',
+              scope: 'test',
+              title: '✨ Features',
+              authorName: 'test',
+              authorEmail: 'test@test.com',
+              authorNameEncode: 'test2',
+            },
+          ],
+        },
+      ],
+    };
+    const transformedContext = finalizeContext(customConfigWithSubCommitScope)(
+      contextWithMultipleCommits,
+    );
+    expect(transformedContext.commitGroups[0].commits[0].first).toBe(true);
+    expect(transformedContext.commitGroups[0].commits[1].first).toBe(false);
+  });
+
+  it('should set first and last correctly when commits have the same scope', () => {
+    const contextWithMultipleCommits = {
+      ...context,
+      commitGroups: [
+        {
+          title: '✨ Features',
+          commits: [
+            {
+              hash: '1234',
+              subject: 'test commit 1',
+              scope: 'test',
+              title: '✨ Features',
+              authorName: 'test',
+              authorEmail: 'test@test.com',
+              authorNameEncode: 'test',
+            },
+            {
+              hash: '5678',
+              subject: 'test commit 2',
+              scope: 'test',
+              title: '✨ Features',
+              authorName: 'test',
+              authorEmail: 'test@test.com',
+              authorNameEncode: 'test2',
+            },
+          ],
+        },
+      ],
+    };
+    const transformedContext = finalizeContext(customConfig)(contextWithMultipleCommits);
+    expect(transformedContext.commitGroups[0].commits[0].first).toBe(true);
+    expect(transformedContext.commitGroups[0].commits[0].last).toBe(false);
+    expect(transformedContext.commitGroups[0].commits[1].first).toBe(false);
+    expect(transformedContext.commitGroups[0].commits[1].last).toBe(true);
+  });
+
+  it('should set author correctly when authorNameEncode is not empty', () => {
+    const contextWithAuthorNameEncode = {
+      ...context,
+      commitGroups: [
+        {
+          title: '✨ Features',
+          commits: [
+            {
+              hash: '1234',
+              subject: 'test commit',
+              scope: 'test',
+              title: '✨ Features',
+              authorName: 'test',
+              authorEmail: 'test@test.com',
+              authorNameEncode: 'test',
+            },
+          ],
+        },
+      ],
+    };
+    const transformedContext = finalizeContext(customConfig)(contextWithAuthorNameEncode);
+    expect(transformedContext.authors).toEqual([
+      {
+        authorName: 'test',
+        authorEmail: 'test@test.com',
+        authorNameEncode: 'test',
+      },
+    ]);
+  });
+
+  it('should not set author when authorNameEncode is empty', () => {
+    const contextWithoutAuthorNameEncode = {
+      ...context,
+      commitGroups: [
+        {
+          title: '✨ Features',
+          commits: [
+            {
+              hash: '1234',
+              subject: 'test commit',
+              scope: 'test',
+              title: '✨ Features',
+              authorName: 'test',
+              authorEmail: 'test@test.com',
+              authorNameEncode: '',
+            },
+          ],
+        },
+      ],
+    };
+    const transformedContext = finalizeContext(customConfig)(contextWithoutAuthorNameEncode);
+    expect(transformedContext.authors).toEqual([]);
   });
 });
