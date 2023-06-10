@@ -29,7 +29,7 @@ describe('test transformCommitGroups', () => {
   };
 
   it('should transform commitGroups correctly', () => {
-    const subCommitScope = customConfig?.scopeDisplayName?.['*'] || '';
+    const subCommitScope = customConfig?.scopeDisplayName?.['*'] || null;
     const authors = {};
     context.commitGroups = context.commitGroups.map((item) => {
       const subtitle = Object.values(typeMap).find(
