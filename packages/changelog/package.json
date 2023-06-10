@@ -43,7 +43,7 @@
     "conventional-commits-parser": "^3",
     "git-dummy-commit": "^1",
     "pangu": "^4",
-    "shelljs": "^0",
+    "shelljs": "^0.8",
     "through2": "^4"
   },
   "publishConfig": {
