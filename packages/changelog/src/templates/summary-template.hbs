@@ -1,0 +1,35 @@
+{{> header}}
+
+{{#each commitGroups}}
+
+{{#if title}}
+### {{title}}
+
+{{/if}}
+{{#each commits}}{{#if first}}- **{{scope}}**: {{subject}}{{else}}{{rawSubject}}{{/if}}{{#if last}}.
+{{else}}, {{/if}}{{/each}}
+{{/each}}
+
+<br/>
+
+{{#each authors}}
+[<img width="32" height="32" src="https://avatars.githubusercontent.com/{{authorNameEncode}}" />](https://github.com/{{authorNameEncode}})
+{{/each}}
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+{{#each commitGroups}}
+
+{{#if title}}
+
+#### {{subtitle}}
+
+{{/if}}
+{{#each commits}}
+{{> commit root=@root}}{{/each}}
+{{/each}}
+</details>
+
+{{> footer}}
+

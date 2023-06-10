@@ -1,11 +1,17 @@
-import { getDisplayName } from './typeDisplayName';
-import { scopeMapDisplayName } from './scopeMapDisplayName';
-import type { CustomConfig } from '../customConfig';
-import type { Commit } from 'conventional-commits-parser';
-import type { Context } from 'conventional-changelog-writer';
 import type { CommitTypes } from '@gitmoji/commit-types';
-
 import types from '@gitmoji/commit-types';
+import type { Context } from 'conventional-changelog-writer';
+import type { Commit } from 'conventional-commits-parser';
+import pangu from 'pangu';
+import type { CustomConfig } from '../customConfig';
+import { scopeMapDisplayName } from './scopeMapDisplayName';
+import { getDisplayName } from './typeDisplayName';
+
+const capitalizeFirstLetter = (str: string): string => {
+  const firstLetter = String(str).slice(0, 1).toUpperCase();
+  const remainingStr = String(str).slice(1);
+  return firstLetter + remainingStr;
+};
 
 export default (customConfig: CustomConfig) => (commit: Commit, context: Context) => {
   let discard = true;
@@ -79,6 +85,13 @@ export default (customConfig: CustomConfig) => (commit: Commit, context: Context
   commit.references = commit.references.filter((reference) => {
     return issues.indexOf(reference.issue) === -1;
   });
+
+  // format
+  if (commit.authorName) commit.authorNameEncode = encodeURIComponent(commit.authorName);
+  if (commit.subject) {
+    commit.rawSubject = commit.subject;
+    commit.subject = pangu.spacing(capitalizeFirstLetter(commit.subject));
+  }
 
   return commit;
 };

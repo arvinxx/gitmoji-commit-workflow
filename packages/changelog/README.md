@@ -47,13 +47,46 @@ interface ChangelogConfig {
    * title language
    * @default en-US
    */
-  titleLanguage?: 'en-US' | 'zh-CN';
+  titleLanguage?: 'en-US' | 'zh-CN' | 'mix';
   /**
    * whether to show author
    * @default false
    */
   showAuthor?: boolean;
+  /**
+   * whether to show author avatar
+   * @default false
+   */
+  showAuthorAvatar?: boolean;
+  /**
+   * whether to show summary
+   * @default false
+   */
+  showSummary?: boolean;
+  /**
+   * Reduce heading level from # to ##
+   * @default false
+   */
+  reduceHeadingLevel?: boolean;
+  /**
+   * put timestamp to second line
+   * @default false
+   */
+  newlineTimestamp?: boolean;
+  /**
+   * add back to top button
+   * @default false
+   */
+  addBackToTop?: boolean;
 }
+```
+
+> 👉 Tip: If turn on `back to top` button, should edit `CHANGELOG.md` first like below:
+
+```markdown
+<a name="readme-top"></a>
+
+# Changelog
 ```
 
 ## License

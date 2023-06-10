@@ -1,0 +1,28 @@
+{{#if isPatch~}}
+  ##
+{{~else~}}
+  #
+{{~/if}} {{#if @root.linkCompare~}}
+  [Version&nbsp;{{version}}](
+  {{~#if @root.repository~}}
+    {{~#if @root.host}}
+      {{~@root.host}}/
+    {{~/if}}
+    {{~#if @root.owner}}
+      {{~@root.owner}}/
+    {{~/if}}
+    {{~@root.repository}}
+  {{~else}}
+    {{~@root.repoUrl}}
+  {{~/if~}}
+  /compare/{{previousTag}}...{{currentTag}})
+{{~else}}
+Version&nbsp;{{~version}}
+{{~/if}}
+{{~#if title}} "{{title}}"
+{{~/if}}
+
+{{~#if date}}
+
+<sup>Released on **{{date}}**</sup>
+{{/if}}

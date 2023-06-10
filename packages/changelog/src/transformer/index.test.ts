@@ -1,5 +1,5 @@
-import transform from './index';
 import type { Commit } from 'conventional-commits-parser';
+import transform from './index';
 
 const generateCommit = (commit: Partial<Commit>) =>
   ({
@@ -91,6 +91,57 @@ describe('transform', () => {
         notes: [],
         references: [],
         scope: 'module-foo',
+        type: '✨ Features',
+      });
+    });
+
+    it('should encode author name', () => {
+      const transformer = transform({});
+      const commit = generateCommit({
+        type: 'feat',
+        authorName: 'Arvin Xu',
+      });
+
+      expect(transformer(commit, defaultContext)).toEqual({
+        header: '',
+        mentions: [],
+        notes: [],
+        references: [],
+        authorNameEncode: 'Arvin%20Xu',
+        authorName: 'Arvin Xu',
+        type: '✨ Features',
+      });
+    });
+
+    it('should format subject message', () => {
+      const transformer = transform({});
+      const commitEN = generateCommit({
+        type: 'feat',
+        subject: 'add Button components',
+      });
+
+      const commitCN = generateCommit({
+        type: 'feat',
+        subject: '增加Button组件',
+      });
+
+      expect(transformer(commitEN, defaultContext)).toEqual({
+        header: '',
+        mentions: [],
+        notes: [],
+        references: [],
+        subject: 'Add Button components',
+        rawSubject: 'add Button components',
+        type: '✨ Features',
+      });
+
+      expect(transformer(commitCN, defaultContext)).toEqual({
+        header: '',
+        mentions: [],
+        notes: [],
+        references: [],
+        subject: '增加 Button 组件',
+        rawSubject: '增加Button组件',
         type: '✨ Features',
       });
     });

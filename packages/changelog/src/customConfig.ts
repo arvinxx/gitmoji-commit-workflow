@@ -19,6 +19,14 @@ export interface CustomConfig {
    */
   showAuthor?: boolean;
   /**
+   * 是否显示作者头像
+   */
+  showAuthorAvatar?: boolean;
+  /**
+   * 是否显示摘要
+   */
+  showSummary?: boolean;
+  /**
    * whether to include emoji in title
    */
   withEmoji?: boolean;
@@ -26,6 +34,18 @@ export interface CustomConfig {
    * title language
    */
   titleLanguage?: 'en-US' | 'zh-CN';
+  /**
+   * Reduce heading level from # to ##
+   */
+  reduceHeadingLevel?: boolean;
+  /**
+   * put timestamp to second line
+   */
+  newlineTimestamp?: boolean;
+  /**
+   * add back to top button
+   */
+  addBackToTop?: boolean;
 }
 
 const explorer = cosmiconfigSync('changelog');
