@@ -1,5 +1,26 @@
 # Changelog
 
+## [Version&nbsp;1.5.2](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.5.1...semantic-release-config-gitmoji@1.5.2)
+
+<sup>Released on **2023-06-10**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### Dependencies
+
+- **conventional-changelog-gitmoji-config:** upgraded to 1.5.1
+
 ## semantic-release-config-gitmoji [1.5.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/semantic-release-config-gitmoji@1.5.0...semantic-release-config-gitmoji@1.5.1) (2023-06-10)
 
 ### Dependencies
