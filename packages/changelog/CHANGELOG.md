@@ -1,5 +1,30 @@
 # Changelog
 
+## [Version&nbsp;1.5.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.5.0...conventional-changelog-gitmoji-config@1.5.1)
+
+<sup>Released on **2023-06-10**</sup>
+
+#### 🐛 Bug Fixes
+
+- **changelog**: Add pangu deps.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+##### What's fixed
+
+- **changelog**: Add pangu deps ([f62727e](https://github.com/arvinxx/gitmoji-commit-workflow/commit/f62727e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 # conventional-changelog-gitmoji-config [1.5.0](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.4.7...conventional-changelog-gitmoji-config@1.5.0) (2023-06-10)
 
 ### ✨ Features
