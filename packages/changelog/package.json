@@ -35,7 +35,9 @@
   "dependencies": {
     "@gitmoji/commit-types": "1.1.5",
     "@gitmoji/parser-opts": "1.4.0",
-    "cosmiconfig": "^7"
+    "cosmiconfig": "^7",
+    "lodash": "^4",
+    "pangu": "^4"
   },
   "devDependencies": {
     "@types/conventional-changelog-core": "^4",
@@ -45,8 +47,6 @@
     "conventional-changelog-writer": "^5",
     "conventional-commits-parser": "^3",
     "git-dummy-commit": "^1",
-    "lodash": "^4",
-    "pangu": "^4",
     "shelljs": "^0.8",
     "through2": "^4"
   },
