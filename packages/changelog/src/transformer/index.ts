@@ -35,6 +35,7 @@ export default (customConfig: CustomConfig) => (commit: Commit, context: Context
   commit.type = getDisplayName(commit.type, {
     language: customConfig.titleLanguage,
     withEmoji: customConfig.withEmoji,
+    customTypeMap: customConfig.customTypeMap,
   });
 
   /** * 处理 scope ** */

@@ -78,6 +78,10 @@ interface ChangelogConfig {
    * @default false
    */
   addBackToTop?: boolean;
+  /**
+   * Custom type display map
+   */
+  customTypeMap?: { [key in CommitTypes]?: CustomTypeNameMap };
 }
 ```
 
