@@ -4,18 +4,20 @@ exports[`finalizeContext should transform commitGroups correctly 1`] = `
 {
   "authors": [
     {
-      "authorEmail": "test@test.com",
-      "authorName": "test",
-      "authorNameEncode": "test",
+      "authorAvatar": "https://avatars.githubusercontent.com/u/17870709?v=4",
+      "authorEmail": "i@canisminor.cc",
+      "authorName": "canisminor1990",
+      "authorUrl": "https://api.github.com/users/canisminor1990",
     },
   ],
   "commitGroups": [
     {
       "commits": [
         {
-          "authorEmail": "test@test.com",
-          "authorName": "test",
-          "authorNameEncode": "test",
+          "authorAvatar": "https://avatars.githubusercontent.com/u/17870709?v=4",
+          "authorEmail": "i@canisminor.cc",
+          "authorName": "canisminor1990",
+          "authorUrl": "https://api.github.com/users/canisminor1990",
           "first": true,
           "hash": "1234",
           "last": true,

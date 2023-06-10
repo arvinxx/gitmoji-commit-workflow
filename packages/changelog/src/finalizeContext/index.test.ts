@@ -18,9 +18,10 @@ describe('finalizeContext', () => {
             subject: 'test commit',
             scope: 'test',
             title: '✨ Features',
-            authorName: 'test',
-            authorEmail: 'test@test.com',
-            authorNameEncode: 'test',
+            authorName: 'canisminor1990',
+            authorEmail: 'i@canisminor.cc',
+            authorAvatar: 'https://avatars.githubusercontent.com/u/17870709?v=4',
+            authorUrl: 'https://api.github.com/users/canisminor1990',
           },
         ],
       },
@@ -127,18 +128,20 @@ describe('finalizeContext', () => {
               subject: 'test commit 1',
               scope: 'test',
               title: '✨ Features',
-              authorName: 'test',
-              authorEmail: 'test@test.com',
-              authorNameEncode: 'test',
+              authorName: 'canisminor1990',
+              authorEmail: 'i@canisminor.cc',
+              authorAvatar: 'https://avatars.githubusercontent.com/u/17870709?v=4',
+              authorUrl: 'https://api.github.com/users/canisminor1990',
             },
             {
               hash: '5678',
               subject: 'test commit 2',
               scope: 'test',
               title: '✨ Features',
-              authorName: 'test',
-              authorEmail: 'test@test.com',
-              authorNameEncode: 'test2',
+              authorName: 'canisminor1990',
+              authorEmail: 'i@canisminor.cc',
+              authorAvatar: 'https://avatars.githubusercontent.com/u/17870709?v=4',
+              authorUrl: 'https://api.github.com/users/canisminor1990',
             },
           ],
         },
@@ -163,18 +166,20 @@ describe('finalizeContext', () => {
               subject: 'test commit 1',
               scope: 'test',
               title: '✨ Features',
-              authorName: 'test',
-              authorEmail: 'test@test.com',
-              authorNameEncode: 'test',
+              authorName: 'canisminor1990',
+              authorEmail: 'i@canisminor.cc',
+              authorAvatar: 'https://avatars.githubusercontent.com/u/17870709?v=4',
+              authorUrl: 'https://api.github.com/users/canisminor1990',
             },
             {
               hash: '5678',
               subject: 'test commit 2',
               scope: 'test',
               title: '✨ Features',
-              authorName: 'test',
-              authorEmail: 'test@test.com',
-              authorNameEncode: 'test2',
+              authorName: 'canisminor1990',
+              authorEmail: 'i@canisminor.cc',
+              authorAvatar: 'https://avatars.githubusercontent.com/u/17870709?v=4',
+              authorUrl: 'https://api.github.com/users/canisminor1990',
             },
           ],
         },
@@ -187,7 +192,7 @@ describe('finalizeContext', () => {
     expect(transformedContext.commitGroups[0].commits[1].last).toBe(true);
   });
 
-  it('should set author correctly when authorNameEncode is not empty', () => {
+  it('should set author correctly when authorAvatar is not empty', () => {
     const contextWithAuthorNameEncode = {
       ...context,
       commitGroups: [
@@ -199,9 +204,10 @@ describe('finalizeContext', () => {
               subject: 'test commit',
               scope: 'test',
               title: '✨ Features',
-              authorName: 'test',
-              authorEmail: 'test@test.com',
-              authorNameEncode: 'test',
+              authorName: 'canisminor1990',
+              authorEmail: 'i@canisminor.cc',
+              authorAvatar: 'https://avatars.githubusercontent.com/u/17870709?v=4',
+              authorUrl: 'https://api.github.com/users/canisminor1990',
             },
           ],
         },
@@ -210,14 +216,15 @@ describe('finalizeContext', () => {
     const transformedContext = finalizeContext(customConfig)(contextWithAuthorNameEncode);
     expect(transformedContext.authors).toEqual([
       {
-        authorName: 'test',
-        authorEmail: 'test@test.com',
-        authorNameEncode: 'test',
+        authorAvatar: 'https://avatars.githubusercontent.com/u/17870709?v=4',
+        authorEmail: 'i@canisminor.cc',
+        authorName: 'canisminor1990',
+        authorUrl: 'https://api.github.com/users/canisminor1990',
       },
     ]);
   });
 
-  it('should not set author when authorNameEncode is empty', () => {
+  it('should not set author when authorAvatar is empty', () => {
     const contextWithoutAuthorNameEncode = {
       ...context,
       commitGroups: [
@@ -229,9 +236,8 @@ describe('finalizeContext', () => {
               subject: 'test commit',
               scope: 'test',
               title: '✨ Features',
-              authorName: 'test',
-              authorEmail: 'test@test.com',
-              authorNameEncode: '',
+              authorName: 'canisminor1990',
+              authorEmail: 'i@canisminor.cc',
             },
           ],
         },

@@ -23,7 +23,10 @@ const reduceHeadingLevel = (skip: boolean, template: string): string => {
 };
 export default (customConfig: CustomConfig): Options => {
   const mainTemplate = customConfig.showSummary
-    ? summaryTemplate.replace(/{{gitUserInfo}}/g, customConfig.showAuthor ? summaryAvatar : '')
+    ? summaryTemplate.replace(
+        /{{gitUserInfo}}/g,
+        customConfig.showAuthor && customConfig.showAuthorAvatar ? summaryAvatar : '',
+      )
     : template;
   const commitPartial = commit.replace(
     /{{gitUserInfo}}/g,

@@ -36,11 +36,12 @@ export default (customConfig: CustomConfig) => (context: Context): Context => {
       } else {
         c.last = false;
       }
-      if (c.authorNameEncode && !authors[c.authorNameEncode]) {
-        authors[c.authorNameEncode] = {
+      if (c.authorAvatar && !authors[c.authorEmail]) {
+        authors[c.authorEmail] = {
           authorName: c.authorName,
           authorEmail: c.authorEmail,
-          authorNameEncode: c.authorNameEncode,
+          authorAvatar: c.authorAvatar,
+          authorUrl: c.authorUrl,
         };
       }
       return c;
