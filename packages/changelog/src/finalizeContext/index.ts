@@ -14,7 +14,6 @@ export default (customConfig: CustomConfig) => (context: Context): Context => {
     ).subtitle;
     let group;
     let commits = item.commits.sort((a, b) => {
-      console.log(a.scope, b.scope);
       if (a.scope === subCommitScope && b.scope === subCommitScope) {
         return 0;
       } else if (a.scope === subCommitScope) {

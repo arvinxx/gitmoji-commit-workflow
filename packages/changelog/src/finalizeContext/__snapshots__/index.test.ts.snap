@@ -30,34 +30,3 @@ exports[`finalizeContext should transform commitGroups correctly 1`] = `
   ],
 }
 `;
-
-exports[`test transformCommitGroups should transform commitGroups correctly 1`] = `
-{
-  "authors": [
-    {
-      "authorEmail": "test@test.com",
-      "authorName": "test",
-      "authorNameEncode": "test",
-    },
-  ],
-  "commitGroups": [
-    {
-      "commits": [
-        {
-          "authorEmail": "test@test.com",
-          "authorName": "test",
-          "authorNameEncode": "test",
-          "first": true,
-          "hash": "1234",
-          "last": true,
-          "scope": "test",
-          "subject": "test commit",
-          "title": "✨ Features",
-        },
-      ],
-      "subtitle": "What's improved",
-      "title": "✨ Features",
-    },
-  ],
-}
-`;
