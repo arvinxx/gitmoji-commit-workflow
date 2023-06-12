@@ -1,5 +1,6 @@
 import type { CommitTypes } from '@gitmoji/commit-types';
 import { cosmiconfigSync } from 'cosmiconfig';
+import { CustomTypeNameMap } from './transformer/typeDisplayName';
 
 export interface CustomConfig {
   /**
@@ -46,6 +47,12 @@ export interface CustomConfig {
    * add back to top button
    */
   addBackToTop?: boolean;
+  /**
+   * Custom type display map
+   */
+  customTypeMap?: {
+    [key in CommitTypes]?: CustomTypeNameMap;
+  };
 }
 
 const explorer = cosmiconfigSync('changelog');

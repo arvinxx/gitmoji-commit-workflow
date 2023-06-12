@@ -1,8 +1,17 @@
 import type { CommitTypes } from '@gitmoji/commit-types';
+import { merge } from 'lodash';
 
 export interface DisplayNameOptions {
   withEmoji?: boolean;
   language?: 'en-US' | 'zh-CN' | 'mix';
+  customTypeMap?: { [key in CommitTypes]?: CustomTypeNameMap };
+}
+
+export interface CustomTypeNameMap {
+  emoji?: string;
+  'en-US'?: string;
+  'zh-CN'?: string;
+  subtitle?: string;
 }
 
 interface TypeNameMap {
@@ -81,14 +90,23 @@ export const typeMap: Record<Exclude<CommitTypes, 'wip'>, TypeNameMap> = {
   },
 };
 
+export const defineTypeMap = (
+  customTypeMap: { [key in CommitTypes]?: CustomTypeNameMap },
+): Record<Exclude<CommitTypes, 'wip'>, TypeNameMap> => {
+  if (!customTypeMap) return typeMap;
+  return merge(typeMap, customTypeMap);
+};
+
 export const getDisplayName = (
   type: CommitTypes | string,
   options: DisplayNameOptions = {},
 ): string => {
   const { withEmoji = true, language = 'en-US' } = options;
 
-  if (type in typeMap) {
-    const item = typeMap[type];
+  const diplayTypeMap = defineTypeMap(options.customTypeMap);
+
+  if (type in diplayTypeMap) {
+    const item = diplayTypeMap[type];
     const { emoji } = item;
     return `${withEmoji ? `${emoji} ` : ''}${
       language === 'mix' ? [item['en-US'], item['zh-CN']].join(' | ') : item[language]

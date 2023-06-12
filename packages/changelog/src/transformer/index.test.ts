@@ -95,11 +95,15 @@ describe('transform', () => {
       });
     });
 
-    it('should encode author name', () => {
-      const transformer = transform({});
+    it('should get author avatar', () => {
+      const transformer = transform({
+        showAuthor: true,
+        showAuthorAvatar: true,
+      });
       const commit = generateCommit({
         type: 'feat',
-        authorName: 'Arvin Xu',
+        authorName: 'canisminor1990',
+        authorEmail: 'i@canisminor.cc',
       });
 
       expect(transformer(commit, defaultContext)).toEqual({
@@ -107,8 +111,10 @@ describe('transform', () => {
         mentions: [],
         notes: [],
         references: [],
-        authorNameEncode: 'Arvin%20Xu',
-        authorName: 'Arvin Xu',
+        authorName: 'canisminor1990',
+        authorEmail: 'i@canisminor.cc',
+        authorAvatar: 'https://avatars.githubusercontent.com/u/17870709?v=4',
+        authorUrl: 'https://api.github.com/users/canisminor1990',
         type: '✨ Features',
       });
     });
@@ -143,6 +149,22 @@ describe('transform', () => {
         subject: '增加 Button 组件',
         rawSubject: '增加Button组件',
         type: '✨ Features',
+      });
+    });
+
+    it('should change type display', () => {
+      const transformer = transform({ customTypeMap: { feat: { emoji: '🤯' } } });
+      const commit = generateCommit({
+        header: '',
+        type: 'feat',
+      });
+
+      expect(transformer(commit, defaultContext)).toEqual({
+        header: '',
+        mentions: [],
+        notes: [],
+        references: [],
+        type: '🤯 Features',
       });
     });
   });

@@ -1,9 +1,10 @@
 import type { Context } from 'conventional-changelog-writer';
 import { CustomConfig } from '../customConfig';
-import { typeMap } from '../transformer/typeDisplayName';
+import { defineTypeMap } from '../transformer/typeDisplayName';
 export default (customConfig: CustomConfig) => (context: Context): Context => {
-  const subCommitScope = customConfig?.scopeDisplayName?.['*'] || '';
+  const subCommitScope = customConfig?.scopeDisplayName?.['*'] || null;
   const authors = {};
+  const typeMap = defineTypeMap(customConfig.customTypeMap);
   context.commitGroups = context.commitGroups.map((item) => {
     const subtitle = Object.values(typeMap).find(
       (i) =>
@@ -35,11 +36,12 @@ export default (customConfig: CustomConfig) => (context: Context): Context => {
       } else {
         c.last = false;
       }
-      if (c.authorNameEncode && !authors[c.authorNameEncode]) {
-        authors[c.authorNameEncode] = {
+      if (c.authorAvatar && !authors[c.authorEmail]) {
+        authors[c.authorEmail] = {
           authorName: c.authorName,
           authorEmail: c.authorEmail,
-          authorNameEncode: c.authorNameEncode,
+          authorAvatar: c.authorAvatar,
+          authorUrl: c.authorUrl,
         };
       }
       return c;

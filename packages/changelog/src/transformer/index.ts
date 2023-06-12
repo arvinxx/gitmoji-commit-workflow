@@ -1,3 +1,4 @@
+import fetch from '@ardatan/sync-fetch';
 import type { CommitTypes } from '@gitmoji/commit-types';
 import types from '@gitmoji/commit-types';
 import type { Context } from 'conventional-changelog-writer';
@@ -6,12 +7,13 @@ import pangu from 'pangu';
 import type { CustomConfig } from '../customConfig';
 import { scopeMapDisplayName } from './scopeMapDisplayName';
 import { getDisplayName } from './typeDisplayName';
-
 const capitalizeFirstLetter = (str: string): string => {
   const firstLetter = String(str).slice(0, 1).toUpperCase();
   const remainingStr = String(str).slice(1);
   return firstLetter + remainingStr;
 };
+
+const cacheUsers = {};
 
 export default (customConfig: CustomConfig) => (commit: Commit, context: Context) => {
   let discard = true;
@@ -35,6 +37,7 @@ export default (customConfig: CustomConfig) => (commit: Commit, context: Context
   commit.type = getDisplayName(commit.type, {
     language: customConfig.titleLanguage,
     withEmoji: customConfig.withEmoji,
+    customTypeMap: customConfig.customTypeMap,
   });
 
   /** * 处理 scope ** */
@@ -87,10 +90,29 @@ export default (customConfig: CustomConfig) => (commit: Commit, context: Context
   });
 
   // format
-  if (commit.authorName) commit.authorNameEncode = encodeURIComponent(commit.authorName);
   if (commit.subject) {
     commit.rawSubject = commit.subject;
     commit.subject = pangu.spacing(capitalizeFirstLetter(commit.subject));
+  }
+
+  if (customConfig.showAuthor && customConfig.showAuthorAvatar && commit.authorEmail) {
+    if (!cacheUsers[commit.authorEmail]) {
+      const authorInfo = fetch(
+        `https://api.github.com/search/users?q=${commit.authorEmail}`,
+      ).json();
+      if (authorInfo?.items?.length > 0) {
+        cacheUsers[commit.authorEmail] = authorInfo.items[0];
+      } else {
+        cacheUsers[commit.authorEmail] = 'unknown';
+      }
+    }
+
+    if (cacheUsers[commit.authorEmail] !== 'unknown') {
+      const userInfo = cacheUsers[commit.authorEmail];
+      commit.authorName = userInfo.login;
+      commit.authorAvatar = userInfo.avatar_url;
+      commit.authorUrl = userInfo.url;
+    }
   }
 
   return commit;

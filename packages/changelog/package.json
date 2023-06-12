@@ -33,13 +33,16 @@
     "test": "jest"
   },
   "dependencies": {
+    "@ardatan/sync-fetch": "^0",
     "@gitmoji/commit-types": "1.1.5",
     "@gitmoji/parser-opts": "1.4.0",
     "cosmiconfig": "^7",
+    "lodash": "^4",
     "pangu": "^4"
   },
   "devDependencies": {
     "@types/conventional-changelog-core": "^4",
+    "@types/lodash": "^4",
     "better-than-before": "^1",
     "conventional-changelog-core": "^4",
     "conventional-changelog-writer": "^5",

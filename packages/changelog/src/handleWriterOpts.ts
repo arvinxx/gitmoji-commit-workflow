@@ -9,6 +9,7 @@ const basePath = resolve(__dirname, './templates');
 
 const template = readFileSync(`${basePath}/template.hbs`, 'utf-8');
 const summaryTemplate = readFileSync(`${basePath}/summary-template.hbs`, 'utf-8');
+const summaryAvatar = readFileSync(`${basePath}/summary-avatar.hbs`, 'utf-8');
 const header = readFileSync(`${basePath}/header.hbs`, 'utf-8');
 const headerNewlineTimestamp = readFileSync(`${basePath}/header-newline-timestamp.hbs`, 'utf-8');
 const commit = readFileSync(`${basePath}/commit.hbs`, 'utf-8');
@@ -21,7 +22,12 @@ const reduceHeadingLevel = (skip: boolean, template: string): string => {
   return template.replace(/(^|\n)(#+)/g, (match, p1, p2) => p1 + '#' + p2);
 };
 export default (customConfig: CustomConfig): Options => {
-  const mainTemplate = customConfig.showSummary ? summaryTemplate : template;
+  const mainTemplate = customConfig.showSummary
+    ? summaryTemplate.replace(
+        /{{gitUserInfo}}/g,
+        customConfig.showAuthor && customConfig.showAuthorAvatar ? summaryAvatar : '',
+      )
+    : template;
   const commitPartial = commit.replace(
     /{{gitUserInfo}}/g,
     customConfig.showAuthor ? (customConfig.showAuthorAvatar ? authorAvatar : author) : '',
