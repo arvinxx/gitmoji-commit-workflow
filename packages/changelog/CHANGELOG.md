@@ -1,5 +1,30 @@
 # Changelog
 
+### [Version&nbsp;1.5.2](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.5.1...conventional-changelog-gitmoji-config@1.5.2)
+
+<sup>Released on **2023-06-12**</sup>
+
+#### 🐛 Bug Fixes
+
+- **changelog**: Fix subCommitScope default value and reduceHeadingLevel.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **changelog**: Fix subCommitScope default value and reduceHeadingLevel, closes [#670](https://github.com/arvinxx/gitmoji-commit-workflow/issues/670) ([e4da993](https://github.com/arvinxx/gitmoji-commit-workflow/commit/e4da993))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;1.5.1](https://github.com/arvinxx/gitmoji-commit-workflow/compare/conventional-changelog-gitmoji-config@1.5.0...conventional-changelog-gitmoji-config@1.5.1)
 
 <sup>Released on **2023-06-10**</sup>
