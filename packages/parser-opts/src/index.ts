@@ -5,7 +5,7 @@ const gitmojiUnicodeStr = gitmojiUnicodeRegex.source;
 const emojiStr = emojiRegex.source;
 
 export default {
-  // Test URL: https://regex101.com/r/HYr6d3/1
+  // Test URL: https://regex101.com/r/WXbn1P/1
   headerPattern: new RegExp(
     `^(?:${gitmojiCodeStr}|(?:${gitmojiUnicodeStr})|(?:${emojiStr}))\\s(?<type>[a-zA-Z-,\/]+)(?:\\((?<scope>.*)\\))?!?:\\s(?<subject>(?:(?!#).)*(?:(?!\\s).))(?:\\s\\(?(?<ticket>#\\d*)\\)?)?$`,
   ),
